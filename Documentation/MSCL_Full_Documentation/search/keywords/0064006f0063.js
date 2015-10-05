@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("doc",["Function"],[["doCommand",,[["BaseStation",,,,0,"File:MicroStrain/Wireless/BaseStation.h:BaseStation.doCommand","CClass:BaseStation:doCommand"],["BaseStation_Impl",,,,0,"File:MicroStrain/Wireless/BaseStation_Impl.h:BaseStation_Impl.doCommand","CClass:BaseStation_Impl:doCommand"]]]]);

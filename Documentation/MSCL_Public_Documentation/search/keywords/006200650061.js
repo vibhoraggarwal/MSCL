@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("bea",["Class","Function"],[["BeaconStatus",,[[,,,,0,"File:MicroStrain/Wireless/Commands/BaseStation_BeaconStatus.h:BeaconStatus","CClass:BeaconStatus"],["BaseStation","beaconStatus",,,1,"File:MicroStrain/Wireless/BaseStation.h:BaseStation.beaconStatus","CClass:BaseStation:beaconStatus"]]]]);

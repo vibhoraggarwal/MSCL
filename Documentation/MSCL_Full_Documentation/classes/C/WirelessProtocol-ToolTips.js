@@ -1,0 +1,1 @@
+NDContentPage.OnToolTipsLoaded({1165:"<div class=\"NDToolTip TClass LC\"><div class=\"NDClassPrototype\" id=\"NDClassPrototype1165\"><div class=\"CPEntry TClass Current\"><div class=\"CPName\">WirelessProtocol</div></div></div><div class=\"TTSummary\">Class containing protocol information for a device.</div></div>"});

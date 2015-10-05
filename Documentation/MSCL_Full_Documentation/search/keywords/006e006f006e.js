@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("non",["Function"],[["NonFloat",,[["BaseStationAnalogPair",,,,0,"File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair.NonFloat","CClass:BaseStationAnalogPair:NonFloat"]]]]);
