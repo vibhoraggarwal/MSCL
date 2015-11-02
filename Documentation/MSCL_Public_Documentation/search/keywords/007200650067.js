@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("reg",["Function"],[["regionCode",,[["WirelessNode",,,,0,"File:MicroStrain/Wireless/WirelessNode.h:WirelessNode.regionCode","CClass:WirelessNode:regionCode"]]]]);

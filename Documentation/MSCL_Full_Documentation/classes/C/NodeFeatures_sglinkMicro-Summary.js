@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("CClass:NodeFeatures_sglinkMicro","NodeFeatures_sglinkMicro");NDSummary.OnSummaryLoaded("CClass:NodeFeatures_sglinkMicro",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"],["Groups","Group"]],[[2218,0,0,"NodeFeatures_sglinkMicro"],[2219,0,2,"Functions","Functions"],[2220,0,1,"NodeFeatures_sglinkMicro","NodeFeatures_sglinkMicro"]]);

@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("CClass:InertialNodeFeatures","InertialNodeFeatures");NDSummary.OnSummaryLoaded("CClass:InertialNodeFeatures",[["C/C++","C"]],[["Classes","Class"]],[[33,0,0,"InertialNodeFeatures"]]);

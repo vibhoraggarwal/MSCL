@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("cho",["Function"],[["chooseBaseStationProtocol",,[["WirelessProtocol",,,,0,"File:MicroStrain/Wireless/Commands/WirelessProtocol.h:WirelessProtocol.chooseBaseStationProtocol","CClass:WirelessProtocol:chooseBaseStationProtocol"]]]]);

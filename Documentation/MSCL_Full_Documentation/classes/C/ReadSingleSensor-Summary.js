@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("CClass:ReadSingleSensor","ReadSingleSensor");NDSummary.OnSummaryLoaded("CClass:ReadSingleSensor",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"],["Groups","Group"]],[[1366,0,0,"ReadSingleSensor"],[1367,0,2,"Functions","Functions"],[1368,0,1,"buildCommand","buildCommand"]]);

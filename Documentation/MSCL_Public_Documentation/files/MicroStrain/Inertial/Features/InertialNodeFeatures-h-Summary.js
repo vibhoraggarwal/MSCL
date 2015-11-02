@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("File:MicroStrain/Inertial/Features/InertialNodeFeatures.h","InertialNodeFeatures.h");NDSummary.OnSummaryLoaded("File:MicroStrain/Inertial/Features/InertialNodeFeatures.h",[["C/C++","C"]],[["Classes","Class"]],[[33,0,0,"InertialNodeFeatures","InertialNodeFeatures"]]);

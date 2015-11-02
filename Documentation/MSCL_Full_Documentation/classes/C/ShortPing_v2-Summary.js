@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("CClass:ShortPing_v2","ShortPing_v2");NDSummary.OnSummaryLoaded("CClass:ShortPing_v2",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"],["Groups","Group"]],[[1314,0,0,"ShortPing_v2"],[1315,0,2,"Functions","Functions"],[1316,0,1,"buildCommand","buildCommand"]]);

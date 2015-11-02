@@ -1,1 +1,1 @@
-NDFramePage.OnPageTitleLoaded("CClass:FieldParser_Quaternion","FieldParser_Quaternion");NDSummary.OnSummaryLoaded("CClass:FieldParser_Quaternion",[["C/C++","C"]],[["Classes","Class"]],[[452,0,0,"FieldParser_Quaternion"]]);
+NDFramePage.OnPageTitleLoaded("CClass:FieldParser_Quaternion","FieldParser_Quaternion");NDSummary.OnSummaryLoaded("CClass:FieldParser_Quaternion",[["C/C++","C"]],[["Classes","Class"]],[[521,0,0,"FieldParser_Quaternion"]]);

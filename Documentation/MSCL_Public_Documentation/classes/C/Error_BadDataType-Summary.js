@@ -1,1 +1,1 @@
-NDFramePage.OnPageTitleLoaded("CClass:Error_BadDataType","Error_BadDataType");NDSummary.OnSummaryLoaded("CClass:Error_BadDataType",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"]],[[1326,0,0,"Error_BadDataType"],[1327,0,1,"Error_BadDataType","Error_BadDataType"]]);
+NDFramePage.OnPageTitleLoaded("CClass:Error_BadDataType","Error_BadDataType");NDSummary.OnSummaryLoaded("CClass:Error_BadDataType",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"]],[[1417,0,0,"Error_BadDataType"],[1418,0,1,"Error_BadDataType","Error_BadDataType"]]);

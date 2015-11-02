@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("deb",["Function"],[["debugMode",,[["FatigueOptions",,,,0,"File:MicroStrain/Wireless/Configuration/FatigueOptions.h:FatigueOptions.debugMode","CClass:FatigueOptions:debugMode"]]]]);

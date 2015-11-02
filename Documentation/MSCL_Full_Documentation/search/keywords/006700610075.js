@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("gau",["Function"],[["gaugeFactor",,[["WirelessNodeConfig",,,,0,"File:MicroStrain/Wireless/Configuration/WirelessNodeConfig.h:WirelessNodeConfig.gaugeFactor","CClass:WirelessNodeConfig:gaugeFactor"]]]]);
