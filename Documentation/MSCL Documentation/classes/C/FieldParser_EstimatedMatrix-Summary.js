@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("CClass:FieldParser_EstimatedMatrix","FieldParser_EstimatedMatrix");NDSummary.OnSummaryLoaded("CClass:FieldParser_EstimatedMatrix",[["C/C++","C"]],[["Classes","Class"],["Constants","Constant"],["Groups","Group"]],[[693,0,0,"FieldParser_EstimatedMatrix"],[694,0,2,"Constants","Constants"],[695,0,1,"Valid Flags","Valid_Flags"],[696,0,1,,"NED_FLAG"]]);

@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("CClass:BaseStation_RfSweepStart","BaseStation_RfSweepStart");NDSummary.OnSummaryLoaded("CClass:BaseStation_RfSweepStart",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"],["Groups","Group"]],[[1563,0,0,"BaseStation_RfSweepStart"],[1564,0,2,"Functions","Functions"],[1565,0,1,"buildCommand","buildCommand"]]);

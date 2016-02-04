@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("0",["Constant"],[["0",,[["Vector","COLUMN_POS = 0",,"column_pos=0",0,"File:MicroStrain/Vector.h:Vector.COLUMN_POS=0","CClass:Vector:COLUMN_POS=0"],["SyncNetworkInfo","status_OK&nbsp; = 0",,"status_ok=0",0,"File:MicroStrain/Wireless/SyncNetworkInfo.h:SyncNetworkInfo.status_OK=0","CClass:SyncNetworkInfo:status_OK=0"]]]]);

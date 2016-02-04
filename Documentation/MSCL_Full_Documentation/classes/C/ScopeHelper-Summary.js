@@ -1,1 +1,0 @@
-NDFramePage.OnPageTitleLoaded("CClass:ScopeHelper","ScopeHelper");NDSummary.OnSummaryLoaded("CClass:ScopeHelper",[["C/C++","C"]],[["Classes","Class"],["Groups","Group"],["Variables","Variable"]],[[4342,0,0,"ScopeHelper"],[4343,0,1,"Variables","Variables"],[4344,0,2,"m_outOfScopeFunction","m_outOfScopeFunction"],[4345,0,2,"m_canceled","m_canceled"]]);

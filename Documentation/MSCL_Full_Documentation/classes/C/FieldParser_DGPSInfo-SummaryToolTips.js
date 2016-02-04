@@ -1,1 +1,0 @@
-NDSummary.OnToolTipsLoaded("CClass:FieldParser_DGPSInfo",{621:"<div class=\"NDToolTip TClass LC\"><div class=\"NDClassPrototype\" id=\"NDClassPrototype621\"><div class=\"CPEntry TClass Current\"><div class=\"CPName\">FieldParser_DGPSInfo</div></div></div><div class=\"TTSummary\">The field parser for DGPS Information data</div></div>"});

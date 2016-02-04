@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("0",["Enumeration"],[["0",,[["SyncNetworkInfo","status_OK&nbsp; = 0",,"status_ok=0",0,"File:MicroStrain/Wireless/SyncNetworkInfo.h:SyncNetworkInfo.status_OK=0","CClass:SyncNetworkInfo:status_OK=0"]]]]);

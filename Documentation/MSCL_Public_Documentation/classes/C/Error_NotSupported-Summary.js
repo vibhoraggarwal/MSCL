@@ -1,1 +1,0 @@
-NDFramePage.OnPageTitleLoaded("CClass:Error_NotSupported","Error_NotSupported");NDSummary.OnSummaryLoaded("CClass:Error_NotSupported",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"]],[[1411,0,0,"Error_NotSupported"],[1412,0,1,"Error_NotSupported","Error_NotSupported"],[1413,0,1,"Error_NotSupported","Error_NotSupported(2)"]]);
