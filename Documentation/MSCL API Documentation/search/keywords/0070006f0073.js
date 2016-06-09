@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("pos",["Class"],[["PositionOffset",,[[,,,,0,"File:MicroStrain/Inertial/PositionOffset.h:PositionOffset","CClass:PositionOffset"]]]]);
+NDSearch.OnPrefixDataLoaded("pos",["Class","Function"],[["PositionOffset",,[[,,,,0,"File:MicroStrain/Inertial/PositionOffset.h:PositionOffset","CClass:PositionOffset"]]],["postDuration",,[["EventTriggerOptions",,,,1,"File:MicroStrain/Wireless/Configuration/EventTriggerOptions.h:EventTriggerOptions.postDuration","CClass:EventTriggerOptions:postDuration"]]]]);

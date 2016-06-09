@@ -1,1 +1,1 @@
-NDSummary.OnToolTipsLoaded("CClass:InertialPacketInfo",{515:"<div class=\"NDToolTip TStruct LC\"><div class=\"TTSummary\">Contains constants representing information on Inertial MIP Packets</div></div>"});
+NDSummary.OnToolTipsLoaded("CClass:InertialPacketInfo",{512:"<div class=\"NDToolTip TStruct LC\"><div class=\"TTSummary\">Contains constants representing information on Inertial MIP Packets</div></div>"});

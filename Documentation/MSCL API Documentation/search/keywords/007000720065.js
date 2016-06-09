@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("pre",["Function"],[["prettyStr",,[["SampleRate",,,,0,"File:MicroStrain/SampleRate.h:SampleRate.prettyStr","CClass:SampleRate:prettyStr"]]]]);
+NDSearch.OnPrefixDataLoaded("pre",["Function"],[["preDuration",,[["EventTriggerOptions",,,,0,"File:MicroStrain/Wireless/Configuration/EventTriggerOptions.h:EventTriggerOptions.preDuration","CClass:EventTriggerOptions:preDuration"]]],["prettyStr",,[["SampleRate",,,,0,"File:MicroStrain/SampleRate.h:SampleRate.prettyStr","CClass:SampleRate:prettyStr"]]]]);
