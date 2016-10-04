@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("CClass:AutoShuntCalResult","AutoShuntCalResult");NDSummary.OnSummaryLoaded("CClass:AutoShuntCalResult",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"]],[[414,0,0,"AutoShuntCalResult"],[415,0,1,"errorFlag","errorFlag"],[416,0,1,"slope","slope"],[417,0,1,"offset","offset"],[418,0,1,"baseMedian","baseMedian"]]);

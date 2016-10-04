@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("lsb",["Function"],[["lsb",,[[,,,,0,"File:Utils.cpp:lsb"],["Utils",,,,0,"File:Utils.h:Utils.lsb","CClass:Utils:lsb"]]]]);
+NDSearch.OnPrefixDataLoaded("lsb",["Function"],[["lsb",,[["Utils",,,,0,"File:Utils.h:Utils.lsb","CClass:Utils:lsb"]]]]);

@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("ond",["Function"],[["onDeviceAdded",,[["WsdaFinder",,,,0,"File:Communication/WsdaFinder.h:WsdaFinder.onDeviceAdded","CClass:WsdaFinder:onDeviceAdded"]]]]);

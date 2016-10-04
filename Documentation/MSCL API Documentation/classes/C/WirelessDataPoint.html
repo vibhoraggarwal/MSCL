@@ -8,33 +8,33 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="Topic1118"></a><div class="CTopic TClass LC first">
+<a name="Topic1235"></a><div class="CTopic TClass LC first">
  <div class="CTitle">WirelessDataPoint</div>
- <div class="NDClassPrototype HasParents" id="NDClassPrototype1118"><a class="CPEntry Parent TClass" href="../../index.html#CClass:DataPoint" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1490);" onmouseout="NDContentPage.OnLinkMouseOut(event);" ><div class="CPModifiers"><span class="SHKeyword">public</span></div><div class="CPName">DataPoint</div></a><div class="CPEntry TClass Current"><div class="CPName">WirelessDataPoint</div></div></div>
- <div class="CBody"><p>Represents a single channel's data point within a sweep</p><div class="CHeading">See Also</div><p><a href="../../index.html#CClass:DataPoint" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1490);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DataPoint</a>, <a href="../../index.html#CClass:Value" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1507);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Value</a></p></div>
+ <div class="NDClassPrototype HasParents" id="NDClassPrototype1235"><a class="CPEntry Parent TClass" href="../../index.html#CClass:DataPoint" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1620);" onmouseout="NDContentPage.OnLinkMouseOut(event);" ><div class="CPModifiers"><span class="SHKeyword">public</span></div><div class="CPName">DataPoint</div></a><div class="CPEntry TClass Current"><div class="CPName">WirelessDataPoint</div></div></div>
+ <div class="CBody"><p>Represents a single channel's data point within a sweep</p><div class="CHeading">See Also</div><p><a href="../../index.html#CClass:DataPoint" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1620);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DataPoint</a>, <a href="../../index.html#CClass:Value" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1645);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Value</a></p></div>
 </div>
 
-<a name="channelId"></a><a name="Topic1119"></a><div class="CTopic TFunction LC">
+<a name="channelId"></a><a name="Topic1236"></a><div class="CTopic TFunction LC">
  <div class="CTitle">channelId</div>
- <div id="NDPrototype1119" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:WirelessChannel:ChannelId" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1137);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessChannel::ChannelId</a> channelId() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>Gets the <a href="../../index.html#CClass:WirelessChannel:ChannelId" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1137);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessChannel::ChannelId</a> associated with the data point.</p><div class="CHeading">Returns</div><p>A <a href="../../index.html#CClass:WirelessChannel:ChannelId" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1137);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessChannel::ChannelId</a> representing which channel this data corresponds with.</p></div>
+ <div id="NDPrototype1236" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:WirelessChannel:ChannelId" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1305);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessChannel::ChannelId</a> channelId() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>Gets the <a href="../../index.html#CClass:WirelessChannel:ChannelId" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1305);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessChannel::ChannelId</a> associated with the data point.</p><div class="CHeading">Returns</div><p>A <a href="../../index.html#CClass:WirelessChannel:ChannelId" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1305);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessChannel::ChannelId</a> representing which channel this data corresponds with.</p></div>
 </div>
 
-<a name="channelNumber"></a><a name="Topic1120"></a><div class="CTopic TFunction LC">
+<a name="channelNumber"></a><a name="Topic1237"></a><div class="CTopic TFunction LC">
  <div class="CTitle">channelNumber</div>
- <div id="NDPrototype1120" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> channelNumber() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>Gets the channel number associated with the data point (ch1 = 1, ch8 = 8), when applicable.&nbsp; Otherwise, this will return a 0 (for example, a Structural Health data point doesn't relate an actual channel on the Wireless Node, so this will be a 0).&nbsp; This number can be used to relate to the Node's <a href="../../index.html#CClass:WirelessChannel" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1136);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessChannel</a> in the map returned from calling &lt;WirelessNode::channels&gt;().</p><div class="CHeading">Returns</div><p>The channel number associated with the data point.</p></div>
+ <div id="NDPrototype1237" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> channelNumber() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>Gets the channel number associated with the data point (ch1 = 1, ch8 = 8), when applicable.&nbsp; Otherwise, this will return a 0 (for example, a Structural Health data point doesn't relate an actual channel on the Wireless Node, so this will be a 0).&nbsp; This number can be used to relate to the Node's <a href="../../index.html#CClass:WirelessChannel" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1304);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessChannel</a> in the map returned from calling &lt;WirelessNode::channels&gt;().</p><div class="CHeading">Returns</div><p>The channel number associated with the data point.</p></div>
 </div>
 
-<a name="channelName"></a><a name="Topic1121"></a><div class="CTopic TFunction LC">
+<a name="channelName"></a><a name="Topic1238"></a><div class="CTopic TFunction LC">
  <div class="CTitle">channelName</div>
- <div id="NDPrototype1121" class="NDPrototype NoParameterForm"><span class="SHKeyword">const</span> std::<span class="SHKeyword">string</span>&amp; channelName() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>Gets the name of the channel.&nbsp; This is the universal channel name that should be used for uploading to SensorCloud.</p><div class="CHeading">Returns</div><p>The name of the channel.</p><div class="CHeading">Exceptions</div><ul><li><p><a href="../../index.html#CClass:Error" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1570);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Error</a>: Unknown channel.</p></li></ul></div>
+ <div id="NDPrototype1238" class="NDPrototype NoParameterForm"><span class="SHKeyword">const</span> std::<span class="SHKeyword">string</span>&amp; channelName() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>Gets the name of the channel.&nbsp; This is the universal channel name that should be used for uploading to SensorCloud.</p><div class="CHeading">Returns</div><p>The name of the channel.</p><div class="CHeading">Exceptions</div><ul><li><p><a href="../../index.html#CClass:Error" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1721);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Error</a>: Unknown channel.</p></li></ul></div>
 </div>
 
-<a name="ChannelData"></a><a name="Topic1122"></a><div class="CTopic TType LC last">
+<a name="ChannelData"></a><a name="Topic1239"></a><div class="CTopic TType LC last">
  <div class="CTitle">ChannelData</div>
- <div class="CBody"><p>A typedef for a collection (vector) of <a href="../../index.html#CClass:WirelessDataPoint" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1118);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessDataPoint</a>s</p></div>
+ <div class="CBody"><p>A typedef for a collection (vector) of <a href="../../index.html#CClass:WirelessDataPoint" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1235);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessDataPoint</a>s</p></div>
 </div>
 
 </body></html>

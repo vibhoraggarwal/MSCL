@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("imp",["Constant"],[["Impact",,[["AvailableSampleRates","Wireless Impact Sensor Sample Rates",,,0,"File:MicroStrain/Wireless/Features/AvailableSampleRates.h:AvailableSampleRates.Wireless_Impact_Sensor_Sample_Rates","CClass:AvailableSampleRates:Wireless_Impact_Sensor_Sample_Rates"]]]]);

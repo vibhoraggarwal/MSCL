@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("deb",["Function"],[["debugMode",,[["FatigueOptions",,,,0,"File:MicroStrain/Wireless/Configuration/FatigueOptions.h:FatigueOptions.debugMode","CClass:FatigueOptions:debugMode"]]]]);
+NDSearch.OnPrefixDataLoaded("deb",["Function"],[["debugMode",,[["Connection",,,,0,"File:Communication/Connection.h:Connection.debugMode","CClass:Connection:debugMode"],["FatigueOptions",,,,0,"File:MicroStrain/Wireless/Configuration/FatigueOptions.h:FatigueOptions.debugMode","CClass:FatigueOptions:debugMode"]]]]);

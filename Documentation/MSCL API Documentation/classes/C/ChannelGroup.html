@@ -8,33 +8,45 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="Topic598"></a><div class="CTopic TClass LC first">
+<a name="Topic628"></a><div class="CTopic TClass LC first">
  <div class="CTitle">ChannelGroup</div>
- <div class="NDClassPrototype" id="NDClassPrototype598"><div class="CPEntry TClass Current"><div class="CPName">ChannelGroup</div></div></div>
+ <div class="NDClassPrototype" id="NDClassPrototype628"><div class="CPEntry TClass Current"><div class="CPName">ChannelGroup</div></div></div>
  <div class="CBody"><p>Represents a group of channels that have combined settings.</p></div>
 </div>
 
-<a name="channels"></a><a name="Topic599"></a><div class="CTopic TFunction LC">
+<a name="channels"></a><a name="Topic629"></a><div class="CTopic TFunction LC">
  <div class="CTitle">channels</div>
- <div id="NDPrototype599" class="NDPrototype NoParameterForm"><span class="SHKeyword">const</span> <a href="../../index.html#CClass:ChannelMask" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1363);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ChannelMask</a>&amp; channels() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>Gets the <a href="../../index.html#CClass:ChannelMask" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1363);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ChannelMask</a> representing which channels are part of this group.</p></div>
+ <div id="NDPrototype629" class="NDPrototype NoParameterForm"><span class="SHKeyword">const</span> <a href="../../index.html#CClass:ChannelMask" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1465);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ChannelMask</a>&amp; channels() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>Gets the <a href="../../index.html#CClass:ChannelMask" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1465);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ChannelMask</a> representing which channels are part of this group.</p></div>
 </div>
 
-<a name="name"></a><a name="Topic600"></a><div class="CTopic TFunction LC">
+<a name="name"></a><a name="Topic630"></a><div class="CTopic TFunction LC">
  <div class="CTitle">name</div>
- <div id="NDPrototype600" class="NDPrototype NoParameterForm"><span class="SHKeyword">const</span> std::<span class="SHKeyword">string</span>&amp; name() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype630" class="NDPrototype NoParameterForm"><span class="SHKeyword">const</span> std::<span class="SHKeyword">string</span>&amp; name() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Gets the name of the channel group.</p></div>
 </div>
 
-<a name="settings"></a><a name="Topic601"></a><div class="CTopic TFunction LC">
- <div class="CTitle">settings</div>
- <div id="NDPrototype601" class="NDPrototype NoParameterForm"><span class="SHKeyword">const</span> WirelessTypes::ChannelGroupSettings&amp; settings() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>Gets the <a href="../../index.html#CClass:WirelessTypes:ChannelGroupSetting" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,937);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::ChannelGroupSettings</a> that this group supports.</p></div>
+<a name="eepromLocation"></a><a name="Topic631"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">eepromLocation</div>
+ <div id="NDPrototype631" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">uint16</span> eepromLocation(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><a href="../../index.html#CClass:WirelessTypes:ChannelGroupSetting" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,981);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::</a></td><td class="PType"><a href="../../index.html#CClass:WirelessTypes:ChannelGroupSetting" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,981);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ChannelGroupSetting</a>&nbsp;</td><td class="PName last">setting</td></tr></table></td><td class="PAfterParameters">) <span class="SHKeyword">const</span></td></tr></table></div>
+ <div class="CBody"><p>Gets the eeprom location that the ChannelGroup uses for a specified setting.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">setting<div class="CDLParameterType"><a href="../../index.html#CClass:WirelessTypes:ChannelGroupSetting" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,981);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::ChannelGroupSetting</a></div></td><td class="CDLDefinition"><p>The <a href="../../index.html#CClass:WirelessTypes:ChannelGroupSetting" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,981);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::ChannelGroupSetting</a> to find the eeprom location for.</p></td></tr></table><div class="CHeading">Returns</div><p>The eeprom location for the specified setting.</p><div class="CHeading">Exceptions</div><ul><li><p><a href="../../index.html#CClass:Error_NotSupported" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1725);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Error_NotSupported</a>: The requested <a href="../../index.html#CClass:WirelessTypes:ChannelGroupSetting" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,981);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::ChannelGroupSetting</a> is not supported by this ChannelGroup.</p></li></ul></div>
 </div>
 
-<a name="ChannelGroups"></a><a name="Topic602"></a><div class="CTopic TType LC last">
+<a name="settings"></a><a name="Topic632"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">settings</div>
+ <div id="NDPrototype632" class="NDPrototype NoParameterForm"><span class="SHKeyword">const</span> WirelessTypes::ChannelGroupSettings&amp; settings() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>Gets the <a href="../../index.html#CClass:WirelessTypes:ChannelGroupSetting" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,981);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::ChannelGroupSettings</a> that this group supports.</p><div class="CHeading">Returns</div><p>The <a href="../../index.html#CClass:WirelessTypes:ChannelGroupSetting" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,981);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::ChannelGroupSettings</a> for this group.</p></div>
+</div>
+
+<a name="hasSetting"></a><a name="Topic633"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">hasSetting</div>
+ <div id="NDPrototype633" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">bool</span> hasSetting(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><a href="../../index.html#CClass:WirelessTypes:ChannelGroupSetting" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,981);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::</a></td><td class="PType"><a href="../../index.html#CClass:WirelessTypes:ChannelGroupSetting" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,981);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ChannelGroupSetting</a>&nbsp;</td><td class="PName last">setting</td></tr></table></td><td class="PAfterParameters">) <span class="SHKeyword">const</span></td></tr></table></div>
+ <div class="CBody"><p>Helper function for quick check if setting is present in this channel group.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">setting<div class="CDLParameterType"><a href="../../index.html#CClass:WirelessTypes:ChannelGroupSetting" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,981);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::ChannelGroupSetting</a></div></td><td class="CDLDefinition"><p>The <a href="../../index.html#CClass:WirelessTypes:ChannelGroupSetting" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,981);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::ChannelGroupSetting</a> to look for.</p></td></tr></table><div class="CHeading">Returns</div><p>true if the ChannelGroup has the given setting, false otherwise.</p></div>
+</div>
+
+<a name="ChannelGroups"></a><a name="Topic634"></a><div class="CTopic TType LC last">
  <div class="CTitle">ChannelGroups</div>
- <div class="CBody"><p>A typedef for a vector of <a href="../../index.html#CClass:ChannelGroup" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,598);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ChannelGroup</a>s.</p></div>
+ <div class="CBody"><p>A typedef for a vector of <a href="../../index.html#CClass:ChannelGroup" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,628);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ChannelGroup</a>s.</p></div>
 </div>
 
 </body></html>

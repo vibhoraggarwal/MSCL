@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("==",["Operator"],[["==",,[["BitMask",,,,0,"File:BitMask.h:BitMask.==","CClass:BitMask:=="]]]]);
+NDSearch.OnPrefixDataLoaded("==",["Operator"],[["==",,[["BitMask",,,,0,"File:BitMask.h:BitMask.==","CClass:BitMask:=="],["ChannelMask",,,,0,"File:MicroStrain/Wireless/ChannelMask.h:ChannelMask.==","CClass:ChannelMask:=="]]]]);

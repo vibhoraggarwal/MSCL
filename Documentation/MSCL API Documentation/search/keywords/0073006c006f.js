@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("slo",["Function"],[["slope",,[["LinearEquation",,,,0,"File:MicroStrain/Wireless/LinearEquation.h:LinearEquation.slope","CClass:LinearEquation:slope"]]]]);
+NDSearch.OnPrefixDataLoaded("slo",["Function"],[["slope",,[["AutoShuntCalResult",,,,0,"File:MicroStrain/Wireless/Commands/AutoCalResult.h:AutoShuntCalResult.slope","CClass:AutoShuntCalResult:slope"],["LinearEquation",,,,0,"File:MicroStrain/Wireless/LinearEquation.h:LinearEquation.slope","CClass:LinearEquation:slope"]]]]);

@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("has",["Function"],[["hasBaseStation",,[["WirelessNode",,,,0,"File:MicroStrain/Wireless/WirelessNode.h:WirelessNode.hasBaseStation","CClass:WirelessNode:hasBaseStation"]]]]);
+NDSearch.OnPrefixDataLoaded("has",["Function"],[["hasBaseStation",,[["WirelessNode",,,,0,"File:MicroStrain/Wireless/WirelessNode.h:WirelessNode.hasBaseStation","CClass:WirelessNode:hasBaseStation"]]],["hasSetting",,[["ChannelGroup",,,,0,"File:MicroStrain/Wireless/Features/ChannelGroup.h:ChannelGroup.hasSetting","CClass:ChannelGroup:hasSetting"]]]]);

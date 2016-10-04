@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("CClass:GetLoggedData","GetLoggedData");NDSummary.OnSummaryLoaded("CClass:GetLoggedData",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"],["Groups","Group"]],[[1559,0,0,"GetLoggedData"],[1560,0,2,"Functions","Functions"],[1561,0,1,"buildCommand","buildCommand"]]);

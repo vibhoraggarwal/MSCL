@@ -1,1 +1,0 @@
-NDSearch.OnPrefixDataLoaded("bla",["Constant"],[["Blade-Impact-Link",,[["AvailableSampleRates","Blade-Impact-Link Sample Rates",,,0,"File:MicroStrain/Wireless/Features/AvailableSampleRates.h:AvailableSampleRates.Blade-Impact-Link_Sample_Rates","CClass:AvailableSampleRates:Blade-Impact-Link_Sample_Rates"]]]]);

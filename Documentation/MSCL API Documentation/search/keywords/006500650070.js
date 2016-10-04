@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("eep",["Function"],[["eepromLocation",,[["ChannelGroup",,,,0,"File:MicroStrain/Wireless/Features/ChannelGroup.h:ChannelGroup.eepromLocation","CClass:ChannelGroup:eepromLocation"]]]]);
