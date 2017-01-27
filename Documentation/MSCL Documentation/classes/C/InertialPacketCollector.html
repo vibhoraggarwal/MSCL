@@ -8,87 +8,87 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="Topic488"></a><div class="CTopic TClass LC first">
+<a name="Topic523"></a><div class="CTopic TClass LC first">
  <div class="CTitle">InertialPacketCollector</div>
- <div class="NDClassPrototype" id="NDClassPrototype488"><div class="CPEntry TClass Current"><div class="CPName">InertialPacketCollector</div></div></div>
+ <div class="NDClassPrototype" id="NDClassPrototype523"><div class="CPEntry TClass Current"><div class="CPName">InertialPacketCollector</div></div></div>
  <div class="CBody"><p>Class that sets/matches expected responses, and stores all the Inertial packets</p></div>
 </div>
 
-<a name="Functions"></a><a name="Topic489"></a><div class="CTopic TGroup LC">
+<a name="Functions"></a><a name="Topic524"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="InertialPacketCollector"></a><a name="Topic490"></a><div class="CTopic TFunction LC">
+<a name="InertialPacketCollector"></a><a name="Topic525"></a><div class="CTopic TFunction LC">
  <div class="CTitle">InertialPacketCollector</div>
- <div id="NDPrototype490" class="NDPrototype NoParameterForm">InertialPacketCollector()</div>
+ <div id="NDPrototype525" class="NDPrototype NoParameterForm">InertialPacketCollector()</div>
  <div class="CBody"><p>The default constructor for the InertialPacketCollector</p></div>
 </div>
 
-<a name="InertialPacketCollector(2)"></a><a name="Topic491"></a><div class="CTopic TFunction LC">
+<a name="InertialPacketCollector(2)"></a><a name="Topic526"></a><div class="CTopic TFunction LC">
  <div class="CTitle">InertialPacketCollector</div>
- <div id="NDPrototype491" class="NDPrototype NoParameterForm">~InertialPacketCollector()</div>
+ <div id="NDPrototype526" class="NDPrototype NoParameterForm">~InertialPacketCollector()</div>
  <div class="CBody"><p>The destructor for the InertialPacketCollector</p></div>
 </div>
 
-<a name="Types"></a><a name="Topic492"></a><div class="CTopic TGroup LC">
+<a name="Types"></a><a name="Topic527"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Types</div>
 </div>
 
-<a name="circular_data_buffer"></a><a name="Topic493"></a><div class="CTopic TType LC">
+<a name="circular_data_buffer"></a><a name="Topic528"></a><div class="CTopic TType LC">
  <div class="CTitle">circular_data_buffer</div>
- <div class="CBody"><p>Typedef for a circular buffer of a <a href="../../index.html#CClass:InertialDataPacket" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,827);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialDataPacket</a></p></div>
+ <div class="CBody"><p>Typedef for a circular buffer of a <a href="../../index.html#CClass:InertialDataPacket" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,855);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialDataPacket</a></p></div>
 </div>
 
-<a name="Constants"></a><a name="Topic494"></a><div class="CTopic TGroup LC">
+<a name="Constants"></a><a name="Topic529"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Constants</div>
 </div>
 
-<a name="MAX_DATA_BUFFER_SIZE=1024*100"></a><a name="Topic495"></a><div class="CTopic TConstant LC">
+<a name="MAX_DATA_BUFFER_SIZE=1024*100"></a><a name="Topic530"></a><div class="CTopic TConstant LC">
  <div class="CTitle">MAX_DATA_BUFFER_SIZE = 1024 * 100</div>
  <div class="CBody"><p>The maximum number of data packets that can be stored in the circular buffer</p></div>
 </div>
 
-<a name="Variables"></a><a name="Topic496"></a><div class="CTopic TGroup LC">
+<a name="Variables"></a><a name="Topic531"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="m_dataPackets"></a><a name="Topic497"></a><div class="CTopic TVariable LC">
+<a name="m_dataPackets"></a><a name="Topic532"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_dataPackets</div>
- <div id="NDPrototype497" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:InertialPacketCollector:circular_data_buffer" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,493);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >circular_data_buffer</a> m_dataPackets</div>
- <div class="CBody"><p>A circular buffer that holds <a href="../../index.html#CClass:InertialDataPacket" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,827);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialDataPacket</a>s</p></div>
+ <div id="NDPrototype532" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:InertialPacketCollector:circular_data_buffer" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,528);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >circular_data_buffer</a> m_dataPackets</div>
+ <div class="CBody"><p>A circular buffer that holds <a href="../../index.html#CClass:InertialDataPacket" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,855);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialDataPacket</a>s</p></div>
 </div>
 
-<a name="m_packetMutex"></a><a name="Topic498"></a><div class="CTopic TVariable LC">
+<a name="m_packetMutex"></a><a name="Topic533"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_packetMutex</div>
- <div id="NDPrototype498" class="NDPrototype NoParameterForm">std::mutex m_packetMutex</div>
+ <div id="NDPrototype533" class="NDPrototype NoParameterForm">std::mutex m_packetMutex</div>
  <div class="CBody"><p>A mutex used for thread safety when accessing/modifying the m_dataPackets buffer</p></div>
 </div>
 
-<a name="m_emptyBufferCondition"></a><a name="Topic499"></a><div class="CTopic TVariable LC">
+<a name="m_emptyBufferCondition"></a><a name="Topic534"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_emptyBufferCondition</div>
- <div id="NDPrototype499" class="NDPrototype NoParameterForm">std::condition_variable m_emptyBufferCondition</div>
+ <div id="NDPrototype534" class="NDPrototype NoParameterForm">std::condition_variable m_emptyBufferCondition</div>
  <div class="CBody"><p>Allows the write to buffer thread to tell the reading thread when data is available</p></div>
 </div>
 
-<a name="Functions(2)"></a><a name="Topic500"></a><div class="CTopic TGroup LC">
+<a name="Functions(2)"></a><a name="Topic535"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="addDataPacket"></a><a name="Topic501"></a><div class="CTopic TFunction LC">
+<a name="addDataPacket"></a><a name="Topic536"></a><div class="CTopic TFunction LC">
  <div class="CTitle">addDataPacket</div>
- <div id="NDPrototype501" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> addDataPacket(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span>&nbsp;</td><td class="PType"><a href="../../index.html#CClass:InertialPacket" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,514);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialPacket</a>&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">packet</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
- <div class="CBody"><p>Adds a data packet to the data packets circular buffer</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">packet<div class="CDLParameterType"><span class="SHKeyword">const</span> <a href="../../index.html#CClass:InertialPacket" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,514);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialPacket</a>&amp;</div></td><td class="CDLDefinition"><p>The <a href="../../index.html#CClass:InertialPacket" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,514);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialPacket</a> to be added to the buffer</p></td></tr></table></div>
+ <div id="NDPrototype536" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> addDataPacket(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span>&nbsp;</td><td class="PType"><a href="../../index.html#CClass:InertialPacket" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,580);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialPacket</a>&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">packet</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div class="CBody"><p>Adds a data packet to the data packets circular buffer</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">packet<div class="CDLParameterType"><span class="SHKeyword">const</span> <a href="../../index.html#CClass:InertialPacket" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,580);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialPacket</a>&amp;</div></td><td class="CDLDefinition"><p>The <a href="../../index.html#CClass:InertialPacket" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,580);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialPacket</a> to be added to the buffer</p></td></tr></table></div>
 </div>
 
-<a name="getDataPackets"></a><a name="Topic502"></a><div class="CTopic TFunction LC">
+<a name="getDataPackets"></a><a name="Topic537"></a><div class="CTopic TFunction LC">
  <div class="CTitle">getDataPackets</div>
- <div id="NDPrototype502" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> getDataPackets(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first">std::</td><td class="PType">vector&lt;<a href="../../index.html#CClass:InertialDataPacket" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,827);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialDataPacket</a>&gt;&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName">packets,</td><td></td><td class="last"></td></tr><tr><td class="first"></td><td class="PType"><span class="SHKeyword">uint32</span>&nbsp;</td><td></td><td class="PName">timeout</td><td class="PDefaultValueSeparator">=&nbsp;</td><td class="PDefaultValue last"><span class="SHNumber">0</span>,</td></tr><tr><td class="first"></td><td class="PType"><span class="SHKeyword">uint32</span>&nbsp;</td><td></td><td class="PName">maxPackets</td><td class="PDefaultValueSeparator">=&nbsp;</td><td class="PDefaultValue last"><span class="SHNumber">0</span></td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
- <div class="CBody"><p>Gets up to the requested amount of data packets that have been collected.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">packets<div class="CDLParameterType">std::vector&lt;<a href="../../index.html#CClass:InertialDataPacket" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,827);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialDataPacket</a>&gt;&amp;</div></td><td class="CDLDefinition"><p>A vector of <a href="../../index.html#CClass:InertialDataPacket" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,827);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialDataPacket</a> to hold the result.</p></td></tr><tr><td class="CDLEntry">maxPackets<div class="CDLParameterType"><span class="SHKeyword">uint32</span></div></td><td class="CDLDefinition"><p>The maximum number of packets to return. If this is 0 (default), all sweeps will be returned.</p></td></tr></table></div>
+ <div id="NDPrototype537" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> getDataPackets(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first">std::</td><td class="PType">vector&lt;<a href="../../index.html#CClass:InertialDataPacket" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,855);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialDataPacket</a>&gt;&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName">packets,</td><td></td><td class="last"></td></tr><tr><td class="first"></td><td class="PType"><span class="SHKeyword">uint32</span>&nbsp;</td><td></td><td class="PName">timeout</td><td class="PDefaultValueSeparator">=&nbsp;</td><td class="PDefaultValue last"><span class="SHNumber">0</span>,</td></tr><tr><td class="first"></td><td class="PType"><span class="SHKeyword">uint32</span>&nbsp;</td><td></td><td class="PName">maxPackets</td><td class="PDefaultValueSeparator">=&nbsp;</td><td class="PDefaultValue last"><span class="SHNumber">0</span></td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div class="CBody"><p>Gets up to the requested amount of data packets that have been collected.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">packets<div class="CDLParameterType">std::vector&lt;<a href="../../index.html#CClass:InertialDataPacket" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,855);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialDataPacket</a>&gt;&amp;</div></td><td class="CDLDefinition"><p>A vector of <a href="../../index.html#CClass:InertialDataPacket" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,855);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialDataPacket</a> to hold the result.</p></td></tr><tr><td class="CDLEntry">maxPackets<div class="CDLParameterType"><span class="SHKeyword">uint32</span></div></td><td class="CDLDefinition"><p>The maximum number of packets to return. If this is 0 (default), all sweeps will be returned.</p></td></tr></table></div>
 </div>
 
-<a name="totalPackets"></a><a name="Topic503"></a><div class="CTopic TFunction LC last">
+<a name="totalPackets"></a><a name="Topic538"></a><div class="CTopic TFunction LC last">
  <div class="CTitle">totalPackets</div>
- <div id="NDPrototype503" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> totalPackets()</div>
+ <div id="NDPrototype538" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> totalPackets()</div>
  <div class="CBody"><p>Gets the total number of data packets that are currently in the buffer.</p><div class="CHeading">Returns</div><p>The total number of data packets that are currently in the buffer.</p></div>
 </div>
 

@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("onl",["Function"],[["onlySupportsRawDataMode",,[["NodeFeatures",,,,0,"File:MicroStrain/Wireless/Features/NodeFeatures.h:NodeFeatures.onlySupportsRawDataMode","CClass:NodeFeatures:onlySupportsRawDataMode"]]]]);

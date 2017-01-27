@@ -8,35 +8,35 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="Topic265"></a><div class="CTopic TClass LC first">
+<a name="Topic305"></a><div class="CTopic TClass LC first">
  <div class="CTitle">GpsMessageFormat</div>
- <div class="NDClassPrototype" id="NDClassPrototype265"><div class="CPEntry TClass Current"><div class="CPName">GpsMessageFormat</div></div></div>
+ <div class="NDClassPrototype" id="NDClassPrototype305"><div class="CPEntry TClass Current"><div class="CPName">GpsMessageFormat</div></div></div>
  <div class="CBody"><p>Contains the logic for the &quot;GPS Message Format&quot; command</p></div>
 </div>
 
-<a name="Constants"></a><a name="Topic266"></a><div class="CTopic TGroup LC">
+<a name="Constants"></a><a name="Topic306"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Constants</div>
 </div>
 
-<a name="Packet_Bytes"></a><a name="Topic267"></a><div class="CTopic TConstant LC">
+<a name="Packet_Bytes"></a><a name="Topic307"></a><div class="CTopic TConstant LC">
  <div class="CTitle">Packet Bytes</div>
- <div class="CBody"><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="CMD_ID"></a><a name="Topic268"></a>CMD_ID</td><td class="CDLDefinition"><p>CMD_GPS_MESSAGE_FORMAT&nbsp; - The <a href="../../index.html#CClass:InertialTypes:Command" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,858);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialTypes::Command</a> for this command</p></td></tr><tr><td class="CDLEntry"><a name="FIELD_DATA_BYTE"></a><a name="Topic269"></a>FIELD_DATA_BYTE</td><td class="CDLDefinition"><p>0x81&nbsp; - The Data Field Descriptor byte</p></td></tr></table></div>
+ <div class="CBody"><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="CMD_ID"></a><a name="Topic308"></a>CMD_ID</td><td class="CDLDefinition"><p>CMD_GPS_MESSAGE_FORMAT&nbsp; - The <a href="../../index.html#CClass:InertialTypes:Command" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,929);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialTypes::Command</a> for this command</p></td></tr><tr><td class="CDLEntry"><a name="FIELD_DATA_BYTE"></a><a name="Topic309"></a>FIELD_DATA_BYTE</td><td class="CDLDefinition"><p>0x81&nbsp; - The Data Field Descriptor byte</p></td></tr></table></div>
 </div>
 
-<a name="Functions"></a><a name="Topic270"></a><div class="CTopic TGroup LC">
+<a name="Functions"></a><a name="Topic310"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="buildCommand_get"></a><a name="Topic271"></a><div class="CTopic TFunction LC">
+<a name="buildCommand_get"></a><a name="Topic311"></a><div class="CTopic TFunction LC">
  <div class="CTitle">buildCommand_get</div>
- <div id="NDPrototype271" class="NDPrototype NoParameterForm"><span class="SHKeyword">static</span> <a href="../../index.html#CClass:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5043);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> buildCommand_get()</div>
- <div class="CBody"><p>Builds the bytes for the &quot;get&quot; command</p><div class="CHeading">Returns</div><p>A <a href="../../index.html#CClass:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5043);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> that holds the bytes that make up the command</p></div>
+ <div id="NDPrototype311" class="NDPrototype NoParameterForm"><span class="SHKeyword">static</span> <a href="../../index.html#CClass:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5292);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> buildCommand_get()</div>
+ <div class="CBody"><p>Builds the bytes for the &quot;get&quot; command</p><div class="CHeading">Returns</div><p>A <a href="../../index.html#CClass:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5292);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> that holds the bytes that make up the command</p></div>
 </div>
 
-<a name="buildCommand_set"></a><a name="Topic272"></a><div class="CTopic TFunction LC last">
+<a name="buildCommand_set"></a><a name="Topic312"></a><div class="CTopic TFunction LC last">
  <div class="CTitle">buildCommand_set</div>
- <div id="NDPrototype272" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">static</span> <a href="../../index.html#CClass:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5043);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> buildCommand_set(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span>&nbsp;</td><td class="PType">InertialChannels&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">channels,</td></tr><tr><td class="first"></td><td class="PType"><span class="SHKeyword">uint16</span>&nbsp;</td><td></td><td class="PName last">sampleRateBase</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
- <div class="CBody"><p>Builds the bytes for the &quot;set&quot; command.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">channels<div class="CDLParameterType"><span class="SHKeyword">const</span> InertialChannels&amp;</div></td><td class="CDLDefinition"><p>The <a href="../../index.html#CClass:InertialChannel" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1256);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialChannels</a> holding the channels to be set. This should only contain channels that are in the GPS (0x81) descriptor set.</p></td></tr><tr><td class="CDLEntry">sampleRateBase<div class="CDLParameterType"><span class="SHKeyword">uint16</span></div></td><td class="CDLDefinition"><p>The base sample rate for the gps command set.</p></td></tr></table><div class="CHeading">Returns</div><p>A <a href="../../index.html#CClass:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5043);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> that holds the bytes that make up the command</p><div class="CHeading">Exceptions</div><ul><li><p><a href="../../index.html#CClass:Error" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5292);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Error</a>: An <a href="../../index.html#CClass:InertialChannel" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1256);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialChannel</a> in the channels parameter is not part of the Sensor descriptor set</p></li></ul></div>
+ <div id="NDPrototype312" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">static</span> <a href="../../index.html#CClass:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5292);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> buildCommand_set(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span>&nbsp;</td><td class="PType">InertialChannels&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">channels,</td></tr><tr><td class="first"></td><td class="PType"><span class="SHKeyword">uint16</span>&nbsp;</td><td></td><td class="PName last">sampleRateBase</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div class="CBody"><p>Builds the bytes for the &quot;set&quot; command.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">channels<div class="CDLParameterType"><span class="SHKeyword">const</span> InertialChannels&amp;</div></td><td class="CDLDefinition"><p>The <a href="../../index.html#CClass:InertialChannel" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1313);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialChannels</a> holding the channels to be set. This should only contain channels that are in the GPS (0x81) descriptor set.</p></td></tr><tr><td class="CDLEntry">sampleRateBase<div class="CDLParameterType"><span class="SHKeyword">uint16</span></div></td><td class="CDLDefinition"><p>The base sample rate for the gps command set.</p></td></tr></table><div class="CHeading">Returns</div><p>A <a href="../../index.html#CClass:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5292);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> that holds the bytes that make up the command</p><div class="CHeading">Exceptions</div><ul><li><p><a href="../../index.html#CClass:Error" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5609);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Error</a>: An <a href="../../index.html#CClass:InertialChannel" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1313);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialChannel</a> in the channels parameter is not part of the Sensor descriptor set</p></li></ul></div>
 </div>
 
 </body></html>

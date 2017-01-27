@@ -1,1 +1,1 @@
-NDFramePage.OnPageTitleLoaded("CClass:DeviceInfo","DeviceInfo");NDSummary.OnSummaryLoaded("CClass:DeviceInfo",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"]],[[2,0,0,"DeviceInfo"],[3,0,1,"description","description"],[4,0,1,"serial","serial"]]);
+NDFramePage.OnPageTitleLoaded("CClass:DeviceInfo","DeviceInfo");NDSummary.OnSummaryLoaded("CClass:DeviceInfo",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"]],[[8,0,0,"DeviceInfo"],[9,0,1,"description","description"],[10,0,1,"serial","serial"],[11,0,1,"baudRate","baudRate"]]);

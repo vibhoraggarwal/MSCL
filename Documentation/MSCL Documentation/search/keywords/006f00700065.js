@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("ope",["Function"],[["operator&lt;","operator<",[["WirelessParser",,,"operator<",0,"File:MicroStrain/Wireless/WirelessParser.h:WirelessParser.operator<","CClass:WirelessParser:operator<"]]]]);
