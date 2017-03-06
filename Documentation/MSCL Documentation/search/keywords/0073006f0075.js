@@ -1,1 +1,0 @@
-NDSearch.OnPrefixDataLoaded("sou",["Variable"],[["sourceChannel",,[["MathMetaData",,,,0,"File:MicroStrain/Wireless/DatalogDownloader.h:MathMetaData.sourceChannel","CClass:MathMetaData:sourceChannel"]]]]);

@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("fwv",["Variable"],[["fwVersion",,[["InertialDeviceInfo",,,,0,"File:MicroStrain/Inertial/Commands/GetDeviceInfo.h:InertialDeviceInfo.fwVersion","CClass:InertialDeviceInfo:fwVersion"]]]]);

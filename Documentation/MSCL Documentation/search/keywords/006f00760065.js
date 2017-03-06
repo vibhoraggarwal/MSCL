@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("ove",["Function"],[["overheadFactor",,[["SyncSamplingFormulas",,,,0,"File:MicroStrain/Wireless/SyncSamplingFormulas.h:SyncSamplingFormulas.overheadFactor","CClass:SyncSamplingFormulas:overheadFactor"]]]]);

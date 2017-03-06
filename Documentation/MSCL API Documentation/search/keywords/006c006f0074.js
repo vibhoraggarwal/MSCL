@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("lot",["Function"],[["lotNumber",,[["InertialNodeInfo",,,,0,"File:MicroStrain/Inertial/InertialNodeInfo.h:InertialNodeInfo.lotNumber","CClass:InertialNodeInfo:lotNumber"]]]]);
+NDSearch.OnPrefixDataLoaded("lot",["Function"],[["lotNumber",,[["InertialNode",,,,0,"File:MicroStrain/Inertial/InertialNode.h:InertialNode.lotNumber","CClass:InertialNode:lotNumber"]]]]);

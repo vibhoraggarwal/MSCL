@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("gns",["Enumeration"],[["GnssFixType",,[["InertialDataEnums",,,,0,"File:MicroStrain/Inertial/InertialDataPoint.h:InertialDataEnums.GnssFixType","CClass:InertialDataEnums:GnssFixType"]]]]);

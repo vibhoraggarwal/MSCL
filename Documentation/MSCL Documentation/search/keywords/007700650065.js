@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("wee",["Constant"],[["WEEK_NUM_VALID",,[["FieldParser_GPSTime",,,,0,"File:MicroStrain/Inertial/Packets/InertialFieldParser_GPS.h:FieldParser_GPSTime.WEEK_NUM_VALID","CClass:FieldParser_GPSTime:WEEK_NUM_VALID"]]]]);
+NDSearch.OnPrefixDataLoaded("wee",["Constant"],[["WEEK_NUM_VALID",,[["FieldParser_GPSTime",,,,0,"File:MicroStrain/Inertial/Packets/InertialFieldParser_GNSS.h:FieldParser_GPSTime.WEEK_NUM_VALID","CClass:FieldParser_GPSTime:WEEK_NUM_VALID"]]]]);
