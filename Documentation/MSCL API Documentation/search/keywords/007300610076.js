@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("sav",["Function"],[["saveSettingsAsStartup",,[["InertialNode",,,,0,"File:MicroStrain/Inertial/InertialNode.h:InertialNode.saveSettingsAsStartup","CClass:InertialNode:saveSettingsAsStartup"]]]]);

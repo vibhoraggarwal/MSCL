@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("sba",["Struct"],[["SBASSettingsData",,[[,,,,0,"File:MicroStrain/Inertial/InertialReturnTypes.h:SBASSettingsData","CClass:SBASSettingsData"]]]]);

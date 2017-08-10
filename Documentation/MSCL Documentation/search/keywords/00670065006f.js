@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("geo",["Type"],[["GeometricVector",,[[,,,,0,"File:MicroStrain/Inertial/InertialReturnTypes.h:GeometricVector"]]]]);

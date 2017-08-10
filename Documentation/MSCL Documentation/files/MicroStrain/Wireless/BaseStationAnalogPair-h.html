@@ -8,143 +8,143 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="BaseStationAnalogPair"></a><a name="Topic5096"></a><div class="CTopic TClass LC first">
+<a name="BaseStationAnalogPair"></a><a name="Topic5382"></a><div class="CTopic TClass LC first">
  <div class="CTitle">BaseStationAnalogPair</div>
- <div class="NDClassPrototype" id="NDClassPrototype5096"><div class="CPEntry TClass Current"><div class="CPName">BaseStationAnalogPair</div></div></div>
+ <div class="NDClassPrototype" id="NDClassPrototype5382"><div class="CPEntry TClass Current"><div class="CPName">BaseStationAnalogPair</div></div></div>
  <div class="CBody"><p>Represents an Analog Pairing on a BaseStation.</p></div>
 </div>
 
-<a name="BaseStationAnalogPair.Functions"></a><a name="Topic5097"></a><div class="CTopic TGroup LC">
+<a name="BaseStationAnalogPair.Functions"></a><a name="Topic5383"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="BaseStationAnalogPair.BaseStationAnalogPair"></a><a name="Topic5098"></a><div class="CTopic TFunction LC">
+<a name="BaseStationAnalogPair.BaseStationAnalogPair"></a><a name="Topic5384"></a><div class="CTopic TFunction LC">
  <div class="CTitle">BaseStationAnalogPair</div>
- <div id="NDPrototype5098" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">BaseStationAnalogPair(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">nodeAddress,</td></tr><tr><td class="PType first"><span class="SHKeyword">uint8</span>&nbsp;</td><td class="PName last">nodeChannel,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">output_0V,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">output_3V</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype5384" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">BaseStationAnalogPair(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">nodeAddress,</td></tr><tr><td class="PType first"><span class="SHKeyword">uint8</span>&nbsp;</td><td class="PName last">nodeChannel,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">output_0V,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">output_3V</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>Creates a BaseStationAnalogPair object with the provided parameters.&nbsp; Note: This constructor is private to enforce using ::Float and ::NonFloat static functions for construction.</p></div>
 </div>
 
-<a name="BaseStationAnalogPair.Constants"></a><a name="Topic5099"></a><div class="CTopic TGroup LC">
+<a name="BaseStationAnalogPair.Constants"></a><a name="Topic5385"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Constants</div>
 </div>
 
-<a name="BaseStationAnalogPair.CHANNEL_NOT_FLOAT"></a><a name="Topic5100"></a><div class="CTopic TConstant LC">
+<a name="BaseStationAnalogPair.CHANNEL_NOT_FLOAT"></a><a name="Topic5386"></a><div class="CTopic TConstant LC">
  <div class="CTitle">CHANNEL_NOT_FLOAT</div>
  <div class="CBody"><p>A (NaN) value representing that the paired node channel is not transmitting float point values.&nbsp; The outputVal_0V and outputVal_3V values should be set to this value if not being paired to a channel transmitting floats.</p></div>
 </div>
 
-<a name="BaseStationAnalogPair(2)"></a><a name="Topic5101"></a><div class="CTopic TClass LC">
+<a name="BaseStationAnalogPair(2)"></a><a name="Topic5387"></a><div class="CTopic TClass LC">
  <div class="CTitle">BaseStationAnalogPair</div>
- <div id="NDPrototype5101" class="NDPrototype NoParameterForm">BaseStationAnalogPair()</div>
+ <div id="NDPrototype5387" class="NDPrototype NoParameterForm">BaseStationAnalogPair()</div>
  <div class="CBody"><p>Creates a default constructed BaseStationAnalogPair object.</p></div>
 </div>
 
-<a name="BaseStationAnalogPair.Functions(2)"></a><a name="Topic5102"></a><div class="CTopic TGroup LC">
+<a name="BaseStationAnalogPair.Functions(2)"></a><a name="Topic5388"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="BaseStationAnalogPair.Float"></a><a name="Topic5103"></a><div class="CTopic TFunction LC">
+<a name="BaseStationAnalogPair.Float"></a><a name="Topic5389"></a><div class="CTopic TFunction LC">
  <div class="CTitle">Float</div>
- <div id="NDPrototype5103" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">static</span> <a href="../../../index.html#File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5096);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >BaseStationAnalogPair</a> Float(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">nodeAddress,</td></tr><tr><td class="PType first"><span class="SHKeyword">uint8</span>&nbsp;</td><td class="PName last">nodeChannel,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">output_0V,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">output_3V</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
- <div class="CBody"><p>Creates a BaseStationAnalogPair object to be paired to WirelessNode's channel that is transmitting floating point values.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">nodeAddress<div class="CDLParameterType"><span class="SHKeyword">uint16</span></div></td><td class="CDLDefinition"><p>The node address to pair to.</p></td></tr><tr><td class="CDLEntry">nodeChannel<div class="CDLParameterType"><span class="SHKeyword">uint8</span></div></td><td class="CDLDefinition"><p>The node's channel number to pair to.</p></td></tr><tr><td class="CDLEntry">output_0V<div class="CDLParameterType"><span class="SHKeyword">float</span></div></td><td class="CDLDefinition"><p>The floating point value that represents 0 volt output.</p></td></tr><tr><td class="CDLEntry">output_3V<div class="CDLParameterType"><span class="SHKeyword">float</span></div></td><td class="CDLDefinition"><p>The floating point value that represents 3 volt output.</p></td></tr></table><div class="CHeading">Returns</div><p>A <a href="../../../index.html#File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair.BaseStationAnalogPair" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5098);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >BaseStationAnalogPair</a> object created with the specified parameters.</p></div>
+ <div id="NDPrototype5389" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">static</span> <a href="../../../index.html#File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5382);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >BaseStationAnalogPair</a> Float(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">nodeAddress,</td></tr><tr><td class="PType first"><span class="SHKeyword">uint8</span>&nbsp;</td><td class="PName last">nodeChannel,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">output_0V,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">output_3V</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div class="CBody"><p>Creates a BaseStationAnalogPair object to be paired to WirelessNode's channel that is transmitting floating point values.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">nodeAddress<div class="CDLParameterType"><span class="SHKeyword">uint16</span></div></td><td class="CDLDefinition"><p>The node address to pair to.</p></td></tr><tr><td class="CDLEntry">nodeChannel<div class="CDLParameterType"><span class="SHKeyword">uint8</span></div></td><td class="CDLDefinition"><p>The node's channel number to pair to.</p></td></tr><tr><td class="CDLEntry">output_0V<div class="CDLParameterType"><span class="SHKeyword">float</span></div></td><td class="CDLDefinition"><p>The floating point value that represents 0 volt output.</p></td></tr><tr><td class="CDLEntry">output_3V<div class="CDLParameterType"><span class="SHKeyword">float</span></div></td><td class="CDLDefinition"><p>The floating point value that represents 3 volt output.</p></td></tr></table><div class="CHeading">Returns</div><p>A <a href="../../../index.html#File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair.BaseStationAnalogPair" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5384);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >BaseStationAnalogPair</a> object created with the specified parameters.</p></div>
 </div>
 
-<a name="BaseStationAnalogPair.NonFloat"></a><a name="Topic5104"></a><div class="CTopic TFunction LC">
+<a name="BaseStationAnalogPair.NonFloat"></a><a name="Topic5390"></a><div class="CTopic TFunction LC">
  <div class="CTitle">NonFloat</div>
- <div id="NDPrototype5104" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">static</span> <a href="../../../index.html#File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5096);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >BaseStationAnalogPair</a> NonFloat(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">nodeAddress,</td></tr><tr><td class="PType first"><span class="SHKeyword">uint8</span>&nbsp;</td><td class="PName last">nodeChannel</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
- <div class="CBody"><p>Creates a BaseStationAnalogPair object to be paired to WirelessNode's channel that is NOT transmitting floating point values.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">nodeAddress<div class="CDLParameterType"><span class="SHKeyword">uint16</span></div></td><td class="CDLDefinition"><p>The node address to pair to.</p></td></tr><tr><td class="CDLEntry">nodeChannel<div class="CDLParameterType"><span class="SHKeyword">uint8</span></div></td><td class="CDLDefinition"><p>The node's channel number to pair to.</p></td></tr></table><div class="CHeading">Returns</div><p>A <a href="../../../index.html#File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair.BaseStationAnalogPair" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5098);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >BaseStationAnalogPair</a> object created with the specified parameters.</p></div>
+ <div id="NDPrototype5390" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">static</span> <a href="../../../index.html#File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5382);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >BaseStationAnalogPair</a> NonFloat(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">nodeAddress,</td></tr><tr><td class="PType first"><span class="SHKeyword">uint8</span>&nbsp;</td><td class="PName last">nodeChannel</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div class="CBody"><p>Creates a BaseStationAnalogPair object to be paired to WirelessNode's channel that is NOT transmitting floating point values.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">nodeAddress<div class="CDLParameterType"><span class="SHKeyword">uint16</span></div></td><td class="CDLDefinition"><p>The node address to pair to.</p></td></tr><tr><td class="CDLEntry">nodeChannel<div class="CDLParameterType"><span class="SHKeyword">uint8</span></div></td><td class="CDLDefinition"><p>The node's channel number to pair to.</p></td></tr></table><div class="CHeading">Returns</div><p>A <a href="../../../index.html#File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair.BaseStationAnalogPair" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5384);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >BaseStationAnalogPair</a> object created with the specified parameters.</p></div>
 </div>
 
-<a name="BaseStationAnalogPair.Variables"></a><a name="Topic5105"></a><div class="CTopic TGroup LC">
+<a name="BaseStationAnalogPair.Variables"></a><a name="Topic5391"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="BaseStationAnalogPair.m_nodeAddress"></a><a name="Topic5106"></a><div class="CTopic TVariable LC">
+<a name="BaseStationAnalogPair.m_nodeAddress"></a><a name="Topic5392"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_nodeAddress</div>
- <div id="NDPrototype5106" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> m_nodeAddress</div>
+ <div id="NDPrototype5392" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> m_nodeAddress</div>
  <div class="CBody"><p>The node address to pair.</p></div>
 </div>
 
-<a name="BaseStationAnalogPair.m_nodeChannel"></a><a name="Topic5107"></a><div class="CTopic TVariable LC">
+<a name="BaseStationAnalogPair.m_nodeChannel"></a><a name="Topic5393"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_nodeChannel</div>
- <div id="NDPrototype5107" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> m_nodeChannel</div>
+ <div id="NDPrototype5393" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> m_nodeChannel</div>
  <div class="CBody"><p>The node's channel to pair.</p></div>
 </div>
 
-<a name="BaseStationAnalogPair.m_outputVal_0V"></a><a name="Topic5108"></a><div class="CTopic TVariable LC">
+<a name="BaseStationAnalogPair.m_outputVal_0V"></a><a name="Topic5394"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_outputVal_0V</div>
- <div id="NDPrototype5108" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> m_outputVal_0V</div>
+ <div id="NDPrototype5394" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> m_outputVal_0V</div>
  <div class="CBody"><p>The floating point value that represents 0 volts, if the node/channel is sending floating point data.</p></div>
 </div>
 
-<a name="BaseStationAnalogPair.m_outputVal_3V"></a><a name="Topic5109"></a><div class="CTopic TVariable LC">
+<a name="BaseStationAnalogPair.m_outputVal_3V"></a><a name="Topic5395"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_outputVal_3V</div>
- <div id="NDPrototype5109" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> m_outputVal_3V</div>
+ <div id="NDPrototype5395" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> m_outputVal_3V</div>
  <div class="CBody"><p>The floating point value that represents 3 volts, if the node/channel is sending floating point data.</p></div>
 </div>
 
-<a name="BaseStationAnalogPair.Functions(3)"></a><a name="Topic5110"></a><div class="CTopic TGroup LC">
+<a name="BaseStationAnalogPair.Functions(3)"></a><a name="Topic5396"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="BaseStationAnalogPair.nodeAddress"></a><a name="Topic5111"></a><div class="CTopic TFunction LC">
+<a name="BaseStationAnalogPair.nodeAddress"></a><a name="Topic5397"></a><div class="CTopic TFunction LC">
  <div class="CTitle">nodeAddress</div>
- <div id="NDPrototype5111" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> nodeAddress() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype5397" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> nodeAddress() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Gets the node address to be paired with that is currently set in this object.</p><div class="CHeading">Returns</div><p>The node address to be paired with that is currently set in this object.</p></div>
 </div>
 
-<a name="BaseStationAnalogPair.nodeAddress(2)"></a><a name="Topic5112"></a><div class="CTopic TFunction LC">
+<a name="BaseStationAnalogPair.nodeAddress(2)"></a><a name="Topic5398"></a><div class="CTopic TFunction LC">
  <div class="CTitle">nodeAddress</div>
- <div id="NDPrototype5112" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> nodeAddress(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">address</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype5398" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> nodeAddress(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">address</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>Sets the node address of the WirelessNode to be paired with.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">address<div class="CDLParameterType"><span class="SHKeyword">uint16</span></div></td><td class="CDLDefinition"><p>The node address to be paired with.</p></td></tr></table></div>
 </div>
 
-<a name="BaseStationAnalogPair.nodeChannel"></a><a name="Topic5113"></a><div class="CTopic TFunction LC">
+<a name="BaseStationAnalogPair.nodeChannel"></a><a name="Topic5399"></a><div class="CTopic TFunction LC">
  <div class="CTitle">nodeChannel</div>
- <div id="NDPrototype5113" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> nodeChannel() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype5399" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> nodeChannel() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Gets the node's channel to be paired with that is currently set in this object.</p><div class="CHeading">Returns</div><p>The node's channel to be paired with that is currently set in this object.</p></div>
 </div>
 
-<a name="BaseStationAnalogPair.nodeChannel(2)"></a><a name="Topic5114"></a><div class="CTopic TFunction LC">
+<a name="BaseStationAnalogPair.nodeChannel(2)"></a><a name="Topic5400"></a><div class="CTopic TFunction LC">
  <div class="CTitle">nodeChannel</div>
- <div id="NDPrototype5114" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> nodeChannel(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint8</span>&nbsp;</td><td class="PName last">channelNumber</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype5400" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> nodeChannel(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint8</span>&nbsp;</td><td class="PName last">channelNumber</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>Sets the node's channel of the WirelessNode to be paired with.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">channelNumber<div class="CDLParameterType"><span class="SHKeyword">uint8</span></div></td><td class="CDLDefinition"><p>The node's channel number (ch1 = 1, ch8 = 8) to be paired with.</p></td></tr></table></div>
 </div>
 
-<a name="BaseStationAnalogPair.floatData"></a><a name="Topic5115"></a><div class="CTopic TFunction LC">
+<a name="BaseStationAnalogPair.floatData"></a><a name="Topic5401"></a><div class="CTopic TFunction LC">
  <div class="CTitle">floatData</div>
- <div id="NDPrototype5115" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> expectFloatData() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype5401" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> expectFloatData() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Checks whether floating point data is expected in this object.</p><div class="CHeading">Returns</div><p>True if floating point data is expected, false if it is not.</p></div>
 </div>
 
-<a name="BaseStationAnalogPair.floatData(2)"></a><a name="Topic5116"></a><div class="CTopic TFunction LC">
+<a name="BaseStationAnalogPair.floatData(2)"></a><a name="Topic5402"></a><div class="CTopic TFunction LC">
  <div class="CTitle">floatData</div>
- <div id="NDPrototype5116" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> expectFloatData(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">bool</span>&nbsp;</td><td class="PName last">enable</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
- <div class="CBody"><p>Sets whether floating point data is expected or not.&nbsp; Note: If enabling, this will set outputVal_0V to 0 and outputVal_3V to 65535. You should update these values accordingly.&nbsp; Note: If disabling, this will set outputVal_0V and outputVal_3V to <a href="../../../index.html#File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair.CHANNEL_NOT_FLOAT" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5100);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >CHANNEL_NOT_FLOAT</a>.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">enable<div class="CDLParameterType"><span class="SHKeyword">bool</span></div></td><td class="CDLDefinition"><p>Whether to enable or disable the expectation for floating point data.</p></td></tr></table></div>
+ <div id="NDPrototype5402" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> expectFloatData(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">bool</span>&nbsp;</td><td class="PName last">enable</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div class="CBody"><p>Sets whether floating point data is expected or not.&nbsp; Note: If enabling, this will set outputVal_0V to 0 and outputVal_3V to 65535. You should update these values accordingly.&nbsp; Note: If disabling, this will set outputVal_0V and outputVal_3V to <a href="../../../index.html#File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair.CHANNEL_NOT_FLOAT" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5386);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >CHANNEL_NOT_FLOAT</a>.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">enable<div class="CDLParameterType"><span class="SHKeyword">bool</span></div></td><td class="CDLDefinition"><p>Whether to enable or disable the expectation for floating point data.</p></td></tr></table></div>
 </div>
 
-<a name="BaseStationAnalogPair.outputVal_0V"></a><a name="Topic5117"></a><div class="CTopic TFunction LC">
+<a name="BaseStationAnalogPair.outputVal_0V"></a><a name="Topic5403"></a><div class="CTopic TFunction LC">
  <div class="CTitle">outputVal_0V</div>
- <div id="NDPrototype5117" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> outputVal_0V() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype5403" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> outputVal_0V() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Gets the output value that represents 0 Volts that is currently set in this object.</p><div class="CHeading">Returns</div><p>The output value that represents 0 Volts.</p></div>
 </div>
 
-<a name="BaseStationAnalogPair.outputVal_0V(2)"></a><a name="Topic5118"></a><div class="CTopic TFunction LC">
+<a name="BaseStationAnalogPair.outputVal_0V(2)"></a><a name="Topic5404"></a><div class="CTopic TFunction LC">
  <div class="CTitle">outputVal_0V</div>
- <div id="NDPrototype5118" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> outputVal_0V(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">value</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
- <div class="CBody"><p>Sets the output value that represents 0 Volts.&nbsp; Note: Setting this to a NaN (<a href="../../../index.html#File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair.CHANNEL_NOT_FLOAT" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5100);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >CHANNEL_NOT_FLOAT</a>) disables the float expectation and sets outputVal_3V to <a href="../../../index.html#File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair.CHANNEL_NOT_FLOAT" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5100);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >CHANNEL_NOT_FLOAT</a> as well.&nbsp; Note: If outputVal_3V is set to <a href="../../../index.html#File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair.CHANNEL_NOT_FLOAT" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5100);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >CHANNEL_NOT_FLOAT</a> when this is called with a real value, outputVal_3V will be updated to (value + 1.0).</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">value<div class="CDLParameterType"><span class="SHKeyword">float</span></div></td><td class="CDLDefinition"><p>The output value to represent 0 Volts.</p></td></tr></table></div>
+ <div id="NDPrototype5404" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> outputVal_0V(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">value</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div class="CBody"><p>Sets the output value that represents 0 Volts.&nbsp; Note: Setting this to a NaN (<a href="../../../index.html#File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair.CHANNEL_NOT_FLOAT" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5386);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >CHANNEL_NOT_FLOAT</a>) disables the float expectation and sets outputVal_3V to <a href="../../../index.html#File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair.CHANNEL_NOT_FLOAT" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5386);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >CHANNEL_NOT_FLOAT</a> as well.&nbsp; Note: If outputVal_3V is set to <a href="../../../index.html#File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair.CHANNEL_NOT_FLOAT" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5386);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >CHANNEL_NOT_FLOAT</a> when this is called with a real value, outputVal_3V will be updated to (value + 1.0).</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">value<div class="CDLParameterType"><span class="SHKeyword">float</span></div></td><td class="CDLDefinition"><p>The output value to represent 0 Volts.</p></td></tr></table></div>
 </div>
 
-<a name="BaseStationAnalogPair.outputVal_3V"></a><a name="Topic5119"></a><div class="CTopic TFunction LC">
+<a name="BaseStationAnalogPair.outputVal_3V"></a><a name="Topic5405"></a><div class="CTopic TFunction LC">
  <div class="CTitle">outputVal_3V</div>
- <div id="NDPrototype5119" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> outputVal_3V() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype5405" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> outputVal_3V() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Gets the output value that represents 3 Volts that is currently set in this object.</p><div class="CHeading">Returns</div><p>The output value that represents 3 Volts.</p></div>
 </div>
 
-<a name="BaseStationAnalogPair.outputVal_3V(2)"></a><a name="Topic5120"></a><div class="CTopic TFunction LC last">
+<a name="BaseStationAnalogPair.outputVal_3V(2)"></a><a name="Topic5406"></a><div class="CTopic TFunction LC last">
  <div class="CTitle">outputVal_3V</div>
- <div id="NDPrototype5120" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> outputVal_3V(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">value</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
- <div class="CBody"><p>Sets the output value that represents 3 Volts.&nbsp; Note: Setting this to a NaN (<a href="../../../index.html#File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair.CHANNEL_NOT_FLOAT" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5100);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >CHANNEL_NOT_FLOAT</a>) disables the float expectation and sets outputVal_0V to <a href="../../../index.html#File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair.CHANNEL_NOT_FLOAT" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5100);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >CHANNEL_NOT_FLOAT</a> as well.&nbsp; Note: If outputVal_0V is set to <a href="../../../index.html#File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair.CHANNEL_NOT_FLOAT" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5100);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >CHANNEL_NOT_FLOAT</a> when this is called with a real value, outputVal_0V will be updated to (value - 1.0).</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">value<div class="CDLParameterType"><span class="SHKeyword">float</span></div></td><td class="CDLDefinition"><p>The output value to represent 3 Volts.</p></td></tr></table></div>
+ <div id="NDPrototype5406" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> outputVal_3V(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">value</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div class="CBody"><p>Sets the output value that represents 3 Volts.&nbsp; Note: Setting this to a NaN (<a href="../../../index.html#File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair.CHANNEL_NOT_FLOAT" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5386);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >CHANNEL_NOT_FLOAT</a>) disables the float expectation and sets outputVal_0V to <a href="../../../index.html#File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair.CHANNEL_NOT_FLOAT" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5386);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >CHANNEL_NOT_FLOAT</a> as well.&nbsp; Note: If outputVal_0V is set to <a href="../../../index.html#File:MicroStrain/Wireless/BaseStationAnalogPair.h:BaseStationAnalogPair.CHANNEL_NOT_FLOAT" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5386);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >CHANNEL_NOT_FLOAT</a> when this is called with a real value, outputVal_0V will be updated to (value - 1.0).</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">value<div class="CDLParameterType"><span class="SHKeyword">float</span></div></td><td class="CDLDefinition"><p>The output value to represent 3 Volts.</p></td></tr></table></div>
 </div>
 
 </body></html>

@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("-",["Operator","Constant"],[["-",,[["Timestamp",,,,0,"File:Timestamp.h:Timestamp.-","CClass:Timestamp:-"],["NodeMemory_v2","FLASH_CHUNK_SIZE - 102",,"flash_chunk_size-102",1,"File:MicroStrain/Wireless/NodeMemory_v2.h:NodeMemory_v2.FLASH_CHUNK_SIZE-102","CClass:NodeMemory_v2:FLASH_CHUNK_SIZE-102"]]]]);
+NDSearch.OnPrefixDataLoaded("-",["Operator"],[["-",,[["Timestamp",,,,0,"File:Timestamp.h:Timestamp.-","CClass:Timestamp:-"]]]]);
