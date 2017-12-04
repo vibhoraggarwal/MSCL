@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("rtc",["Type"],[["RTCMMessage",,[[,,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:RTCMMessage"]]]]);

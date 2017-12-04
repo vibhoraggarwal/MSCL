@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("CClass:BaseStationInfo","BaseStationInfo");NDSummary.OnSummaryLoaded("CClass:BaseStationInfo",[["C/C++","C"]],[["Functions","Function"],["Structs","Struct"]],[[1516,0,1,"BaseStationInfo"],[1517,0,0,"BaseStationInfo","BaseStationInfo"]]);

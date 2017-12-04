@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("x",["Function"],[["x",,[["PositionOffset",,,,0,"File:MicroStrain/Inertial/PositionOffset.h:PositionOffset.x","CClass:PositionOffset:x"]]]]);
+NDSearch.OnPrefixDataLoaded("x",["Variable","Function"],[["x",,[["GeometricVector",,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:GeometricVector.x","CClass:GeometricVector:x"],["PositionOffset",,,,1,"File:MicroStrain/Inertial/PositionOffset.h:PositionOffset.x","CClass:PositionOffset:x"]]]]);

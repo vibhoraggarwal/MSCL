@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("sba",["Function","Struct"],[["SBASSettings",,[[,,,,0,"File:MicroStrain/Inertial/Commands/GNSS_SBASSettings.h:SBASSettings"]]],["SBASSettingsData",,[[,,,,1,"File:MicroStrain/Inertial/InertialReturnTypes.h:SBASSettingsData","CClass:SBASSettingsData"]]]]);
+NDSearch.OnPrefixDataLoaded("sba",["Function","Struct"],[["SBASSettings",,[[,,,,0,"File:MicroStrain/Inertial/Commands/GNSS_SBASSettings.h:SBASSettings"]]],["SBASSettingsData",,[[,,,,1,"File:MicroStrain/Inertial/ExposedInertialTypes.h:SBASSettingsData","CClass:SBASSettingsData"]]]]);

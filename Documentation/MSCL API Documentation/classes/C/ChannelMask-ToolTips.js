@@ -1,1 +1,1 @@
-NDContentPage.OnToolTipsLoaded({1901:"<div class=\"NDToolTip TClass LC\"><div class=\"NDClassPrototype\" id=\"NDClassPrototype1901\"><div class=\"CPEntry TClass Current\"><div class=\"CPName\">BitMask</div></div></div><div class=\"TTSummary\">Represents a bitmask.</div></div>"});
+NDContentPage.OnToolTipsLoaded({});

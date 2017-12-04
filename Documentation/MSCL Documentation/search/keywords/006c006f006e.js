@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("lon",["Class"],[["LongPing",,[[,,,,0,"File:MicroStrain/Wireless/Commands/LongPing.h:LongPing","CClass:LongPing"]]]]);
+NDSearch.OnPrefixDataLoaded("lon",["Variable","Class"],[["longitude",,[["ExternalGNSSUpdateData",,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:ExternalGNSSUpdateData.longitude","CClass:ExternalGNSSUpdateData:longitude"]]],["LongPing",,[[,,,,1,"File:MicroStrain/Wireless/Commands/LongPing.h:LongPing","CClass:LongPing"]]]]);

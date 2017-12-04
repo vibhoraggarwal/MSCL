@@ -8,297 +8,297 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="DataBuffer"></a><a name="Topic5777"></a><div class="CTopic TSection LC first">
+<a name="DataBuffer"></a><a name="Topic6096"></a><div class="CTopic TSection LC first">
  <div class="CTitle">DataBuffer</div>
  <div class="CBody"><p>Used to easily read a container of bytes</p></div>
 </div>
 
-<a name="BufferWriter"></a><a name="Topic5778"></a><div class="CTopic TClass LC">
+<a name="BufferWriter"></a><a name="Topic6097"></a><div class="CTopic TClass LC">
  <div class="CTitle">BufferWriter</div>
- <div class="NDClassPrototype" id="NDClassPrototype5778"><div class="CPEntry TClass Current"><div class="CPName">BufferWriter</div></div></div>
+ <div class="NDClassPrototype" id="NDClassPrototype6097"><div class="CPEntry TClass Current"><div class="CPName">BufferWriter</div></div></div>
  <div class="CBody"><p>Class used to interface with a DataBuffer and append data to it</p></div>
 </div>
 
-<a name="BufferWriter.Functions"></a><a name="Topic5779"></a><div class="CTopic TGroup LC">
+<a name="BufferWriter.Functions"></a><a name="Topic6098"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="BufferWriter.BufferWriter"></a><a name="Topic5780"></a><div class="CTopic TFunction LC">
+<a name="BufferWriter.BufferWriter"></a><a name="Topic6099"></a><div class="CTopic TFunction LC">
  <div class="CTitle">BufferWriter</div>
- <div id="NDPrototype5780" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">BufferWriter(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="first"></td><td class="PType"><span class="SHKeyword">uint8</span>&nbsp;</td><td class="PNamePrefix">*</td><td class="PName last">buffer,</td></tr><tr><td class="PModifierQualifier first">std::</td><td class="PType">size_t&nbsp;</td><td></td><td class="PName last">size,</td></tr><tr><td class="PModifierQualifier first">std::</td><td class="PType">size_t&nbsp;</td><td class="PNamePrefix">*</td><td class="PName last">offset</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype6099" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">BufferWriter(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="first"></td><td class="PType"><span class="SHKeyword">uint8</span>&nbsp;</td><td class="PNamePrefix">*</td><td class="PName last">buffer,</td></tr><tr><td class="PModifierQualifier first">std::</td><td class="PType">size_t&nbsp;</td><td></td><td class="PName last">size,</td></tr><tr><td class="PModifierQualifier first">std::</td><td class="PType">size_t&nbsp;</td><td class="PNamePrefix">*</td><td class="PName last">offset</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>Constructor to create a BufferWriter object</p></div>
 </div>
 
-<a name="BufferWriter.Variables"></a><a name="Topic5781"></a><div class="CTopic TGroup LC">
+<a name="BufferWriter.Variables"></a><a name="Topic6100"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="BufferWriter.m_buffer"></a><a name="Topic5782"></a><div class="CTopic TVariable LC">
+<a name="BufferWriter.m_buffer"></a><a name="Topic6101"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_buffer</div>
- <div id="NDPrototype5782" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span>* m_buffer</div>
+ <div id="NDPrototype6101" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span>* m_buffer</div>
  <div class="CBody"><p>The buffer to write to, at the specific position to start writing data</p></div>
 </div>
 
-<a name="BufferWriter.m_size"></a><a name="Topic5783"></a><div class="CTopic TVariable LC">
+<a name="BufferWriter.m_size"></a><a name="Topic6102"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_size</div>
- <div id="NDPrototype5783" class="NDPrototype NoParameterForm">std::size_t m_size</div>
+ <div id="NDPrototype6102" class="NDPrototype NoParameterForm">std::size_t m_size</div>
  <div class="CBody"><p>The size available to write</p></div>
 </div>
 
-<a name="BufferWriter.m_writeOffset"></a><a name="Topic5784"></a><div class="CTopic TVariable LC">
+<a name="BufferWriter.m_writeOffset"></a><a name="Topic6103"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_writeOffset</div>
- <div id="NDPrototype5784" class="NDPrototype NoParameterForm">std::size_t* m_writeOffset</div>
+ <div id="NDPrototype6103" class="NDPrototype NoParameterForm">std::size_t* m_writeOffset</div>
  <div class="CBody"><p>A pointer to the current position to start writing in the buffer</p></div>
 </div>
 
-<a name="BufferWriter.Functions(2)"></a><a name="Topic5785"></a><div class="CTopic TGroup LC">
+<a name="BufferWriter.Functions(2)"></a><a name="Topic6104"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="BufferWriter.buffer"></a><a name="Topic5786"></a><div class="CTopic TFunction LC">
+<a name="BufferWriter.buffer"></a><a name="Topic6105"></a><div class="CTopic TFunction LC">
  <div class="CTitle">buffer</div>
- <div id="NDPrototype5786" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span>* buffer()</div>
+ <div id="NDPrototype6105" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span>* buffer()</div>
  <div class="CBody"><p>Gets the buffer to write to</p><div class="CHeading">Returns</div><p>The buffer to write to, as a byte reference</p></div>
 </div>
 
-<a name="BufferWriter.size"></a><a name="Topic5787"></a><div class="CTopic TFunction LC">
+<a name="BufferWriter.size"></a><a name="Topic6106"></a><div class="CTopic TFunction LC">
  <div class="CTitle">size</div>
- <div id="NDPrototype5787" class="NDPrototype NoParameterForm">std::size_t size()</div>
+ <div id="NDPrototype6106" class="NDPrototype NoParameterForm">std::size_t size()</div>
  <div class="CBody"><p>Gets the size of the buffer available to write</p><div class="CHeading">Returns</div><p>The size of the buffer available to write</p></div>
 </div>
 
-<a name="BufferWriter.commit"></a><a name="Topic5788"></a><div class="CTopic TFunction LC">
+<a name="BufferWriter.commit"></a><a name="Topic6107"></a><div class="CTopic TFunction LC">
  <div class="CTitle">commit</div>
- <div id="NDPrototype5788" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> commit(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first">std::</td><td class="PType">size_t&nbsp;</td><td class="PName last">numBytesAdded</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype6107" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> commit(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first">std::</td><td class="PType">size_t&nbsp;</td><td class="PName last">numBytesAdded</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>Commits a number of bytes that were added to the buffer by moving the current offset.</p><p>This function must be called after bytes are added to the buffer, or else they will be ignored as if they were never added.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">numBytesAdded<div class="CDLParameterType">std::size_t</div></td><td class="CDLDefinition"><p>The number of bytes added to the buffer</p></td></tr></table></div>
 </div>
 
-<a name="DataBuffer(2)"></a><a name="Topic5789"></a><div class="CTopic TClass LC">
+<a name="DataBuffer(2)"></a><a name="Topic6108"></a><div class="CTopic TClass LC">
  <div class="CTitle">DataBuffer</div>
- <div class="NDClassPrototype" id="NDClassPrototype5789"><div class="CPEntry TClass Current"><div class="CPName">DataBuffer</div></div></div>
- <div class="CBody"><p>A buffer of bytes extending from the ByteStream class that is used for holding bytes read in from the connection</p><div class="CHeading">See Also</div><p><a href="../../index.html#File:MicroStrain/ByteStream.h:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5829);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a></p></div>
+ <div class="NDClassPrototype" id="NDClassPrototype6108"><div class="CPEntry TClass Current"><div class="CPName">DataBuffer</div></div></div>
+ <div class="CBody"><p>A buffer of bytes extending from the ByteStream class that is used for holding bytes read in from the connection</p><div class="CHeading">See Also</div><p><a href="../../index.html#File:MicroStrain/ByteStream.h:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5996);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a></p></div>
 </div>
 
-<a name="DataBuffer.Variables"></a><a name="Topic5790"></a><div class="CTopic TGroup LC">
+<a name="DataBuffer.Variables"></a><a name="Topic6109"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="DataBuffer.m_data"></a><a name="Topic5791"></a><div class="CTopic TVariable LC">
+<a name="DataBuffer.m_data"></a><a name="Topic6110"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_data</div>
- <div id="NDPrototype5791" class="NDPrototype NoParameterForm"><a href="../../index.html#File:MicroStrain/ByteStream.h:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5829);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> m_data</div>
+ <div id="NDPrototype6110" class="NDPrototype NoParameterForm"><a href="../../index.html#File:MicroStrain/ByteStream.h:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5996);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> m_data</div>
  <div class="CBody"><p>The underlying ByteStream that holds the data</p></div>
 </div>
 
-<a name="DataBuffer.m_appendPosition"></a><a name="Topic5792"></a><div class="CTopic TVariable LC">
+<a name="DataBuffer.m_appendPosition"></a><a name="Topic6111"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_appendPosition</div>
- <div id="NDPrototype5792" class="NDPrototype NoParameterForm">std::size_t m_appendPosition</div>
+ <div id="NDPrototype6111" class="NDPrototype NoParameterForm">std::size_t m_appendPosition</div>
  <div class="CBody"><p>The current position to use when appending data to the buffer</p></div>
 </div>
 
-<a name="DataBuffer.m_readPosition"></a><a name="Topic5793"></a><div class="CTopic TVariable LC">
+<a name="DataBuffer.m_readPosition"></a><a name="Topic6112"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_readPosition</div>
- <div id="NDPrototype5793" class="NDPrototype NoParameterForm">std::size_t m_readPosition</div>
+ <div id="NDPrototype6112" class="NDPrototype NoParameterForm">std::size_t m_readPosition</div>
  <div class="CBody"><p>The current position in the buffer for reading data</p></div>
 </div>
 
-<a name="DataBuffer.Functions"></a><a name="Topic5794"></a><div class="CTopic TGroup LC">
+<a name="DataBuffer.Functions"></a><a name="Topic6113"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="DataBuffer.DataBuffer"></a><a name="Topic5795"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.DataBuffer"></a><a name="Topic6114"></a><div class="CTopic TFunction LC">
  <div class="CTitle">DataBuffer</div>
- <div id="NDPrototype5795" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">explicit</span> DataBuffer(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint32</span>&nbsp;</td><td class="PName last">size</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype6114" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">explicit</span> DataBuffer(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint32</span>&nbsp;</td><td class="PName last">size</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>Constructor to create a DataBuffer object</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">size<div class="CDLParameterType"><span class="SHKeyword">uint32</span></div></td><td class="CDLDefinition"><p>The start and final size of the DataBuffer</p></td></tr></table></div>
 </div>
 
-<a name="DataBuffer.DataBuffer(2)"></a><a name="Topic5796"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.DataBuffer(2)"></a><a name="Topic6115"></a><div class="CTopic TFunction LC">
  <div class="CTitle">DataBuffer</div>
- <div id="NDPrototype5796" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">explicit</span> DataBuffer(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span>&nbsp;</td><td class="PType"><a href="../../index.html#File:Types.h:Bytes" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5961);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Bytes</a>&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">data</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
- <div class="CBody"><p>Constructor to create a DataBuffer object given existing data as <a href="../../index.html#File:Types.h:Bytes" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5961);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Bytes</a></p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">data<div class="CDLParameterType"><span class="SHKeyword">const</span> <a href="../../index.html#File:Types.h:Bytes" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5961);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Bytes</a>&amp;</div></td><td class="CDLDefinition"><p>a <a href="../../index.html#File:Types.h:Bytes" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5961);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Bytes</a> array containing existing data</p></td></tr></table></div>
+ <div id="NDPrototype6115" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">explicit</span> DataBuffer(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span>&nbsp;</td><td class="PType"><a href="../../index.html#File:Types.h:Bytes" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6209);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Bytes</a>&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">data</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div class="CBody"><p>Constructor to create a DataBuffer object given existing data as <a href="../../index.html#File:Types.h:Bytes" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6209);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Bytes</a></p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">data<div class="CDLParameterType"><span class="SHKeyword">const</span> <a href="../../index.html#File:Types.h:Bytes" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6209);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Bytes</a>&amp;</div></td><td class="CDLDefinition"><p>a <a href="../../index.html#File:Types.h:Bytes" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6209);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Bytes</a> array containing existing data</p></td></tr></table></div>
 </div>
 
-<a name="DataBuffer.DataBuffer(3)"></a><a name="Topic5797"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.DataBuffer(3)"></a><a name="Topic6116"></a><div class="CTopic TFunction LC">
  <div class="CTitle">DataBuffer</div>
- <div id="NDPrototype5797" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">explicit</span> DataBuffer(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span>&nbsp;</td><td class="PType"><a href="../../index.html#File:MicroStrain/ByteStream.h:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5829);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a>&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">data</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
- <div class="CBody"><p>Constructor to create a DataBuffer given an existing <a href="../../index.html#File:MicroStrain/ByteStream.h:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5829);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a></p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">data<div class="CDLParameterType"><span class="SHKeyword">const</span> <a href="../../index.html#File:MicroStrain/ByteStream.h:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5829);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a>&amp;</div></td><td class="CDLDefinition"><p>a <a href="../../index.html#File:MicroStrain/ByteStream.h:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5829);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> containing existing data</p></td></tr></table></div>
+ <div id="NDPrototype6116" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">explicit</span> DataBuffer(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span>&nbsp;</td><td class="PType"><a href="../../index.html#File:MicroStrain/ByteStream.h:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5996);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a>&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">data</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div class="CBody"><p>Constructor to create a DataBuffer given an existing <a href="../../index.html#File:MicroStrain/ByteStream.h:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5996);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a></p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">data<div class="CDLParameterType"><span class="SHKeyword">const</span> <a href="../../index.html#File:MicroStrain/ByteStream.h:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5996);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a>&amp;</div></td><td class="CDLDefinition"><p>a <a href="../../index.html#File:MicroStrain/ByteStream.h:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5996);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> containing existing data</p></td></tr></table></div>
 </div>
 
-<a name="DataBuffer.~DataBuffer"></a><a name="Topic5798"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.~DataBuffer"></a><a name="Topic6117"></a><div class="CTopic TFunction LC">
  <div class="CTitle">~DataBuffer</div>
- <div id="NDPrototype5798" class="NDPrototype NoParameterForm"><span class="SHKeyword">virtual</span> ~DataBuffer()</div>
+ <div id="NDPrototype6117" class="NDPrototype NoParameterForm"><span class="SHKeyword">virtual</span> ~DataBuffer()</div>
  <div class="CBody"><p>Default destructor for the DataBuffer object</p></div>
 </div>
 
-<a name="DataBuffer.peekByte"></a><a name="Topic5799"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.peekByte"></a><a name="Topic6118"></a><div class="CTopic TFunction LC">
  <div class="CTitle">peekByte</div>
- <div id="NDPrototype5799" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> peekByte()</div>
+ <div id="NDPrototype6118" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> peekByte()</div>
  <div class="CBody"><p>Gets the next byte from the buffer without moving the read position</p><div class="CHeading">Returns</div><p>The next byte in the buffer, based on its current position</p><div class="CHeading">Exceptions</div><ul><li><p>std::out_of_range: The index requested is out of range</p></li></ul></div>
 </div>
 
-<a name="DataBuffer.skipBytes"></a><a name="Topic5800"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.skipBytes"></a><a name="Topic6119"></a><div class="CTopic TFunction LC">
  <div class="CTitle">skipBytes</div>
- <div id="NDPrototype5800" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> skipBytes(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first">std::</td><td class="PType">size_t&nbsp;</td><td class="PName last">numBytesToSkip</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype6119" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> skipBytes(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first">std::</td><td class="PType">size_t&nbsp;</td><td class="PName last">numBytesToSkip</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>Moves the read pointer forward the requested number of bytes</p></div>
 </div>
 
-<a name="DataBuffer.read_int8"></a><a name="Topic5801"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.read_int8"></a><a name="Topic6120"></a><div class="CTopic TFunction LC">
  <div class="CTitle">read_int8</div>
- <div id="NDPrototype5801" class="NDPrototype NoParameterForm"><span class="SHKeyword">int8</span> read_int8()</div>
+ <div id="NDPrototype6120" class="NDPrototype NoParameterForm"><span class="SHKeyword">int8</span> read_int8()</div>
  <div class="CBody"><p>Reads the next 1-byte signed integer from the buffer</p><div class="CHeading">Returns</div><p>The next int8 in the buffer, based on its current position</p><div class="CHeading">Exceptions</div><ul><li><p>std::out_of_range: The index requested is out of range</p></li></ul></div>
 </div>
 
-<a name="DataBuffer.read_uint8"></a><a name="Topic5802"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.read_uint8"></a><a name="Topic6121"></a><div class="CTopic TFunction LC">
  <div class="CTitle">read_uint8</div>
- <div id="NDPrototype5802" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> read_uint8()</div>
+ <div id="NDPrototype6121" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> read_uint8()</div>
  <div class="CBody"><p>Reads the next 1-byte unsigned integer from the buffer</p><div class="CHeading">Returns</div><p>The next uint8 in the buffer, based on its current position</p><div class="CHeading">Exceptions</div><ul><li><p>std::out_of_range: The index requested is out of range</p></li></ul></div>
 </div>
 
-<a name="DataBuffer.read_int16"></a><a name="Topic5803"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.read_int16"></a><a name="Topic6122"></a><div class="CTopic TFunction LC">
  <div class="CTitle">read_int16</div>
- <div id="NDPrototype5803" class="NDPrototype NoParameterForm"><span class="SHKeyword">int16</span> read_int16()</div>
+ <div id="NDPrototype6122" class="NDPrototype NoParameterForm"><span class="SHKeyword">int16</span> read_int16()</div>
  <div class="CBody"><p>Reads the next 2-byte signed integer from the buffer</p><div class="CHeading">Returns</div><p>The next int16 in the buffer, based on its current position</p><div class="CHeading">Exceptions</div><ul><li><p>std::out_of_range: The index requested is out of range</p></li></ul></div>
 </div>
 
-<a name="DataBuffer.read_uint16"></a><a name="Topic5804"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.read_uint16"></a><a name="Topic6123"></a><div class="CTopic TFunction LC">
  <div class="CTitle">read_uint16</div>
- <div id="NDPrototype5804" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> read_uint16()</div>
+ <div id="NDPrototype6123" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> read_uint16()</div>
  <div class="CBody"><p>Reads the next 2-byte unsigned integer from the buffer</p><div class="CHeading">Returns</div><p>The next uint16 in the buffer, based on its current position</p><div class="CHeading">Exceptions</div><ul><li><p>std::out_of_range: The index requested is out of range</p></li></ul></div>
 </div>
 
-<a name="DataBuffer.read_uint32"></a><a name="Topic5805"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.read_uint32"></a><a name="Topic6124"></a><div class="CTopic TFunction LC">
  <div class="CTitle">read_uint32</div>
- <div id="NDPrototype5805" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> read_uint32()</div>
+ <div id="NDPrototype6124" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> read_uint32()</div>
  <div class="CBody"><p>Reads the next 4-byte unsigned integer from the buffer</p><div class="CHeading">Returns</div><p>The next uint32 in the buffer, based on its current position</p><div class="CHeading">Exceptions</div><ul><li><p>std::out_of_range: The index requested is out of range</p></li></ul></div>
 </div>
 
-<a name="DataBuffer.read_uint64"></a><a name="Topic5806"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.read_uint64"></a><a name="Topic6125"></a><div class="CTopic TFunction LC">
  <div class="CTitle">read_uint64</div>
- <div id="NDPrototype5806" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint64</span> read_uint64()</div>
+ <div id="NDPrototype6125" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint64</span> read_uint64()</div>
  <div class="CBody"><p>Reads the next 8-byte unsigned integer from the buffer</p><div class="CHeading">Returns</div><p>The next uint364 in the buffer, based on its current position</p><div class="CHeading">Exceptions</div><ul><li><p>std::out_of_range: The index requested is out of range</p></li></ul></div>
 </div>
 
-<a name="DataBuffer.read_float"></a><a name="Topic5807"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.read_float"></a><a name="Topic6126"></a><div class="CTopic TFunction LC">
  <div class="CTitle">read_float</div>
- <div id="NDPrototype5807" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> read_float()</div>
+ <div id="NDPrototype6126" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> read_float()</div>
  <div class="CBody"><p>Reads the next 4-byte float from the buffer</p><div class="CHeading">Returns</div><p>The next float in the buffer, based on its current position</p><div class="CHeading">Exceptions</div><ul><li><p>std::out_of_range: The index requested is out of range</p></li></ul></div>
 </div>
 
-<a name="DataBuffer.read_double"></a><a name="Topic5808"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.read_double"></a><a name="Topic6127"></a><div class="CTopic TFunction LC">
  <div class="CTitle">read_double</div>
- <div id="NDPrototype5808" class="NDPrototype NoParameterForm"><span class="SHKeyword">double</span> read_double()</div>
+ <div id="NDPrototype6127" class="NDPrototype NoParameterForm"><span class="SHKeyword">double</span> read_double()</div>
  <div class="CBody"><p>Reads the next 8-byte double from the buffer</p><div class="CHeading">Returns</div><p>The next double in the buffer, based on its current position</p><div class="CHeading">Exceptions</div><ul><li><p>std::out_of_range: The index requested is out of range</p></li></ul></div>
 </div>
 
-<a name="DataBuffer.read_string"></a><a name="Topic5809"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.read_string"></a><a name="Topic6128"></a><div class="CTopic TFunction LC">
  <div class="CTitle">read_string</div>
- <div id="NDPrototype5809" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">std::<span class="SHKeyword">string</span> read_string(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first">std::</td><td class="PType">size_t&nbsp;</td><td class="PName last">length</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype6128" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">std::<span class="SHKeyword">string</span> read_string(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first">std::</td><td class="PType">size_t&nbsp;</td><td class="PName last">length</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>Reads a string of the specified length from the buffer</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">length<div class="CDLParameterType">std::size_t</div></td><td class="CDLDefinition"><p>The length (number of characters) of the string to read</p></td></tr></table><div class="CHeading">Returns</div><p>The string of the specified length, starting from the current position in the buffer</p><div class="CHeading">Exceptions</div><ul><li><p>std::out_of_range: The index + length requested is out of range</p></li></ul></div>
 </div>
 
-<a name="DataBuffer.size"></a><a name="Topic5810"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.size"></a><a name="Topic6129"></a><div class="CTopic TFunction LC">
  <div class="CTitle">size</div>
- <div id="NDPrototype5810" class="NDPrototype NoParameterForm">std::size_t size() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype6129" class="NDPrototype NoParameterForm">std::size_t size() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Gets the amount of bytes in the DataBuffer</p><div class="CHeading">Returns</div><p>The amount of bytes in the DataBuffer</p></div>
 </div>
 
-<a name="DataBuffer.bytesRemanining"></a><a name="Topic5811"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.bytesRemanining"></a><a name="Topic6130"></a><div class="CTopic TFunction LC">
  <div class="CTitle">bytesRemanining</div>
  <div class="CBody"><table class="CDefinitionList"><tr><td class="CDLEntry">Gets the remaining bytes available to read (append position</td><td class="CDLDefinition"><p>read position)</p></td></tr></table><div class="CHeading">Returns</div><p>The remaining number of bytes available to read</p></div>
 </div>
 
-<a name="DataBuffer.appendPosition"></a><a name="Topic5812"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.appendPosition"></a><a name="Topic6131"></a><div class="CTopic TFunction LC">
  <div class="CTitle">appendPosition</div>
- <div id="NDPrototype5812" class="NDPrototype NoParameterForm">std::size_t appendPosition() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype6131" class="NDPrototype NoParameterForm">std::size_t appendPosition() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Gets the append position of the buffer.</p><div class="CHeading">Returns</div><p>The append position of the buffer.</p></div>
 </div>
 
-<a name="DataBuffer.readPosition"></a><a name="Topic5813"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.readPosition"></a><a name="Topic6132"></a><div class="CTopic TFunction LC">
  <div class="CTitle">readPosition</div>
- <div id="NDPrototype5813" class="NDPrototype NoParameterForm">std::size_t readPosition() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype6132" class="NDPrototype NoParameterForm">std::size_t readPosition() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Gets the read position of the buffer.</p><div class="CHeading">Returns</div><p>The read position of the buffer.</p></div>
 </div>
 
-<a name="DataBuffer.moreToRead"></a><a name="Topic5814"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.moreToRead"></a><a name="Topic6133"></a><div class="CTopic TFunction LC">
  <div class="CTitle">moreToRead</div>
- <div id="NDPrototype5814" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> moreToRead() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype6133" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> moreToRead() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Gets whether or not there are more bytes to be read in the DataBuffer</p><div class="CHeading">Returns</div><p>true if m_moreToRead is true, false otherwise</p></div>
 </div>
 
-<a name="DataBuffer.shiftExtraToStart"></a><a name="Topic5815"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.shiftExtraToStart"></a><a name="Topic6134"></a><div class="CTopic TFunction LC">
  <div class="CTitle">shiftExtraToStart</div>
- <div id="NDPrototype5815" class="NDPrototype NoParameterForm">std::size_t shiftExtraToStart()</div>
+ <div id="NDPrototype6134" class="NDPrototype NoParameterForm">std::size_t shiftExtraToStart()</div>
  <div class="CBody"><p>Copies any unparsed data in the DataBuffer to the front of the buffer.&nbsp; Also resets the readPosition and moves the appendPosition to immediately after the data that was moved.</p><div class="CHeading">Returns</div><p>The number of bytes that were shifted.</p></div>
 </div>
 
-<a name="DataBuffer.getBufferWriter"></a><a name="Topic5816"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.getBufferWriter"></a><a name="Topic6135"></a><div class="CTopic TFunction LC">
  <div class="CTitle">getBufferWriter</div>
- <div id="NDPrototype5816" class="NDPrototype NoParameterForm"><a href="../../index.html#File:MicroStrain/DataBuffer.h:BufferWriter" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5778);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >BufferWriter</a> getBufferWriter()</div>
- <div class="CBody"><p>Creates a <a href="../../index.html#File:MicroStrain/DataBuffer.h:BufferWriter" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5778);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >BufferWriter</a> object based on this DataBuffer.</p><div class="CHeading">Returns</div><p>A BufferWriter object used to add data to this DataBuffer</p></div>
+ <div id="NDPrototype6135" class="NDPrototype NoParameterForm"><a href="../../index.html#File:MicroStrain/DataBuffer.h:BufferWriter" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6097);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >BufferWriter</a> getBufferWriter()</div>
+ <div class="CBody"><p>Creates a <a href="../../index.html#File:MicroStrain/DataBuffer.h:BufferWriter" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6097);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >BufferWriter</a> object based on this DataBuffer.</p><div class="CHeading">Returns</div><p>A BufferWriter object used to add data to this DataBuffer</p></div>
 </div>
 
-<a name="DataBuffer.resetBuffer"></a><a name="Topic5817"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.resetBuffer"></a><a name="Topic6136"></a><div class="CTopic TFunction LC">
  <div class="CTitle">resetBuffer</div>
- <div id="NDPrototype5817" class="NDPrototype NoParameterForm"><span class="SHKeyword">void</span> resetBuffer()</div>
+ <div id="NDPrototype6136" class="NDPrototype NoParameterForm"><span class="SHKeyword">void</span> resetBuffer()</div>
  <div class="CBody"><p>Resets the append and read positions in the buffer back to 0.</p></div>
 </div>
 
-<a name="DataBuffer.bytesToRead"></a><a name="Topic5818"></a><div class="CTopic TFunction LC">
+<a name="DataBuffer.bytesToRead"></a><a name="Topic6137"></a><div class="CTopic TFunction LC">
  <div class="CTitle">bytesToRead</div>
- <div id="NDPrototype5818" class="NDPrototype NoParameterForm"><a href="../../index.html#File:Types.h:Bytes" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5961);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Bytes</a> bytesToRead() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>Gets a copy of the underlying bytes in this DataBuffer from the read position to the appendPosition.</p><div class="CHeading">Returns</div><p>A <a href="../../index.html#File:Types.h:Bytes" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5961);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Bytes</a> container.</p></div>
+ <div id="NDPrototype6137" class="NDPrototype NoParameterForm"><a href="../../index.html#File:Types.h:Bytes" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6209);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Bytes</a> bytesToRead() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>Gets a copy of the underlying bytes in this DataBuffer from the read position to the appendPosition.</p><div class="CHeading">Returns</div><p>A <a href="../../index.html#File:Types.h:Bytes" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6209);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Bytes</a> container.</p></div>
 </div>
 
-<a name="ReadBufferSavePoint"></a><a name="Topic5819"></a><div class="CTopic TClass LC">
+<a name="ReadBufferSavePoint"></a><a name="Topic6138"></a><div class="CTopic TClass LC">
  <div class="CTitle">ReadBufferSavePoint</div>
- <div class="NDClassPrototype" id="NDClassPrototype5819"><div class="CPEntry TClass Current"><div class="CPName">ReadBufferSavePoint</div></div></div>
- <div class="CBody"><p>Acts as a save point so that bytes can be read out of a <a href="../../index.html#File:MicroStrain/DataBuffer.h:DataBuffer" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5777);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DataBuffer</a> and the read point reverted</p><div class="CHeading">See Also</div><p><a href="../../index.html#File:MicroStrain/DataBuffer.h:DataBuffer" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5777);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DataBuffer</a></p></div>
+ <div class="NDClassPrototype" id="NDClassPrototype6138"><div class="CPEntry TClass Current"><div class="CPName">ReadBufferSavePoint</div></div></div>
+ <div class="CBody"><p>Acts as a save point so that bytes can be read out of a <a href="../../index.html#File:MicroStrain/DataBuffer.h:DataBuffer" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6096);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DataBuffer</a> and the read point reverted</p><div class="CHeading">See Also</div><p><a href="../../index.html#File:MicroStrain/DataBuffer.h:DataBuffer" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6096);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DataBuffer</a></p></div>
 </div>
 
-<a name="ReadBufferSavePoint.Functions"></a><a name="Topic5820"></a><div class="CTopic TGroup LC">
+<a name="ReadBufferSavePoint.Functions"></a><a name="Topic6139"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="ReadBufferSavePoint.ReadBufferSavePoint"></a><a name="Topic5821"></a><div class="CTopic TFunction LC">
+<a name="ReadBufferSavePoint.ReadBufferSavePoint"></a><a name="Topic6140"></a><div class="CTopic TFunction LC">
  <div class="CTitle">ReadBufferSavePoint</div>
- <div id="NDPrototype5821" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">ReadBufferSavePoint(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><a href="../../index.html#File:MicroStrain/DataBuffer.h:DataBuffer(2)" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5789);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DataBuffer</a>&nbsp;</td><td class="PNamePrefix">*</td><td class="PName last">data</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
- <div class="CBody"><p>Creates a ReadBufferSavePoint based on the <a href="../../index.html#File:MicroStrain/DataBuffer.h:DataBuffer" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5777);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DataBuffer</a> passed in</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">data<div class="CDLParameterType"><a href="../../index.html#File:MicroStrain/DataBuffer.h:DataBuffer(2)" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5789);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DataBuffer</a>*</div></td><td class="CDLDefinition"><p>the data that will be updated or reverted</p></td></tr></table></div>
+ <div id="NDPrototype6140" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">ReadBufferSavePoint(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><a href="../../index.html#File:MicroStrain/DataBuffer.h:DataBuffer(2)" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6108);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DataBuffer</a>&nbsp;</td><td class="PNamePrefix">*</td><td class="PName last">data</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div class="CBody"><p>Creates a ReadBufferSavePoint based on the <a href="../../index.html#File:MicroStrain/DataBuffer.h:DataBuffer" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6096);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DataBuffer</a> passed in</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">data<div class="CDLParameterType"><a href="../../index.html#File:MicroStrain/DataBuffer.h:DataBuffer(2)" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6108);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DataBuffer</a>*</div></td><td class="CDLDefinition"><p>the data that will be updated or reverted</p></td></tr></table></div>
 </div>
 
-<a name="ReadBufferSavePoint.ReadBufferSavePoint(2)"></a><a name="Topic5822"></a><div class="CTopic TFunction LC">
+<a name="ReadBufferSavePoint.ReadBufferSavePoint(2)"></a><a name="Topic6141"></a><div class="CTopic TFunction LC">
  <div class="CTitle">ReadBufferSavePoint</div>
- <div id="NDPrototype5822" class="NDPrototype NoParameterForm">~ReadBufferSavePoint()</div>
+ <div id="NDPrototype6141" class="NDPrototype NoParameterForm">~ReadBufferSavePoint()</div>
  <div class="CBody"><p>Destroying a ReadBufferSavePoint object, reverting any uncommited data</p></div>
 </div>
 
-<a name="ReadBufferSavePoint.Variables"></a><a name="Topic5823"></a><div class="CTopic TGroup LC">
+<a name="ReadBufferSavePoint.Variables"></a><a name="Topic6142"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="ReadBufferSavePoint.m_data"></a><a name="Topic5824"></a><div class="CTopic TVariable LC">
+<a name="ReadBufferSavePoint.m_data"></a><a name="Topic6143"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_data</div>
- <div id="NDPrototype5824" class="NDPrototype NoParameterForm"><a href="../../index.html#File:MicroStrain/DataBuffer.h:DataBuffer(2)" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5789);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DataBuffer</a>* m_data</div>
- <div class="CBody"><p>The <a href="../../index.html#File:MicroStrain/DataBuffer.h:DataBuffer" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5777);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DataBuffer</a> of data to be accessed</p></div>
+ <div id="NDPrototype6143" class="NDPrototype NoParameterForm"><a href="../../index.html#File:MicroStrain/DataBuffer.h:DataBuffer(2)" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6108);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DataBuffer</a>* m_data</div>
+ <div class="CBody"><p>The <a href="../../index.html#File:MicroStrain/DataBuffer.h:DataBuffer" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6096);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DataBuffer</a> of data to be accessed</p></div>
 </div>
 
-<a name="ReadBufferSavePoint.m_savePosition"></a><a name="Topic5825"></a><div class="CTopic TVariable LC">
+<a name="ReadBufferSavePoint.m_savePosition"></a><a name="Topic6144"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_savePosition</div>
- <div id="NDPrototype5825" class="NDPrototype NoParameterForm">std::size_t m_savePosition</div>
- <div class="CBody"><p>The current save position in the <a href="../../index.html#File:MicroStrain/DataBuffer.h:DataBuffer" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5777);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DataBuffer</a></p></div>
+ <div id="NDPrototype6144" class="NDPrototype NoParameterForm">std::size_t m_savePosition</div>
+ <div class="CBody"><p>The current save position in the <a href="../../index.html#File:MicroStrain/DataBuffer.h:DataBuffer" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6096);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DataBuffer</a></p></div>
 </div>
 
-<a name="ReadBufferSavePoint.Functions(2)"></a><a name="Topic5826"></a><div class="CTopic TGroup LC">
+<a name="ReadBufferSavePoint.Functions(2)"></a><a name="Topic6145"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="ReadBufferSavePoint.revert"></a><a name="Topic5827"></a><div class="CTopic TFunction LC">
+<a name="ReadBufferSavePoint.revert"></a><a name="Topic6146"></a><div class="CTopic TFunction LC">
  <div class="CTitle">revert</div>
- <div id="NDPrototype5827" class="NDPrototype NoParameterForm"><span class="SHKeyword">void</span> revert()</div>
- <div class="CBody"><p>reverts the read position of the <a href="../../index.html#File:MicroStrain/DataBuffer.h:DataBuffer" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5777);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DataBuffer</a> back to its saved position</p></div>
+ <div id="NDPrototype6146" class="NDPrototype NoParameterForm"><span class="SHKeyword">void</span> revert()</div>
+ <div class="CBody"><p>reverts the read position of the <a href="../../index.html#File:MicroStrain/DataBuffer.h:DataBuffer" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6096);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >DataBuffer</a> back to its saved position</p></div>
 </div>
 
-<a name="ReadBufferSavePoint.commit"></a><a name="Topic5828"></a><div class="CTopic TFunction LC last">
+<a name="ReadBufferSavePoint.commit"></a><a name="Topic6147"></a><div class="CTopic TFunction LC last">
  <div class="CTitle">commit</div>
- <div id="NDPrototype5828" class="NDPrototype NoParameterForm"><span class="SHKeyword">void</span> commit()</div>
+ <div id="NDPrototype6147" class="NDPrototype NoParameterForm"><span class="SHKeyword">void</span> commit()</div>
  <div class="CBody"><p>commits all the currently read data so that it will not be reverted</p></div>
 </div>
 

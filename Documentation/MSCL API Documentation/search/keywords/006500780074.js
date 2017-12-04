@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("ext",["Function"],[["extendedRange",,[["RadioFeatures",,,,0,"File:MicroStrain/Wireless/RadioFeatures.h:RadioFeatures.extendedRange","CClass:RadioFeatures:extendedRange"]]]]);
+NDSearch.OnPrefixDataLoaded("ext",["Function","Struct"],[["extendedRange",,[["RadioFeatures",,,,0,"File:MicroStrain/Wireless/RadioFeatures.h:RadioFeatures.extendedRange","CClass:RadioFeatures:extendedRange"]]],["ExternalGNSSUpdateData",,[[,,,,1,"File:MicroStrain/Inertial/ExposedInertialTypes.h:ExternalGNSSUpdateData","CClass:ExternalGNSSUpdateData"]]]]);

@@ -8,98 +8,98 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="Topic5266"></a><div class="CTopic TClass LC first">
+<a name="Topic5512"></a><div class="CTopic TClass LC first">
  <div class="CTitle">ChannelMask</div>
- <div class="NDClassPrototype HasParents" id="NDClassPrototype5266"><a class="CPEntry Parent TClass" href="../../index.html#CClass:BitMask" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6112);" onmouseout="NDContentPage.OnLinkMouseOut(event);" ><div class="CPModifiers"><span class="SHKeyword">private</span></div><div class="CPName">BitMask</div></a><div class="CPEntry TClass Current"><div class="CPName">ChannelMask</div></div></div>
+ <div class="NDClassPrototype" id="NDClassPrototype5512"><div class="CPEntry TClass Current"><div class="CPName">ChannelMask</div></div></div>
  <div class="CBody"><p>Represents the channel mask (active and inactive channels) for a WirelessNode.</p></div>
 </div>
 
-<a name="Constants"></a><a name="Topic5267"></a><div class="CTopic TGroup LC">
+<a name="Constants"></a><a name="Topic5513"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Constants</div>
 </div>
 
-<a name="MAX_CHANNELS=16"></a><a name="Topic5268"></a><div class="CTopic TConstant LC">
+<a name="MAX_CHANNELS=16"></a><a name="Topic5514"></a><div class="CTopic TConstant LC">
  <div class="CTitle">MAX_CHANNELS = 16</div>
  <div class="CBody"><p>The maximum number of channels currently available on any node</p></div>
 </div>
 
-<a name="Functions"></a><a name="Topic5269"></a><div class="CTopic TGroup LC">
+<a name="Functions"></a><a name="Topic5515"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="ChannelMask"></a><a name="Topic5270"></a><div class="CTopic TFunction LC">
+<a name="ChannelMask"></a><a name="Topic5516"></a><div class="CTopic TFunction LC">
  <div class="CTitle">ChannelMask</div>
- <div id="NDPrototype5270" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">explicit</span> ChannelMask(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">channelMask</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype5516" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">explicit</span> ChannelMask(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">channelMask</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>Creates an ChannelMask object given a channel mask that was stored on a WirelessNode</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">channelMask<div class="CDLParameterType"><span class="SHKeyword">uint16</span></div></td><td class="CDLDefinition"><p>A channel mask value from a WirelessNode representing the active and inactive channels</p></td></tr></table></div>
 </div>
 
-<a name="ChannelMask(2)"></a><a name="Topic5271"></a><div class="CTopic TFunction LC">
+<a name="ChannelMask(2)"></a><a name="Topic5517"></a><div class="CTopic TFunction LC">
  <div class="CTitle">ChannelMask</div>
- <div id="NDPrototype5271" class="NDPrototype NoParameterForm">ChannelMask()</div>
+ <div id="NDPrototype5517" class="NDPrototype NoParameterForm">ChannelMask()</div>
  <div class="CBody"><p>The default constructor for creating an ChannelMask object, which sets all the channels to inactive</p></div>
 </div>
 
-<a name="Operators"></a><a name="Topic5272"></a><div class="CTopic TGroup LC">
+<a name="Operators"></a><a name="Topic5518"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Operators</div>
 </div>
 
-<a name="=="></a><a name="Topic5273"></a><div class="CTopic TOperator LC">
+<a name="=="></a><a name="Topic5519"></a><div class="CTopic TOperator LC">
  <div class="CTitle">==</div>
  <div class="CBody"><p>Equal operator for comparing ChannelMasks.</p></div>
 </div>
 
-<a name="!="></a><a name="Topic5274"></a><div class="CTopic TOperator LC">
+<a name="!="></a><a name="Topic5520"></a><div class="CTopic TOperator LC">
  <div class="CTitle">!=</div>
  <div class="CBody"><p>Not Equal operator for comparing ChannelMasks.</p></div>
 </div>
 
-<a name="&lt;"></a><a name="Topic5275"></a><div class="CTopic TOperator LC">
+<a name="&lt;"></a><a name="Topic5521"></a><div class="CTopic TOperator LC">
  <div class="CTitle">&lt;</div>
  <div class="CBody"><p>Less Than operator for comparing ChannelMasks.</p></div>
 </div>
 
-<a name="&gt;"></a><a name="Topic5276"></a><div class="CTopic TOperator LC">
+<a name="&gt;"></a><a name="Topic5522"></a><div class="CTopic TOperator LC">
  <div class="CTitle">&gt;</div>
  <div class="CBody"><p>Greater Than operator for comparing ChannelMasks.</p></div>
 </div>
 
-<a name="Functions(2)"></a><a name="Topic5277"></a><div class="CTopic TGroup LC">
+<a name="Functions(2)"></a><a name="Topic5523"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="fromMask"></a><a name="Topic5278"></a><div class="CTopic TFunction LC">
+<a name="fromMask"></a><a name="Topic5524"></a><div class="CTopic TFunction LC">
  <div class="CTitle">fromMask</div>
- <div id="NDPrototype5278" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> fromMask(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">channelMask</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype5524" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> fromMask(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">channelMask</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>Initializes the ChannelMask object from a channel mask</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">channelMask<div class="CDLParameterType"><span class="SHKeyword">uint16</span></div></td><td class="CDLDefinition"><p>A channel mask value from a WirelessNode representing the active and inactive channels</p></td></tr></table></div>
 </div>
 
-<a name="toMask"></a><a name="Topic5279"></a><div class="CTopic TFunction LC">
+<a name="toMask"></a><a name="Topic5525"></a><div class="CTopic TFunction LC">
  <div class="CTitle">toMask</div>
- <div id="NDPrototype5279" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> toMask() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype5525" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> toMask() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Gets the channel mask value of the current ChannelMask object</p><div class="CHeading">Returns</div><p>The ChannelMask object represented as a channel mask</p></div>
 </div>
 
-<a name="count"></a><a name="Topic5280"></a><div class="CTopic TFunction LC">
+<a name="count"></a><a name="Topic5526"></a><div class="CTopic TFunction LC">
  <div class="CTitle">count</div>
- <div id="NDPrototype5280" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> count() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype5526" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> count() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Gets the total number of active channels in the current ChannelMask object</p><div class="CHeading">Returns</div><p>The total number of active channels</p></div>
 </div>
 
-<a name="enabled"></a><a name="Topic5281"></a><div class="CTopic TFunction LC">
+<a name="enabled"></a><a name="Topic5527"></a><div class="CTopic TFunction LC">
  <div class="CTitle">enabled</div>
- <div id="NDPrototype5281" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">bool</span> enabled(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint8</span>&nbsp;</td><td class="PName last">channel</td></tr></table></td><td class="PAfterParameters">) <span class="SHKeyword">const</span></td></tr></table></div>
+ <div id="NDPrototype5527" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">bool</span> enabled(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint8</span>&nbsp;</td><td class="PName last">channel</td></tr></table></td><td class="PAfterParameters">) <span class="SHKeyword">const</span></td></tr></table></div>
  <div class="CBody"><p>Checks whether a certain channel is enabled or disabled</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">channel<div class="CDLParameterType"><span class="SHKeyword">uint8</span></div></td><td class="CDLDefinition"><p>The channel to check if enabled or disabled, based on index 1 (channel1 = 1, channel8 = 8)</p></td></tr></table><div class="CHeading">Returns</div><p>true if the channel is enabled, false if the channel is disabled</p></div>
 </div>
 
-<a name="enable"></a><a name="Topic5282"></a><div class="CTopic TFunction LC">
+<a name="enable"></a><a name="Topic5528"></a><div class="CTopic TFunction LC">
  <div class="CTitle">enable</div>
- <div id="NDPrototype5282" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> enable(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint8</span>&nbsp;</td><td class="PName">channel,</td><td></td><td class="last"></td></tr><tr><td class="PType first"><span class="SHKeyword">bool</span>&nbsp;</td><td class="PName">enable&nbsp;</td><td class="PDefaultValueSeparator">=&nbsp;</td><td class="PDefaultValue last"><span class="SHKeyword">true</span></td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype5528" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> enable(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint8</span>&nbsp;</td><td class="PName">channel,</td><td></td><td class="last"></td></tr><tr><td class="PType first"><span class="SHKeyword">bool</span>&nbsp;</td><td class="PName">enable&nbsp;</td><td class="PDefaultValueSeparator">=&nbsp;</td><td class="PDefaultValue last"><span class="SHKeyword">true</span></td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>Enables or disables a specified channel</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">channel<div class="CDLParameterType"><span class="SHKeyword">uint8</span></div></td><td class="CDLDefinition"><p>The channel to enable or disable, based on index 1 (channel1 = 1, channel8 = 8)</p></td></tr><tr><td class="CDLEntry">enable<div class="CDLParameterType"><span class="SHKeyword">bool</span></div></td><td class="CDLDefinition"><p>Set to true to enable the channel, false to disable the channel</p></td></tr></table></div>
 </div>
 
-<a name="lastChEnabled"></a><a name="Topic5283"></a><div class="CTopic TFunction LC last">
+<a name="lastChEnabled"></a><a name="Topic5529"></a><div class="CTopic TFunction LC last">
  <div class="CTitle">lastChEnabled</div>
- <div id="NDPrototype5283" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> lastChEnabled() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype5529" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> lastChEnabled() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Finds the last channel (highest channel number) that is enabled in the mask.&nbsp; This is useful when looping over the ChannelMask object and performing an action on all enabled channels.</p><div class="CHeading">Returns</div><p>The channel number (ch1 = 1, ch16 = 16) of the last channel enabled. 0 if no channels are enabled.</p></div>
 </div>
 

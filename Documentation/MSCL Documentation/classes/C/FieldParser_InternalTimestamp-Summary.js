@@ -1,1 +1,1 @@
-NDFramePage.OnPageTitleLoaded("CClass:FieldParser_InternalTimestamp","FieldParser_InternalTimestamp");NDSummary.OnSummaryLoaded("CClass:FieldParser_InternalTimestamp",[["C/C++","C"]],[["Classes","Class"]],[[760,0,0,"FieldParser_InternalTimestamp"]]);
+NDFramePage.OnPageTitleLoaded("CClass:FieldParser_InternalTimestamp","FieldParser_InternalTimestamp");NDSummary.OnSummaryLoaded("CClass:FieldParser_InternalTimestamp",[["C/C++","C"]],[["Classes","Class"]],[[973,0,0,"FieldParser_InternalTimestamp"]]);

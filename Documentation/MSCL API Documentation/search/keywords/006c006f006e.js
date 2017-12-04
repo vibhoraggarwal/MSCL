@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("lon",["Variable"],[["longitude",,[["ExternalGNSSUpdateData",,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:ExternalGNSSUpdateData.longitude","CClass:ExternalGNSSUpdateData:longitude"]]]]);

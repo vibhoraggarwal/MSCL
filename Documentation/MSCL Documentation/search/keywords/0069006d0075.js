@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("imu",["Variable"],[["imuStreamIsEnabled",,[["DeviceStatusData",,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:DeviceStatusData.imuStreamIsEnabled","CClass:DeviceStatusData:imuStreamIsEnabled"]]]]);

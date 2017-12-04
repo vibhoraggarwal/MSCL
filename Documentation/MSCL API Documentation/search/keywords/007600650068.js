@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("veh",["Enumeration"],[["VehicleModeType",,[["ExternalGNSSUpdateData",,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:ExternalGNSSUpdateData.VehicleModeType","CClass:ExternalGNSSUpdateData:VehicleModeType"]]]]);

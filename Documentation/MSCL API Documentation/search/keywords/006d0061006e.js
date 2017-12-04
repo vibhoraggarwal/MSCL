@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("man",["Enumeration"],[["ManualFilterBandwidthConfig",,[["AdvancedLowPassFilterData",,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:AdvancedLowPassFilterData.ManualFilterBandwidthConfig","CClass:AdvancedLowPassFilterData:ManualFilterBandwidthConfig"]]]]);

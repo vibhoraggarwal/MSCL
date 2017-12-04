@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("est",["Variable"],[["estimationFilterStreamIsEnabled",,[["DeviceStatusData",,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:DeviceStatusData.estimationFilterStreamIsEnabled","CClass:DeviceStatusData:estimationFilterStreamIsEnabled"]]]]);

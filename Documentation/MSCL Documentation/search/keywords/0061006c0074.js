@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("alt",["Variable"],[["altitudeAboveWGS84Ellipsoid",,[["ExternalGNSSUpdateData",,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:ExternalGNSSUpdateData.altitudeAboveWGS84Ellipsoid","CClass:ExternalGNSSUpdateData:altitudeAboveWGS84Ellipsoid"]]]]);
