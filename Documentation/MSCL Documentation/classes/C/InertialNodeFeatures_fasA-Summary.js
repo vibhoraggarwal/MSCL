@@ -1,1 +1,0 @@
-NDFramePage.OnPageTitleLoaded("CClass:InertialNodeFeatures_fasA","InertialNodeFeatures_fasA");NDSummary.OnSummaryLoaded("CClass:InertialNodeFeatures_fasA",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"],["Groups","Group"]],[[835,0,0,"InertialNodeFeatures_fasA"],[836,0,2,"Functions","Functions"],[837,0,1,"InertialNodeFeatures_fasA","InertialNodeFeatures_fasA"]]);

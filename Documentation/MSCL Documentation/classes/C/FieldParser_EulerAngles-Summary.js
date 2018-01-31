@@ -1,1 +1,1 @@
-NDFramePage.OnPageTitleLoaded("CClass:FieldParser_EulerAngles","FieldParser_EulerAngles");NDSummary.OnSummaryLoaded("CClass:FieldParser_EulerAngles",[["C/C++","C"]],[["Classes","Class"]],[[972,0,0,"FieldParser_EulerAngles"]]);
+NDFramePage.OnPageTitleLoaded("CClass:FieldParser_EulerAngles","FieldParser_EulerAngles");NDSummary.OnSummaryLoaded("CClass:FieldParser_EulerAngles",[["C/C++","C"]],[["Classes","Class"]],[[771,0,0,"FieldParser_EulerAngles"]]);

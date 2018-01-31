@@ -1,0 +1,1 @@
+NDFramePage.OnPageTitleLoaded("File:MicroStrain/MIP/MipNode_Impl.h","MipNode_Impl.h");NDSummary.OnSummaryLoaded("File:MicroStrain/MIP/MipNode_Impl.h",[["C/C++","C"]],[["Functions","Function"]],[[273,0,0,"setDeviceTime","setDeviceTime"]]);

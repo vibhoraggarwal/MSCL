@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("fun",["Enumeration"],[["FunctionSelector",,[["InertialTypes",,,,0,"File:MicroStrain/Inertial/InertialTypes.h:InertialTypes.FunctionSelector","CClass:InertialTypes:FunctionSelector"]]]]);
+NDSearch.OnPrefixDataLoaded("fun",["Enumeration"],[["FunctionSelector",,[["MipTypes",,,,0,"File:MicroStrain/MIP/MipTypes.h:MipTypes.FunctionSelector","CClass:MipTypes:FunctionSelector"]]]]);

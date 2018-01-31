@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("upd",["Function"],[["updateEepromCacheFromNodeDiscovery",,[["WirelessNode",,,,0,"File:MicroStrain/Wireless/WirelessNode.h:WirelessNode.updateEepromCacheFromNodeDiscovery","CClass:WirelessNode:updateEepromCacheFromNodeDiscovery"]]]]);

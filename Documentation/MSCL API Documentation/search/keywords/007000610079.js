@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("pay",["Function"],[["payload",,[["InertialPacket",,,,0,"File:MicroStrain/Inertial/Packets/InertialPacket.h:InertialPacket.payload","CClass:InertialPacket:payload"]]]]);
+NDSearch.OnPrefixDataLoaded("pay",["Function"],[["payload",,[["MipPacket",,,,0,"File:MicroStrain/MIP/Packets/MipPacket.h:MipPacket.payload","CClass:MipPacket:payload"]]]]);

@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("qua",["Function"],[["qualifier",,[["InertialDataPoint",,,,0,"File:MicroStrain/Inertial/InertialDataPoint.h:InertialDataPoint.qualifier","CClass:InertialDataPoint:qualifier"]]]]);
+NDSearch.OnPrefixDataLoaded("qua",["Function"],[["qualifier",,[["MipDataPoint",,,,0,"File:MicroStrain/MIP/MipDataPoint.h:MipDataPoint.qualifier","CClass:MipDataPoint:qualifier"]]]]);

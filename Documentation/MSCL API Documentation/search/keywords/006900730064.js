@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("isd",["Function"],[["isDataPacket",,[["InertialPacket",,,,0,"File:MicroStrain/Inertial/Packets/InertialPacket.h:InertialPacket.isDataPacket","CClass:InertialPacket:isDataPacket"]]]]);
+NDSearch.OnPrefixDataLoaded("isd",["Function"],[["isDataPacket",,[["MipPacket",,,,0,"File:MicroStrain/MIP/Packets/MipPacket.h:MipPacket.isDataPacket","CClass:MipPacket:isDataPacket"]]]]);

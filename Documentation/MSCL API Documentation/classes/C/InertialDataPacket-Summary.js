@@ -1,1 +1,0 @@
-NDFramePage.OnPageTitleLoaded("CClass:InertialDataPacket","InertialDataPacket");NDSummary.OnSummaryLoaded("CClass:InertialDataPacket",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"],["Types","Type"]],[[70,0,0,"InertialDataPacket"],[71,0,1,"data","data"],[72,0,1,"timestamp","timestamp"],[73,0,2,"InertialDataPackets","InertialDataPackets"]]);

@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("cir",["Type"],[["circular_data_buffer",,[["InertialPacketCollector",,,,0,"File:MicroStrain/Inertial/Packets/InertialPacketCollector.h:InertialPacketCollector.circular_data_buffer","CClass:InertialPacketCollector:circular_data_buffer"]]]]);
+NDSearch.OnPrefixDataLoaded("cir",["Type"],[["circular_data_buffer",,[["MipPacketCollector",,,,0,"File:MicroStrain/MIP/Packets/MipPacketCollector.h:MipPacketCollector.circular_data_buffer","CClass:MipPacketCollector:circular_data_buffer"]]]]);

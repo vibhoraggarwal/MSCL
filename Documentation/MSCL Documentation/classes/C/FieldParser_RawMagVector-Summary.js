@@ -1,1 +1,1 @@
-NDFramePage.OnPageTitleLoaded("CClass:FieldParser_RawMagVector","FieldParser_RawMagVector");NDSummary.OnSummaryLoaded("CClass:FieldParser_RawMagVector",[["C/C++","C"]],[["Classes","Class"]],[[963,0,0,"FieldParser_RawMagVector"]]);
+NDFramePage.OnPageTitleLoaded("CClass:FieldParser_RawMagVector","FieldParser_RawMagVector");NDSummary.OnSummaryLoaded("CClass:FieldParser_RawMagVector",[["C/C++","C"]],[["Classes","Class"]],[[762,0,0,"FieldParser_RawMagVector"]]);

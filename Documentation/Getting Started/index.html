@@ -451,7 +451,7 @@ See the Collecting Data section for more info.
 
 <h2 id="starting-sampling">Starting Sampling</h2>
 
-<p>There are 3 main sampling modes: <strong>Synchronized Sampling</strong>, <strong>Non-Synchronized Sampling</strong>, and <strong>Armed Datalogging</strong>.</p>
+<p>There are 2 main sampling modes: <strong>Synchronized Sampling</strong> and <strong>Non-Synchronized Sampling</strong>.</p>
 <pre class="highlight cpp"><code><span class="c1">//create a SyncSamplingNetwork object, giving it the BaseStation that will be the master BaseStation for the network
 </span><span class="n">mscl</span><span class="o">::</span><span class="n">SyncSamplingNetwork</span> <span class="n">network</span><span class="p">(</span><span class="n">baseStation</span><span class="p">);</span>
 
@@ -524,47 +524,11 @@ The <b>startSampling( )</b> function will arm all of the Nodes for sampling and 
 </code></pre>
 <h3 id="non-synchronized-sampling">Non-Synchronized Sampling</h3>
 
-<p>Non-Synchronized Sampling requires no beacon, or network. Instead, each Node is set to sample individually. </p>
+<p>Non-Synchronized Sampling requires no beacon, or network. Instead, each Node is set to sample individually. This mode has much lower latency than Synchronized Sampling.</p>
 
 <p>Since there is no synchronization, there is a high chance of data loss, as Nodes could send their data at the same time as other Nodes, resulting in a loss of packets. This sampling mode also does not transmit timestamps with the data. Instead, timestamps will be assigned to the data when MSCL receives it.</p>
 
 <p>To start a Non-Sync Sampling network, use the <code class="prettyprint">startNonSyncSampling()</code> function on the <code class="prettyprint">WirelessNode</code> object.</p>
-<pre class="highlight cpp"><code><span class="c1">//create a ArmedDataloggingNetwork object, giving it the BaseStation that will be the master BaseStation for the network
-</span><span class="n">mscl</span><span class="o">::</span><span class="n">ArmedDataloggingNetwork</span> <span class="n">network</span><span class="p">(</span><span class="n">baseStation</span><span class="p">);</span>
-
-<span class="c1">//add WirelessNode(s) to the network.
-//Note: The Node must already be configured for Armed Datalogging before adding to the network, or else Error_InvalidNodeConfig will be thrown.
-</span><span class="n">network</span><span class="p">.</span><span class="n">addNode</span><span class="p">(</span><span class="n">node</span><span class="p">);</span>
-<span class="n">network</span><span class="p">.</span><span class="n">addNode</span><span class="p">(</span><span class="n">node2</span><span class="p">);</span>
-
-<span class="c1">//start datalogging with all the nodes in the network.
-</span><span class="n">network</span><span class="p">.</span><span class="n">startSampling</span><span class="p">();</span>
-</code></pre><pre class="highlight csharp"><code><span class="c1">//create a ArmedDataloggingNetwork object, giving it the BaseStation that will be the master BaseStation for the network</span>
-<span class="n">mscl</span><span class="p">.</span><span class="n">SyncSamplingNetwork</span> <span class="n">network</span> <span class="p">=</span> <span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">SyncSamplingNetwork</span><span class="p">(</span><span class="n">baseStation</span><span class="p">);</span>
-
-<span class="c1">//add WirelessNode(s) to the network.</span>
-<span class="c1">//Note: The Node must already be configured for Armed Datalogging before adding to the network, or else Error_InvalidNodeConfig will be thrown.</span>
-<span class="n">network</span><span class="p">.</span><span class="nf">addNode</span><span class="p">(</span><span class="n">node</span><span class="p">);</span>
-<span class="n">network</span><span class="p">.</span><span class="nf">addNode</span><span class="p">(</span><span class="n">node2</span><span class="p">);</span>
-
-<span class="c1">//start datalogging with all the nodes in the network.</span>
-<span class="n">network</span><span class="p">.</span><span class="nf">startSampling</span><span class="p">();</span>
-</code></pre><pre class="highlight python"><code><span class="c"># create a ArmedDataloggingNetwork object, giving it the BaseStation that will be the master BaseStation for the network</span>
-<span class="n">network</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">.</span><span class="n">ArmedDataloggingNetwork</span><span class="p">(</span><span class="n">baseStation</span><span class="p">)</span>
-
-<span class="c"># add WirelessNode(s) to the network.</span>
-<span class="c"># Note: The Node must already be configured for Armed Datalogging before adding to the network, or else Error_InvalidNodeConfig will be thrown.</span>
-<span class="n">network</span><span class="o">.</span><span class="n">addNode</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
-<span class="n">network</span><span class="o">.</span><span class="n">addNode</span><span class="p">(</span><span class="n">node2</span><span class="p">)</span>
-
-<span class="c"># start datalogging with all the nodes in the network.</span>
-<span class="n">network</span><span class="o">.</span><span class="n">startSampling</span><span class="p">()</span>
-</code></pre>
-<h3 id="armed-datalogging">Armed Datalogging</h3>
-
-<p>Armed Datalogging involves creating a network with one or more Wireless Nodes and starting all of the Nodes simultaneously.</p>
-
-<p>There is no beacon keeping the nodes aligned, and all data is logged to each Node&rsquo;s internal storage, to be downloaded later.</p>
 
 <h2 id="collecting-data">Collecting Data</h2>
 <pre class="highlight cpp"><code><span class="c1">//create the BaseStation, passing in the connection
@@ -684,25 +648,25 @@ However, some types such as valueType_Vector cannot be converted to other values
 #include "mscl/MicroStrain/Inertial/InertialNode.h"
 </span>
 <span class="c1">//create the connection object with port and baud rate
-</span><span class="n">mscl</span><span class="o">::</span><span class="n">Connection</span><span class="o">::</span><span class="n">Serial</span> <span class="n">connection</span><span class="p">(</span><span class="s">"COM3"</span><span class="p">,</span> <span class="mi">921600</span><span class="p">);</span>
+</span><span class="n">mscl</span><span class="o">::</span><span class="n">Connection</span><span class="o">::</span><span class="n">Serial</span> <span class="n">connection</span><span class="p">(</span><span class="s">"COM3"</span><span class="p">,</span> <span class="mi">115200</span><span class="p">);</span>
 
 <span class="c1">//create the InertialNode, passing in the connection
 </span><span class="n">mscl</span><span class="o">::</span><span class="n">InertialNode</span> <span class="n">node</span><span class="p">(</span><span class="n">connection</span><span class="p">);</span>
 </code></pre><pre class="highlight csharp"><code><span class="c1">//create the connection object with port and baud rate</span>
-<span class="n">mscl</span><span class="p">.</span><span class="n">Connection</span> <span class="n">connection</span> <span class="p">=</span> <span class="n">mscl</span><span class="p">.</span><span class="n">Connection</span><span class="p">.</span><span class="nf">Serial</span><span class="p">(</span><span class="s">"COM3"</span><span class="p">,</span> <span class="m">921600</span><span class="p">);</span>
+<span class="n">mscl</span><span class="p">.</span><span class="n">Connection</span> <span class="n">connection</span> <span class="p">=</span> <span class="n">mscl</span><span class="p">.</span><span class="n">Connection</span><span class="p">.</span><span class="nf">Serial</span><span class="p">(</span><span class="s">"COM3"</span><span class="p">,</span> <span class="m">115200</span><span class="p">);</span>
 
 <span class="c1">//create the InertialNode, passing in the connection</span>
 <span class="n">mscl</span><span class="p">.</span><span class="n">InertialNode</span> <span class="n">node</span> <span class="p">=</span> <span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">InertialNode</span><span class="p">(</span><span class="n">connection</span><span class="p">);</span>
 </code></pre><pre class="highlight python"><code><span class="kn">import</span> <span class="nn">mscl</span>
 
 <span class="c">#create the connection object with port and baud rate</span>
-<span class="n">connection</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">.</span><span class="n">Connection</span><span class="o">.</span><span class="n">Serial</span><span class="p">(</span><span class="s">"COM3"</span><span class="p">,</span> <span class="mi">921600</span><span class="p">)</span>
+<span class="n">connection</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">.</span><span class="n">Connection</span><span class="o">.</span><span class="n">Serial</span><span class="p">(</span><span class="s">"COM3"</span><span class="p">,</span> <span class="mi">115200</span><span class="p">)</span>
 
 <span class="c">#create the InertialNode, passing in the connection</span>
 <span class="n">node</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">.</span><span class="n">InertialNode</span><span class="p">(</span><span class="n">connection</span><span class="p">)</span>
 </code></pre>
 <blockquote>
-<p>Make sure to replace <code class="prettyprint">COM3</code> and <code class="prettyprint">921600</code> with your own port settings.</p>
+<p>Make sure to replace <code class="prettyprint">COM3</code> and <code class="prettyprint">115200</code> with your own port settings.</p>
 </blockquote>
 
 <p>To interace with an <a href="http://www.microstrain.com/lord-microstrain-inertial-sensors-all-products">Inertial Node</a>, create an <code class="prettyprint">InertialNode</code> object.</p>
@@ -736,13 +700,13 @@ As soon as the Connection object is created, the port will be opened.
 
 <h2 id="configuring-a-node">Configuring a Node</h2>
 <pre class="highlight cpp"><code><span class="c1">//get all of the active channels for the GPS category on the Node
-</span><span class="n">mscl</span><span class="o">::</span><span class="n">InertialChannels</span> <span class="n">activeChs</span> <span class="o">=</span> <span class="n">node</span><span class="p">.</span><span class="n">getActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">InertialTypes</span><span class="o">::</span><span class="n">CATEGORY_GPS</span><span class="p">);</span>
+</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipChannels</span> <span class="n">activeChs</span> <span class="o">=</span> <span class="n">node</span><span class="p">.</span><span class="n">getActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipTypes</span><span class="o">::</span><span class="n">CLASS_GNSS</span><span class="p">);</span>
 </code></pre><pre class="highlight csharp"><code><span class="c1">//get all of the active channels for the GPS category on the Node</span>
-<span class="n">mscl</span><span class="p">.</span><span class="n">InertialChannels</span> <span class="n">activeChs</span> <span class="p">=</span> <span class="n">node</span><span class="p">.</span><span class="nf">getActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">InertialTypes</span><span class="p">.</span><span class="n">InertialCategory</span><span class="p">.</span><span class="n">CATEGORY_GPS</span><span class="p">);</span>
+<span class="n">mscl</span><span class="p">.</span><span class="n">MipChannels</span> <span class="n">activeChs</span> <span class="p">=</span> <span class="n">node</span><span class="p">.</span><span class="nf">getActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipTypes</span><span class="p">.</span><span class="n">DataClass</span><span class="p">.</span><span class="n">CLASS_GNSS</span><span class="p">);</span>
 </code></pre><pre class="highlight python"><code><span class="c"># get all of the active channels for the GPS category on the Node</span>
-<span class="n">activeChs</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">getActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">InertialTypes</span><span class="o">.</span><span class="n">CATEGORY_GPS</span><span class="p">)</span>
+<span class="n">activeChs</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">getActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">MipTypes</span><span class="o">.</span><span class="n">CLASS_GNSS</span><span class="p">)</span>
 </code></pre>
-<p>Each Inertial Node has 1 or more Categories of sensors on the Node:</p>
+<p>Each Inertial Node has 1 or more Data Classes on the Node:</p>
 
 <table><thead>
 <tr>
@@ -751,84 +715,89 @@ As soon as the Connection object is created, the port will be opened.
 </tr>
 </thead><tbody>
 <tr>
-<td>Sensor</td>
-<td><code class="prettyprint">CATEGORY_SENSOR</code></td>
+<td>AHRS/IMU</td>
+<td><code class="prettyprint">CLASS_AHRS_IMU</code></td>
 </tr>
 <tr>
-<td>GPS</td>
-<td><code class="prettyprint">CATEGORY_GPS</code></td>
+<td>GNSS</td>
+<td><code class="prettyprint">CLASS_GNSS</code></td>
 </tr>
 <tr>
 <td>Estimation Filter</td>
-<td><code class="prettyprint">CATEGORY_ESTFILTER</code></td>
+<td><code class="prettyprint">CLASS_ESTFILTER</code></td>
 </tr>
 </tbody></table>
 
-<p>When getting and setting configuration options, it is sometimes necessary to choose the category to target for the command. This is the case in getting the active channels that are currently enabled on the Node.</p>
-<pre class="highlight cpp"><code><span class="c1">//build up the channels to set
-</span><span class="n">mscl</span><span class="o">::</span><span class="n">InertialChannels</span> <span class="n">chs</span><span class="p">;</span>
+<p>When getting and setting configuration options, it is sometimes necessary to choose the class to target for the command. This is the case in getting the active channels that are currently enabled on the Node.</p>
+<pre class="highlight cpp"><code>
+<span class="n">mscl</span><span class="o">::</span><span class="n">MipChannels</span> <span class="n">ahrsImuChs</span><span class="p">;</span>
+<span class="n">ahrsImuChs</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipChannel</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipTypes</span><span class="o">::</span><span class="n">CH_FIELD_SENSOR_RAW_ACCEL_VEC</span><span class="p">,</span> <span class="n">mscl</span><span class="o">::</span><span class="n">SampleRate</span><span class="o">::</span><span class="n">Hertz</span><span class="p">(</span><span class="mi">500</span><span class="p">)));</span>
+<span class="n">ahrsImuChs</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipChannel</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipTypes</span><span class="o">::</span><span class="n">CH_FIELD_SENSOR_RAW_GYRO_VEC</span><span class="p">,</span> <span class="n">mscl</span><span class="o">::</span><span class="n">SampleRate</span><span class="o">::</span><span class="n">Hertz</span><span class="p">(</span><span class="mi">100</span><span class="p">)));</span>
 
-<span class="n">chs</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">InertialChannel</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">InertialTypes</span><span class="o">::</span><span class="n">CH_FIELD_SENSOR_RAW_ACCEL_VEC</span><span class="p">,</span> <span class="n">mscl</span><span class="o">::</span><span class="n">SampleRate</span><span class="o">::</span><span class="n">Hertz</span><span class="p">(</span><span class="mi">500</span><span class="p">)));</span>
+<span class="n">mscl</span><span class="o">::</span><span class="n">MipChannels</span> <span class="n">gnssChs</span><span class="p">;</span>
+<span class="n">gnssChs</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipChannel</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipTypes</span><span class="o">::</span><span class="n">CH_FIELD_GNSS_LLH_POSITION</span><span class="p">,</span> <span class="n">mscl</span><span class="o">::</span><span class="n">SampleRate</span><span class="o">::</span><span class="n">Hertz</span><span class="p">(</span><span class="mi">1</span><span class="p">)));</span>
 
-<span class="n">chs</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">InertialChannel</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">InertialTypes</span><span class="o">::</span><span class="n">CH_FIELD_SENSOR_RAW_GYRO_VEC</span><span class="p">,</span> <span class="n">mscl</span><span class="o">::</span><span class="n">SampleRate</span><span class="o">::</span><span class="n">Hertz</span><span class="p">(</span><span class="mi">100</span><span class="p">)));</span>
+<span class="n">mscl</span><span class="o">::</span><span class="n">MipChannels</span> <span class="n">estFilterChs</span><span class="p">;</span>
+<span class="n">estFilterChs</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipChannel</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipTypes</span><span class="o">::</span><span class="n">CH_FIELD_ESTFILTER_ESTIMATED_GYRO_BIAS</span><span class="p">,</span> <span class="n">mscl</span><span class="o">::</span><span class="n">SampleRate</span><span class="o">::</span><span class="n">Hertz</span><span class="p">(</span><span class="mi">100</span><span class="p">)));</span>
 
-<span class="c1">//set the active channels for the Sensor category on the Node
-</span><span class="n">node</span><span class="p">.</span><span class="n">setActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">InertialTypes</span><span class="o">::</span><span class="n">CATEGORY_SENSOR</span><span class="p">,</span> <span class="n">chs</span><span class="p">);</span>
+<span class="c1">//set the active channels for the different data classes on the Node
+</span><span class="n">node</span><span class="p">.</span><span class="n">setActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipTypes</span><span class="o">::</span><span class="n">CLASS_AHRS_IMU</span><span class="p">,</span> <span class="n">ahrsImuChs</span><span class="p">);</span>
+<span class="n">node</span><span class="p">.</span><span class="n">setActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipTypes</span><span class="o">::</span><span class="n">CLASS_GNSS</span><span class="p">,</span> <span class="n">gnssChs</span><span class="p">);</span>
+<span class="n">node</span><span class="p">.</span><span class="n">setActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipTypes</span><span class="o">::</span><span class="n">CLASS_ESTFILTER</span><span class="p">,</span> <span class="n">estFilterChs</span><span class="p">);</span>
 
-<span class="k">if</span><span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">features</span><span class="p">().</span><span class="n">supportsCategory</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">InertialTypes</span><span class="o">::</span><span class="n">CATEGORY_SENSOR</span><span class="p">))</span>
-<span class="p">{</span>
-    <span class="c1">//get the channel fields supported by the Node
-</span>    <span class="n">mscl</span><span class="o">::</span><span class="n">InertialTypes</span><span class="o">::</span><span class="n">ChannelFields</span> <span class="n">fields</span> <span class="o">=</span> <span class="n">info</span><span class="p">.</span><span class="n">supportedChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">InertialTypes</span><span class="o">::</span><span class="n">CATEGORY_SENSOR</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre><pre class="highlight csharp"><code><span class="c1">//build up the channels to set</span>
-<span class="n">mscl</span><span class="p">::</span><span class="n">InertialChannels</span> <span class="n">chs</span> <span class="p">=</span> <span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">InertialChannels</span><span class="p">();</span>
+</code></pre><pre class="highlight csharp"><code>
+<span class="n">mscl</span><span class="p">::</span><span class="n">MipChannels</span> <span class="n">ahrsImuChs</span> <span class="p">=</span> <span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">MipChannels</span><span class="p">();</span>
+<span class="n">ahrsImuChs</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">MipChannel</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipTypes</span><span class="p">.</span><span class="n">ChannelField</span><span class="p">.</span><span class="n">CH_FIELD_SENSOR_RAW_ACCEL_VEC</span><span class="p">,</span> <span class="n">mscl</span><span class="p">.</span><span class="n">SampleRate</span><span class="p">.</span><span class="nf">Hertz</span><span class="p">(</span><span class="m">500</span><span class="p">)));</span>
+<span class="n">ahrsImuChs</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">MipChannel</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipTypes</span><span class="p">.</span><span class="n">ChannelField</span><span class="p">.</span><span class="n">CH_FIELD_SENSOR_RAW_GYRO_VEC</span><span class="p">,</span> <span class="n">mscl</span><span class="p">.</span><span class="n">SampleRate</span><span class="p">.</span><span class="nf">Hertz</span><span class="p">(</span><span class="m">100</span><span class="p">)));</span>
 
-<span class="n">chs</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">InertialChannel</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">InertialTypes</span><span class="p">.</span><span class="n">ChannelField</span><span class="p">.</span><span class="n">CH_FIELD_SENSOR_RAW_ACCEL_VEC</span><span class="p">,</span> <span class="n">mscl</span><span class="p">.</span><span class="n">SampleRate</span><span class="p">.</span><span class="nf">Hertz</span><span class="p">(</span><span class="m">500</span><span class="p">)));</span>
+<span class="n">mscl</span><span class="p">::</span><span class="n">MipChannels</span> <span class="n">gnssChs</span> <span class="p">=</span> <span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">MipChannels</span><span class="p">();</span>
+<span class="n">gnssChs</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">MipChannel</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipTypes</span><span class="p">.</span><span class="n">ChannelField</span><span class="p">.</span><span class="n">CH_FIELD_GNSS_LLH_POSITION</span><span class="p">,</span> <span class="n">mscl</span><span class="p">.</span><span class="n">SampleRate</span><span class="p">.</span><span class="nf">Hertz</span><span class="p">(</span><span class="m">1</span><span class="p">)));</span>
 
-<span class="n">chs</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">InertialChannel</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">InertialTypes</span><span class="p">.</span><span class="n">ChannelField</span><span class="p">.</span><span class="n">CH_FIELD_SENSOR_RAW_GYRO_VEC</span><span class="p">,</span> <span class="n">mscl</span><span class="p">.</span><span class="n">SampleRate</span><span class="p">.</span><span class="nf">Hertz</span><span class="p">(</span><span class="m">100</span><span class="p">)));</span>
+<span class="n">mscl</span><span class="p">::</span><span class="n">MipChannels</span> <span class="n">estFilterChs</span> <span class="p">=</span> <span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">MipChannels</span><span class="p">();</span>
+<span class="n">estFilterChs</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">MipChannel</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipTypes</span><span class="p">.</span><span class="n">ChannelField</span><span class="p">.</span><span class="n">CH_FIELD_ESTFILTER_ESTIMATED_GYRO_BIAS</span><span class="p">,</span> <span class="n">mscl</span><span class="p">.</span><span class="n">SampleRate</span><span class="p">.</span><span class="nf">Hertz</span><span class="p">(</span><span class="m">100</span><span class="p">)));</span>
 
-<span class="c1">//set the active channels for the Sensor category on the Node</span>
-<span class="n">node</span><span class="p">.</span><span class="nf">setActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">InertialTypes</span><span class="p">.</span><span class="n">InertialCategory</span><span class="p">.</span><span class="n">CATEGORY_SENSOR</span><span class="p">,</span> <span class="n">chs</span><span class="p">);</span>
+<span class="c1">//set the active channels for the different data classes on the Node</span>
+<span class="n">node</span><span class="p">.</span><span class="nf">setActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipTypes</span><span class="p">.</span><span class="n">DataClass</span><span class="p">.</span><span class="n">CLASS_AHRS_IMU</span><span class="p">,</span> <span class="n">ahrsImuChs</span><span class="p">);</span>
+<span class="n">node</span><span class="p">.</span><span class="nf">setActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipTypes</span><span class="p">.</span><span class="n">DataClass</span><span class="p">.</span><span class="n">CLASS_GNSS</span><span class="p">,</span> <span class="n">gnssChs</span><span class="p">);</span>
+<span class="n">node</span><span class="p">.</span><span class="nf">setActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipTypes</span><span class="p">.</span><span class="n">DataClass</span><span class="p">.</span><span class="n">CLASS_ESTFILTER</span><span class="p">,</span> <span class="n">estFilterChs</span><span class="p">);</span>
 
-<span class="k">if</span><span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="nf">features</span><span class="p">().</span><span class="nf">supportsCategory</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">InertialTypes</span><span class="p">.</span><span class="n">InertialCategory</span><span class="p">.</span><span class="n">CATEGORY_SENSOR</span><span class="p">))</span>
-<span class="p">{</span>
-    <span class="c1">//get the channel fields supported by the Node</span>
-    <span class="n">mscl</span><span class="p">.</span><span class="n">InertialTypes</span><span class="p">.</span><span class="n">ChannelFields</span> <span class="n">fields</span> <span class="p">=</span> <span class="n">info</span><span class="p">.</span><span class="nf">supportedChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">InertialTypes</span><span class="p">.</span><span class="n">InertialCategory</span><span class="p">.</span><span class="n">CATEGORY_SENSOR</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre><pre class="highlight python"><code><span class="c"># build up the channels to set</span>
-<span class="n">chs</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">.</span><span class="n">InertialChannels</span><span class="p">()</span>
+</code></pre><pre class="highlight python"><code>
+<span class="n">ahrsImuChs</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">.</span><span class="n">MipChannels</span><span class="p">()</span>
+<span class="n">ahrsImuChs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">MipChannel</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">MipTypes</span><span class="o">.</span><span class="n">CH_FIELD_SENSOR_RAW_ACCEL_VEC</span><span class="p">,</span> <span class="n">mscl</span><span class="o">.</span><span class="n">SampleRate</span><span class="o">.</span><span class="n">Hertz</span><span class="p">(</span><span class="mi">500</span><span class="p">)))</span>
+<span class="n">ahrsImuChs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">MipChannel</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">MipTypes</span><span class="o">.</span><span class="n">CH_FIELD_SENSOR_RAW_GYRO_VEC</span><span class="p">,</span> <span class="n">mscl</span><span class="o">.</span><span class="n">SampleRate</span><span class="o">.</span><span class="n">Hertz</span><span class="p">(</span><span class="mi">100</span><span class="p">)))</span>
 
-<span class="n">chs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">InertialChannel</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">InertialTypes</span><span class="o">.</span><span class="n">CH_FIELD_SENSOR_RAW_ACCEL_VEC</span><span class="p">,</span> <span class="n">mscl</span><span class="o">.</span><span class="n">SampleRate</span><span class="o">.</span><span class="n">Hertz</span><span class="p">(</span><span class="mi">500</span><span class="p">)))</span>
+<span class="n">gnssChs</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">.</span><span class="n">MipChannels</span><span class="p">()</span>
+<span class="n">gnssChs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">MipChannel</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">MipTypes</span><span class="o">.</span><span class="n">CH_FIELD_GNSS_LLH_POSITION</span><span class="p">,</span> <span class="n">mscl</span><span class="o">.</span><span class="n">SampleRate</span><span class="o">.</span><span class="n">Hertz</span><span class="p">(</span><span class="mi">1</span><span class="p">)))</span>
 
-<span class="n">chs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">InertialChannel</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">InertialTypes</span><span class="o">.</span><span class="n">CH_FIELD_SENSOR_RAW_GYRO_VEC</span><span class="p">,</span> <span class="n">mscl</span><span class="o">.</span><span class="n">SampleRate</span><span class="o">.</span><span class="n">Hertz</span><span class="p">(</span><span class="mi">100</span><span class="p">)))</span>
+<span class="n">estFilterChs</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">.</span><span class="n">MipChannels</span><span class="p">()</span>
+<span class="n">estFilterChs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">MipChannel</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">MipTypes</span><span class="o">.</span><span class="n">CH_FIELD_ESTFILTER_ESTIMATED_GYRO_BIAS</span><span class="p">,</span> <span class="n">mscl</span><span class="o">.</span><span class="n">SampleRate</span><span class="o">.</span><span class="n">Hertz</span><span class="p">(</span><span class="mi">100</span><span class="p">)))</span>
 
-<span class="c"># set the active channels for the Sensor category on the Node</span>
-<span class="n">node</span><span class="o">.</span><span class="n">setActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">InertialTypes</span><span class="o">.</span><span class="n">CATEGORY_SENSOR</span><span class="p">,</span> <span class="n">chs</span><span class="p">)</span>
+<span class="c"># set the active channels for the AHRS/IMU class on the Node</span>
+<span class="n">node</span><span class="o">.</span><span class="n">setActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">MipTypes</span><span class="o">.</span><span class="n">CLASS_AHRS_IMU</span><span class="p">,</span> <span class="n">ahrsImuChs</span><span class="p">)</span>
+<span class="n">node</span><span class="o">.</span><span class="n">setActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">MipTypes</span><span class="o">.</span><span class="n">CLASS_GNSS</span><span class="p">,</span> <span class="n">gnssChs</span><span class="p">)</span>
+<span class="n">node</span><span class="o">.</span><span class="n">setActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">MipTypes</span><span class="o">.</span><span class="n">CLASS_ESTFILTER</span><span class="p">,</span> <span class="n">estFilterChs</span><span class="p">)</span>
 
-<span class="k">if</span> <span class="n">node</span><span class="o">.</span><span class="n">features</span><span class="p">()</span><span class="o">.</span><span class="n">supportsCategory</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">InertialTypes</span><span class="o">.</span><span class="n">CATEGORY_SENSOR</span><span class="p">):</span>
-    <span class="c"># get the channel fields supported by the Node</span>
-    <span class="n">fields</span> <span class="o">=</span> <span class="n">info</span><span class="o">.</span><span class="n">supportedChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">InertialTypes</span><span class="o">.</span><span class="n">CATEGORY_SENSOR</span><span class="p">)</span>
 </code></pre>
-<p>Setting the active channels involves building an <code class="prettyprint">InertialChannels</code> container, and then passing that to the <code class="prettyprint">setActiveChannelFields</code> function for a specific category.</p>
+<p>Setting the active channels involves building an <code class="prettyprint">MipChannels</code> container, and then passing that to the <code class="prettyprint">setActiveChannelFields</code> function for a specific category.</p>
 
 <p>Not all categories and channel fields are supported by each Inertial Node. Use the <code class="prettyprint">node.features()</code> function to get this information on the Node.</p>
 
 <h2 id="starting-sampling">Starting Sampling</h2>
-<pre class="highlight cpp"><code><span class="c1">//start sampling on the Sensor category of the Node
-</span><span class="n">node</span><span class="p">.</span><span class="n">enableDataStream</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">InertialTypes</span><span class="o">::</span><span class="n">CATEGORY_SENSOR</span><span class="p">);</span>
+<pre class="highlight cpp"><code><span class="c1">//start sampling the active channels on the AHRS/IMU class of the Node
+</span><span class="n">node</span><span class="p">.</span><span class="n">enableDataStream</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipTypes</span><span class="o">::</span><span class="n">CLASS_AHRS_IMU</span><span class="p">);</span>
 
-<span class="c1">//start sampling on the GPS category of the Node
-</span><span class="n">node</span><span class="p">.</span><span class="n">enableDataStream</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">InertialTypes</span><span class="o">::</span><span class="n">CATEGORY_GPS</span><span class="p">);</span>
-</code></pre><pre class="highlight csharp"><code><span class="c1">//start sampling on the Sensor category of the Node</span>
-<span class="n">node</span><span class="p">.</span><span class="nf">enableDataStream</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">InertialTypes</span><span class="p">.</span><span class="n">InertialCategory</span><span class="p">.</span><span class="n">CATEGORY_SENSOR</span><span class="p">);</span>
+<span class="c1">//start sampling the active channels on the GNSS class of the Node
+</span><span class="n">node</span><span class="p">.</span><span class="n">enableDataStream</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipTypes</span><span class="o">::</span><span class="n">CLASS_GNSS</span><span class="p">);</span>
+</code></pre><pre class="highlight csharp"><code><span class="c1">//start sampling on the AHRS/IMU class of the Node</span>
+<span class="n">node</span><span class="p">.</span><span class="nf">enableDataStream</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipTypes</span><span class="p">.</span><span class="n">DataClass</span><span class="p">.</span><span class="n">CLASS_AHRS_IMU</span><span class="p">);</span>
 
-<span class="c1">//start sampling on the GPS category of the Node</span>
-<span class="n">node</span><span class="p">.</span><span class="nf">enableDataStream</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">InertialTypes</span><span class="p">.</span><span class="n">InertialCategory</span><span class="p">.</span><span class="n">CATEGORY_GPS</span><span class="p">);</span>
-</code></pre><pre class="highlight python"><code><span class="c"># start sampling on the Sensor category of the Node</span>
-<span class="n">node</span><span class="o">.</span><span class="n">enableDataStream</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">InertialTypes</span><span class="o">.</span><span class="n">CATEGORY_SENSOR</span><span class="p">)</span>
+<span class="c1">//start sampling on the GNSS class of the Node</span>
+<span class="n">node</span><span class="p">.</span><span class="nf">enableDataStream</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipTypes</span><span class="p">.</span><span class="n">DataClass</span><span class="p">.</span><span class="n">CLASS_GNSS</span><span class="p">);</span>
+</code></pre><pre class="highlight python"><code><span class="c"># start sampling on the AHRS/IMU class of the Node</span>
+<span class="n">node</span><span class="o">.</span><span class="n">enableDataStream</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">MipTypes</span><span class="o">.</span><span class="n">CLASS_AHRS_IMU</span><span class="p">)</span>
 
-<span class="c"># start sampling on the GPS category of the Node</span>
-<span class="n">node</span><span class="o">.</span><span class="n">enableDataStream</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">InertialTypes</span><span class="o">.</span><span class="n">CATEGORY_GPS</span><span class="p">)</span>
+<span class="c"># start sampling on the GNSS class of the Node</span>
+<span class="n">node</span><span class="o">.</span><span class="n">enableDataStream</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">MipTypes</span><span class="o">.</span><span class="n">CLASS_GNSS</span><span class="p">)</span>
 </code></pre>
 <blockquote>
 <p>You can provide an optional 2nd parameter to the <code class="prettyprint">enableDataStream</code> function which is a boolean that allows enabling (true, default), or disabling (false) of the data stream.</p>
@@ -853,17 +822,17 @@ As soon as the Connection object is created, the port will be opened.
 <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span>
 <span class="p">{</span>
         <span class="c1">//get all the packets that have been collected, with a timeout of 500 milliseconds
-</span>        <span class="n">mscl</span><span class="o">::</span><span class="n">InertialDataPackets</span> <span class="n">packets</span> <span class="o">=</span> <span class="n">node</span><span class="p">.</span><span class="n">getDataPackets</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+</span>        <span class="n">mscl</span><span class="o">::</span><span class="n">MipDataPackets</span> <span class="n">packets</span> <span class="o">=</span> <span class="n">node</span><span class="p">.</span><span class="n">getDataPackets</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
 
-        <span class="k">for</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">InertialDataPacket</span> <span class="n">packet</span> <span class="o">:</span> <span class="n">packets</span><span class="p">)</span>
+        <span class="k">for</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipDataPacket</span> <span class="n">packet</span> <span class="o">:</span> <span class="n">packets</span><span class="p">)</span>
         <span class="p">{</span>
                 <span class="n">packet</span><span class="p">.</span><span class="n">descriptorSet</span><span class="p">();</span> <span class="c1">//the descriptor set of the packet
 </span>                <span class="n">packet</span><span class="p">.</span><span class="n">timestamp</span><span class="p">();</span>     <span class="c1">//the PC time when this packet was received
 </span>
                 <span class="c1">//get all of the points in the packet
-</span>                <span class="n">mscl</span><span class="o">::</span><span class="n">InertialDataPoints</span> <span class="n">points</span> <span class="o">=</span> <span class="n">packet</span><span class="p">.</span><span class="n">data</span><span class="p">();</span>
+</span>                <span class="n">mscl</span><span class="o">::</span><span class="n">MipDataPoints</span> <span class="n">points</span> <span class="o">=</span> <span class="n">packet</span><span class="p">.</span><span class="n">data</span><span class="p">();</span>
 
-                <span class="k">for</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">InertialDataPoint</span> <span class="n">dataPoint</span> <span class="o">:</span> <span class="n">points</span><span class="p">)</span>
+                <span class="k">for</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipDataPoint</span> <span class="n">dataPoint</span> <span class="o">:</span> <span class="n">points</span><span class="p">)</span>
                 <span class="p">{</span>
                         <span class="n">dataPoint</span><span class="p">.</span><span class="n">channelName</span><span class="p">();</span>  <span class="c1">//the name of the channel for this point
 </span>                        <span class="n">dataPoint</span><span class="p">.</span><span class="n">storedAs</span><span class="p">();</span>     <span class="c1">//the ValueType that the data is stored as
@@ -877,17 +846,17 @@ As soon as the Connection object is created, the port will be opened.
 <span class="k">while</span><span class="p">(</span><span class="k">true</span><span class="p">)</span>
 <span class="p">{</span>
         <span class="c1">//get all the packets that have been collected, with a timeout of 500 milliseconds</span>
-        <span class="n">mscl</span><span class="p">.</span><span class="n">InertialDataPackets</span> <span class="n">packets</span> <span class="p">=</span> <span class="n">node</span><span class="p">.</span><span class="nf">getDataPackets</span><span class="p">(</span><span class="m">500</span><span class="p">);</span>
+        <span class="n">mscl</span><span class="p">.</span><span class="n">MipDataPackets</span> <span class="n">packets</span> <span class="p">=</span> <span class="n">node</span><span class="p">.</span><span class="nf">getDataPackets</span><span class="p">(</span><span class="m">500</span><span class="p">);</span>
 
-        <span class="k">foreach</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">InertialDataPacket</span> <span class="n">packet</span> <span class="k">in</span> <span class="n">packets</span><span class="p">)</span>
+        <span class="k">foreach</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipDataPacket</span> <span class="n">packet</span> <span class="k">in</span> <span class="n">packets</span><span class="p">)</span>
         <span class="p">{</span>
                 <span class="n">packet</span><span class="p">.</span><span class="nf">descriptorSet</span><span class="p">();</span>  <span class="c1">//the descriptor set of the packet</span>
                 <span class="n">packet</span><span class="p">.</span><span class="nf">timestamp</span><span class="p">();</span>      <span class="c1">//the PC time when this packet was received</span>
 
                 <span class="c1">//get all of the points in the packet</span>
-                <span class="n">mscl</span><span class="p">.</span><span class="n">InertialDataPoints</span> <span class="n">points</span> <span class="p">=</span> <span class="n">packet</span><span class="p">.</span><span class="nf">data</span><span class="p">();</span>
+                <span class="n">mscl</span><span class="p">.</span><span class="n">MipDataPoints</span> <span class="n">points</span> <span class="p">=</span> <span class="n">packet</span><span class="p">.</span><span class="nf">data</span><span class="p">();</span>
 
-                <span class="k">foreach</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">InertialDataPoint</span> <span class="n">dataPoint</span> <span class="k">in</span> <span class="n">points</span><span class="p">)</span>
+                <span class="k">foreach</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipDataPoint</span> <span class="n">dataPoint</span> <span class="k">in</span> <span class="n">points</span><span class="p">)</span>
                 <span class="p">{</span>
                         <span class="n">dataPoint</span><span class="p">.</span><span class="nf">channelName</span><span class="p">();</span>  <span class="c1">//the name of the channel for this point</span>
                         <span class="n">dataPoint</span><span class="p">.</span><span class="nf">storedAs</span><span class="p">();</span>     <span class="c1">//the ValueType that the data is stored as</span>
@@ -922,9 +891,9 @@ As soon as the Connection object is created, the port will be opened.
 
 <p>As soon as the <code class="prettyprint">InertialNode</code> object is created, all data packets will be parsed and stored in an internal circular buffer.</p>
 
-<p><code class="prettyprint">node.getDataPackets()</code> will return a vector of <code class="prettyprint">InertialDataPacket</code> objects. This will contain all of the packets that have been collected after the <code class="prettyprint">InertialNode</code> object was created.</p>
+<p><code class="prettyprint">node.getDataPackets()</code> will return a vector of <code class="prettyprint">MipDataPacket</code> objects. This will contain all of the packets that have been collected after the <code class="prettyprint">InertialNode</code> object was created.</p>
 
-<p>Each <code class="prettyprint">InertialDataPacket</code> contains various information describing it. The InertialDataPacket&rsquo;s <code class="prettyprint">data()</code> function will return a vector of <code class="prettyprint">InertialDataPoint</code> objects. These data points represent data from the active channels that were sampling on the Node.</p>
+<p>Each <code class="prettyprint">MipDataPacket</code> contains various information describing it. The MipDataPacket&rsquo;s <code class="prettyprint">data()</code> function will return a vector of <code class="prettyprint">MipDataPoint</code> objects. These data points represent data from the active channels that were sampling on the Node.</p>
 
 <p>Each data point will be stored as a certain type. The datapoint&rsquo;s <code class="prettyprint">storedAs()</code> function will return an enum specifying which type the data is stored in (<code class="prettyprint">valueType_float</code>, <code class="prettyprint">valueType_uint16</code>, etc).</p>
 
@@ -962,8 +931,8 @@ However, some types such as valueType_Vector cannot be converted to other values
 <td>An error has occurred with the connection.</td>
 </tr>
 <tr>
-<td>Error_InertialCmdFailed</td>
-<td>The Inertial Command has failed.</td>
+<td>Error_MipCmdFailed</td>
+<td>The MIP Command has failed.</td>
 </tr>
 <tr>
 <td>Error_InvalidConfig</td>

@@ -8,41 +8,41 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="Topic671"></a><div class="CTopic TClass LC first">
+<a name="Topic597"></a><div class="CTopic TClass LC first">
  <div class="CTitle">EstFilterMessageFormat</div>
- <div class="NDClassPrototype" id="NDClassPrototype671"><div class="CPEntry TClass Current"><div class="CPName">EstFilterMessageFormat</div></div></div>
+ <div class="NDClassPrototype" id="NDClassPrototype597"><div class="CPEntry TClass Current"><div class="CPName">EstFilterMessageFormat</div></div></div>
  <div class="CBody"><p>Contains the logic for the &quot;Estimation Filter Message Format&quot; command</p></div>
 </div>
 
-<a name="Constants"></a><a name="Topic672"></a><div class="CTopic TGroup LC">
+<a name="Constants"></a><a name="Topic598"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Constants</div>
 </div>
 
-<a name="Packet_Bytes"></a><a name="Topic673"></a><div class="CTopic TConstant LC">
+<a name="Packet_Bytes"></a><a name="Topic599"></a><div class="CTopic TConstant LC">
  <div class="CTitle">Packet Bytes</div>
- <div class="CBody"><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="CMD_ID"></a><a name="Topic674"></a>CMD_ID</td><td class="CDLDefinition"><p>CMD_EF_MESSAGE_FORMAT&nbsp; - The <a href="../../index.html#CClass:InertialTypes:Command" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1278);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialTypes::Command</a> for this command</p></td></tr><tr><td class="CDLEntry"><a name="FIELD_DATA_BYTE"></a><a name="Topic675"></a>FIELD_DATA_BYTE</td><td class="CDLDefinition"><p>0x82&nbsp; - The Data Field Descriptor byte</p></td></tr></table></div>
+ <div class="CBody"><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="CMD_ID"></a><a name="Topic600"></a>CMD_ID</td><td class="CDLDefinition"><p>CMD_EF_MESSAGE_FORMAT&nbsp; - The <a href="../../index.html#CClass:MipTypes:Command" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1662);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >MipTypes::Command</a> for this command</p></td></tr><tr><td class="CDLEntry"><a name="FIELD_DATA_BYTE"></a><a name="Topic601"></a>FIELD_DATA_BYTE</td><td class="CDLDefinition"><p>0x82&nbsp; - The Data Field Descriptor byte</p></td></tr></table></div>
 </div>
 
-<a name="Functions"></a><a name="Topic676"></a><div class="CTopic TGroup LC">
+<a name="Functions"></a><a name="Topic602"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="buildCommand_get"></a><a name="Topic677"></a><div class="CTopic TFunction LC">
+<a name="buildCommand_get"></a><a name="Topic603"></a><div class="CTopic TFunction LC">
  <div class="CTitle">buildCommand_get</div>
- <div id="NDPrototype677" class="NDPrototype NoParameterForm"><span class="SHKeyword">static</span> <a href="../../index.html#CClass:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5996);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> buildCommand_get()</div>
- <div class="CBody"><p>Builds the bytes for the &quot;get&quot; command</p><div class="CHeading">Returns</div><p>A <a href="../../index.html#CClass:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5996);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> that holds the bytes that make up the command</p></div>
+ <div id="NDPrototype603" class="NDPrototype NoParameterForm"><span class="SHKeyword">static</span> <a href="../../index.html#CClass:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6366);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> buildCommand_get()</div>
+ <div class="CBody"><p>Builds the bytes for the &quot;get&quot; command</p><div class="CHeading">Returns</div><p>A <a href="../../index.html#CClass:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6366);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> that holds the bytes that make up the command</p></div>
 </div>
 
-<a name="buildCommand_set"></a><a name="Topic678"></a><div class="CTopic TFunction LC">
+<a name="buildCommand_set"></a><a name="Topic604"></a><div class="CTopic TFunction LC">
  <div class="CTitle">buildCommand_set</div>
- <div id="NDPrototype678" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">static</span> <a href="../../index.html#CClass:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5996);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> buildCommand_set(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span>&nbsp;</td><td class="PType">InertialChannels&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">channels,</td></tr><tr><td class="first"></td><td class="PType"><span class="SHKeyword">uint16</span>&nbsp;</td><td></td><td class="PName last">sampleRateBase</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
- <div class="CBody"><p>Builds the bytes for the &quot;set&quot; command.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">channels<div class="CDLParameterType"><span class="SHKeyword">const</span> InertialChannels&amp;</div></td><td class="CDLDefinition"><p>The <a href="../../index.html#CClass:InertialChannel" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1760);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialChannels</a> holding the channels to be set. This should only contain channels that are in the Estimation Filter (0x82) descriptor set</p></td></tr><tr><td class="CDLEntry">sampleRateBase<div class="CDLParameterType"><span class="SHKeyword">uint16</span></div></td><td class="CDLDefinition"><p>The base sample rate for the estimation filter command set.</p></td></tr></table><div class="CHeading">Returns</div><p>A <a href="../../index.html#CClass:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5996);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> that holds the bytes that make up the command</p><div class="CHeading">Exceptions</div><ul><li><p><a href="../../index.html#CClass:Error" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6323);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Error</a>: An <a href="../../index.html#CClass:InertialChannel" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1760);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialChannel</a> in the channels parameter is not part of the Sensor descriptor set</p></li></ul></div>
+ <div id="NDPrototype604" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">static</span> <a href="../../index.html#CClass:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6366);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> buildCommand_set(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span>&nbsp;</td><td class="PType">MipChannels&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">channels,</td></tr><tr><td class="first"></td><td class="PType"><span class="SHKeyword">uint16</span>&nbsp;</td><td></td><td class="PName last">sampleRateBase</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div class="CBody"><p>Builds the bytes for the &quot;set&quot; command.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">channels<div class="CDLParameterType"><span class="SHKeyword">const</span> MipChannels&amp;</div></td><td class="CDLDefinition"><p>The <a href="../../index.html#CClass:MipChannel" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1921);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >MipChannels</a> holding the channels to be set. This should only contain channels that are in the Estimation Filter (0x82) descriptor set</p></td></tr><tr><td class="CDLEntry">sampleRateBase<div class="CDLParameterType"><span class="SHKeyword">uint16</span></div></td><td class="CDLDefinition"><p>The base sample rate for the estimation filter command set.</p></td></tr></table><div class="CHeading">Returns</div><p>A <a href="../../index.html#CClass:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6366);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> that holds the bytes that make up the command</p><div class="CHeading">Exceptions</div><ul><li><p><a href="../../index.html#CClass:Error" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6687);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Error</a>: An <a href="../../index.html#CClass:MipChannel" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1921);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >MipChannel</a> in the channels parameter is not part of the Sensor descriptor set</p></li></ul></div>
 </div>
 
-<a name="buildCommand_save"></a><a name="Topic679"></a><div class="CTopic TFunction LC last">
+<a name="buildCommand_save"></a><a name="Topic605"></a><div class="CTopic TFunction LC last">
  <div class="CTitle">buildCommand_save</div>
- <div id="NDPrototype679" class="NDPrototype NoParameterForm"><span class="SHKeyword">static</span> <a href="../../index.html#CClass:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5996);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> buildCommand_save()</div>
- <div class="CBody"><p>Builds the bytes for the &quot;save&quot; command</p><div class="CHeading">Returns</div><p>A <a href="../../index.html#CClass:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,5996);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> that holds the bytes that make up the command</p></div>
+ <div id="NDPrototype605" class="NDPrototype NoParameterForm"><span class="SHKeyword">static</span> <a href="../../index.html#CClass:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6366);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> buildCommand_save()</div>
+ <div class="CBody"><p>Builds the bytes for the &quot;save&quot; command</p><div class="CHeading">Returns</div><p>A <a href="../../index.html#CClass:ByteStream" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6366);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ByteStream</a> that holds the bytes that make up the command</p></div>
 </div>
 
 </body></html>

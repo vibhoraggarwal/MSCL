@@ -8,78 +8,78 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="GNSS_ConstellationSettings"></a><a name="Topic457"></a><div class="CTopic TClass LC first">
+<a name="GNSS_ConstellationSettings"></a><a name="Topic496"></a><div class="CTopic TClass LC first">
  <div class="CTitle">GNSS_ConstellationSettings</div>
- <div class="NDClassPrototype HasParents" id="NDClassPrototype457"><div class="CPEntry Parent TClass"><div class="CPModifiers"><span class="SHKeyword">public</span></div><div class="CPName">InertialCommand</div></div><div class="CPEntry TClass Current"><div class="CPName">GNSS_ConstellationSettings</div></div></div>
+ <div class="NDClassPrototype HasParents" id="NDClassPrototype496"><div class="CPEntry Parent TClass"><div class="CPModifiers"><span class="SHKeyword">public</span></div><div class="CPName">MipCommand</div></div><div class="CPEntry TClass Current"><div class="CPName">GNSS_ConstellationSettings</div></div></div>
  <div class="CBody"><p>Contains the logic for the &quot;GNSS Constellation Settings&quot; command</p></div>
 </div>
 
-<a name="GNSS_ConstellationSettings.Functions"></a><a name="Topic458"></a><div class="CTopic TGroup LC">
+<a name="GNSS_ConstellationSettings.Functions"></a><a name="Topic497"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="GNSS_ConstellationSettings.commandType"></a><a name="Topic459"></a><div class="CTopic TFunction LC">
+<a name="GNSS_ConstellationSettings.commandType"></a><a name="Topic498"></a><div class="CTopic TFunction LC">
  <div class="CTitle">commandType</div>
- <div id="NDPrototype459" class="NDPrototype NoParameterForm"><span class="SHKeyword">virtual</span> <a href="../../../../index.html#File:MicroStrain/Inertial/InertialTypes.h:InertialTypes.Command" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1278);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialTypes::Command</a> commandType() <span class="SHKeyword">const</span></div>
- <div class="CBody"><div class="CHeading">Returns</div><table class="CDefinitionList"><tr><td class="CDLEntry">InertialTypes::Command</td><td class="CDLDefinition"><p>the command ID.</p></td></tr></table></div>
+ <div id="NDPrototype498" class="NDPrototype NoParameterForm"><span class="SHKeyword">virtual</span> <a href="../../../../index.html#File:MicroStrain/MIP/MipTypes.h:MipTypes.Command" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1662);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >MipTypes::Command</a> commandType() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><div class="CHeading">Returns</div><table class="CDefinitionList"><tr><td class="CDLEntry">MipTypes::Command</td><td class="CDLDefinition"><p>the command ID.</p></td></tr></table></div>
 </div>
 
-<a name="GNSS_ConstellationSettings.fieldDataByte"></a><a name="Topic460"></a><div class="CTopic TFunction LC">
+<a name="GNSS_ConstellationSettings.fieldDataByte"></a><a name="Topic499"></a><div class="CTopic TFunction LC">
  <div class="CTitle">fieldDataByte</div>
- <div id="NDPrototype460" class="NDPrototype NoParameterForm"><span class="SHKeyword">virtual</span> <span class="SHKeyword">uint8</span> fieldDataByte() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype499" class="NDPrototype NoParameterForm"><span class="SHKeyword">virtual</span> <span class="SHKeyword">uint8</span> fieldDataByte() <span class="SHKeyword">const</span></div>
  <div class="CBody"><div class="CHeading">Returns</div><table class="CDefinitionList"><tr><td class="CDLEntry">uint8</td><td class="CDLDefinition"><p>the byte ID for field data in the reply.</p></td></tr></table></div>
 </div>
 
-<a name="GNSS_ConstellationSettings.commandName"></a><a name="Topic461"></a><div class="CTopic TFunction LC">
+<a name="GNSS_ConstellationSettings.commandName"></a><a name="Topic500"></a><div class="CTopic TFunction LC">
  <div class="CTitle">commandName</div>
- <div id="NDPrototype461" class="NDPrototype NoParameterForm"><span class="SHKeyword">virtual</span> std::<span class="SHKeyword">string</span> commandName() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype500" class="NDPrototype NoParameterForm"><span class="SHKeyword">virtual</span> std::<span class="SHKeyword">string</span> commandName() <span class="SHKeyword">const</span></div>
  <div class="CBody"><div class="CHeading">Returns</div><table class="CDefinitionList"><tr><td class="CDLEntry">std::string</td><td class="CDLDefinition"><p>the string name for this class.</p></td></tr></table></div>
 </div>
 
-<a name="GNSS_ConstellationSettings.responseExpected"></a><a name="Topic462"></a><div class="CTopic TFunction LC">
+<a name="GNSS_ConstellationSettings.responseExpected"></a><a name="Topic501"></a><div class="CTopic TFunction LC">
  <div class="CTitle">responseExpected</div>
- <div id="NDPrototype462" class="NDPrototype NoParameterForm"><span class="SHKeyword">virtual</span> <span class="SHKeyword">bool</span> responseExpected() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype501" class="NDPrototype NoParameterForm"><span class="SHKeyword">virtual</span> <span class="SHKeyword">bool</span> responseExpected() <span class="SHKeyword">const</span></div>
  <div class="CBody"><div class="CHeading">Returns</div><table class="CDefinitionList"><tr><td class="CDLEntry">bool</td><td class="CDLDefinition"><p>True indicates that a response should return from the device.</p></td></tr></table></div>
 </div>
 
-<a name="GNSS_ConstellationSettings.MakeSetCommand"></a><a name="Topic463"></a><div class="CTopic TFunction LC">
+<a name="GNSS_ConstellationSettings.MakeSetCommand"></a><a name="Topic502"></a><div class="CTopic TFunction LC">
  <div class="CTitle">MakeSetCommand</div>
- <div id="NDPrototype463" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">static</span> <a href="../../../../index.html#File:MicroStrain/Inertial/Commands/GNSS_ConstellationSettings.h:GNSS_ConstellationSettings" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,457);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >GNSS_ConstellationSettings</a> MakeSetCommand(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PName first last">ConstellationSettingsData</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype502" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">static</span> <a href="../../../../index.html#File:MicroStrain/Inertial/Commands/GNSS_ConstellationSettings.h:GNSS_ConstellationSettings" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,496);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >GNSS_ConstellationSettings</a> MakeSetCommand(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PName first last">ConstellationSettingsData</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><div class="CHeading">Returns</div><table class="CDefinitionList"><tr><td class="CDLEntry">GNSS_ConstellationSettings</td><td class="CDLDefinition"><p>object set up to send a set command.</p></td></tr></table></div>
 </div>
 
-<a name="GNSS_ConstellationSettings.MakeGetCommand"></a><a name="Topic464"></a><div class="CTopic TFunction LC">
+<a name="GNSS_ConstellationSettings.MakeGetCommand"></a><a name="Topic503"></a><div class="CTopic TFunction LC">
  <div class="CTitle">MakeGetCommand</div>
- <div id="NDPrototype464" class="NDPrototype NoParameterForm"><span class="SHKeyword">static</span> <a href="../../../../index.html#File:MicroStrain/Inertial/Commands/GNSS_ConstellationSettings.h:GNSS_ConstellationSettings" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,457);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >GNSS_ConstellationSettings</a> MakeGetCommand()</div>
+ <div id="NDPrototype503" class="NDPrototype NoParameterForm"><span class="SHKeyword">static</span> <a href="../../../../index.html#File:MicroStrain/Inertial/Commands/GNSS_ConstellationSettings.h:GNSS_ConstellationSettings" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,496);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >GNSS_ConstellationSettings</a> MakeGetCommand()</div>
  <div class="CBody"><div class="CHeading">Returns</div><table class="CDefinitionList"><tr><td class="CDLEntry">GNSS_ConstellationSettings</td><td class="CDLDefinition"><p>object set up to send a get command.</p></td></tr></table></div>
 </div>
 
-<a name="GNSS_ConstellationSettings.MakeResetToDefaultCommand"></a><a name="Topic465"></a><div class="CTopic TFunction LC">
+<a name="GNSS_ConstellationSettings.MakeResetToDefaultCommand"></a><a name="Topic504"></a><div class="CTopic TFunction LC">
  <div class="CTitle">MakeResetToDefaultCommand</div>
- <div id="NDPrototype465" class="NDPrototype NoParameterForm"><span class="SHKeyword">static</span> <a href="../../../../index.html#File:MicroStrain/Inertial/Commands/GNSS_ConstellationSettings.h:GNSS_ConstellationSettings" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,457);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >GNSS_ConstellationSettings</a> MakeResetToDefaultCommand()</div>
+ <div id="NDPrototype504" class="NDPrototype NoParameterForm"><span class="SHKeyword">static</span> <a href="../../../../index.html#File:MicroStrain/Inertial/Commands/GNSS_ConstellationSettings.h:GNSS_ConstellationSettings" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,496);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >GNSS_ConstellationSettings</a> MakeResetToDefaultCommand()</div>
  <div class="CBody"><div class="CHeading">Returns</div><table class="CDefinitionList"><tr><td class="CDLEntry">bool</td><td class="CDLDefinition"><p>True indicates that a response should return from the device.</p></td></tr></table></div>
 </div>
 
-<a name="GNSS_ConstellationSettings.getResponseData"></a><a name="Topic466"></a><div class="CTopic TFunction LC">
+<a name="GNSS_ConstellationSettings.getResponseData"></a><a name="Topic505"></a><div class="CTopic TFunction LC">
  <div class="CTitle">getResponseData</div>
- <div id="NDPrototype466" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">static</span> <a href="../../../../index.html#File:MicroStrain/Inertial/ExposedInertialTypes.h:ConstellationSettingsData" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1823);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ConstellationSettingsData</a> getResponseData(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span>&nbsp;</td><td class="PType"><a href="../../../../index.html#File:MicroStrain/Inertial/Commands/GenericInertialCommand.h:GenericInertialCommandResponse" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,565);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >GenericInertialCommandResponse</a>&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">response</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype505" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">static</span> <a href="../../../../index.html#File:MicroStrain/Inertial/ExposedInertialTypes.h:ConstellationSettingsData" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1026);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ConstellationSettingsData</a> getResponseData(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span>&nbsp;</td><td class="PType"><a href="../../../../index.html#File:MicroStrain/MIP/Commands/GenericMipCommand.h:GenericMipCmdResponse" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1447);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >GenericMipCmdResponse</a>&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">response</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><div class="CHeading">Returns</div><table class="CDefinitionList"><tr><td class="CDLEntry">ConstellationSettingsData</td><td class="CDLDefinition"><p>An object with the data returned from the device.</p></td></tr></table></div>
 </div>
 
-<a name="GNSS_ConstellationSettings.operator_ByteStream"></a><a name="Topic467"></a><div class="CTopic TFunction LC">
+<a name="GNSS_ConstellationSettings.operator_ByteStream"></a><a name="Topic506"></a><div class="CTopic TFunction LC">
  <div class="CTitle">operator ByteStream</div>
- <div id="NDPrototype467" class="NDPrototype NoParameterForm"><span class="SHKeyword">operator</span> ByteStream() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype506" class="NDPrototype NoParameterForm"><span class="SHKeyword">operator</span> ByteStream() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Converts this class to a ByteStream.</p></div>
 </div>
 
-<a name="GNSS_ConstellationSettings.Variables"></a><a name="Topic468"></a><div class="CTopic TGroup LC">
+<a name="GNSS_ConstellationSettings.Variables"></a><a name="Topic507"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="GNSS_ConstellationSettings.m_data"></a><a name="Topic469"></a><div class="CTopic TVariable LC last">
+<a name="GNSS_ConstellationSettings.m_data"></a><a name="Topic508"></a><div class="CTopic TVariable LC last">
  <div class="CTitle">m_data</div>
- <div id="NDPrototype469" class="NDPrototype NoParameterForm"><a href="../../../../index.html#File:MicroStrain/Inertial/ExposedInertialTypes.h:ConstellationSettingsData" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1823);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ConstellationSettingsData</a> m_data</div>
- <div class="CBody"><p>The <a href="../../../../index.html#File:MicroStrain/Inertial/ExposedInertialTypes.h:ConstellationSettingsData" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1823);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ConstellationSettingsData</a> to send to the device.&nbsp; Variable: m_functionSelector The <a href="../../../../index.html#File:MicroStrain/Inertial/InertialTypes.h:InertialTypes.FunctionSelector" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1263);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialTypes::FunctionSelector</a> type of command to send, get/set, reset to factory defaults, et al.</p></div>
+ <div id="NDPrototype508" class="NDPrototype NoParameterForm"><a href="../../../../index.html#File:MicroStrain/Inertial/ExposedInertialTypes.h:ConstellationSettingsData" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1026);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ConstellationSettingsData</a> m_data</div>
+ <div class="CBody"><p>The <a href="../../../../index.html#File:MicroStrain/Inertial/ExposedInertialTypes.h:ConstellationSettingsData" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1026);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ConstellationSettingsData</a> to send to the device.&nbsp; Variable: m_functionSelector The <a href="../../../../index.html#File:MicroStrain/MIP/MipTypes.h:MipTypes.FunctionSelector" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1647);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >MipTypes::FunctionSelector</a> type of command to send, get/set, reset to factory defaults, et al.</p></div>
 </div>
 
 </body></html>

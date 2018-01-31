@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("~gp",["Function"],[["~GPSTimeUpdate",,[["GPSTimeUpdate",,,,0,"File:MicroStrain/Inertial/Commands/GPSTimeUpdate.h:GPSTimeUpdate.~GPSTimeUpdate","CClass:GPSTimeUpdate:~GPSTimeUpdate"]]]]);
+NDSearch.OnPrefixDataLoaded("~gp",["Function"],[["~GPSTimeUpdate",,[["GPSTimeUpdate",,,,0,"File:MicroStrain/MIP/Commands/GPSTimeUpdate.h:GPSTimeUpdate.~GPSTimeUpdate","CClass:GPSTimeUpdate:~GPSTimeUpdate"]]]]);
