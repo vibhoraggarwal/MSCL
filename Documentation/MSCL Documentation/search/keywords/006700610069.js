@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("gai",["Variable"],[["gain",,[["RangeEntry",,,,0,"File:MicroStrain/Wireless/Configuration/InputRange.h:RangeEntry.gain","CClass:RangeEntry:gain"]]]]);

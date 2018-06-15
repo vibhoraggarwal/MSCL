@@ -45,14 +45,25 @@
 
 <a name="ShuntCalCmdInfo.inputRange"></a><a name="Topic551"></a><div class="CTopic TVariable LC">
  <div class="CTitle">inputRange</div>
- <div id="NDPrototype551" class="NDPrototype NoParameterForm"><a href="../../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.InputRange" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1354);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::InputRange</a> inputRange</div>
- <div class="CBody"><p>The <a href="../../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.InputRange" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1354);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::InputRange</a> to use when performing the Shunt Cal command.</p></div>
+ <div id="NDPrototype551" class="NDPrototype NoParameterForm"><a href="../../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.InputRange" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1457);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::InputRange</a> inputRange</div>
+ <div class="CBody"><p>The <a href="../../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.InputRange" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1457);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::InputRange</a> to use when performing the Shunt Cal command.</p></div>
 </div>
 
-<a name="ShuntCalCmdInfo.hardwareOffset"></a><a name="Topic552"></a><div class="CTopic TVariable LC last">
+<a name="ShuntCalCmdInfo.hardwareOffset"></a><a name="Topic552"></a><div class="CTopic TVariable LC">
  <div class="CTitle">hardwareOffset</div>
  <div id="NDPrototype552" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> hardwareOffset</div>
  <div class="CBody"><p>The hardware offset to use when performing the Shunt Cal command.</p></div>
+</div>
+
+<a name="ShuntCalCmdInfo.excitationVoltage_"></a><a name="Topic553"></a><div class="CTopic TVariable LC">
+ <div class="CTitle">excitationVoltage;</div>
+ <div class="CBody"><p>The excitation voltage of the Node when performing the Shunt Cal command.&nbsp; Note: This will only be used if the Node supports excitation voltage configuration (see <a href="../../../../index.html#File:MicroStrain/Wireless/Features/NodeFeatures.h:NodeFeatures.supportsExcitationVoltageConfig" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,925);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >NodeFeatures::supportsExcitationVoltageConfig</a>).</p></div>
+</div>
+
+<a name="ShuntCalCmdInfo.ShuntCalCmdInfo"></a><a name="Topic554"></a><div class="CTopic TFunction LC last">
+ <div class="CTitle">ShuntCalCmdInfo</div>
+ <div id="NDPrototype554" class="NDPrototype NoParameterForm">ShuntCalCmdInfo(): useInternalShunt(<span class="SHKeyword">true</span>), numActiveGauges(<span class="SHNumber">0</span>), gaugeResistance(<span class="SHNumber">0</span>), shuntResistance(<span class="SHNumber">0</span>), gaugeFactor(<span class="SHNumber">0.0f</span>), inputRange(WirelessTypes::range_1mV), hardwareOffset(<span class="SHNumber">0</span>), excitationVoltage(<a href="../../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.voltage_1500mV" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1604);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::voltage_1500mV</a>)</div>
+ <div class="CBody"><p>Creates a default constructed ShuntCalCmdInfo object.</p></div>
 </div>
 
 </body></html>

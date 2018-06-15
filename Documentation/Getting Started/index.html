@@ -121,22 +121,16 @@
       <div class="dark-box"></div>
       <div class="content">
         <h1 id="introduction">Introduction</h1>
-<pre class="highlight cpp"><code><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Sensing is Fun!"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-
-<span class="c1">//you can get the version of MSCL like this
-</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mscl</span><span class="o">::</span><span class="n">LibVersion</span><span class="o">::</span><span class="n">asString</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</code></pre><pre class="highlight csharp"><code><span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">"Sensing is Fun!"</span><span class="p">);</span>
-
-<span class="c1">//you can get the version of MSCL like this</span>
-<span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">LibVersion</span><span class="p">.</span><span class="nf">asString</span><span class="p">());</span>
-</code></pre><pre class="highlight python"><code><span class="k">print</span> <span class="s">"Sensing is Fun!"</span>
-
-<span class="c"># you can get the version of MSCL like this</span>
-<span class="k">print</span> <span class="n">mscl</span><span class="o">.</span><span class="n">LibVersion</span><span class="o">.</span><span class="n">asString</span><span class="p">()</span>
+<pre class="highlight cpp"><code><span class="c1">//get the version of MSCL (MSCL_VERSION.majorPart(), .minorPart(), and .patchPart() are also available)
+</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mscl</span><span class="o">::</span><span class="n">MSCL_VERSION</span><span class="p">.</span><span class="n">str</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</code></pre><pre class="highlight csharp"><code><span class="c1">//get the version of MSCL (MSCL_VERSION.majorPart(), .minorPart(), and .patchPart() are also available)</span>
+<span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MSCL_VERSION</span><span class="p">.</span><span class="nf">ToString</span><span class="p">());</span>
+</code></pre><pre class="highlight python"><code><span class="c"># get the version of MSCL (MSCL_VERSION.majorPart(), .minorPart(), and .patchPart() are also available)</span>
+<span class="k">print</span> <span class="n">mscl</span><span class="o">.</span><span class="n">MSCL_VERSION</span>
 </code></pre>
 <p>Welcome to the MSCL (MicroStrain Communication Library) Quick Start Guide! </p>
 
-<p>You can use MSCL to interact with wireless and wired sensors developed by <a href="http://www.microstrain.com/">LORD MicroStrain Sensing Systems</a>.</p>
+<p>You can use MSCL to interact with sensors developed by <a href="http://www.microstrain.com/">LORD Sensing</a>.</p>
 
 <p>MSCL has language bindings in C++, .NET (C#, VB, LabView, MATLAB), and Python! You can view code examples in the area to the right, and you can switch the programming language of the examples with the tabs above that.</p>
 
@@ -821,69 +815,69 @@ As soon as the Connection object is created, the port will be opened.
 
 <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span>
 <span class="p">{</span>
-        <span class="c1">//get all the packets that have been collected, with a timeout of 500 milliseconds
-</span>        <span class="n">mscl</span><span class="o">::</span><span class="n">MipDataPackets</span> <span class="n">packets</span> <span class="o">=</span> <span class="n">node</span><span class="p">.</span><span class="n">getDataPackets</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+    <span class="c1">//get all the packets that have been collected, with a timeout of 500 milliseconds
+</span>    <span class="n">mscl</span><span class="o">::</span><span class="n">MipDataPackets</span> <span class="n">packets</span> <span class="o">=</span> <span class="n">node</span><span class="p">.</span><span class="n">getDataPackets</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
 
-        <span class="k">for</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipDataPacket</span> <span class="n">packet</span> <span class="o">:</span> <span class="n">packets</span><span class="p">)</span>
-        <span class="p">{</span>
-                <span class="n">packet</span><span class="p">.</span><span class="n">descriptorSet</span><span class="p">();</span> <span class="c1">//the descriptor set of the packet
-</span>                <span class="n">packet</span><span class="p">.</span><span class="n">timestamp</span><span class="p">();</span>     <span class="c1">//the PC time when this packet was received
+    <span class="k">for</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipDataPacket</span> <span class="n">packet</span> <span class="o">:</span> <span class="n">packets</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">packet</span><span class="p">.</span><span class="n">descriptorSet</span><span class="p">();</span> <span class="c1">//the descriptor set of the packet
+</span>        <span class="n">packet</span><span class="p">.</span><span class="n">timestamp</span><span class="p">();</span>     <span class="c1">//the PC time when this packet was received
 </span>
-                <span class="c1">//get all of the points in the packet
-</span>                <span class="n">mscl</span><span class="o">::</span><span class="n">MipDataPoints</span> <span class="n">points</span> <span class="o">=</span> <span class="n">packet</span><span class="p">.</span><span class="n">data</span><span class="p">();</span>
+        <span class="c1">//get all of the points in the packet
+</span>        <span class="n">mscl</span><span class="o">::</span><span class="n">MipDataPoints</span> <span class="n">points</span> <span class="o">=</span> <span class="n">packet</span><span class="p">.</span><span class="n">data</span><span class="p">();</span>
 
-                <span class="k">for</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipDataPoint</span> <span class="n">dataPoint</span> <span class="o">:</span> <span class="n">points</span><span class="p">)</span>
-                <span class="p">{</span>
-                        <span class="n">dataPoint</span><span class="p">.</span><span class="n">channelName</span><span class="p">();</span>  <span class="c1">//the name of the channel for this point
-</span>                        <span class="n">dataPoint</span><span class="p">.</span><span class="n">storedAs</span><span class="p">();</span>     <span class="c1">//the ValueType that the data is stored as
-</span>                        <span class="n">dataPoint</span><span class="p">.</span><span class="n">as_float</span><span class="p">();</span>     <span class="c1">//get the value as a float
-</span>                <span class="p">}</span>
-        <span class="p">}</span>
+        <span class="k">for</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipDataPoint</span> <span class="n">dataPoint</span> <span class="o">:</span> <span class="n">points</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">dataPoint</span><span class="p">.</span><span class="n">channelName</span><span class="p">();</span>  <span class="c1">//the name of the channel for this point
+</span>            <span class="n">dataPoint</span><span class="p">.</span><span class="n">storedAs</span><span class="p">();</span>     <span class="c1">//the ValueType that the data is stored as
+</span>            <span class="n">dataPoint</span><span class="p">.</span><span class="n">as_float</span><span class="p">();</span>     <span class="c1">//get the value as a float
+</span>        <span class="p">}</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 </code></pre><pre class="highlight csharp"><code><span class="c1">//create the InertialNode, passing in the connection</span>
 <span class="n">mscl</span><span class="p">.</span><span class="n">InertialNode</span> <span class="n">node</span> <span class="p">=</span> <span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">InertialNode</span><span class="p">(</span><span class="n">connection</span><span class="p">);</span>
 
 <span class="k">while</span><span class="p">(</span><span class="k">true</span><span class="p">)</span>
 <span class="p">{</span>
-        <span class="c1">//get all the packets that have been collected, with a timeout of 500 milliseconds</span>
-        <span class="n">mscl</span><span class="p">.</span><span class="n">MipDataPackets</span> <span class="n">packets</span> <span class="p">=</span> <span class="n">node</span><span class="p">.</span><span class="nf">getDataPackets</span><span class="p">(</span><span class="m">500</span><span class="p">);</span>
+    <span class="c1">//get all the packets that have been collected, with a timeout of 500 milliseconds</span>
+    <span class="n">mscl</span><span class="p">.</span><span class="n">MipDataPackets</span> <span class="n">packets</span> <span class="p">=</span> <span class="n">node</span><span class="p">.</span><span class="nf">getDataPackets</span><span class="p">(</span><span class="m">500</span><span class="p">);</span>
 
-        <span class="k">foreach</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipDataPacket</span> <span class="n">packet</span> <span class="k">in</span> <span class="n">packets</span><span class="p">)</span>
+    <span class="k">foreach</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipDataPacket</span> <span class="n">packet</span> <span class="k">in</span> <span class="n">packets</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">packet</span><span class="p">.</span><span class="nf">descriptorSet</span><span class="p">();</span>  <span class="c1">//the descriptor set of the packet</span>
+        <span class="n">packet</span><span class="p">.</span><span class="nf">timestamp</span><span class="p">();</span>      <span class="c1">//the PC time when this packet was received</span>
+
+        <span class="c1">//get all of the points in the packet</span>
+        <span class="n">mscl</span><span class="p">.</span><span class="n">MipDataPoints</span> <span class="n">points</span> <span class="p">=</span> <span class="n">packet</span><span class="p">.</span><span class="nf">data</span><span class="p">();</span>
+
+        <span class="k">foreach</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipDataPoint</span> <span class="n">dataPoint</span> <span class="k">in</span> <span class="n">points</span><span class="p">)</span>
         <span class="p">{</span>
-                <span class="n">packet</span><span class="p">.</span><span class="nf">descriptorSet</span><span class="p">();</span>  <span class="c1">//the descriptor set of the packet</span>
-                <span class="n">packet</span><span class="p">.</span><span class="nf">timestamp</span><span class="p">();</span>      <span class="c1">//the PC time when this packet was received</span>
-
-                <span class="c1">//get all of the points in the packet</span>
-                <span class="n">mscl</span><span class="p">.</span><span class="n">MipDataPoints</span> <span class="n">points</span> <span class="p">=</span> <span class="n">packet</span><span class="p">.</span><span class="nf">data</span><span class="p">();</span>
-
-                <span class="k">foreach</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipDataPoint</span> <span class="n">dataPoint</span> <span class="k">in</span> <span class="n">points</span><span class="p">)</span>
-                <span class="p">{</span>
-                        <span class="n">dataPoint</span><span class="p">.</span><span class="nf">channelName</span><span class="p">();</span>  <span class="c1">//the name of the channel for this point</span>
-                        <span class="n">dataPoint</span><span class="p">.</span><span class="nf">storedAs</span><span class="p">();</span>     <span class="c1">//the ValueType that the data is stored as</span>
-                        <span class="n">dataPoint</span><span class="p">.</span><span class="nf">as_float</span><span class="p">();</span>     <span class="c1">//get the value as a float</span>
-                <span class="p">}</span>
+            <span class="n">dataPoint</span><span class="p">.</span><span class="nf">channelName</span><span class="p">();</span>  <span class="c1">//the name of the channel for this point</span>
+            <span class="n">dataPoint</span><span class="p">.</span><span class="nf">storedAs</span><span class="p">();</span>     <span class="c1">//the ValueType that the data is stored as</span>
+            <span class="n">dataPoint</span><span class="p">.</span><span class="nf">as_float</span><span class="p">();</span>     <span class="c1">//get the value as a float</span>
         <span class="p">}</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 </code></pre><pre class="highlight python"><code><span class="c"># create the InertialNode, passing in the connection</span>
 <span class="n">node</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">.</span><span class="n">InertialNode</span><span class="p">(</span><span class="n">connection</span><span class="p">)</span>
 
 <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
 
-        <span class="c"># get all the packets that have been collected, with a timeout of 500 milliseconds</span>
-        <span class="n">packets</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">getDataPackets</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+    <span class="c"># get all the packets that have been collected, with a timeout of 500 milliseconds</span>
+    <span class="n">packets</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">getDataPackets</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
 
-        <span class="k">for</span> <span class="n">packet</span> <span class="ow">in</span> <span class="n">packets</span><span class="p">:</span>
-                <span class="n">packet</span><span class="o">.</span><span class="n">descriptorSet</span><span class="p">()</span>  <span class="c"># the descriptor set of the packet</span>
-                <span class="n">packet</span><span class="o">.</span><span class="n">timestamp</span><span class="p">()</span>      <span class="c"># the PC time when this packet was received</span>
+    <span class="k">for</span> <span class="n">packet</span> <span class="ow">in</span> <span class="n">packets</span><span class="p">:</span>
+        <span class="n">packet</span><span class="o">.</span><span class="n">descriptorSet</span><span class="p">()</span>  <span class="c"># the descriptor set of the packet</span>
+        <span class="n">packet</span><span class="o">.</span><span class="n">timestamp</span><span class="p">()</span>      <span class="c"># the PC time when this packet was received</span>
 
-                <span class="c"># get all of the points in the packet</span>
-                <span class="n">points</span> <span class="o">=</span> <span class="n">packet</span><span class="o">.</span><span class="n">data</span><span class="p">()</span>
+        <span class="c"># get all of the points in the packet</span>
+        <span class="n">points</span> <span class="o">=</span> <span class="n">packet</span><span class="o">.</span><span class="n">data</span><span class="p">()</span>
 
-                <span class="k">for</span> <span class="n">dataPoint</span> <span class="ow">in</span> <span class="n">points</span><span class="p">:</span>
-                        <span class="n">dataPoint</span><span class="o">.</span><span class="n">channelName</span><span class="p">()</span>   <span class="c"># the name of the channel for this point</span>
-                        <span class="n">dataPoint</span><span class="o">.</span><span class="n">storedAs</span><span class="p">()</span>      <span class="c"># the ValueType that the data is stored as</span>
-                        <span class="n">dataPoint</span><span class="o">.</span><span class="n">as_float</span><span class="p">()</span>      <span class="c"># get the value as a float</span>
-        <span class="p">}</span>
+        <span class="k">for</span> <span class="n">dataPoint</span> <span class="ow">in</span> <span class="n">points</span><span class="p">:</span>
+            <span class="n">dataPoint</span><span class="o">.</span><span class="n">channelName</span><span class="p">()</span>   <span class="c"># the name of the channel for this point</span>
+            <span class="n">dataPoint</span><span class="o">.</span><span class="n">storedAs</span><span class="p">()</span>      <span class="c"># the ValueType that the data is stored as</span>
+            <span class="n">dataPoint</span><span class="o">.</span><span class="n">as_float</span><span class="p">()</span>      <span class="c"># get the value as a float</span>
+    <span class="p">}</span>
 </code></pre>
 <blockquote>
 <p><code class="prettyprint">as_float()</code> returns the dataPoint value as a 4-byte float. However there are more options, such as <code class="prettyprint">as_uint16()</code>, <code class="prettyprint">as_double()</code>, <code class="prettyprint">as_string()</code>, etc. The <code class="prettyprint">ValueType</code> that is returned from the <code class="prettyprint">storedAs()</code> function determines how the data is actually stored.</p>
