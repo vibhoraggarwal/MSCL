@@ -1,1 +1,1 @@
-NDFramePage.OnPageTitleLoaded("CClass:AutoCalResult","AutoCalResult");NDSummary.OnSummaryLoaded("CClass:AutoCalResult",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"]],[[559,0,0,"AutoCalResult"],[560,0,1,"completionFlag","completionFlag"]]);
+NDFramePage.OnPageTitleLoaded("CClass:AutoCalResult","AutoCalResult");NDSummary.OnSummaryLoaded("CClass:AutoCalResult",[["C/C++","C"]],[["Classes","Class"],["Functions","Function"]],[[610,0,0,"AutoCalResult"],[611,0,1,"completionFlag","completionFlag"]]);

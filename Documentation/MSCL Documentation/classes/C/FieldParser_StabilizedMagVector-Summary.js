@@ -1,1 +1,1 @@
-NDFramePage.OnPageTitleLoaded("CClass:FieldParser_StabilizedMagVector","FieldParser_StabilizedMagVector");NDSummary.OnSummaryLoaded("CClass:FieldParser_StabilizedMagVector",[["C/C++","C"]],[["Classes","Class"]],[[756,0,0,"FieldParser_StabilizedMagVector"]]);
+NDFramePage.OnPageTitleLoaded("CClass:FieldParser_StabilizedMagVector","FieldParser_StabilizedMagVector");NDSummary.OnSummaryLoaded("CClass:FieldParser_StabilizedMagVector",[["C/C++","C"]],[["Classes","Class"]],[[853,0,0,"FieldParser_StabilizedMagVector"]]);

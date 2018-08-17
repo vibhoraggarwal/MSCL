@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("opt",["Struct"],[["Options",,[[,"Geographic Source Options",,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:Geographic_Source_Options","CClass:Geographic_Source_Options"]]]]);

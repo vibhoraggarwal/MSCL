@@ -1,1 +1,1 @@
-NDContentPage.OnToolTipsLoaded({1321:"<div class=\"NDToolTip TFunction LC\"><div id=\"NDPrototype1321\" class=\"NDPrototype NoParameterForm\">DeviceStatusData getBasicDeviceStatus()</div><div class=\"TTSummary\">Gets the basic device status.</div></div>"});
+NDContentPage.OnToolTipsLoaded({1578:"<div class=\"NDToolTip TFunction LC\"><div id=\"NDPrototype1578\" class=\"NDPrototype NoParameterForm\">DeviceStatusData getBasicDeviceStatus()</div><div class=\"TTSummary\">Gets the basic device status.</div></div>"});

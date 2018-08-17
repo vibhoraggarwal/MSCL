@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("geo",["Struct"],[["GeometricVector",,[[,,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:GeometricVector","CClass:GeometricVector"]]]]);
+NDSearch.OnPrefixDataLoaded("geo",["Struct"],[["Geographic",,[[,"Geographic Source Options",,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:Geographic_Source_Options","CClass:Geographic_Source_Options"]]],["GeometricVector",,[[,,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:GeometricVector","CClass:GeometricVector"]]]]);

@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("ada",["Struct","Enumeration"],[["AdaptiveMeasurementData",,[[,,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:AdaptiveMeasurementData","CClass:AdaptiveMeasurementData"]]],["AdaptiveMeasurementMode",,[[,,,,1,"File:MicroStrain/Inertial/ExposedInertialTypes.h:AdaptiveMeasurementMode"]]]]);

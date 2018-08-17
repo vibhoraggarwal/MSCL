@@ -8,36 +8,36 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="NodeCommTimes"></a><a name="Topic5834"></a><div class="CTopic TClass LC first">
+<a name="NodeCommTimes"></a><a name="Topic6151"></a><div class="CTopic TClass LC first">
  <div class="CTitle">NodeCommTimes</div>
- <div class="NDClassPrototype" id="NDClassPrototype5834"><div class="CPEntry TClass Current"><div class="CPName">NodeCommTimes</div></div></div>
+ <div class="NDClassPrototype" id="NDClassPrototype6151"><div class="CPEntry TClass Current"><div class="CPName">NodeCommTimes</div></div></div>
  <div class="CBody"><p>Contains a global map of Wireless Node addresses to last communication times.</p></div>
 </div>
 
-<a name="NodeCommTimes.Variables"></a><a name="Topic5835"></a><div class="CTopic TGroup LC">
+<a name="NodeCommTimes.Variables"></a><a name="Topic6152"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="NodeCommTimes.m_nodesLastCommTime"></a><a name="Topic5836"></a><div class="CTopic TVariable LC">
+<a name="NodeCommTimes.m_nodesLastCommTime"></a><a name="Topic6153"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_nodesLastCommTime</div>
- <div id="NDPrototype5836" class="NDPrototype NoParameterForm"><span class="SHKeyword">static</span> std::map&lt;<a href="../../../index.html#File:Types.h:NodeAddress" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6725);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >NodeAddress</a>, <a href="../../../index.html#File:Timestamp.h:Timestamp" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6751);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Timestamp</a>&gt; m_nodesLastCommTime</div>
- <div class="CBody"><p>A map of node address to <a href="../../../index.html#File:Timestamp.h:Timestamp" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6751);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Timestamp</a> objects, holding the last communication time for nodes with this BaseStation.</p></div>
+ <div id="NDPrototype6153" class="NDPrototype NoParameterForm"><span class="SHKeyword">static</span> std::map&lt;<a href="../../../index.html#File:Types.h:NodeAddress" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6979);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >NodeAddress</a>, <a href="../../../index.html#File:Timestamp.h:Timestamp" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,7007);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Timestamp</a>&gt; m_nodesLastCommTime</div>
+ <div class="CBody"><p>A map of node address to <a href="../../../index.html#File:Timestamp.h:Timestamp" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,7007);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Timestamp</a> objects, holding the last communication time for nodes with this BaseStation.</p></div>
 </div>
 
-<a name="NodeCommTimes.Functions"></a><a name="Topic5837"></a><div class="CTopic TGroup LC">
+<a name="NodeCommTimes.Functions"></a><a name="Topic6154"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="NodeCommTimes.updateCommTime"></a><a name="Topic5838"></a><div class="CTopic TFunction LC">
+<a name="NodeCommTimes.updateCommTime"></a><a name="Topic6155"></a><div class="CTopic TFunction LC">
  <div class="CTitle">updateCommTime</div>
- <div id="NDPrototype5838" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">static</span> <span class="SHKeyword">void</span> updateCommTime(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><a href="../../../index.html#File:Types.h:NodeAddress" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6725);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >NodeAddress</a>&nbsp;</td><td class="PName last">nodeAddress</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
- <div class="CBody"><p>Sets the communication time for the given node address to the current system time.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">nodeAddress<div class="CDLParameterType"><a href="../../../index.html#File:Types.h:NodeAddress" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6725);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >NodeAddress</a></div></td><td class="CDLDefinition"><p>The node address to update the last communication time for.</p></td></tr></table></div>
+ <div id="NDPrototype6155" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">static</span> <span class="SHKeyword">void</span> updateCommTime(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><a href="../../../index.html#File:Types.h:NodeAddress" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6979);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >NodeAddress</a>&nbsp;</td><td class="PName last">nodeAddress</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div class="CBody"><p>Sets the communication time for the given node address to the current system time.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">nodeAddress<div class="CDLParameterType"><a href="../../../index.html#File:Types.h:NodeAddress" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6979);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >NodeAddress</a></div></td><td class="CDLDefinition"><p>The node address to update the last communication time for.</p></td></tr></table></div>
 </div>
 
-<a name="NodeCommTimes.getLastCommTime"></a><a name="Topic5839"></a><div class="CTopic TFunction LC last">
+<a name="NodeCommTimes.getLastCommTime"></a><a name="Topic6156"></a><div class="CTopic TFunction LC last">
  <div class="CTitle">getLastCommTime</div>
- <div id="NDPrototype5839" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">static const</span> <a href="../../../index.html#File:Timestamp.h:Timestamp" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6751);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Timestamp</a>&amp; getLastCommTime(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><a href="../../../index.html#File:Types.h:NodeAddress" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6725);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >NodeAddress</a>&nbsp;</td><td class="PName last">nodeAddress</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
- <div class="CBody"><p>Gets the last communication time for the given node address.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">nodeAddress<div class="CDLParameterType"><a href="../../../index.html#File:Types.h:NodeAddress" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6725);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >NodeAddress</a></div></td><td class="CDLDefinition"><p>The node address to get the last communication time for.</p></td></tr></table><div class="CHeading">Exceptions</div><ul><li><p><a href="../../../index.html#File:Exceptions.h:Error_NoData" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6947);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Error_NoData</a>: There is no communication time logged for the given node address.</p></li></ul></div>
+ <div id="NDPrototype6156" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">static const</span> <a href="../../../index.html#File:Timestamp.h:Timestamp" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,7007);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Timestamp</a>&amp; getLastCommTime(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><a href="../../../index.html#File:Types.h:NodeAddress" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6979);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >NodeAddress</a>&nbsp;</td><td class="PName last">nodeAddress</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div class="CBody"><p>Gets the last communication time for the given node address.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">nodeAddress<div class="CDLParameterType"><a href="../../../index.html#File:Types.h:NodeAddress" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6979);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >NodeAddress</a></div></td><td class="CDLDefinition"><p>The node address to get the last communication time for.</p></td></tr></table><div class="CHeading">Exceptions</div><ul><li><p><a href="../../../index.html#File:Exceptions.h:Error_NoData" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,7213);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Error_NoData</a>: There is no communication time logged for the given node address.</p></li></ul></div>
 </div>
 
 </body></html>
