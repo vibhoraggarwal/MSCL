@@ -8,35 +8,47 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="Topic225"></a><div class="CTopic TStruct LC first">
+<a name="Topic248"></a><div class="CTopic TStruct LC first">
  <div class="CTitle">AdvancedLowPassFilterData</div>
- <div class="CBody"><p>Contains the data for the <a href="../../index.html#CClass:InertialNode:setAdvancedLowPassFilterSettings" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,373);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialNode::setAdvancedLowPassFilterSettings</a> API call.</p></div>
+ <div class="CBody"><p>Contains the data for the <a href="../../index.html#CClass:InertialNode:setAdvancedLowPassFilterSettings" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,605);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialNode::setAdvancedLowPassFilterSettings</a> API call.</p></div>
 </div>
 
-<a name="AdvancedLowPassFilterData"></a><a name="Topic226"></a><div class="CTopic TFunction LC">
- <div class="CTitle">AdvancedLowPassFilterData</div>
- <div id="NDPrototype226" class="NDPrototype NoParameterForm">AdvancedLowPassFilterData() : dataDescriptor (SCALED_ACCEL_DATA), manualFilterBandwidthConfig (SET_TO_HALF_REPORTING_RATE), applyLowPassFilter (<span class="SHKeyword">true</span>), cutoffFrequency (<span class="SHNumber">0</span>)</div>
-</div>
-
-<a name="DataDescriptor"></a><a name="Topic227"></a><div class="CTopic TEnumeration LC">
- <div class="CTitle">DataDescriptor</div>
- <div class="CBody"><p>The enum for the different data descriptors.</p><p>SCALED_ACCEL_DATA = 0x04 SCALED_GYRO_DATA = 0x05 SCALED_MAG_DATA = 0x06 SCALED_PRESSURE_DATA = 0x17</p></div>
-</div>
-
-<a name="ManualFilterBandwidthConfig"></a><a name="Topic228"></a><div class="CTopic TEnumeration LC">
+<a name="ManualFilterBandwidthConfig"></a><a name="Topic249"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">ManualFilterBandwidthConfig</div>
  <div class="CBody"><p>The enum for the different data descriptors.</p><p>SET_TO_HALF_REPORTING_RATE = 0X00 USER_SPECIFIED_CUTOFF_FREQ = 0x01</p></div>
 </div>
 
-<a name="applyLowPassFilter"></a><a name="Topic229"></a><div class="CTopic TVariable LC">
+<a name="AdvancedLowPassFilterData"></a><a name="Topic250"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">AdvancedLowPassFilterData</div>
+ <div id="NDPrototype250" class="NDPrototype NoParameterForm">AdvancedLowPassFilterData() : dataDescriptor(mscl::MipTypes::ChannelField::CH_FIELD_SENSOR_SCALED_ACCEL_VEC), manualFilterBandwidthConfig(SET_TO_HALF_REPORTING_RATE), applyLowPassFilter(<span class="SHKeyword">true</span>), cutoffFrequency(<span class="SHNumber">0</span>)</div>
+</div>
+
+<a name="AdvancedLowPassFilterData(2)"></a><a name="Topic251"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">AdvancedLowPassFilterData</div>
+ <div id="NDPrototype251" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">AdvancedLowPassFilterData(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first">mscl::MipTypes::</td><td class="PType">ChannelField&nbsp;</td><td class="PName last">descriptor</td></tr></table></td><td class="PAfterParameters">) : dataDescriptor(descriptor), manualFilterBandwidthConfig(SET_TO_HALF_REPORTING_RATE), applyLowPassFilter(<span class="SHKeyword">true</span>), cutoffFrequency(<span class="SHNumber">0</span>)</td></tr></table></div>
+</div>
+
+<a name="dataDescriptor"></a><a name="Topic252"></a><div class="CTopic TVariable LC">
+ <div class="CTitle">dataDescriptor</div>
+ <div id="NDPrototype252" class="NDPrototype NoParameterForm">mscl::MipTypes::ChannelField dataDescriptor</div>
+ <div class="CBody"><p>the data descriptor these settings apply to</p><p>Valid values: CH_FIELD_SENSOR_SCALED_ACCEL_VEC = 0x8004 CH_FIELD_SENSOR_SCALED_GYRO_VEC = 0x8005 CH_FIELD_SENSOR_SCALED_MAG_VEC = 0x8006 CH_FIELD_SENSOR_SCALED_AMBIENT_PRESSURE = 0x8017</p></div>
+</div>
+
+<a name="manualFilterBandwidthConfig"></a><a name="Topic253"></a><div class="CTopic TVariable LC">
+ <div class="CTitle">manualFilterBandwidthConfig</div>
+ <div id="NDPrototype253" class="NDPrototype NoParameterForm"><a href="../../index.html#CClass:AdvancedLowPassFilterData:ManualFilterBandwidthConfig" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,249);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ManualFilterBandwidthConfig</a> manualFilterBandwidthConfig</div>
+ <div class="CBody"><p>The <a href="../../index.html#CClass:AdvancedLowPassFilterData:ManualFilterBandwidthConfig" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,249);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ManualFilterBandwidthConfig</a> to use.</p></div>
+</div>
+
+<a name="applyLowPassFilter"></a><a name="Topic254"></a><div class="CTopic TVariable LC">
  <div class="CTitle">applyLowPassFilter</div>
- <div id="NDPrototype229" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> applyLowPassFilter</div>
+ <div id="NDPrototype254" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> applyLowPassFilter</div>
  <div class="CBody"><p>applies low-pass filter if set to true.</p></div>
 </div>
 
-<a name="cutoffFrequency"></a><a name="Topic230"></a><div class="CTopic TVariable LC last">
+<a name="cutoffFrequency"></a><a name="Topic255"></a><div class="CTopic TVariable LC last">
  <div class="CTitle">cutoffFrequency</div>
- <div id="NDPrototype230" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> cutoffFrequency</div>
+ <div id="NDPrototype255" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> cutoffFrequency</div>
  <div class="CBody"><p>Sets the cutoff frequency, only if manualFilterBandwidthConfig == USER_SPECIFIED_CUTOFF_FREQ</p></div>
 </div>
 

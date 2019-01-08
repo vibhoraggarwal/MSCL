@@ -8,61 +8,61 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="TimestampCounter"></a><a name="Topic7049"></a><div class="CTopic TClass LC first">
+<a name="TimestampCounter"></a><a name="Topic7256"></a><div class="CTopic TClass LC first">
  <div class="CTitle">TimestampCounter</div>
- <div class="NDClassPrototype" id="NDClassPrototype7049"><div class="CPEntry TClass Current"><div class="CPName">TimestampCounter</div></div></div>
+ <div class="NDClassPrototype" id="NDClassPrototype7256"><div class="CPEntry TClass Current"><div class="CPName">TimestampCounter</div></div></div>
  <div class="CBody"><p>A utility for accurately counting time without additive error.</p></div>
 </div>
 
-<a name="TimestampCounter.Functions"></a><a name="Topic7050"></a><div class="CTopic TGroup LC">
+<a name="TimestampCounter.Functions"></a><a name="Topic7257"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="TimestampCounter.TimestampCounter"></a><a name="Topic7051"></a><div class="CTopic TFunction LC">
+<a name="TimestampCounter.TimestampCounter"></a><a name="Topic7258"></a><div class="CTopic TFunction LC">
  <div class="CTitle">TimestampCounter</div>
- <div id="NDPrototype7051" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">TimestampCounter(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span>&nbsp;</td><td class="PType"><a href="../index.html#File:MicroStrain/SampleRate.h:SampleRate" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6472);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >SampleRate</a>&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName">sampleRate,</td><td></td><td class="last"></td></tr><tr><td class="first"></td><td class="PType"><span class="SHKeyword">uint64</span>&nbsp;</td><td></td><td class="PName">startTime&nbsp;</td><td class="PDefaultValueSeparator">=&nbsp;</td><td class="PDefaultValue last"><span class="SHNumber">0</span></td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
- <div class="CBody"><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">sampleRate<div class="CDLParameterType"><span class="SHKeyword">const</span> <a href="../index.html#File:MicroStrain/SampleRate.h:SampleRate" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6472);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >SampleRate</a>&amp;</div></td><td class="CDLDefinition"><p>The rate to count at.</p></td></tr><tr><td class="CDLEntry">startTime<div class="CDLParameterType"><span class="SHKeyword">uint64</span></div></td><td class="CDLDefinition"><p>The time to start counting from, as the number of nanoseconds since Unix Epoch.</p></td></tr></table></div>
+ <div id="NDPrototype7258" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">TimestampCounter(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span>&nbsp;</td><td class="PType"><a href="../index.html#File:MicroStrain/SampleRate.h:SampleRate" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6693);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >SampleRate</a>&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName">sampleRate,</td><td></td><td class="last"></td></tr><tr><td class="first"></td><td class="PType"><span class="SHKeyword">uint64</span>&nbsp;</td><td></td><td class="PName">startTime&nbsp;</td><td class="PDefaultValueSeparator">=&nbsp;</td><td class="PDefaultValue last"><span class="SHNumber">0</span></td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div class="CBody"><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">sampleRate<div class="CDLParameterType"><span class="SHKeyword">const</span> <a href="../index.html#File:MicroStrain/SampleRate.h:SampleRate" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6693);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >SampleRate</a>&amp;</div></td><td class="CDLDefinition"><p>The rate to count at.</p></td></tr><tr><td class="CDLEntry">startTime<div class="CDLParameterType"><span class="SHKeyword">uint64</span></div></td><td class="CDLDefinition"><p>The time to start counting from, as the number of nanoseconds since Unix Epoch.</p></td></tr></table></div>
 </div>
 
-<a name="TimestampCounter.reset"></a><a name="Topic7052"></a><div class="CTopic TFunction LC">
+<a name="TimestampCounter.reset"></a><a name="Topic7259"></a><div class="CTopic TFunction LC">
  <div class="CTitle">reset</div>
- <div id="NDPrototype7052" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> reset(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span>&nbsp;</td><td class="PType"><a href="../index.html#File:MicroStrain/SampleRate.h:SampleRate" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6472);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >SampleRate</a>&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">sampleRate,</td></tr><tr><td class="first"></td><td class="PType"><span class="SHKeyword">uint64</span>&nbsp;</td><td></td><td class="PName last">time</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
- <div class="CBody"><p>Start counting again with the specificed Sample Rate and from the specified time.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">sampleRate<div class="CDLParameterType"><span class="SHKeyword">const</span> <a href="../index.html#File:MicroStrain/SampleRate.h:SampleRate" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6472);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >SampleRate</a>&amp;</div></td><td class="CDLDefinition"><p>The rate to count at.</p></td></tr><tr><td class="CDLEntry">time<div class="CDLParameterType"><span class="SHKeyword">uint64</span></div></td><td class="CDLDefinition"><p>The time to start counting from, as the number of nanoseconds since Unix Epoch.</p></td></tr></table></div>
+ <div id="NDPrototype7259" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> reset(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span>&nbsp;</td><td class="PType"><a href="../index.html#File:MicroStrain/SampleRate.h:SampleRate" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6693);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >SampleRate</a>&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">sampleRate,</td></tr><tr><td class="first"></td><td class="PType"><span class="SHKeyword">uint64</span>&nbsp;</td><td></td><td class="PName last">time</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div class="CBody"><p>Start counting again with the specificed Sample Rate and from the specified time.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">sampleRate<div class="CDLParameterType"><span class="SHKeyword">const</span> <a href="../index.html#File:MicroStrain/SampleRate.h:SampleRate" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6693);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >SampleRate</a>&amp;</div></td><td class="CDLDefinition"><p>The rate to count at.</p></td></tr><tr><td class="CDLEntry">time<div class="CDLParameterType"><span class="SHKeyword">uint64</span></div></td><td class="CDLDefinition"><p>The time to start counting from, as the number of nanoseconds since Unix Epoch.</p></td></tr></table></div>
 </div>
 
-<a name="TimestampCounter.reset(2)"></a><a name="Topic7053"></a><div class="CTopic TFunction LC">
+<a name="TimestampCounter.reset(2)"></a><a name="Topic7260"></a><div class="CTopic TFunction LC">
  <div class="CTitle">reset</div>
- <div id="NDPrototype7053" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> reset(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint64</span>&nbsp;</td><td class="PName last">time</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype7260" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> reset(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint64</span>&nbsp;</td><td class="PName last">time</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>Start counting again from the specified time, keeping the same Sample Rate</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">time<div class="CDLParameterType"><span class="SHKeyword">uint64</span></div></td><td class="CDLDefinition"><p>The time to start counting from, as the number of nanoseconds since Unix Epoch.</p></td></tr></table></div>
 </div>
 
-<a name="TimestampCounter.advance"></a><a name="Topic7054"></a><div class="CTopic TFunction LC">
+<a name="TimestampCounter.advance"></a><a name="Topic7261"></a><div class="CTopic TFunction LC">
  <div class="CTitle">advance</div>
- <div id="NDPrototype7054" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> advance(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first">size_t&nbsp;</td><td class="PName last">n</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype7261" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> advance(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first">size_t&nbsp;</td><td class="PName last">n</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>Advances the counter by n periods.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">n<div class="CDLParameterType">size_t</div></td><td class="CDLDefinition"><p>The number of periods to advance the counter.</p></td></tr></table></div>
 </div>
 
-<a name="TimestampCounter.advance(2)"></a><a name="Topic7055"></a><div class="CTopic TFunction LC">
+<a name="TimestampCounter.advance(2)"></a><a name="Topic7262"></a><div class="CTopic TFunction LC">
  <div class="CTitle">advance</div>
- <div id="NDPrototype7055" class="NDPrototype NoParameterForm"><span class="SHKeyword">void</span> advance()</div>
+ <div id="NDPrototype7262" class="NDPrototype NoParameterForm"><span class="SHKeyword">void</span> advance()</div>
  <div class="CBody"><p>Advances the counter by one period.</p></div>
 </div>
 
-<a name="TimestampCounter.reverse"></a><a name="Topic7056"></a><div class="CTopic TFunction LC">
+<a name="TimestampCounter.reverse"></a><a name="Topic7263"></a><div class="CTopic TFunction LC">
  <div class="CTitle">reverse</div>
- <div id="NDPrototype7056" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> reverse(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first">size_t&nbsp;</td><td class="PName last">n</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype7263" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> reverse(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first">size_t&nbsp;</td><td class="PName last">n</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>Reverse the counter by n periods.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">n<div class="CDLParameterType">size_t</div></td><td class="CDLDefinition"><p>The number of periods to advance the counter.</p></td></tr></table></div>
 </div>
 
-<a name="TimestampCounter.reverse(2)"></a><a name="Topic7057"></a><div class="CTopic TFunction LC">
+<a name="TimestampCounter.reverse(2)"></a><a name="Topic7264"></a><div class="CTopic TFunction LC">
  <div class="CTitle">reverse</div>
- <div id="NDPrototype7057" class="NDPrototype NoParameterForm"><span class="SHKeyword">void</span> reverse()</div>
+ <div id="NDPrototype7264" class="NDPrototype NoParameterForm"><span class="SHKeyword">void</span> reverse()</div>
  <div class="CBody"><p>Reverse the counter by one period.</p></div>
 </div>
 
-<a name="TimestampCounter.time"></a><a name="Topic7058"></a><div class="CTopic TFunction LC last">
+<a name="TimestampCounter.time"></a><a name="Topic7265"></a><div class="CTopic TFunction LC last">
  <div class="CTitle">time</div>
- <div id="NDPrototype7058" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint64</span> time() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype7265" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint64</span> time() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Gets the current time of the counter.</p><div class="CHeading">Returns</div><p>The current time of the counter, as the number of nanoseconds since Unix Epoch.</p></div>
 </div>
 

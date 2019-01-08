@@ -1,1 +1,1 @@
-NDSearch.OnPrefixDataLoaded("lat",["Variable"],[["lattitude",,[["ExternalGNSSUpdateData",,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:ExternalGNSSUpdateData.lattitude","CClass:ExternalGNSSUpdateData:lattitude"]]]]);
+NDSearch.OnPrefixDataLoaded("lat",["Variable"],[["latitude",,[["Position",,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:Position.latitude","CClass:Position:latitude"]]],["lattitude",,[["ExternalGNSSUpdateData",,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:ExternalGNSSUpdateData.lattitude","CClass:ExternalGNSSUpdateData:lattitude"]]]]);

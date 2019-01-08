@@ -8,849 +8,947 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="Types"></a><a name="Topic1254"></a><div class="CTopic TGroup LC first">
+<a name="Types"></a><a name="Topic1264"></a><div class="CTopic TGroup LC first">
  <div class="CTitle">Types</div>
 </div>
 
-<a name="VehicleModeType"></a><a name="Topic1255"></a><div class="CTopic TEnumeration LC">
+<a name="VehicleModeType"></a><a name="Topic1265"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">VehicleModeType</div>
  <div class="CBody"><p>The enum for the different data descriptors.</p><p>PORTABLE_VEHICLE = 0x01 AUTOMOTIVE_VEHICLE = 0x02 AIRBORNE_VEHICLE = 0x03 AIRBORNE_HIGH_G_VEHICLE = 0x4</p></div>
 </div>
 
-<a name="GNSS_Source"></a><a name="Topic1256"></a><div class="CTopic TEnumeration LC">
+<a name="GNSS_Source"></a><a name="Topic1266"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">GNSS_Source</div>
  <div class="CBody"><p>Dictates whether GNSS source is internal or external.</p><p>INTERNAL_GNSS = 0x01 EXTERNAL_GNSS = 0x02</p></div>
 </div>
 
-<a name="GnssFixType"></a><a name="Topic1257"></a><div class="CTopic TEnumeration LC">
+<a name="GnssFixType"></a><a name="Topic1267"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">GnssFixType</div>
- <div class="CBody"><p>The GNSS Fix Types with the GPS Fix Information field</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="FIXTYPE_3D"></a><a name="Topic1258"></a>FIXTYPE_3D</td><td class="CDLDefinition"><p>0x00&nbsp; - 3D Fix</p></td></tr><tr><td class="CDLEntry"><a name="FIXTYPE_2D"></a><a name="Topic1259"></a>FIXTYPE_2D</td><td class="CDLDefinition"><p>0x01&nbsp; - 2D Fix</p></td></tr><tr><td class="CDLEntry"><a name="FIXTYPE_TIMEONLY"></a><a name="Topic1260"></a>FIXTYPE_TIMEONLY</td><td class="CDLDefinition"><p>0x02&nbsp; - Time Only</p></td></tr><tr><td class="CDLEntry"><a name="FIXTYPE_NONE"></a><a name="Topic1261"></a>FIXTYPE_NONE</td><td class="CDLDefinition"><p>0x03&nbsp; - None</p></td></tr><tr><td class="CDLEntry"><a name="FIXTYPE_INVALID"></a><a name="Topic1262"></a>FIXTYPE_INVALID</td><td class="CDLDefinition"><p>0x04&nbsp; - Invalid</p></td></tr></table></div>
+ <div class="CBody"><p>The GNSS Fix Types with the GPS Fix Information field</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="FIXTYPE_3D"></a><a name="Topic1268"></a>FIXTYPE_3D</td><td class="CDLDefinition"><p>0x00&nbsp; - 3D Fix</p></td></tr><tr><td class="CDLEntry"><a name="FIXTYPE_2D"></a><a name="Topic1269"></a>FIXTYPE_2D</td><td class="CDLDefinition"><p>0x01&nbsp; - 2D Fix</p></td></tr><tr><td class="CDLEntry"><a name="FIXTYPE_TIMEONLY"></a><a name="Topic1270"></a>FIXTYPE_TIMEONLY</td><td class="CDLDefinition"><p>0x02&nbsp; - Time Only</p></td></tr><tr><td class="CDLEntry"><a name="FIXTYPE_NONE"></a><a name="Topic1271"></a>FIXTYPE_NONE</td><td class="CDLDefinition"><p>0x03&nbsp; - None</p></td></tr><tr><td class="CDLEntry"><a name="FIXTYPE_INVALID"></a><a name="Topic1272"></a>FIXTYPE_INVALID</td><td class="CDLDefinition"><p>0x04&nbsp; - Invalid</p></td></tr></table></div>
 </div>
 
-<a name="HwStatus_SensorState"></a><a name="Topic1263"></a><div class="CTopic TEnumeration LC">
+<a name="HwStatus_SensorState"></a><a name="Topic1273"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">HwStatus_SensorState</div>
- <div class="CBody"><p>The Sensor States with the GPS Hardware Status field</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="SENSORSTATE_OFF"></a><a name="Topic1264"></a>SENSORSTATE_OFF</td><td class="CDLDefinition"><p>0x00&nbsp; - Sensor Off</p></td></tr><tr><td class="CDLEntry"><a name="SENSORSTATE_ON"></a><a name="Topic1265"></a>SENSORSTATE_ON</td><td class="CDLDefinition"><p>0x01&nbsp; - Sensor On</p></td></tr><tr><td class="CDLEntry"><a name="SENSORSTATE_UNKNOWN"></a><a name="Topic1266"></a>SENSORSTATE_UNKNOWN</td><td class="CDLDefinition"><p>0x02&nbsp; - Sensor State Unknown</p></td></tr></table></div>
+ <div class="CBody"><p>The Sensor States with the GPS Hardware Status field</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="SENSORSTATE_OFF"></a><a name="Topic1274"></a>SENSORSTATE_OFF</td><td class="CDLDefinition"><p>0x00&nbsp; - Sensor Off</p></td></tr><tr><td class="CDLEntry"><a name="SENSORSTATE_ON"></a><a name="Topic1275"></a>SENSORSTATE_ON</td><td class="CDLDefinition"><p>0x01&nbsp; - Sensor On</p></td></tr><tr><td class="CDLEntry"><a name="SENSORSTATE_UNKNOWN"></a><a name="Topic1276"></a>SENSORSTATE_UNKNOWN</td><td class="CDLDefinition"><p>0x02&nbsp; - Sensor State Unknown</p></td></tr></table></div>
 </div>
 
-<a name="AntennaState"></a><a name="Topic1267"></a><div class="CTopic TEnumeration LC">
+<a name="AntennaState"></a><a name="Topic1277"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">AntennaState</div>
- <div class="CBody"><p>The Antenna States with the GPS Hardware Status field</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="ANTENNASTATE_INIT"></a><a name="Topic1268"></a>ANTENNASTATE_INIT</td><td class="CDLDefinition"><p>0x01&nbsp; - Antenna Init</p></td></tr><tr><td class="CDLEntry"><a name="ANTENNASTATE_SHORT"></a><a name="Topic1269"></a>ANTENNASTATE_SHORT</td><td class="CDLDefinition"><p>0x02&nbsp; - Antenna Short</p></td></tr><tr><td class="CDLEntry"><a name="ANTENNASTATE_OPEN"></a><a name="Topic1270"></a>ANTENNASTATE_OPEN</td><td class="CDLDefinition"><p>0x03&nbsp; - Antenna Open</p></td></tr><tr><td class="CDLEntry"><a name="ANTENNASTATE_GOOD"></a><a name="Topic1271"></a>ANTENNASTATE_GOOD</td><td class="CDLDefinition"><p>0x04&nbsp; - Antenna Good</p></td></tr><tr><td class="CDLEntry"><a name="ANTENNASTATE_UNKNOWN"></a><a name="Topic1272"></a>ANTENNASTATE_UNKNOWN</td><td class="CDLDefinition"><p>0x05&nbsp; - Antenna State Unknown</p></td></tr></table></div>
+ <div class="CBody"><p>The Antenna States with the GPS Hardware Status field</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="ANTENNASTATE_INIT"></a><a name="Topic1278"></a>ANTENNASTATE_INIT</td><td class="CDLDefinition"><p>0x01&nbsp; - Antenna Init</p></td></tr><tr><td class="CDLEntry"><a name="ANTENNASTATE_SHORT"></a><a name="Topic1279"></a>ANTENNASTATE_SHORT</td><td class="CDLDefinition"><p>0x02&nbsp; - Antenna Short</p></td></tr><tr><td class="CDLEntry"><a name="ANTENNASTATE_OPEN"></a><a name="Topic1280"></a>ANTENNASTATE_OPEN</td><td class="CDLDefinition"><p>0x03&nbsp; - Antenna Open</p></td></tr><tr><td class="CDLEntry"><a name="ANTENNASTATE_GOOD"></a><a name="Topic1281"></a>ANTENNASTATE_GOOD</td><td class="CDLDefinition"><p>0x04&nbsp; - Antenna Good</p></td></tr><tr><td class="CDLEntry"><a name="ANTENNASTATE_UNKNOWN"></a><a name="Topic1282"></a>ANTENNASTATE_UNKNOWN</td><td class="CDLDefinition"><p>0x05&nbsp; - Antenna State Unknown</p></td></tr></table></div>
 </div>
 
-<a name="AntennaPower"></a><a name="Topic1273"></a><div class="CTopic TEnumeration LC">
+<a name="AntennaPower"></a><a name="Topic1283"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">AntennaPower</div>
- <div class="CBody"><p>The Antenna Powers with the GPS Hardware Status field</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="ANTENNAPOWER_OFF"></a><a name="Topic1274"></a>ANTENNAPOWER_OFF</td><td class="CDLDefinition"><p>0x00&nbsp; - Antenna Off</p></td></tr><tr><td class="CDLEntry"><a name="ANTENNAPOWER_ON"></a><a name="Topic1275"></a>ANTENNAPOWER_ON</td><td class="CDLDefinition"><p>0x01&nbsp; - Antenna On</p></td></tr><tr><td class="CDLEntry"><a name="ANTENNAPOWER_UNKNOWN"></a><a name="Topic1276"></a>ANTENNAPOWER_UNKNOWN</td><td class="CDLDefinition"><p>0x02&nbsp; - Antenna Power Unknown</p></td></tr></table></div>
+ <div class="CBody"><p>The Antenna Powers with the GPS Hardware Status field</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="ANTENNAPOWER_OFF"></a><a name="Topic1284"></a>ANTENNAPOWER_OFF</td><td class="CDLDefinition"><p>0x00&nbsp; - Antenna Off</p></td></tr><tr><td class="CDLEntry"><a name="ANTENNAPOWER_ON"></a><a name="Topic1285"></a>ANTENNAPOWER_ON</td><td class="CDLDefinition"><p>0x01&nbsp; - Antenna On</p></td></tr><tr><td class="CDLEntry"><a name="ANTENNAPOWER_UNKNOWN"></a><a name="Topic1286"></a>ANTENNAPOWER_UNKNOWN</td><td class="CDLDefinition"><p>0x02&nbsp; - Antenna Power Unknown</p></td></tr></table></div>
 </div>
 
-<a name="FilterState"></a><a name="Topic1277"></a><div class="CTopic TEnumeration LC">
+<a name="FilterState"></a><a name="Topic1287"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">FilterState</div>
- <div class="CBody"><p>The Filter States with the NAV Filter Status field</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="FILTERSTATE_STARTUP"></a><a name="Topic1278"></a>FILTERSTATE_STARTUP</td><td class="CDLDefinition"><p>0x00&nbsp; - Startup</p></td></tr><tr><td class="CDLEntry"><a name="FILTERSTATE_INIT"></a><a name="Topic1279"></a>FILTERSTATE_INIT</td><td class="CDLDefinition"><p>0x01&nbsp; - Initialization (see status flags)</p></td></tr><tr><td class="CDLEntry"><a name="FILTERSTATE_RUNNING_SLN_VALID"></a><a name="Topic1280"></a>FILTERSTATE_RUNNING_SLN_VALID</td><td class="CDLDefinition"><p>0x02&nbsp; - Running, Solution Valid</p></td></tr><tr><td class="CDLEntry"><a name="FILTERSTATE_RUNNING_SLN_ERROR"></a><a name="Topic1281"></a>FILTERSTATE_RUNNING_SLN_ERROR</td><td class="CDLDefinition"><p>0x03&nbsp; - Running, Solution Error (see status flags)</p></td></tr></table></div>
+ <div class="CBody"><p>The Filter States with the NAV Filter Status field</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="FILTERSTATE_STARTUP"></a><a name="Topic1288"></a>FILTERSTATE_STARTUP</td><td class="CDLDefinition"><p>0x00&nbsp; - Startup</p></td></tr><tr><td class="CDLEntry"><a name="FILTERSTATE_INIT"></a><a name="Topic1289"></a>FILTERSTATE_INIT</td><td class="CDLDefinition"><p>0x01&nbsp; - Initialization (see status flags)</p></td></tr><tr><td class="CDLEntry"><a name="FILTERSTATE_RUNNING_SLN_VALID"></a><a name="Topic1290"></a>FILTERSTATE_RUNNING_SLN_VALID</td><td class="CDLDefinition"><p>0x02&nbsp; - Running, Solution Valid</p></td></tr><tr><td class="CDLEntry"><a name="FILTERSTATE_RUNNING_SLN_ERROR"></a><a name="Topic1291"></a>FILTERSTATE_RUNNING_SLN_ERROR</td><td class="CDLDefinition"><p>0x03&nbsp; - Running, Solution Error (see status flags)</p></td></tr></table></div>
 </div>
 
-<a name="FilterStatus"></a><a name="Topic1282"></a><div class="CTopic TEnumeration LC">
+<a name="FilterStatus"></a><a name="Topic1292"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">FilterStatus</div>
- <div class="CBody"><p>Binary flags that give information with the NAV Filter Status field. Each bit must be checked accordingly.</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="FILTERSTATUS_IMU_UNAVAILABLE"></a><a name="Topic1283"></a>FILTERSTATUS_IMU_UNAVAILABLE</td><td class="CDLDefinition"><p>0x0001&nbsp; - Filter Running, IMU Unavailable</p></td></tr><tr><td class="CDLEntry"><a name="FILTERSTATUS_GPS_UNAVAILABLE"></a><a name="Topic1284"></a>FILTERSTATUS_GPS_UNAVAILABLE</td><td class="CDLDefinition"><p>0x0002&nbsp; - Filter Running, GPS Unavailable</p></td></tr><tr><td class="CDLEntry"><a name="FILTERSTATUS_MATRIX_SINGULARITY_IN_CALC"></a><a name="Topic1285"></a>FILTERSTATUS_MATRIX_SINGULARITY_IN_CALC</td><td class="CDLDefinition"><p>0x0008&nbsp; - Filter Running, Matrix Singularity in Calculation</p></td></tr><tr><td class="CDLEntry"><a name="FILTERSTATUS_POS_COVARIANCE_HIGH_WARN"></a><a name="Topic1286"></a>FILTERSTATUS_POS_COVARIANCE_HIGH_WARN</td><td class="CDLDefinition"><p>0x0010&nbsp; - Filter Running, Position Covariance High Warning</p></td></tr><tr><td class="CDLEntry"><a name="FILTERSTATUS_VEL_COVARIANCE_HIGH_WARN"></a><a name="Topic1287"></a>FILTERSTATUS_VEL_COVARIANCE_HIGH_WARN</td><td class="CDLDefinition"><p>0x0020&nbsp; - Filter Running, Velocity Covariance High Warning</p></td></tr><tr><td class="CDLEntry"><a name="FILTERSTATUS_ATT_COVARIANCE_HIGH_WARN"></a><a name="Topic1288"></a>FILTERSTATUS_ATT_COVARIANCE_HIGH_WARN</td><td class="CDLDefinition"><p>0x0040&nbsp; - Filter Running, Attitude Covariance High Warning</p></td></tr><tr><td class="CDLEntry"><a name="FILTERSTATUS_NAN_IN_SOLUTION"></a><a name="Topic1289"></a>FILTERSTATUS_NAN_IN_SOLUTION</td><td class="CDLDefinition"><p>0x0080&nbsp; - Filter Running, NAN in Solution</p></td></tr><tr><td class="CDLEntry"><a name="FILTERSTATUS_ATT_NOT_INIT"></a><a name="Topic1290"></a>FILTERSTATUS_ATT_NOT_INIT</td><td class="CDLDefinition"><p>0x1000&nbsp; - Filter Initialization, Attitude not Initialized</p></td></tr><tr><td class="CDLEntry"><a name="FILTERSTATUS_POS_VEL_NOT_INIT"></a><a name="Topic1291"></a>FILTERSTATUS_POS_VEL_NOT_INIT</td><td class="CDLDefinition"><p>0x2000&nbsp; - Filter Initialization, Position and Velocity not Initialized</p></td></tr></table></div>
+ <div class="CBody"><p>Binary flags that give information with the NAV Filter Status field. Each bit must be checked accordingly.</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="FILTERSTATUS_IMU_UNAVAILABLE"></a><a name="Topic1293"></a>FILTERSTATUS_IMU_UNAVAILABLE</td><td class="CDLDefinition"><p>0x0001&nbsp; - Filter Running, IMU Unavailable</p></td></tr><tr><td class="CDLEntry"><a name="FILTERSTATUS_GPS_UNAVAILABLE"></a><a name="Topic1294"></a>FILTERSTATUS_GPS_UNAVAILABLE</td><td class="CDLDefinition"><p>0x0002&nbsp; - Filter Running, GPS Unavailable</p></td></tr><tr><td class="CDLEntry"><a name="FILTERSTATUS_MATRIX_SINGULARITY_IN_CALC"></a><a name="Topic1295"></a>FILTERSTATUS_MATRIX_SINGULARITY_IN_CALC</td><td class="CDLDefinition"><p>0x0008&nbsp; - Filter Running, Matrix Singularity in Calculation</p></td></tr><tr><td class="CDLEntry"><a name="FILTERSTATUS_POS_COVARIANCE_HIGH_WARN"></a><a name="Topic1296"></a>FILTERSTATUS_POS_COVARIANCE_HIGH_WARN</td><td class="CDLDefinition"><p>0x0010&nbsp; - Filter Running, Position Covariance High Warning</p></td></tr><tr><td class="CDLEntry"><a name="FILTERSTATUS_VEL_COVARIANCE_HIGH_WARN"></a><a name="Topic1297"></a>FILTERSTATUS_VEL_COVARIANCE_HIGH_WARN</td><td class="CDLDefinition"><p>0x0020&nbsp; - Filter Running, Velocity Covariance High Warning</p></td></tr><tr><td class="CDLEntry"><a name="FILTERSTATUS_ATT_COVARIANCE_HIGH_WARN"></a><a name="Topic1298"></a>FILTERSTATUS_ATT_COVARIANCE_HIGH_WARN</td><td class="CDLDefinition"><p>0x0040&nbsp; - Filter Running, Attitude Covariance High Warning</p></td></tr><tr><td class="CDLEntry"><a name="FILTERSTATUS_NAN_IN_SOLUTION"></a><a name="Topic1299"></a>FILTERSTATUS_NAN_IN_SOLUTION</td><td class="CDLDefinition"><p>0x0080&nbsp; - Filter Running, NAN in Solution</p></td></tr><tr><td class="CDLEntry"><a name="FILTERSTATUS_ATT_NOT_INIT"></a><a name="Topic1300"></a>FILTERSTATUS_ATT_NOT_INIT</td><td class="CDLDefinition"><p>0x1000&nbsp; - Filter Initialization, Attitude not Initialized</p></td></tr><tr><td class="CDLEntry"><a name="FILTERSTATUS_POS_VEL_NOT_INIT"></a><a name="Topic1301"></a>FILTERSTATUS_POS_VEL_NOT_INIT</td><td class="CDLDefinition"><p>0x2000&nbsp; - Filter Initialization, Position and Velocity not Initialized</p></td></tr></table></div>
 </div>
 
-<a name="HeadingSource"></a><a name="Topic1292"></a><div class="CTopic TEnumeration LC">
+<a name="HeadingSource"></a><a name="Topic1302"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">HeadingSource</div>
- <div class="CBody"><p>The Heading Sources with the Heading Update Source State field</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="HEADINGSOURCE_NONE"></a><a name="Topic1293"></a>HEADINGSOURCE_NONE</td><td class="CDLDefinition"><p>0x0000&nbsp; - No source, heading updates disabled</p></td></tr><tr><td class="CDLEntry"><a name="HEADINGSOURCE_INTERNAL_MAGNETOMETER"></a><a name="Topic1294"></a>HEADINGSOURCE_INTERNAL_MAGNETOMETER</td><td class="CDLDefinition"><p>0x0001&nbsp; - Internal Magnetometer</p></td></tr><tr><td class="CDLEntry"><a name="HEADINGSOURCE_INTERNAL_GPS_VELOCITY_VECTOR"></a><a name="Topic1295"></a>HEADINGSOURCE_INTERNAL_GPS_VELOCITY_VECTOR</td><td class="CDLDefinition"><p>0x0002&nbsp; - Internal GPS Velocity Vector</p></td></tr><tr><td class="CDLEntry"><a name="HEADINGSOURCE_EXTERNAL_HEADING_UPDATE_CMD"></a><a name="Topic1296"></a>HEADINGSOURCE_EXTERNAL_HEADING_UPDATE_CMD</td><td class="CDLDefinition"><p>0x0004&nbsp; - External Heading Update Command</p></td></tr></table></div>
+ <div class="CBody"><p>The Heading Sources with the Heading Update Source State field</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="HEADINGSOURCE_NONE"></a><a name="Topic1303"></a>HEADINGSOURCE_NONE</td><td class="CDLDefinition"><p>0x0000&nbsp; - No source, heading updates disabled</p></td></tr><tr><td class="CDLEntry"><a name="HEADINGSOURCE_INTERNAL_MAGNETOMETER"></a><a name="Topic1304"></a>HEADINGSOURCE_INTERNAL_MAGNETOMETER</td><td class="CDLDefinition"><p>0x0001&nbsp; - Internal Magnetometer</p></td></tr><tr><td class="CDLEntry"><a name="HEADINGSOURCE_INTERNAL_GPS_VELOCITY_VECTOR"></a><a name="Topic1305"></a>HEADINGSOURCE_INTERNAL_GPS_VELOCITY_VECTOR</td><td class="CDLDefinition"><p>0x0002&nbsp; - Internal GPS Velocity Vector</p></td></tr><tr><td class="CDLEntry"><a name="HEADINGSOURCE_EXTERNAL_HEADING_UPDATE_CMD"></a><a name="Topic1306"></a>HEADINGSOURCE_EXTERNAL_HEADING_UPDATE_CMD</td><td class="CDLDefinition"><p>0x0004&nbsp; - External Heading Update Command</p></td></tr></table></div>
 </div>
 
-<a name="HeadingUpdateEnableOption"></a><a name="Topic1297"></a><div class="CTopic TEnumeration LC">
+<a name="HeadingUpdateEnableOption"></a><a name="Topic1307"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">HeadingUpdateEnableOption</div>
- <div class="CBody"><p>The enums to represent the different available options and combinations for the Heading Update Control command (0x0D, 0x18)</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="ENABLE_NONE"></a><a name="Topic1298"></a>ENABLE_NONE</td><td class="CDLDefinition"><p>0x00</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_INTERNAL_MAGNETOMETER"></a><a name="Topic1299"></a>ENABLE_INTERNAL_MAGNETOMETER</td><td class="CDLDefinition"><p>0x01</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_INTERNAL_GNSS"></a><a name="Topic1300"></a>ENABLE_INTERNAL_GNSS</td><td class="CDLDefinition"><p>0x02</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_EXTERNAL_MESSAGES"></a><a name="Topic1301"></a>ENABLE_EXTERNAL_MESSAGES</td><td class="CDLDefinition"><p>0x03</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_MAGNETOMETER_AND_GNSS"></a><a name="Topic1302"></a>ENABLE_MAGNETOMETER_AND_GNSS</td><td class="CDLDefinition"><p>0X04</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_GNSS_AND_EXTERNAL"></a><a name="Topic1303"></a>ENABLE_GNSS_AND_EXTERNAL</td><td class="CDLDefinition"><p>0X05</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_MAGNETOMETER_AND_EXTERNAL"></a><a name="Topic1304"></a>ENABLE_MAGNETOMETER_AND_EXTERNAL</td><td class="CDLDefinition"><p>0X06</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_ALL"></a><a name="Topic1305"></a>ENABLE_ALL</td><td class="CDLDefinition"><p>0x07</p></td></tr></table></div>
+ <div class="CBody"><p>The enums to represent the different available options and combinations for the Heading Update Control command (0x0D, 0x18)</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="ENABLE_NONE"></a><a name="Topic1308"></a>ENABLE_NONE</td><td class="CDLDefinition"><p>0x00</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_INTERNAL_MAGNETOMETER"></a><a name="Topic1309"></a>ENABLE_INTERNAL_MAGNETOMETER</td><td class="CDLDefinition"><p>0x01</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_INTERNAL_GNSS"></a><a name="Topic1310"></a>ENABLE_INTERNAL_GNSS</td><td class="CDLDefinition"><p>0x02</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_EXTERNAL_MESSAGES"></a><a name="Topic1311"></a>ENABLE_EXTERNAL_MESSAGES</td><td class="CDLDefinition"><p>0x03</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_MAGNETOMETER_AND_GNSS"></a><a name="Topic1312"></a>ENABLE_MAGNETOMETER_AND_GNSS</td><td class="CDLDefinition"><p>0X04</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_GNSS_AND_EXTERNAL"></a><a name="Topic1313"></a>ENABLE_GNSS_AND_EXTERNAL</td><td class="CDLDefinition"><p>0X05</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_MAGNETOMETER_AND_EXTERNAL"></a><a name="Topic1314"></a>ENABLE_MAGNETOMETER_AND_EXTERNAL</td><td class="CDLDefinition"><p>0X06</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_ALL"></a><a name="Topic1315"></a>ENABLE_ALL</td><td class="CDLDefinition"><p>0x07</p></td></tr></table></div>
 </div>
 
-<a name="EstimationControlOption"></a><a name="Topic1306"></a><div class="CTopic TEnumeration LC">
+<a name="EstimationControlOption"></a><a name="Topic1316"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">EstimationControlOption</div>
- <div class="CBody"><p>The enums to represent the different available options and combinations for the Estimation Control command (0x0D, 0x14)</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="ENABLE_GYRO_BIAS_ESTIMATION"></a><a name="Topic1307"></a>ENABLE_GYRO_BIAS_ESTIMATION</td><td class="CDLDefinition"><p>0x0001</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_ACCEL_BIAS_ESTIMATION"></a><a name="Topic1308"></a>ENABLE_ACCEL_BIAS_ESTIMATION</td><td class="CDLDefinition"><p>0x0002</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_GYRO_SCALE_FACTOR_ESTIMATION"></a><a name="Topic1309"></a>ENABLE_GYRO_SCALE_FACTOR_ESTIMATION</td><td class="CDLDefinition"><p>0x0004</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_ACCEL_SCALE_FACTOR_ESTIMATION"></a><a name="Topic1310"></a>ENABLE_ACCEL_SCALE_FACTOR_ESTIMATION</td><td class="CDLDefinition"><p>0X0008</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_GNSS_ANTENNA_OFFSET_ESTIMATION"></a><a name="Topic1311"></a>ENABLE_GNSS_ANTENNA_OFFSET_ESTIMATION</td><td class="CDLDefinition"><p>0X0010</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_HARD_IRON_AUTO_CALIBRATION"></a><a name="Topic1312"></a>ENABLE_HARD_IRON_AUTO_CALIBRATION</td><td class="CDLDefinition"><p>0X0020</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_SOFT_IRON_AUTO_CALIBRATION"></a><a name="Topic1313"></a>ENABLE_SOFT_IRON_AUTO_CALIBRATION</td><td class="CDLDefinition"><p>0x0040</p></td></tr></table></div>
+ <div class="CBody"><p>The enums to represent the different available options and combinations for the Estimation Control command (0x0D, 0x14)</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="ENABLE_GYRO_BIAS_ESTIMATION"></a><a name="Topic1317"></a>ENABLE_GYRO_BIAS_ESTIMATION</td><td class="CDLDefinition"><p>0x0001</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_ACCEL_BIAS_ESTIMATION"></a><a name="Topic1318"></a>ENABLE_ACCEL_BIAS_ESTIMATION</td><td class="CDLDefinition"><p>0x0002</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_GYRO_SCALE_FACTOR_ESTIMATION"></a><a name="Topic1319"></a>ENABLE_GYRO_SCALE_FACTOR_ESTIMATION</td><td class="CDLDefinition"><p>0x0004</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_ACCEL_SCALE_FACTOR_ESTIMATION"></a><a name="Topic1320"></a>ENABLE_ACCEL_SCALE_FACTOR_ESTIMATION</td><td class="CDLDefinition"><p>0X0008</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_GNSS_ANTENNA_OFFSET_ESTIMATION"></a><a name="Topic1321"></a>ENABLE_GNSS_ANTENNA_OFFSET_ESTIMATION</td><td class="CDLDefinition"><p>0X0010</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_HARD_IRON_AUTO_CALIBRATION"></a><a name="Topic1322"></a>ENABLE_HARD_IRON_AUTO_CALIBRATION</td><td class="CDLDefinition"><p>0X0020</p></td></tr><tr><td class="CDLEntry"><a name="ENABLE_SOFT_IRON_AUTO_CALIBRATION"></a><a name="Topic1323"></a>ENABLE_SOFT_IRON_AUTO_CALIBRATION</td><td class="CDLDefinition"><p>0x0040</p></td></tr></table></div>
 </div>
 
-<a name="EstimationControlOption(2)"></a><a name="Topic1314"></a><div class="CTopic TEnumeration LC">
+<a name="EstimationControlOption(2)"></a><a name="Topic1324"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">EstimationControlOption</div>
- <div class="CBody"><p>The enums to represent the source options for Declination (0x0D, 0x43), Inclination (0x0D, 0x4C), and Magnitude Source (0x0D, 0x4D)</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="NONE"></a><a name="Topic1315"></a>NONE</td><td class="CDLDefinition"><p>0x0001</p></td></tr><tr><td class="CDLEntry"><a name="WORLD_MAGNETIC_MODEL"></a><a name="Topic1316"></a>WORLD_MAGNETIC_MODEL</td><td class="CDLDefinition"><p>0x0002</p></td></tr><tr><td class="CDLEntry"><a name="MANUAL"></a><a name="Topic1317"></a>MANUAL</td><td class="CDLDefinition"><p>0x0004</p></td></tr></table></div>
+ <div class="CBody"><p>The enums to represent the source options for Declination (0x0D, 0x43), Inclination (0x0D, 0x4C), and Magnitude Source (0x0D, 0x4D)</p><table class="CDefinitionList"><tr><td class="CDLEntry"><a name="NONE"></a><a name="Topic1325"></a>NONE</td><td class="CDLDefinition"><p>0x0001</p></td></tr><tr><td class="CDLEntry"><a name="WORLD_MAGNETIC_MODEL"></a><a name="Topic1326"></a>WORLD_MAGNETIC_MODEL</td><td class="CDLDefinition"><p>0x0002</p></td></tr><tr><td class="CDLEntry"><a name="MANUAL"></a><a name="Topic1327"></a>MANUAL</td><td class="CDLDefinition"><p>0x0004</p></td></tr></table></div>
 </div>
 
-<a name="AdaptiveMeasurementMode"></a><a name="Topic1318"></a><div class="CTopic TEnumeration LC">
+<a name="AdaptiveMeasurementMode"></a><a name="Topic1328"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">AdaptiveMeasurementMode</div>
  <div class="CBody"><p>The enums to represent the different available options and combinations for the Adaptive Measurement commands (0x0D, 0x44-0x46)</p></div>
 </div>
 
-<a name="SatellitePRNs"></a><a name="Topic1319"></a><div class="CTopic TType LC">
- <div class="CTitle">SatellitePRNs</div>
- <div class="CBody"><p>A vector of <a href="../../../index.html#File:Types.h:uint16" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,6976);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >uint16</a> PRN#s for satellites.</p></div>
+<a name="ConstellationId"></a><a name="Topic1329"></a><div class="CTopic TEnumeration LC">
+ <div class="CTitle">ConstellationId</div>
+ <div class="CBody"><p>The enums to represent the different available constellation IDs for GNSS constellation settings</p></div>
 </div>
 
-<a name="RTCMMessage"></a><a name="Topic1320"></a><div class="CTopic TType LC">
+<a name="SatellitePRNs"></a><a name="Topic1330"></a><div class="CTopic TType LC">
+ <div class="CTitle">SatellitePRNs</div>
+ <div class="CBody"><p>A vector of <a href="../../../index.html#File:Types.h:uint16" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,7220);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >uint16</a> PRN#s for satellites.</p></div>
+</div>
+
+<a name="RTCMMessage"></a><a name="Topic1331"></a><div class="CTopic TType LC">
  <div class="CTitle">RTCMMessage</div>
  <div class="CBody"><p>A string composing the RTCM message.</p></div>
 </div>
 
-<a name="Matrix_3x3"></a><a name="Topic1321"></a><div class="CTopic TClass LC">
+<a name="Matrix_3x3"></a><a name="Topic1332"></a><div class="CTopic TClass LC">
  <div class="CTitle">Matrix_3x3</div>
- <div class="NDClassPrototype" id="NDClassPrototype1321"><div class="CPEntry TClass Current"><div class="CPName">Matrix_3x3</div></div></div>
+ <div class="NDClassPrototype" id="NDClassPrototype1332"><div class="CPEntry TClass Current"><div class="CPName">Matrix_3x3</div></div></div>
  <div class="CBody"><p>Defines a 3 by 3 matrix.</p></div>
 </div>
 
-<a name="Matrix_3x3.Functions"></a><a name="Topic1322"></a><div class="CTopic TGroup LC">
+<a name="Matrix_3x3.Functions"></a><a name="Topic1333"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="Matrix_3x3.Matrix_3x3"></a><a name="Topic1323"></a><div class="CTopic TFunction LC">
+<a name="Matrix_3x3.Matrix_3x3"></a><a name="Topic1334"></a><div class="CTopic TFunction LC">
  <div class="CTitle">Matrix_3x3</div>
- <div id="NDPrototype1323" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">Matrix_3x3(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">i00,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">i01,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">i02,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">i10,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">i11,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">i12,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">i20,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">i21,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">i22</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype1334" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">Matrix_3x3(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">i00,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">i01,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">i02,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">i10,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">i11,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">i12,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">i20,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">i21,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">i22</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>Creates a Matrix object.</p><div class="CHeading">Parameters</div><p>i00 i01 i02 i10 i11 i12 i20 i21 i22</p></div>
 </div>
 
-<a name="Matrix_3x3.Matrix_3x3(2)"></a><a name="Topic1324"></a><div class="CTopic TFunction LC">
+<a name="Matrix_3x3.Matrix_3x3(2)"></a><a name="Topic1335"></a><div class="CTopic TFunction LC">
  <div class="CTitle">Matrix_3x3</div>
- <div id="NDPrototype1324" class="NDPrototype NoParameterForm">Matrix_3x3()</div>
+ <div id="NDPrototype1335" class="NDPrototype NoParameterForm">Matrix_3x3()</div>
  <div class="CBody"><p>Creates a zero-filled Matrix object.</p></div>
 </div>
 
-<a name="Matrix_3x3.~Matrix_3x3"></a><a name="Topic1325"></a><div class="CTopic TFunction LC">
+<a name="Matrix_3x3.~Matrix_3x3"></a><a name="Topic1336"></a><div class="CTopic TFunction LC">
  <div class="CTitle">~Matrix_3x3</div>
- <div id="NDPrototype1325" class="NDPrototype NoParameterForm">~Matrix_3x3()</div>
+ <div id="NDPrototype1336" class="NDPrototype NoParameterForm">~Matrix_3x3()</div>
  <div class="CBody"><p>Destroys a Matrix_3x3 object.</p></div>
 </div>
 
-<a name="Matrix_3x3.set"></a><a name="Topic1326"></a><div class="CTopic TFunction LC">
+<a name="Matrix_3x3.set"></a><a name="Topic1337"></a><div class="CTopic TFunction LC">
  <div class="CTitle">set</div>
- <div id="NDPrototype1326" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> <span class="SHKeyword">set</span>(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint8</span>&nbsp;</td><td class="PName last">row,</td></tr><tr><td class="PType first"><span class="SHKeyword">uint8</span>&nbsp;</td><td class="PName last">col,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">value</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype1337" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> <span class="SHKeyword">set</span>(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint8</span>&nbsp;</td><td class="PName last">row,</td></tr><tr><td class="PType first"><span class="SHKeyword">uint8</span>&nbsp;</td><td class="PName last">col,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">value</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>Sets matrix index to passed in float value.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">col<div class="CDLParameterType"><span class="SHKeyword">uint8</span></div></td><td class="CDLDefinition"><p>the column to set.</p></td></tr><tr><td class="CDLEntry">row<div class="CDLParameterType"><span class="SHKeyword">uint8</span></div></td><td class="CDLDefinition"><p>the row to set.</p></td></tr><tr><td class="CDLEntry">value<div class="CDLParameterType"><span class="SHKeyword">float</span></div></td><td class="CDLDefinition"><p>the value to set (row,col) to.</p></td></tr></table></div>
 </div>
 
-<a name="Matrix_3x3.operator"></a><a name="Topic1327"></a><div class="CTopic TFunction LC">
+<a name="Matrix_3x3.operator"></a><a name="Topic1338"></a><div class="CTopic TFunction LC">
  <div class="CTitle">operator()</div>
- <div id="NDPrototype1327" class="NDPrototype NoParameterForm">#ifndef SWIG <span class="SHKeyword">float</span> <span class="SHKeyword">operator</span>() (<span class="SHKeyword">uint8</span> row, <span class="SHKeyword">uint8</span> col) <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype1338" class="NDPrototype NoParameterForm">#ifndef SWIG <span class="SHKeyword">float</span> <span class="SHKeyword">operator</span>() (<span class="SHKeyword">uint8</span> row, <span class="SHKeyword">uint8</span> col) <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Gets value at matrix index (row, col).</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">row</td><td class="CDLDefinition"><p>the row to set.</p></td></tr><tr><td class="CDLEntry">col</td><td class="CDLDefinition"><p>the column to set.</p></td></tr></table></div>
 </div>
 
-<a name="Matrix_3x3.at"></a><a name="Topic1328"></a><div class="CTopic TFunction LC">
+<a name="Matrix_3x3.at"></a><a name="Topic1339"></a><div class="CTopic TFunction LC">
  <div class="CTitle">at</div>
- <div id="NDPrototype1328" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">float</span> at(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint8</span>&nbsp;</td><td class="PName last">row,</td></tr><tr><td class="PType first"><span class="SHKeyword">uint8</span>&nbsp;</td><td class="PName last">col</td></tr></table></td><td class="PAfterParameters">) <span class="SHKeyword">const</span></td></tr></table></div>
- <div class="CBody"><p>Gets value at matrix index (row, col).</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">row<div class="CDLParameterType"><span class="SHKeyword">uint8</span></div></td><td class="CDLDefinition"><p>the row to set.</p></td></tr><tr><td class="CDLEntry">col<div class="CDLParameterType"><span class="SHKeyword">uint8</span></div></td><td class="CDLDefinition"><p>the collumn to set.</p></td></tr></table></div>
+ <div id="NDPrototype1339" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">float</span> at(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint8</span>&nbsp;</td><td class="PName last">row,</td></tr><tr><td class="PType first"><span class="SHKeyword">uint8</span>&nbsp;</td><td class="PName last">col</td></tr></table></td><td class="PAfterParameters">) <span class="SHKeyword">const</span></td></tr></table></div>
+ <div class="CBody"><p>Gets value at matrix index (row, col).</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">row<div class="CDLParameterType"><span class="SHKeyword">uint8</span></div></td><td class="CDLDefinition"><p>the row to set.</p></td></tr><tr><td class="CDLEntry">col<div class="CDLParameterType"><span class="SHKeyword">uint8</span></div></td><td class="CDLDefinition"><p>the column to set.</p></td></tr></table></div>
 </div>
 
-<a name="Matrix_3x3.Variables"></a><a name="Topic1329"></a><div class="CTopic TGroup LC">
+<a name="Matrix_3x3.Variables"></a><a name="Topic1340"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="Matrix_3x3.m_array"></a><a name="Topic1330"></a><div class="CTopic TVariable LC">
+<a name="Matrix_3x3.m_array"></a><a name="Topic1341"></a><div class="CTopic TVariable LC">
  <div class="CTitle">m_array</div>
- <div id="NDPrototype1330" class="NDPrototype NoParameterForm">std::array&lt; std::array&lt;<span class="SHKeyword">float</span>, <span class="SHNumber">3</span>&gt;, <span class="SHNumber">3</span> &gt; m_array</div>
+ <div id="NDPrototype1341" class="NDPrototype NoParameterForm">std::array&lt; std::array&lt;<span class="SHKeyword">float</span>, <span class="SHNumber">3</span>&gt;, <span class="SHNumber">3</span> &gt; m_array</div>
  <div class="CBody"><p>A 3 by 3 array.</p></div>
 </div>
 
-<a name="GeometricVector"></a><a name="Topic1331"></a><div class="CTopic TStruct LC">
+<a name="GeometricVector"></a><a name="Topic1342"></a><div class="CTopic TStruct LC">
  <div class="CTitle">GeometricVector</div>
  <div class="CBody"><p>Defines a 3 dimensional, spatial vector.</p></div>
 </div>
 
-<a name="GeometricVector.Functions"></a><a name="Topic1332"></a><div class="CTopic TGroup LC">
+<a name="GeometricVector.Functions"></a><a name="Topic1343"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="GeometricVector.GeometricVector"></a><a name="Topic1333"></a><div class="CTopic TFunction LC">
+<a name="GeometricVector.GeometricVector"></a><a name="Topic1344"></a><div class="CTopic TFunction LC">
  <div class="CTitle">GeometricVector</div>
- <div id="NDPrototype1333" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">GeometricVector(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">x_init,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">y_init,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">z_init</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype1344" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">GeometricVector(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">x_init,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">y_init,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">z_init</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>Creates a GeometricVector object.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">x_init<div class="CDLParameterType"><span class="SHKeyword">float</span></div></td><td class="CDLDefinition"><p>initial x coordinate</p></td></tr><tr><td class="CDLEntry">y_init<div class="CDLParameterType"><span class="SHKeyword">float</span></div></td><td class="CDLDefinition"><p>initial y coordinate</p></td></tr><tr><td class="CDLEntry">z_init<div class="CDLParameterType"><span class="SHKeyword">float</span></div></td><td class="CDLDefinition"><p>initial z coordinate</p></td></tr></table></div>
 </div>
 
-<a name="GeometricVector.GeometricVector(2)"></a><a name="Topic1334"></a><div class="CTopic TFunction LC">
+<a name="GeometricVector.GeometricVector(2)"></a><a name="Topic1345"></a><div class="CTopic TFunction LC">
  <div class="CTitle">GeometricVector</div>
- <div id="NDPrototype1334" class="NDPrototype NoParameterForm">GeometricVector()</div>
+ <div id="NDPrototype1345" class="NDPrototype NoParameterForm">GeometricVector()</div>
  <div class="CBody"><p>Creates a zero-filled GeometricVector object.</p></div>
 </div>
 
-<a name="GeometricVector.~GeometricVector"></a><a name="Topic1335"></a><div class="CTopic TFunction LC">
+<a name="GeometricVector.~GeometricVector"></a><a name="Topic1346"></a><div class="CTopic TFunction LC">
  <div class="CTitle">~GeometricVector</div>
- <div id="NDPrototype1335" class="NDPrototype NoParameterForm">~GeometricVector()</div>
+ <div id="NDPrototype1346" class="NDPrototype NoParameterForm">~GeometricVector()</div>
  <div class="CBody"><p>Destroys a TimeUpdate object.</p></div>
 </div>
 
-<a name="GeometricVector.Variables"></a><a name="Topic1336"></a><div class="CTopic TGroup LC">
+<a name="GeometricVector.Variables"></a><a name="Topic1347"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="GeometricVector.x"></a><a name="Topic1337"></a><div class="CTopic TVariable LC">
+<a name="GeometricVector.x"></a><a name="Topic1348"></a><div class="CTopic TVariable LC">
  <div class="CTitle">x</div>
- <div id="NDPrototype1337" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> x</div>
+ <div id="NDPrototype1348" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> x</div>
  <div class="CBody"><p>the vector's x coordinate.</p></div>
 </div>
 
-<a name="GeometricVector.y"></a><a name="Topic1338"></a><div class="CTopic TVariable LC">
+<a name="GeometricVector.y"></a><a name="Topic1349"></a><div class="CTopic TVariable LC">
  <div class="CTitle">y</div>
- <div id="NDPrototype1338" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> y</div>
+ <div id="NDPrototype1349" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> y</div>
  <div class="CBody"><p>the vector's y coordinate.</p></div>
 </div>
 
-<a name="GeometricVector.z"></a><a name="Topic1339"></a><div class="CTopic TVariable LC">
+<a name="GeometricVector.z"></a><a name="Topic1350"></a><div class="CTopic TVariable LC">
  <div class="CTitle">z</div>
- <div id="NDPrototype1339" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> z</div>
+ <div id="NDPrototype1350" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> z</div>
  <div class="CBody"><p>the vector's z coordinate.</p></div>
 </div>
 
-<a name="TimeUpdate"></a><a name="Topic1340"></a><div class="CTopic TClass LC">
- <div class="CTitle">TimeUpdate</div>
- <div class="NDClassPrototype" id="NDClassPrototype1340"><div class="CPEntry TClass Current"><div class="CPName">TimeUpdate</div></div></div>
- <div class="CBody"><p>Contains time data for the GNSS_AssistTimeUpdate class.</p></div>
+<a name="Position"></a><a name="Topic1351"></a><div class="CTopic TStruct LC">
+ <div class="CTitle">Position</div>
+ <div class="CBody"><p>Defines a latitude, longitude, and altitude.</p></div>
 </div>
 
-<a name="TimeUpdate.Functions"></a><a name="Topic1341"></a><div class="CTopic TGroup LC">
+<a name="Position.Functions"></a><a name="Topic1352"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="TimeUpdate.TimeUpdate"></a><a name="Topic1342"></a><div class="CTopic TFunction LC">
- <div class="CTitle">TimeUpdate</div>
- <div id="NDPrototype1342" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">TimeUpdate(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">double</span>&nbsp;</td><td class="PName">timeOfWeek,</td><td></td><td class="last"></td></tr><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName">weekNumber,</td><td></td><td class="last"></td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName">timeAccuracy&nbsp;</td><td class="PDefaultValueSeparator">=&nbsp;</td><td class="PDefaultValue last"><span class="SHNumber">0</span></td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
- <div class="CBody"><p>Creates a TimeUpdate object.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">timeOfWeek<div class="CDLParameterType"><span class="SHKeyword">double</span></div></td><td class="CDLDefinition"><p>time into a given week in seconds.</p></td></tr><tr><td class="CDLEntry">weekNumber<div class="CDLParameterType"><span class="SHKeyword">uint16</span></div></td><td class="CDLDefinition"><p>the week number.</p></td></tr><tr><td class="CDLEntry">timeAccuracy<div class="CDLParameterType"><span class="SHKeyword">float</span></div></td><td class="CDLDefinition"><p>accuracy in seconds.</p></td></tr></table></div>
+<a name="Position.Position"></a><a name="Topic1353"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">Position</div>
+ <div id="NDPrototype1353" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">Position(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">double</span>&nbsp;</td><td class="PName last">lat_init,</td></tr><tr><td class="PType first"><span class="SHKeyword">double</span>&nbsp;</td><td class="PName last">long_init,</td></tr><tr><td class="PType first"><span class="SHKeyword">double</span>&nbsp;</td><td class="PName last">alt_init</td></tr></table></td><td class="PAfterParameters">): latitude(lat_init), longitude(long_init), altitude(alt_init)</td></tr></table></div>
+ <div class="CBody"><p>Creates a Position object.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">lat_init<div class="CDLParameterType"><span class="SHKeyword">double</span></div></td><td class="CDLDefinition"><p>initial latitude</p></td></tr><tr><td class="CDLEntry">long_init<div class="CDLParameterType"><span class="SHKeyword">double</span></div></td><td class="CDLDefinition"><p>initial longitude</p></td></tr><tr><td class="CDLEntry">alt_init<div class="CDLParameterType"><span class="SHKeyword">double</span></div></td><td class="CDLDefinition"><p>initial altitude</p></td></tr></table></div>
 </div>
 
-<a name="TimeUpdate.~TimeUpdate"></a><a name="Topic1343"></a><div class="CTopic TFunction LC">
- <div class="CTitle">~TimeUpdate</div>
- <div id="NDPrototype1343" class="NDPrototype NoParameterForm">~TimeUpdate()</div>
+<a name="Position.Position(2)"></a><a name="Topic1354"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">Position</div>
+ <div id="NDPrototype1354" class="NDPrototype NoParameterForm">Position() : latitude(<span class="SHNumber">0</span>), longitude(<span class="SHNumber">0</span>), altitude(<span class="SHNumber">0</span>)</div>
+ <div class="CBody"><p>Creates a zero-filled Position object.</p></div>
+</div>
+
+<a name="Position.~Position"></a><a name="Topic1355"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">~Position</div>
+ <div id="NDPrototype1355" class="NDPrototype NoParameterForm">~Position()</div>
  <div class="CBody"><p>Destroys a TimeUpdate object.</p></div>
 </div>
 
-<a name="TimeUpdate.timeOfWeek"></a><a name="Topic1344"></a><div class="CTopic TFunction LC">
+<a name="Position.Variables"></a><a name="Topic1356"></a><div class="CTopic TGroup LC">
+ <div class="CTitle">Variables</div>
+</div>
+
+<a name="Position.latitude"></a><a name="Topic1357"></a><div class="CTopic TVariable LC">
+ <div class="CTitle">latitude</div>
+ <div id="NDPrototype1357" class="NDPrototype NoParameterForm"><span class="SHKeyword">double</span> latitude</div>
+</div>
+
+<a name="Position.longitude"></a><a name="Topic1358"></a><div class="CTopic TVariable LC">
+ <div class="CTitle">longitude</div>
+ <div id="NDPrototype1358" class="NDPrototype NoParameterForm"><span class="SHKeyword">double</span> longitude</div>
+</div>
+
+<a name="Position.altitude"></a><a name="Topic1359"></a><div class="CTopic TVariable LC">
+ <div class="CTitle">altitude</div>
+ <div id="NDPrototype1359" class="NDPrototype NoParameterForm"><span class="SHKeyword">double</span> altitude</div>
+</div>
+
+<a name="TimeUpdate"></a><a name="Topic1360"></a><div class="CTopic TClass LC">
+ <div class="CTitle">TimeUpdate</div>
+ <div class="NDClassPrototype" id="NDClassPrototype1360"><div class="CPEntry TClass Current"><div class="CPName">TimeUpdate</div></div></div>
+ <div class="CBody"><p>Contains time data for the GNSS_AssistTimeUpdate class.</p></div>
+</div>
+
+<a name="TimeUpdate.Functions"></a><a name="Topic1361"></a><div class="CTopic TGroup LC">
+ <div class="CTitle">Functions</div>
+</div>
+
+<a name="TimeUpdate.TimeUpdate"></a><a name="Topic1362"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">TimeUpdate</div>
+ <div id="NDPrototype1362" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">TimeUpdate(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">double</span>&nbsp;</td><td class="PName">timeOfWeek,</td><td></td><td class="last"></td></tr><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName">weekNumber,</td><td></td><td class="last"></td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName">timeAccuracy&nbsp;</td><td class="PDefaultValueSeparator">=&nbsp;</td><td class="PDefaultValue last"><span class="SHNumber">0</span></td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div class="CBody"><p>Creates a TimeUpdate object.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">timeOfWeek<div class="CDLParameterType"><span class="SHKeyword">double</span></div></td><td class="CDLDefinition"><p>time into a given week in seconds.</p></td></tr><tr><td class="CDLEntry">weekNumber<div class="CDLParameterType"><span class="SHKeyword">uint16</span></div></td><td class="CDLDefinition"><p>the week number.</p></td></tr><tr><td class="CDLEntry">timeAccuracy<div class="CDLParameterType"><span class="SHKeyword">float</span></div></td><td class="CDLDefinition"><p>accuracy in seconds.</p></td></tr></table></div>
+</div>
+
+<a name="TimeUpdate.~TimeUpdate"></a><a name="Topic1363"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">~TimeUpdate</div>
+ <div id="NDPrototype1363" class="NDPrototype NoParameterForm">~TimeUpdate()</div>
+ <div class="CBody"><p>Destroys a TimeUpdate object.</p></div>
+</div>
+
+<a name="TimeUpdate.timeOfWeek"></a><a name="Topic1364"></a><div class="CTopic TFunction LC">
  <div class="CTitle">timeOfWeek</div>
- <div id="NDPrototype1344" class="NDPrototype NoParameterForm"><span class="SHKeyword">double</span> timeOfWeek() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype1364" class="NDPrototype NoParameterForm"><span class="SHKeyword">double</span> timeOfWeek() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>time into a given week in seconds.</p></div>
 </div>
 
-<a name="TimeUpdate.weekNumber"></a><a name="Topic1345"></a><div class="CTopic TFunction LC">
+<a name="TimeUpdate.weekNumber"></a><a name="Topic1365"></a><div class="CTopic TFunction LC">
  <div class="CTitle">weekNumber</div>
- <div id="NDPrototype1345" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> weekNumber() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype1365" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> weekNumber() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>the week number.</p></div>
 </div>
 
-<a name="TimeUpdate.timeAccuracy"></a><a name="Topic1346"></a><div class="CTopic TFunction LC">
+<a name="TimeUpdate.timeAccuracy"></a><a name="Topic1366"></a><div class="CTopic TFunction LC">
  <div class="CTitle">timeAccuracy</div>
- <div id="NDPrototype1346" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> timeAccuracy() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype1366" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> timeAccuracy() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>accuracy in seconds.</p></div>
 </div>
 
-<a name="TimeUpdate.Constants"></a><a name="Topic1347"></a><div class="CTopic TGroup LC">
+<a name="TimeUpdate.Constants"></a><a name="Topic1367"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Constants</div>
 </div>
 
-<a name="TimeUpdate.timeOfWeek(2)"></a><a name="Topic1348"></a><div class="CTopic TConstant LC">
+<a name="TimeUpdate.timeOfWeek(2)"></a><a name="Topic1368"></a><div class="CTopic TConstant LC">
  <div class="CTitle">timeOfWeek</div>
  <div class="CBody"><p>time into a given week in seconds.</p></div>
 </div>
 
-<a name="TimeUpdate.weekNumber(2)"></a><a name="Topic1349"></a><div class="CTopic TConstant LC">
+<a name="TimeUpdate.weekNumber(2)"></a><a name="Topic1369"></a><div class="CTopic TConstant LC">
  <div class="CTitle">weekNumber</div>
  <div class="CBody"><p>the week number.</p></div>
 </div>
 
-<a name="TimeUpdate.timeAccuracy(2)"></a><a name="Topic1350"></a><div class="CTopic TConstant LC">
+<a name="TimeUpdate.timeAccuracy(2)"></a><a name="Topic1370"></a><div class="CTopic TConstant LC">
  <div class="CTitle">timeAccuracy</div>
  <div class="CBody"><p>accuracy in seconds.</p></div>
 </div>
 
-<a name="ZUPTSettingsData"></a><a name="Topic1351"></a><div class="CTopic TStruct LC">
+<a name="ZUPTSettingsData"></a><a name="Topic1371"></a><div class="CTopic TStruct LC">
  <div class="CTitle">ZUPTSettingsData</div>
  <div class="CBody"><p>Contains the data for the AngularRateZUPTControl and VelocityZUPTControl classes.</p></div>
 </div>
 
-<a name="ZUPTSettingsData.Functions"></a><a name="Topic1352"></a><div class="CTopic TGroup LC">
+<a name="ZUPTSettingsData.Functions"></a><a name="Topic1372"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="ZUPTSettingsData.ZUPTSettingsData"></a><a name="Topic1353"></a><div class="CTopic TFunction LC">
+<a name="ZUPTSettingsData.ZUPTSettingsData"></a><a name="Topic1373"></a><div class="CTopic TFunction LC">
  <div class="CTitle">ZUPTSettingsData</div>
- <div id="NDPrototype1353" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">ZUPTSettingsData(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">bool</span>&nbsp;</td><td class="PName last">enable,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">threshold</td></tr></table></td><td class="PAfterParameters">) : enabled(enable), threshold(threshold)</td></tr></table></div>
+ <div id="NDPrototype1373" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">ZUPTSettingsData(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">bool</span>&nbsp;</td><td class="PName last">enable,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">threshold</td></tr></table></td><td class="PAfterParameters">) : enabled(enable), threshold(threshold)</td></tr></table></div>
  <div class="CBody"><p>Creates a ZUPTSettingsData object.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">enable<div class="CDLParameterType"><span class="SHKeyword">bool</span></div></td><td class="CDLDefinition"><p>whether the control is enabled</p></td></tr><tr><td class="CDLEntry">threshold<div class="CDLParameterType"><span class="SHKeyword">float</span></div></td><td class="CDLDefinition"><p>the threshold to trigger the control</p></td></tr></table></div>
 </div>
 
-<a name="ZUPTSettingsData.Variables"></a><a name="Topic1354"></a><div class="CTopic TGroup LC">
+<a name="ZUPTSettingsData.Variables"></a><a name="Topic1374"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="ZUPTSettingsData.enabled"></a><a name="Topic1355"></a><div class="CTopic TVariable LC">
+<a name="ZUPTSettingsData.enabled"></a><a name="Topic1375"></a><div class="CTopic TVariable LC">
  <div class="CTitle">enabled</div>
- <div id="NDPrototype1355" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enabled</div>
+ <div id="NDPrototype1375" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enabled</div>
 </div>
 
-<a name="ZUPTSettingsData.threshold"></a><a name="Topic1356"></a><div class="CTopic TVariable LC">
+<a name="ZUPTSettingsData.threshold"></a><a name="Topic1376"></a><div class="CTopic TVariable LC">
  <div class="CTitle">threshold</div>
- <div id="NDPrototype1356" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> threshold</div>
+ <div id="NDPrototype1376" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> threshold</div>
 </div>
 
-<a name="SBASSettingsData"></a><a name="Topic1357"></a><div class="CTopic TStruct LC">
+<a name="FixedReferencePositionData"></a><a name="Topic1377"></a><div class="CTopic TStruct LC">
+ <div class="CTitle">FixedReferencePositionData</div>
+ <div class="CBody"><p>Contains the data for Set Reference Position command.</p></div>
+</div>
+
+<a name="FixedReferencePositionData.Functions"></a><a name="Topic1378"></a><div class="CTopic TGroup LC">
+ <div class="CTitle">Functions</div>
+</div>
+
+<a name="FixedReferencePositionData.FixedReferencePositionData"></a><a name="Topic1379"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">FixedReferencePositionData</div>
+ <div id="NDPrototype1379" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">FixedReferencePositionData(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">bool</span>&nbsp;</td><td class="PName last">pEnable,</td></tr><tr><td class="PType first"><a href="../../../index.html#File:MicroStrain/Inertial/ExposedInertialTypes.h:Position" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1351);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Position</a>&nbsp;</td><td class="PName last">pReference</td></tr></table></td><td class="PAfterParameters">) : enable(pEnable), referencePosition(pReference)</td></tr></table></div>
+ <div class="CBody"><p>Creates a FixedReferencePositionData object.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">pEnable<div class="CDLParameterType"><span class="SHKeyword">bool</span></div></td><td class="CDLDefinition"><p>indicates whether a fixed reference position should be used</p></td></tr><tr><td class="CDLEntry">pReference<div class="CDLParameterType"><a href="../../../index.html#File:MicroStrain/Inertial/ExposedInertialTypes.h:Position" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1351);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Position</a></div></td><td class="CDLDefinition"><p>the reference position</p></td></tr></table></div>
+</div>
+
+<a name="FixedReferencePositionData.FixedReferencePositionData(2)"></a><a name="Topic1380"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">FixedReferencePositionData</div>
+ <div id="NDPrototype1380" class="NDPrototype NoParameterForm">FixedReferencePositionData() : enable(<span class="SHKeyword">false</span>), referencePosition(<a href="../../../index.html#File:MicroStrain/Inertial/ExposedInertialTypes.h:Position" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1351);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Position</a>())</div>
+ <div class="CBody"><p>Creates a FixedReferencePositionData object.</p></div>
+</div>
+
+<a name="FixedReferencePositionData.Variables"></a><a name="Topic1381"></a><div class="CTopic TGroup LC">
+ <div class="CTitle">Variables</div>
+</div>
+
+<a name="FixedReferencePositionData.enable"></a><a name="Topic1382"></a><div class="CTopic TVariable LC">
+ <div class="CTitle">enable</div>
+ <div id="NDPrototype1382" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enable</div>
+</div>
+
+<a name="FixedReferencePositionData.referencePosition"></a><a name="Topic1383"></a><div class="CTopic TVariable LC">
+ <div class="CTitle">referencePosition</div>
+ <div id="NDPrototype1383" class="NDPrototype NoParameterForm"><a href="../../../index.html#File:MicroStrain/Inertial/ExposedInertialTypes.h:Position" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1351);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Position</a> referencePosition</div>
+</div>
+
+<a name="SBASSettingsData"></a><a name="Topic1384"></a><div class="CTopic TStruct LC">
  <div class="CTitle">SBASSettingsData</div>
  <div class="CBody"><p>Contains the data for the SBASSettings class.</p></div>
 </div>
 
-<a name="SBASSettingsData.Variables"></a><a name="Topic1358"></a><div class="CTopic TGroup LC">
+<a name="SBASSettingsData.Variables"></a><a name="Topic1385"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="SBASSettingsData.enableSBAS"></a><a name="Topic1359"></a><div class="CTopic TVariable LC">
+<a name="SBASSettingsData.enableSBAS"></a><a name="Topic1386"></a><div class="CTopic TVariable LC">
  <div class="CTitle">enableSBAS</div>
- <div id="NDPrototype1359" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enableSBAS</div>
+ <div id="NDPrototype1386" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enableSBAS</div>
 </div>
 
-<a name="SBASSettingsData.enableRanging"></a><a name="Topic1360"></a><div class="CTopic TVariable LC">
+<a name="SBASSettingsData.enableRanging"></a><a name="Topic1387"></a><div class="CTopic TVariable LC">
  <div class="CTitle">enableRanging</div>
- <div id="NDPrototype1360" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enableRanging</div>
+ <div id="NDPrototype1387" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enableRanging</div>
 </div>
 
-<a name="SBASSettingsData.enableCorrectionData"></a><a name="Topic1361"></a><div class="CTopic TVariable LC">
+<a name="SBASSettingsData.enableCorrectionData"></a><a name="Topic1388"></a><div class="CTopic TVariable LC">
  <div class="CTitle">enableCorrectionData</div>
- <div id="NDPrototype1361" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enableCorrectionData</div>
+ <div id="NDPrototype1388" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enableCorrectionData</div>
 </div>
 
-<a name="SBASSettingsData.applyIntegrityInfo"></a><a name="Topic1362"></a><div class="CTopic TVariable LC">
+<a name="SBASSettingsData.applyIntegrityInfo"></a><a name="Topic1389"></a><div class="CTopic TVariable LC">
  <div class="CTitle">applyIntegrityInfo</div>
- <div id="NDPrototype1362" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> applyIntegrityInfo</div>
+ <div id="NDPrototype1389" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> applyIntegrityInfo</div>
 </div>
 
-<a name="SBASSettingsData.SatellitePRNs"></a><a name="Topic1363"></a><div class="CTopic TVariable LC">
+<a name="SBASSettingsData.SatellitePRNs"></a><a name="Topic1390"></a><div class="CTopic TVariable LC">
  <div class="CTitle">SatellitePRNs</div>
- <div id="NDPrototype1363" class="NDPrototype NoParameterForm"><a href="../../../index.html#File:MicroStrain/Inertial/ExposedInertialTypes.h:SatellitePRNs" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1319);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >SatellitePRNs</a> satellitePRNs</div>
- <div class="CBody"><p>The <a href="../../../index.html#File:MicroStrain/Inertial/ExposedInertialTypes.h:SBASSettingsData.SatellitePRNs" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1363);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >SatellitePRNs</a> for all included satellites.</p></div>
+ <div id="NDPrototype1390" class="NDPrototype NoParameterForm"><a href="../../../index.html#File:MicroStrain/Inertial/ExposedInertialTypes.h:SatellitePRNs" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1330);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >SatellitePRNs</a> satellitePRNs</div>
+ <div class="CBody"><p>The <a href="../../../index.html#File:MicroStrain/Inertial/ExposedInertialTypes.h:SBASSettingsData.SatellitePRNs" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1390);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >SatellitePRNs</a> for all included satellites.</p></div>
 </div>
 
-<a name="Constellation"></a><a name="Topic1364"></a><div class="CTopic TStruct LC">
+<a name="Constellation"></a><a name="Topic1391"></a><div class="CTopic TStruct LC">
  <div class="CTitle">Constellation</div>
- <div class="CBody"><p>Contains the satellite constellation data used in the <a href="../../../index.html#File:MicroStrain/Inertial/ExposedInertialTypes.h:ConstellationSettingsData" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1371);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ConstellationSettingsData</a> class.</p></div>
+ <div class="CBody"><p>Contains the satellite constellation data used in the <a href="../../../index.html#File:MicroStrain/Inertial/ExposedInertialTypes.h:ConstellationSettingsData" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1398);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ConstellationSettingsData</a> class.</p></div>
 </div>
 
-<a name="Constellation.Variables"></a><a name="Topic1365"></a><div class="CTopic TGroup LC">
+<a name="Constellation.Variables"></a><a name="Topic1392"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="Constellation.constellationID"></a><a name="Topic1366"></a><div class="CTopic TVariable LC">
+<a name="Constellation.constellationID"></a><a name="Topic1393"></a><div class="CTopic TVariable LC">
  <div class="CTitle">constellationID</div>
- <div id="NDPrototype1366" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> constellationID</div>
+ <div id="NDPrototype1393" class="NDPrototype NoParameterForm">InertialTypes::ConstellationId constellationID</div>
 </div>
 
-<a name="Constellation.enabled"></a><a name="Topic1367"></a><div class="CTopic TVariable LC">
+<a name="Constellation.enabled"></a><a name="Topic1394"></a><div class="CTopic TVariable LC">
  <div class="CTitle">enabled</div>
- <div id="NDPrototype1367" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enabled</div>
+ <div id="NDPrototype1394" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enabled</div>
 </div>
 
-<a name="Constellation.reservedChannelCount"></a><a name="Topic1368"></a><div class="CTopic TVariable LC">
+<a name="Constellation.reservedChannelCount"></a><a name="Topic1395"></a><div class="CTopic TVariable LC">
  <div class="CTitle">reservedChannelCount</div>
- <div id="NDPrototype1368" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> reservedChannelCount</div>
+ <div id="NDPrototype1395" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> reservedChannelCount</div>
  <div class="CBody"><p>The number of reserved channels.&nbsp; (Must be &lt;= 32)</p></div>
 </div>
 
-<a name="Constellation.maxChannels"></a><a name="Topic1369"></a><div class="CTopic TVariable LC">
+<a name="Constellation.maxChannels"></a><a name="Topic1396"></a><div class="CTopic TVariable LC">
  <div class="CTitle">maxChannels</div>
- <div id="NDPrototype1369" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> maxChannels</div>
+ <div id="NDPrototype1396" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint8</span> maxChannels</div>
  <div class="CBody"><p>The maximum number of tracking channels.</p></div>
 </div>
 
-<a name="Constellation.enableL1SAIF"></a><a name="Topic1370"></a><div class="CTopic TVariable LC">
+<a name="Constellation.enableL1SAIF"></a><a name="Topic1397"></a><div class="CTopic TVariable LC">
  <div class="CTitle">enableL1SAIF</div>
- <div id="NDPrototype1370" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enableL1SAIF</div>
+ <div id="NDPrototype1397" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enableL1SAIF</div>
  <div class="CBody"><p>enables L1AIF for constellation QZSS</p></div>
 </div>
 
-<a name="ConstellationSettingsData"></a><a name="Topic1371"></a><div class="CTopic TStruct LC">
+<a name="ConstellationSettingsData"></a><a name="Topic1398"></a><div class="CTopic TStruct LC">
  <div class="CTitle">ConstellationSettingsData</div>
- <div class="CBody"><p>Contains the data for the <a href="../../../index.html#File:MicroStrain/Inertial/InertialNode.h:InertialNode.setConstellationSettings" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1557);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialNode::setConstellationSettings</a> API call.</p></div>
+ <div class="CBody"><p>Contains the data for the <a href="../../../index.html#File:MicroStrain/Inertial/InertialNode.h:InertialNode.setConstellationSettings" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1619);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialNode::setConstellationSettings</a> API call.</p></div>
 </div>
 
-<a name="ConstellationSettingsData.Variables"></a><a name="Topic1372"></a><div class="CTopic TGroup LC">
+<a name="ConstellationSettingsData.Variables"></a><a name="Topic1399"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="ConstellationSettingsData.maxChannelsAvailable"></a><a name="Topic1373"></a><div class="CTopic TVariable LC">
+<a name="ConstellationSettingsData.maxChannelsAvailable"></a><a name="Topic1400"></a><div class="CTopic TVariable LC">
  <div class="CTitle">maxChannelsAvailable</div>
- <div id="NDPrototype1373" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> maxChannelsAvailable</div>
+ <div id="NDPrototype1400" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> maxChannelsAvailable</div>
 </div>
 
-<a name="ConstellationSettingsData.maxChannelsToUse"></a><a name="Topic1374"></a><div class="CTopic TVariable LC">
+<a name="ConstellationSettingsData.maxChannelsToUse"></a><a name="Topic1401"></a><div class="CTopic TVariable LC">
  <div class="CTitle">maxChannelsToUse</div>
- <div id="NDPrototype1374" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> maxChannelsToUse</div>
+ <div id="NDPrototype1401" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> maxChannelsToUse</div>
 </div>
 
-<a name="ConstellationSettingsData.constellations"></a><a name="Topic1375"></a><div class="CTopic TVariable LC">
+<a name="ConstellationSettingsData.constellations"></a><a name="Topic1402"></a><div class="CTopic TVariable LC">
  <div class="CTitle">constellations</div>
- <div id="NDPrototype1375" class="NDPrototype NoParameterForm">Constellations constellations</div>
+ <div id="NDPrototype1402" class="NDPrototype NoParameterForm">Constellations constellations</div>
 </div>
 
-<a name="AdvancedLowPassFilterData"></a><a name="Topic1376"></a><div class="CTopic TStruct LC">
+<a name="AdvancedLowPassFilterData"></a><a name="Topic1403"></a><div class="CTopic TStruct LC">
  <div class="CTitle">AdvancedLowPassFilterData</div>
- <div class="CBody"><p>Contains the data for the <a href="../../../index.html#File:MicroStrain/Inertial/InertialNode.h:InertialNode.setAdvancedLowPassFilterSettings" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1574);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialNode::setAdvancedLowPassFilterSettings</a> API call.</p></div>
+ <div class="CBody"><p>Contains the data for the <a href="../../../index.html#File:MicroStrain/Inertial/InertialNode.h:InertialNode.setAdvancedLowPassFilterSettings" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1636);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialNode::setAdvancedLowPassFilterSettings</a> API call.</p></div>
 </div>
 
-<a name="AdvancedLowPassFilterData.Functions"></a><a name="Topic1377"></a><div class="CTopic TGroup LC">
- <div class="CTitle">Functions</div>
-</div>
-
-<a name="AdvancedLowPassFilterData.AdvancedLowPassFilterData"></a><a name="Topic1378"></a><div class="CTopic TFunction LC">
- <div class="CTitle">AdvancedLowPassFilterData</div>
- <div id="NDPrototype1378" class="NDPrototype NoParameterForm">AdvancedLowPassFilterData() : dataDescriptor (SCALED_ACCEL_DATA), manualFilterBandwidthConfig (SET_TO_HALF_REPORTING_RATE), applyLowPassFilter (<span class="SHKeyword">true</span>), cutoffFrequency (<span class="SHNumber">0</span>)</div>
-</div>
-
-<a name="AdvancedLowPassFilterData.Types"></a><a name="Topic1379"></a><div class="CTopic TGroup LC">
+<a name="AdvancedLowPassFilterData.Types"></a><a name="Topic1404"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Types</div>
 </div>
 
-<a name="AdvancedLowPassFilterData.DataDescriptor"></a><a name="Topic1380"></a><div class="CTopic TEnumeration LC">
- <div class="CTitle">DataDescriptor</div>
- <div class="CBody"><p>The enum for the different data descriptors.</p><p>SCALED_ACCEL_DATA = 0x04 SCALED_GYRO_DATA = 0x05 SCALED_MAG_DATA = 0x06 SCALED_PRESSURE_DATA = 0x17</p></div>
-</div>
-
-<a name="AdvancedLowPassFilterData.ManualFilterBandwidthConfig"></a><a name="Topic1381"></a><div class="CTopic TEnumeration LC">
+<a name="AdvancedLowPassFilterData.ManualFilterBandwidthConfig"></a><a name="Topic1405"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">ManualFilterBandwidthConfig</div>
  <div class="CBody"><p>The enum for the different data descriptors.</p><p>SET_TO_HALF_REPORTING_RATE = 0X00 USER_SPECIFIED_CUTOFF_FREQ = 0x01</p></div>
 </div>
 
-<a name="AdvancedLowPassFilterData.Variables"></a><a name="Topic1382"></a><div class="CTopic TGroup LC">
+<a name="AdvancedLowPassFilterData.Functions"></a><a name="Topic1406"></a><div class="CTopic TGroup LC">
+ <div class="CTitle">Functions</div>
+</div>
+
+<a name="AdvancedLowPassFilterData.AdvancedLowPassFilterData"></a><a name="Topic1407"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">AdvancedLowPassFilterData</div>
+ <div id="NDPrototype1407" class="NDPrototype NoParameterForm">AdvancedLowPassFilterData() : dataDescriptor(mscl::MipTypes::ChannelField::CH_FIELD_SENSOR_SCALED_ACCEL_VEC), manualFilterBandwidthConfig(SET_TO_HALF_REPORTING_RATE), applyLowPassFilter(<span class="SHKeyword">true</span>), cutoffFrequency(<span class="SHNumber">0</span>)</div>
+</div>
+
+<a name="AdvancedLowPassFilterData.AdvancedLowPassFilterData(2)"></a><a name="Topic1408"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">AdvancedLowPassFilterData</div>
+ <div id="NDPrototype1408" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">AdvancedLowPassFilterData(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first">mscl::MipTypes::</td><td class="PType">ChannelField&nbsp;</td><td class="PName last">descriptor</td></tr></table></td><td class="PAfterParameters">) : dataDescriptor(descriptor), manualFilterBandwidthConfig(SET_TO_HALF_REPORTING_RATE), applyLowPassFilter(<span class="SHKeyword">true</span>), cutoffFrequency(<span class="SHNumber">0</span>)</td></tr></table></div>
+</div>
+
+<a name="AdvancedLowPassFilterData.Variables"></a><a name="Topic1409"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="AdvancedLowPassFilterData.applyLowPassFilter"></a><a name="Topic1383"></a><div class="CTopic TVariable LC">
+<a name="AdvancedLowPassFilterData.dataDescriptor"></a><a name="Topic1410"></a><div class="CTopic TVariable LC">
+ <div class="CTitle">dataDescriptor</div>
+ <div id="NDPrototype1410" class="NDPrototype NoParameterForm">mscl::MipTypes::ChannelField dataDescriptor</div>
+ <div class="CBody"><p>the data descriptor these settings apply to</p><p>Valid values: CH_FIELD_SENSOR_SCALED_ACCEL_VEC = 0x8004 CH_FIELD_SENSOR_SCALED_GYRO_VEC = 0x8005 CH_FIELD_SENSOR_SCALED_MAG_VEC = 0x8006 CH_FIELD_SENSOR_SCALED_AMBIENT_PRESSURE = 0x8017</p></div>
+</div>
+
+<a name="AdvancedLowPassFilterData.manualFilterBandwidthConfig"></a><a name="Topic1411"></a><div class="CTopic TVariable LC">
+ <div class="CTitle">manualFilterBandwidthConfig</div>
+ <div id="NDPrototype1411" class="NDPrototype NoParameterForm"><a href="../../../index.html#File:MicroStrain/Inertial/ExposedInertialTypes.h:AdvancedLowPassFilterData.ManualFilterBandwidthConfig" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1405);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ManualFilterBandwidthConfig</a> manualFilterBandwidthConfig</div>
+ <div class="CBody"><p>The <a href="../../../index.html#File:MicroStrain/Inertial/ExposedInertialTypes.h:AdvancedLowPassFilterData.ManualFilterBandwidthConfig" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1405);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ManualFilterBandwidthConfig</a> to use.</p></div>
+</div>
+
+<a name="AdvancedLowPassFilterData.applyLowPassFilter"></a><a name="Topic1412"></a><div class="CTopic TVariable LC">
  <div class="CTitle">applyLowPassFilter</div>
- <div id="NDPrototype1383" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> applyLowPassFilter</div>
+ <div id="NDPrototype1412" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> applyLowPassFilter</div>
  <div class="CBody"><p>applies low-pass filter if set to true.</p></div>
 </div>
 
-<a name="AdvancedLowPassFilterData.cutoffFrequency"></a><a name="Topic1384"></a><div class="CTopic TVariable LC">
+<a name="AdvancedLowPassFilterData.cutoffFrequency"></a><a name="Topic1413"></a><div class="CTopic TVariable LC">
  <div class="CTitle">cutoffFrequency</div>
- <div id="NDPrototype1384" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> cutoffFrequency</div>
+ <div id="NDPrototype1413" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> cutoffFrequency</div>
  <div class="CBody"><p>Sets the cutoff frequency, only if manualFilterBandwidthConfig == USER_SPECIFIED_CUTOFF_FREQ</p></div>
 </div>
 
-<a name="ComplementaryFilterData"></a><a name="Topic1385"></a><div class="CTopic TStruct LC">
+<a name="ComplementaryFilterData"></a><a name="Topic1414"></a><div class="CTopic TStruct LC">
  <div class="CTitle">ComplementaryFilterData</div>
- <div class="CBody"><p>Contains the data needed by the <a href="../../../index.html#File:MicroStrain/Inertial/InertialNode.h:InertialNode.setComplementaryFilterSettings" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1576);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialNode::setComplementaryFilterSettings</a> class.</p></div>
+ <div class="CBody"><p>Contains the data needed by the <a href="../../../index.html#File:MicroStrain/Inertial/InertialNode.h:InertialNode.setComplementaryFilterSettings" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1638);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialNode::setComplementaryFilterSettings</a> class.</p></div>
 </div>
 
-<a name="ComplementaryFilterData.Variables"></a><a name="Topic1386"></a><div class="CTopic TGroup LC">
+<a name="ComplementaryFilterData.Variables"></a><a name="Topic1415"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="ComplementaryFilterData.upCompensationEnabled"></a><a name="Topic1387"></a><div class="CTopic TVariable LC">
+<a name="ComplementaryFilterData.upCompensationEnabled"></a><a name="Topic1416"></a><div class="CTopic TVariable LC">
  <div class="CTitle">upCompensationEnabled</div>
- <div id="NDPrototype1387" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> upCompensationEnabled</div>
+ <div id="NDPrototype1416" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> upCompensationEnabled</div>
  <div class="CBody"><p>determines whether or not the up compensation is enabled.</p></div>
 </div>
 
-<a name="ComplementaryFilterData.upCompensationTimeInSeconds"></a><a name="Topic1388"></a><div class="CTopic TVariable LC">
+<a name="ComplementaryFilterData.upCompensationTimeInSeconds"></a><a name="Topic1417"></a><div class="CTopic TVariable LC">
  <div class="CTitle">upCompensationTimeInSeconds</div>
- <div id="NDPrototype1388" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> upCompensationTimeInSeconds</div>
+ <div id="NDPrototype1417" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> upCompensationTimeInSeconds</div>
  <div class="CBody"><p>Sets the compensation time (in seconds) for the up compensation.</p></div>
 </div>
 
-<a name="ComplementaryFilterData.northCompensationEnabled"></a><a name="Topic1389"></a><div class="CTopic TVariable LC">
+<a name="ComplementaryFilterData.northCompensationEnabled"></a><a name="Topic1418"></a><div class="CTopic TVariable LC">
  <div class="CTitle">northCompensationEnabled</div>
- <div id="NDPrototype1389" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> northCompensationEnabled</div>
+ <div id="NDPrototype1418" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> northCompensationEnabled</div>
  <div class="CBody"><p>determines whether or not the north compensation is enabled.</p></div>
 </div>
 
-<a name="ComplementaryFilterData.northCompensationTimeInSeconds"></a><a name="Topic1390"></a><div class="CTopic TVariable LC">
+<a name="ComplementaryFilterData.northCompensationTimeInSeconds"></a><a name="Topic1419"></a><div class="CTopic TVariable LC">
  <div class="CTitle">northCompensationTimeInSeconds</div>
- <div id="NDPrototype1390" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> northCompensationTimeInSeconds</div>
+ <div id="NDPrototype1419" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> northCompensationTimeInSeconds</div>
  <div class="CBody"><p>Sets the compensation time (in seconds) for the north compensation.</p></div>
 </div>
 
-<a name="DeviceStatusData"></a><a name="Topic1391"></a><div class="CTopic TStruct LC">
+<a name="DeviceStatusData"></a><a name="Topic1420"></a><div class="CTopic TStruct LC">
  <div class="CTitle">DeviceStatusData</div>
- <div class="CBody"><p>Contains the data needed by the <a href="../../../index.html#File:MicroStrain/Inertial/InertialNode.h:InertialNode.getBasicDeviceStatus" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1578);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialNode::getBasicDeviceStatus</a> method.</p></div>
+ <div class="CBody"><p>Contains the data needed by the <a href="../../../index.html#File:MicroStrain/Inertial/InertialNode.h:InertialNode.getBasicDeviceStatus" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1640);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialNode::getBasicDeviceStatus</a> method.</p></div>
 </div>
 
-<a name="DeviceStatusData.Variables"></a><a name="Topic1392"></a><div class="CTopic TGroup LC">
+<a name="DeviceStatusData.Variables"></a><a name="Topic1421"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="DeviceStatusData.systemState"></a><a name="Topic1393"></a><div class="CTopic TVariable LC">
+<a name="DeviceStatusData.systemState"></a><a name="Topic1422"></a><div class="CTopic TVariable LC">
  <div class="CTitle">systemState</div>
- <div id="NDPrototype1393" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> systemState</div>
+ <div id="NDPrototype1422" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> systemState</div>
 </div>
 
-<a name="DeviceStatusData.systemTimerInMS"></a><a name="Topic1394"></a><div class="CTopic TVariable LC">
+<a name="DeviceStatusData.systemTimerInMS"></a><a name="Topic1423"></a><div class="CTopic TVariable LC">
  <div class="CTitle">systemTimerInMS</div>
- <div id="NDPrototype1394" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> systemTimerInMS</div>
+ <div id="NDPrototype1423" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> systemTimerInMS</div>
 </div>
 
-<a name="DeviceStatusData.gnssPowerStateOn"></a><a name="Topic1395"></a><div class="CTopic TVariable LC">
+<a name="DeviceStatusData.gnssPowerStateOn"></a><a name="Topic1424"></a><div class="CTopic TVariable LC">
  <div class="CTitle">gnssPowerStateOn</div>
- <div id="NDPrototype1395" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> gnssPowerStateOn</div>
+ <div id="NDPrototype1424" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> gnssPowerStateOn</div>
 </div>
 
-<a name="DeviceStatusData.numberof1PPSPulses"></a><a name="Topic1396"></a><div class="CTopic TVariable LC">
+<a name="DeviceStatusData.numberof1PPSPulses"></a><a name="Topic1425"></a><div class="CTopic TVariable LC">
  <div class="CTitle">numberof1PPSPulses</div>
- <div id="NDPrototype1396" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> numberof1PPSPulses</div>
+ <div id="NDPrototype1425" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> numberof1PPSPulses</div>
 </div>
 
-<a name="DeviceStatusData.last1PPSInMS"></a><a name="Topic1397"></a><div class="CTopic TVariable LC">
+<a name="DeviceStatusData.last1PPSInMS"></a><a name="Topic1426"></a><div class="CTopic TVariable LC">
  <div class="CTitle">last1PPSInMS</div>
- <div id="NDPrototype1397" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> last1PPSInMS</div>
+ <div id="NDPrototype1426" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> last1PPSInMS</div>
 </div>
 
-<a name="DeviceStatusData.imuStreamIsEnabled"></a><a name="Topic1398"></a><div class="CTopic TVariable LC">
+<a name="DeviceStatusData.imuStreamIsEnabled"></a><a name="Topic1427"></a><div class="CTopic TVariable LC">
  <div class="CTitle">imuStreamIsEnabled</div>
- <div id="NDPrototype1398" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> imuStreamIsEnabled</div>
+ <div id="NDPrototype1427" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> imuStreamIsEnabled</div>
 </div>
 
-<a name="DeviceStatusData.gnssStreamIsEnabled"></a><a name="Topic1399"></a><div class="CTopic TVariable LC">
+<a name="DeviceStatusData.gnssStreamIsEnabled"></a><a name="Topic1428"></a><div class="CTopic TVariable LC">
  <div class="CTitle">gnssStreamIsEnabled</div>
- <div id="NDPrototype1399" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> gnssStreamIsEnabled</div>
+ <div id="NDPrototype1428" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> gnssStreamIsEnabled</div>
 </div>
 
-<a name="DeviceStatusData.estimationFilterStreamIsEnabled"></a><a name="Topic1400"></a><div class="CTopic TVariable LC">
+<a name="DeviceStatusData.estimationFilterStreamIsEnabled"></a><a name="Topic1429"></a><div class="CTopic TVariable LC">
  <div class="CTitle">estimationFilterStreamIsEnabled</div>
- <div id="NDPrototype1400" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> estimationFilterStreamIsEnabled</div>
+ <div id="NDPrototype1429" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> estimationFilterStreamIsEnabled</div>
 </div>
 
-<a name="DeviceStatusData.outgoingIMUDroppedPacketCount"></a><a name="Topic1401"></a><div class="CTopic TVariable LC">
+<a name="DeviceStatusData.outgoingIMUDroppedPacketCount"></a><a name="Topic1430"></a><div class="CTopic TVariable LC">
  <div class="CTitle">outgoingIMUDroppedPacketCount</div>
- <div id="NDPrototype1401" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> outgoingIMUDroppedPacketCount</div>
+ <div id="NDPrototype1430" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> outgoingIMUDroppedPacketCount</div>
 </div>
 
-<a name="DeviceStatusData.outgoingGnssDroppedPacketCount"></a><a name="Topic1402"></a><div class="CTopic TVariable LC">
+<a name="DeviceStatusData.outgoingGnssDroppedPacketCount"></a><a name="Topic1431"></a><div class="CTopic TVariable LC">
  <div class="CTitle">outgoingGnssDroppedPacketCount</div>
- <div id="NDPrototype1402" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> outgoingGnssDroppedPacketCount</div>
+ <div id="NDPrototype1431" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> outgoingGnssDroppedPacketCount</div>
 </div>
 
-<a name="DeviceStatusData.outgoingEstimationFilterDroppedPacketCount"></a><a name="Topic1403"></a><div class="CTopic TVariable LC">
+<a name="DeviceStatusData.outgoingEstimationFilterDroppedPacketCount"></a><a name="Topic1432"></a><div class="CTopic TVariable LC">
  <div class="CTitle">outgoingEstimationFilterDroppedPacketCount</div>
- <div id="NDPrototype1403" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> outgoingEstimationFilterDroppedPacketCount</div>
+ <div id="NDPrototype1432" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> outgoingEstimationFilterDroppedPacketCount</div>
 </div>
 
-<a name="DeviceStatusData.numOfBytesWrittenToComPort"></a><a name="Topic1404"></a><div class="CTopic TVariable LC">
+<a name="DeviceStatusData.numOfBytesWrittenToComPort"></a><a name="Topic1433"></a><div class="CTopic TVariable LC">
  <div class="CTitle">numOfBytesWrittenToComPort</div>
- <div id="NDPrototype1404" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> numOfBytesWrittenToComPort</div>
+ <div id="NDPrototype1433" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> numOfBytesWrittenToComPort</div>
 </div>
 
-<a name="DeviceStatusData.numOfBytesWrittenFromComPort"></a><a name="Topic1405"></a><div class="CTopic TVariable LC">
+<a name="DeviceStatusData.numOfBytesWrittenFromComPort"></a><a name="Topic1434"></a><div class="CTopic TVariable LC">
  <div class="CTitle">numOfBytesWrittenFromComPort</div>
- <div id="NDPrototype1405" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> numOfBytesWrittenFromComPort</div>
+ <div id="NDPrototype1434" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> numOfBytesWrittenFromComPort</div>
 </div>
 
-<a name="DeviceStatusData.numOfOverrunsOnWriteToComPort"></a><a name="Topic1406"></a><div class="CTopic TVariable LC">
+<a name="DeviceStatusData.numOfOverrunsOnWriteToComPort"></a><a name="Topic1435"></a><div class="CTopic TVariable LC">
  <div class="CTitle">numOfOverrunsOnWriteToComPort</div>
- <div id="NDPrototype1406" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> numOfOverrunsOnWriteToComPort</div>
+ <div id="NDPrototype1435" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> numOfOverrunsOnWriteToComPort</div>
 </div>
 
-<a name="DeviceStatusData.numOfIMUParsingErrors"></a><a name="Topic1407"></a><div class="CTopic TVariable LC">
+<a name="DeviceStatusData.numOfIMUParsingErrors"></a><a name="Topic1436"></a><div class="CTopic TVariable LC">
  <div class="CTitle">numOfIMUParsingErrors</div>
- <div id="NDPrototype1407" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> numOfIMUParsingErrors</div>
+ <div id="NDPrototype1436" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> numOfIMUParsingErrors</div>
 </div>
 
-<a name="DeviceStatusData.totalIMUMessagesRead"></a><a name="Topic1408"></a><div class="CTopic TVariable LC">
+<a name="DeviceStatusData.totalIMUMessagesRead"></a><a name="Topic1437"></a><div class="CTopic TVariable LC">
  <div class="CTitle">totalIMUMessagesRead</div>
- <div id="NDPrototype1408" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> totalIMUMessagesRead</div>
+ <div id="NDPrototype1437" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> totalIMUMessagesRead</div>
 </div>
 
-<a name="DeviceStatusData.lastIMUMessageReadInMS"></a><a name="Topic1409"></a><div class="CTopic TVariable LC">
+<a name="DeviceStatusData.lastIMUMessageReadInMS"></a><a name="Topic1438"></a><div class="CTopic TVariable LC">
  <div class="CTitle">lastIMUMessageReadInMS</div>
- <div id="NDPrototype1409" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> lastIMUMessageReadInMS</div>
+ <div id="NDPrototype1438" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> lastIMUMessageReadInMS</div>
 </div>
 
-<a name="DeviceStatusData.numOfGnssParsingErrors"></a><a name="Topic1410"></a><div class="CTopic TVariable LC">
+<a name="DeviceStatusData.numOfGnssParsingErrors"></a><a name="Topic1439"></a><div class="CTopic TVariable LC">
  <div class="CTitle">numOfGnssParsingErrors</div>
- <div id="NDPrototype1410" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> numOfGnssParsingErrors</div>
+ <div id="NDPrototype1439" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> numOfGnssParsingErrors</div>
 </div>
 
-<a name="DeviceStatusData.totalGnssMessagesRead"></a><a name="Topic1411"></a><div class="CTopic TVariable LC">
+<a name="DeviceStatusData.totalGnssMessagesRead"></a><a name="Topic1440"></a><div class="CTopic TVariable LC">
  <div class="CTitle">totalGnssMessagesRead</div>
- <div id="NDPrototype1411" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> totalGnssMessagesRead</div>
+ <div id="NDPrototype1440" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> totalGnssMessagesRead</div>
 </div>
 
-<a name="DeviceStatusData.lastGnssMessageReadInMS"></a><a name="Topic1412"></a><div class="CTopic TVariable LC">
+<a name="DeviceStatusData.lastGnssMessageReadInMS"></a><a name="Topic1441"></a><div class="CTopic TVariable LC">
  <div class="CTitle">lastGnssMessageReadInMS</div>
- <div id="NDPrototype1412" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> lastGnssMessageReadInMS</div>
+ <div id="NDPrototype1441" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> lastGnssMessageReadInMS</div>
 </div>
 
-<a name="ExternalGNSSUpdateData"></a><a name="Topic1413"></a><div class="CTopic TStruct LC">
+<a name="ExternalGNSSUpdateData"></a><a name="Topic1442"></a><div class="CTopic TStruct LC">
  <div class="CTitle">ExternalGNSSUpdateData</div>
- <div class="CBody"><p>Contains the data needed by the <a href="../../../index.html#File:MicroStrain/Inertial/InertialNode.h:InertialNode.sendExternalGNSSUpdate" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1593);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialNode::sendExternalGNSSUpdate</a> method.</p></div>
+ <div class="CBody"><p>Contains the data needed by the <a href="../../../index.html#File:MicroStrain/Inertial/InertialNode.h:InertialNode.sendExternalGNSSUpdate" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1655);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >InertialNode::sendExternalGNSSUpdate</a> method.</p></div>
 </div>
 
-<a name="ExternalGNSSUpdateData.Variables"></a><a name="Topic1414"></a><div class="CTopic TGroup LC">
+<a name="ExternalGNSSUpdateData.Variables"></a><a name="Topic1443"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="ExternalGNSSUpdateData.gpsTimeOfWeek"></a><a name="Topic1415"></a><div class="CTopic TVariable LC">
+<a name="ExternalGNSSUpdateData.gpsTimeOfWeek"></a><a name="Topic1444"></a><div class="CTopic TVariable LC">
  <div class="CTitle">gpsTimeOfWeek</div>
- <div id="NDPrototype1415" class="NDPrototype NoParameterForm"><span class="SHKeyword">double</span> gpsTimeOfWeek</div>
+ <div id="NDPrototype1444" class="NDPrototype NoParameterForm"><span class="SHKeyword">double</span> gpsTimeOfWeek</div>
 </div>
 
-<a name="ExternalGNSSUpdateData.gpsWeekNumber"></a><a name="Topic1416"></a><div class="CTopic TVariable LC">
+<a name="ExternalGNSSUpdateData.gpsWeekNumber"></a><a name="Topic1445"></a><div class="CTopic TVariable LC">
  <div class="CTitle">gpsWeekNumber</div>
- <div id="NDPrototype1416" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> gpsWeekNumber</div>
+ <div id="NDPrototype1445" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> gpsWeekNumber</div>
 </div>
 
-<a name="ExternalGNSSUpdateData.lattitude"></a><a name="Topic1417"></a><div class="CTopic TVariable LC">
+<a name="ExternalGNSSUpdateData.lattitude"></a><a name="Topic1446"></a><div class="CTopic TVariable LC">
  <div class="CTitle">lattitude</div>
- <div id="NDPrototype1417" class="NDPrototype NoParameterForm"><span class="SHKeyword">double</span> lattitude</div>
+ <div id="NDPrototype1446" class="NDPrototype NoParameterForm"><span class="SHKeyword">double</span> lattitude</div>
 </div>
 
-<a name="ExternalGNSSUpdateData.longitude"></a><a name="Topic1418"></a><div class="CTopic TVariable LC">
+<a name="ExternalGNSSUpdateData.longitude"></a><a name="Topic1447"></a><div class="CTopic TVariable LC">
  <div class="CTitle">longitude</div>
- <div id="NDPrototype1418" class="NDPrototype NoParameterForm"><span class="SHKeyword">double</span> longitude</div>
+ <div id="NDPrototype1447" class="NDPrototype NoParameterForm"><span class="SHKeyword">double</span> longitude</div>
 </div>
 
-<a name="ExternalGNSSUpdateData.altitudeAboveWGS84Ellipsoid"></a><a name="Topic1419"></a><div class="CTopic TVariable LC">
+<a name="ExternalGNSSUpdateData.altitudeAboveWGS84Ellipsoid"></a><a name="Topic1448"></a><div class="CTopic TVariable LC">
  <div class="CTitle">altitudeAboveWGS84Ellipsoid</div>
- <div id="NDPrototype1419" class="NDPrototype NoParameterForm"><span class="SHKeyword">double</span> altitudeAboveWGS84Ellipsoid</div>
+ <div id="NDPrototype1448" class="NDPrototype NoParameterForm"><span class="SHKeyword">double</span> altitudeAboveWGS84Ellipsoid</div>
 </div>
 
-<a name="ExternalGNSSUpdateData.northVelocity"></a><a name="Topic1420"></a><div class="CTopic TVariable LC">
+<a name="ExternalGNSSUpdateData.northVelocity"></a><a name="Topic1449"></a><div class="CTopic TVariable LC">
  <div class="CTitle">northVelocity</div>
- <div id="NDPrototype1420" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> northVelocity</div>
+ <div id="NDPrototype1449" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> northVelocity</div>
 </div>
 
-<a name="ExternalGNSSUpdateData.eastVelocity"></a><a name="Topic1421"></a><div class="CTopic TVariable LC">
+<a name="ExternalGNSSUpdateData.eastVelocity"></a><a name="Topic1450"></a><div class="CTopic TVariable LC">
  <div class="CTitle">eastVelocity</div>
- <div id="NDPrototype1421" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> eastVelocity</div>
+ <div id="NDPrototype1450" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> eastVelocity</div>
 </div>
 
-<a name="ExternalGNSSUpdateData.downVelocity"></a><a name="Topic1422"></a><div class="CTopic TVariable LC">
+<a name="ExternalGNSSUpdateData.downVelocity"></a><a name="Topic1451"></a><div class="CTopic TVariable LC">
  <div class="CTitle">downVelocity</div>
- <div id="NDPrototype1422" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> downVelocity</div>
+ <div id="NDPrototype1451" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> downVelocity</div>
 </div>
 
-<a name="ExternalGNSSUpdateData.northPositionUncertainty"></a><a name="Topic1423"></a><div class="CTopic TVariable LC">
+<a name="ExternalGNSSUpdateData.northPositionUncertainty"></a><a name="Topic1452"></a><div class="CTopic TVariable LC">
  <div class="CTitle">northPositionUncertainty</div>
- <div id="NDPrototype1423" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> northPositionUncertainty</div>
+ <div id="NDPrototype1452" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> northPositionUncertainty</div>
 </div>
 
-<a name="ExternalGNSSUpdateData.eastPositionUncertainty"></a><a name="Topic1424"></a><div class="CTopic TVariable LC">
+<a name="ExternalGNSSUpdateData.eastPositionUncertainty"></a><a name="Topic1453"></a><div class="CTopic TVariable LC">
  <div class="CTitle">eastPositionUncertainty</div>
- <div id="NDPrototype1424" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> eastPositionUncertainty</div>
+ <div id="NDPrototype1453" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> eastPositionUncertainty</div>
 </div>
 
-<a name="ExternalGNSSUpdateData.downPositionUncertainty"></a><a name="Topic1425"></a><div class="CTopic TVariable LC">
+<a name="ExternalGNSSUpdateData.downPositionUncertainty"></a><a name="Topic1454"></a><div class="CTopic TVariable LC">
  <div class="CTitle">downPositionUncertainty</div>
- <div id="NDPrototype1425" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> downPositionUncertainty</div>
+ <div id="NDPrototype1454" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> downPositionUncertainty</div>
 </div>
 
-<a name="ExternalGNSSUpdateData.northVelocityUncertainty"></a><a name="Topic1426"></a><div class="CTopic TVariable LC">
+<a name="ExternalGNSSUpdateData.northVelocityUncertainty"></a><a name="Topic1455"></a><div class="CTopic TVariable LC">
  <div class="CTitle">northVelocityUncertainty</div>
- <div id="NDPrototype1426" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> northVelocityUncertainty</div>
+ <div id="NDPrototype1455" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> northVelocityUncertainty</div>
 </div>
 
-<a name="ExternalGNSSUpdateData.eastVelocityUncertainty"></a><a name="Topic1427"></a><div class="CTopic TVariable LC">
+<a name="ExternalGNSSUpdateData.eastVelocityUncertainty"></a><a name="Topic1456"></a><div class="CTopic TVariable LC">
  <div class="CTitle">eastVelocityUncertainty</div>
- <div id="NDPrototype1427" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> eastVelocityUncertainty</div>
+ <div id="NDPrototype1456" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> eastVelocityUncertainty</div>
 </div>
 
-<a name="ExternalGNSSUpdateData.downVelocityUncertainty"></a><a name="Topic1428"></a><div class="CTopic TVariable LC">
+<a name="ExternalGNSSUpdateData.downVelocityUncertainty"></a><a name="Topic1457"></a><div class="CTopic TVariable LC">
  <div class="CTitle">downVelocityUncertainty</div>
- <div id="NDPrototype1428" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> downVelocityUncertainty</div>
+ <div id="NDPrototype1457" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> downVelocityUncertainty</div>
 </div>
 
-<a name="HeadingUpdateOptions"></a><a name="Topic1429"></a><div class="CTopic TStruct LC">
+<a name="HeadingUpdateOptions"></a><a name="Topic1458"></a><div class="CTopic TStruct LC">
  <div class="CTitle">HeadingUpdateOptions</div>
  <div class="CBody"><p>Contains the possible sources of aiding heading updates to the Kalman filter.&nbsp; Some, all, or none of the options can be set as heading aids.</p></div>
 </div>
 
-<a name="HeadingUpdateOptions.Functions"></a><a name="Topic1430"></a><div class="CTopic TGroup LC">
+<a name="HeadingUpdateOptions.Functions"></a><a name="Topic1459"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="HeadingUpdateOptions.operator&lt;InertialTypes.HeadingUpdateEnableOption&gt;"></a><a name="Topic1431"></a><div class="CTopic TFunction LC">
+<a name="HeadingUpdateOptions.operator&lt;InertialTypes.HeadingUpdateEnableOption&gt;"></a><a name="Topic1460"></a><div class="CTopic TFunction LC">
  <div class="CTitle"><span class="Qualifier">operator &lt;InertialTypes::</span>&#8203;HeadingUpdateEnableOption&gt;</div>
  <div class="CBody"><p>Converts this class to a &lt;InertialTypes::HeadingUpdateEnableOption&gt;.</p></div>
 </div>
 
-<a name="HeadingUpdateOptions.HeadingUpdateOptions"></a><a name="Topic1432"></a><div class="CTopic TFunction LC">
+<a name="HeadingUpdateOptions.HeadingUpdateOptions"></a><a name="Topic1461"></a><div class="CTopic TFunction LC">
  <div class="CTitle">HeadingUpdateOptions</div>
- <div id="NDPrototype1432" class="NDPrototype NoParameterForm">HeadingUpdateOptions() : useInternalMagnetometer(<span class="SHKeyword">false</span>), useInternalGNSSVelocityVector(<span class="SHKeyword">false</span>), useExternalHeadingMessages(<span class="SHKeyword">false</span>)</div>
+ <div id="NDPrototype1461" class="NDPrototype NoParameterForm">HeadingUpdateOptions() : useInternalMagnetometer(<span class="SHKeyword">false</span>), useInternalGNSSVelocityVector(<span class="SHKeyword">false</span>), useExternalHeadingMessages(<span class="SHKeyword">false</span>)</div>
 </div>
 
-<a name="HeadingUpdateOptions.HeadingUpdateOptions(2)"></a><a name="Topic1433"></a><div class="CTopic TFunction LC">
+<a name="HeadingUpdateOptions.HeadingUpdateOptions(2)"></a><a name="Topic1462"></a><div class="CTopic TFunction LC">
  <div class="CTitle">HeadingUpdateOptions</div>
- <div id="NDPrototype1433" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">HeadingUpdateOptions(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span> InertialTypes::</td><td class="PType">HeadingUpdateEnableOption&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">headingUpdateOption</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype1462" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">HeadingUpdateOptions(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span> InertialTypes::</td><td class="PType">HeadingUpdateEnableOption&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">headingUpdateOption</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>Updates this class from a &lt;InertialTypes::HeadingUpdateEnableOption&gt; according to the Communications Protocol.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">headingUpdateOption<div class="CDLParameterType"><span class="SHKeyword">const</span> InertialTypes::HeadingUpdateEnableOption&amp;</div></td><td class="CDLDefinition"><p>The heading update used to fill in this object.</p></td></tr></table></div>
 </div>
 
-<a name="HeadingUpdateOptions.Variables"></a><a name="Topic1434"></a><div class="CTopic TGroup LC">
+<a name="HeadingUpdateOptions.Variables"></a><a name="Topic1463"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="HeadingUpdateOptions.useInternalMagnetometer"></a><a name="Topic1435"></a><div class="CTopic TVariable LC">
+<a name="HeadingUpdateOptions.useInternalMagnetometer"></a><a name="Topic1464"></a><div class="CTopic TVariable LC">
  <div class="CTitle">useInternalMagnetometer</div>
- <div id="NDPrototype1435" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> useInternalMagnetometer</div>
+ <div id="NDPrototype1464" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> useInternalMagnetometer</div>
 </div>
 
-<a name="HeadingUpdateOptions.useInternalGNSSVelocityVector"></a><a name="Topic1436"></a><div class="CTopic TVariable LC">
+<a name="HeadingUpdateOptions.useInternalGNSSVelocityVector"></a><a name="Topic1465"></a><div class="CTopic TVariable LC">
  <div class="CTitle">useInternalGNSSVelocityVector</div>
- <div id="NDPrototype1436" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> useInternalGNSSVelocityVector</div>
+ <div id="NDPrototype1465" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> useInternalGNSSVelocityVector</div>
 </div>
 
-<a name="HeadingUpdateOptions.useExternalHeadingMessages"></a><a name="Topic1437"></a><div class="CTopic TVariable LC">
+<a name="HeadingUpdateOptions.useExternalHeadingMessages"></a><a name="Topic1466"></a><div class="CTopic TVariable LC">
  <div class="CTitle">useExternalHeadingMessages</div>
- <div id="NDPrototype1437" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> useExternalHeadingMessages</div>
+ <div id="NDPrototype1466" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> useExternalHeadingMessages</div>
 </div>
 
-<a name="Geographic_Source_Options"></a><a name="Topic1438"></a><div class="CTopic TStruct LC">
+<a name="Geographic_Source_Options"></a><a name="Topic1467"></a><div class="CTopic TStruct LC">
  <div class="CTitle">Geographic Source Options</div>
  <div class="CBody"><p>Holds the Geographic Source Option and the fixed value if manual is selected.&nbsp; Determines the sources for Declination, Inclination, and Magnitude.</p></div>
 </div>
 
-<a name="Geographic_Source_Options.Functions"></a><a name="Topic1439"></a><div class="CTopic TGroup LC">
+<a name="Geographic_Source_Options.Functions"></a><a name="Topic1468"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="Geographic_Source_Options.GeographicSourceOptions"></a><a name="Topic1440"></a><div class="CTopic TFunction LC">
+<a name="Geographic_Source_Options.GeographicSourceOptions"></a><a name="Topic1469"></a><div class="CTopic TFunction LC">
  <div class="CTitle">GeographicSourceOptions</div>
- <div id="NDPrototype1440" class="NDPrototype NoParameterForm">GeographicSourceOptions() : source(InertialTypes::GeographicSourceOption::NONE), fixed(<span class="SHNumber">0.0</span>)</div>
+ <div id="NDPrototype1469" class="NDPrototype NoParameterForm">GeographicSourceOptions() : source(InertialTypes::GeographicSourceOption::NONE), manual(<span class="SHNumber">0.0</span>)</div>
 </div>
 
-<a name="Geographic_Source_Options.GeographicSourceOptions(2)"></a><a name="Topic1441"></a><div class="CTopic TFunction LC">
+<a name="Geographic_Source_Options.GeographicSourceOptions(2)"></a><a name="Topic1470"></a><div class="CTopic TFunction LC">
  <div class="CTitle">GeographicSourceOptions</div>
- <div id="NDPrototype1441" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">GeographicSourceOptions(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span> InertialTypes::</td><td class="PType">GeographicSourceOption&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">sourceValue,</td></tr><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span>&nbsp;</td><td class="PType"><span class="SHKeyword">float</span>&nbsp;</td><td></td><td class="PName last">fixedValue</td></tr></table></td><td class="PAfterParameters">) : source(sourceValue), fixed(fixedValue)</td></tr></table></div>
+ <div id="NDPrototype1470" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">GeographicSourceOptions(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span> InertialTypes::</td><td class="PType">GeographicSourceOption&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">sourceValue,</td></tr><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span>&nbsp;</td><td class="PType"><span class="SHKeyword">float</span>&nbsp;</td><td></td><td class="PName last">fixedValue</td></tr></table></td><td class="PAfterParameters">) : source(sourceValue), manual(fixedValue)</td></tr></table></div>
  <div class="CBody"><p>constructs this class from a GeographicSourceOption and a float.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">sourceValue<div class="CDLParameterType"><span class="SHKeyword">const</span> InertialTypes::GeographicSourceOption&amp;</div></td><td class="CDLDefinition"><p>The geographic source option to use.</p></td></tr><tr><td class="CDLEntry">fixedValue<div class="CDLParameterType"><span class="SHKeyword">const</span> <span class="SHKeyword">float</span></div></td><td class="CDLDefinition"><p>The fixed value entered by the user to be used if the source is fixed.</p></td></tr></table></div>
 </div>
 
-<a name="Geographic_Source_Options.Variables"></a><a name="Topic1442"></a><div class="CTopic TGroup LC">
+<a name="Geographic_Source_Options.Variables"></a><a name="Topic1471"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="Geographic_Source_Options.source"></a><a name="Topic1443"></a><div class="CTopic TVariable LC">
+<a name="Geographic_Source_Options.source"></a><a name="Topic1472"></a><div class="CTopic TVariable LC">
  <div class="CTitle">source</div>
- <div id="NDPrototype1443" class="NDPrototype NoParameterForm">InertialTypes::GeographicSourceOption source</div>
+ <div id="NDPrototype1472" class="NDPrototype NoParameterForm">InertialTypes::GeographicSourceOption source</div>
 </div>
 
-<a name="Geographic_Source_Options.fixed"></a><a name="Topic1444"></a><div class="CTopic TVariable LC">
- <div class="CTitle">fixed</div>
- <div id="NDPrototype1444" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> fixed</div>
+<a name="Geographic_Source_Options.manual"></a><a name="Topic1473"></a><div class="CTopic TVariable LC">
+ <div class="CTitle">manual</div>
+ <div id="NDPrototype1473" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> manual</div>
 </div>
 
-<a name="EstimationControlOptions"></a><a name="Topic1445"></a><div class="CTopic TStruct LC">
+<a name="EstimationControlOptions"></a><a name="Topic1474"></a><div class="CTopic TStruct LC">
  <div class="CTitle">EstimationControlOptions</div>
  <div class="CBody"><p>Controls which parameters are estimated by the Kalman Filter.&nbsp; Some, all, or none of the options can be set as estimation controls.</p></div>
 </div>
 
-<a name="EstimationControlOptions.Functions"></a><a name="Topic1446"></a><div class="CTopic TGroup LC">
+<a name="EstimationControlOptions.Functions"></a><a name="Topic1475"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Functions</div>
 </div>
 
-<a name="EstimationControlOptions.operator&lt;mscl.uint16&gt;"></a><a name="Topic1447"></a><div class="CTopic TFunction LC">
+<a name="EstimationControlOptions.operator&lt;mscl.uint16&gt;"></a><a name="Topic1476"></a><div class="CTopic TFunction LC">
  <div class="CTitle"><span class="Qualifier">operator &lt;mscl::</span>&#8203;uint16&gt;</div>
  <div class="CBody"><p>Converts this class to a &lt;mscl::uint16&gt;.</p></div>
 </div>
 
-<a name="EstimationControlOptions.EstimationControlOptions"></a><a name="Topic1448"></a><div class="CTopic TFunction LC">
+<a name="EstimationControlOptions.EstimationControlOptions"></a><a name="Topic1477"></a><div class="CTopic TFunction LC">
  <div class="CTitle">EstimationControlOptions</div>
- <div id="NDPrototype1448" class="NDPrototype NoParameterForm">EstimationControlOptions() : enableGyroBiasEstimation(<span class="SHKeyword">false</span>), enableAccelBiasEstimation(<span class="SHKeyword">false</span>), enableGyroScaleFactorEstimation(<span class="SHKeyword">false</span>), enableAccelScaleFactorEstimation(<span class="SHKeyword">false</span>), enableGNSSAntennaOffsetEstimation(<span class="SHKeyword">false</span>), enableHardIronAutoCalibration(<span class="SHKeyword">false</span>), enableSoftIronAutoCalibration(<span class="SHKeyword">false</span>)</div>
+ <div id="NDPrototype1477" class="NDPrototype NoParameterForm">EstimationControlOptions() : enableGyroBiasEstimation(<span class="SHKeyword">false</span>), enableAccelBiasEstimation(<span class="SHKeyword">false</span>), enableGyroScaleFactorEstimation(<span class="SHKeyword">false</span>), enableAccelScaleFactorEstimation(<span class="SHKeyword">false</span>), enableGNSSAntennaOffsetEstimation(<span class="SHKeyword">false</span>), enableHardIronAutoCalibration(<span class="SHKeyword">false</span>), enableSoftIronAutoCalibration(<span class="SHKeyword">false</span>)</div>
 </div>
 
-<a name="EstimationControlOptions.EstimationControlOptions(2)"></a><a name="Topic1449"></a><div class="CTopic TFunction LC">
+<a name="EstimationControlOptions.EstimationControlOptions(2)"></a><a name="Topic1478"></a><div class="CTopic TFunction LC">
  <div class="CTitle">EstimationControlOptions</div>
- <div id="NDPrototype1449" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">EstimationControlOptions(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span> mscl::</td><td class="PType"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">estimationControlData</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
+ <div id="NDPrototype1478" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters">EstimationControlOptions(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PModifierQualifier first"><span class="SHKeyword">const</span> mscl::</td><td class="PType"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PNamePrefix">&amp;</td><td class="PName last">estimationControlData</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div>
  <div class="CBody"><p>constructs this class from a &lt;mscl::uint16&gt; estimation control according to the Communications Protocol.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">estimationControlData<div class="CDLParameterType"><span class="SHKeyword">const</span> mscl::<span class="SHKeyword">uint16</span>&amp;</div></td><td class="CDLDefinition"><p>The estimation control data used to fill in this object.</p></td></tr></table></div>
 </div>
 
-<a name="EstimationControlOptions.Variables"></a><a name="Topic1450"></a><div class="CTopic TGroup LC">
+<a name="EstimationControlOptions.Variables"></a><a name="Topic1479"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="EstimationControlOptions.enableGyroBiasEstimation"></a><a name="Topic1451"></a><div class="CTopic TVariable LC">
+<a name="EstimationControlOptions.enableGyroBiasEstimation"></a><a name="Topic1480"></a><div class="CTopic TVariable LC">
  <div class="CTitle">enableGyroBiasEstimation</div>
- <div id="NDPrototype1451" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enableGyroBiasEstimation</div>
+ <div id="NDPrototype1480" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enableGyroBiasEstimation</div>
 </div>
 
-<a name="EstimationControlOptions.enableAccelBiasEstimation"></a><a name="Topic1452"></a><div class="CTopic TVariable LC">
+<a name="EstimationControlOptions.enableAccelBiasEstimation"></a><a name="Topic1481"></a><div class="CTopic TVariable LC">
  <div class="CTitle">enableAccelBiasEstimation</div>
- <div id="NDPrototype1452" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enableAccelBiasEstimation</div>
+ <div id="NDPrototype1481" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enableAccelBiasEstimation</div>
 </div>
 
-<a name="EstimationControlOptions.enableGyroScaleFactorEstimation"></a><a name="Topic1453"></a><div class="CTopic TVariable LC">
+<a name="EstimationControlOptions.enableGyroScaleFactorEstimation"></a><a name="Topic1482"></a><div class="CTopic TVariable LC">
  <div class="CTitle">enableGyroScaleFactorEstimation</div>
- <div id="NDPrototype1453" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enableGyroScaleFactorEstimation</div>
+ <div id="NDPrototype1482" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enableGyroScaleFactorEstimation</div>
 </div>
 
-<a name="EstimationControlOptions.enableAccelScaleFactorEstimation"></a><a name="Topic1454"></a><div class="CTopic TVariable LC">
+<a name="EstimationControlOptions.enableAccelScaleFactorEstimation"></a><a name="Topic1483"></a><div class="CTopic TVariable LC">
  <div class="CTitle">enableAccelScaleFactorEstimation</div>
- <div id="NDPrototype1454" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enableAccelScaleFactorEstimation</div>
+ <div id="NDPrototype1483" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enableAccelScaleFactorEstimation</div>
 </div>
 
-<a name="EstimationControlOptions.enableGNSSAntennaOffsetEstimation"></a><a name="Topic1455"></a><div class="CTopic TVariable LC">
+<a name="EstimationControlOptions.enableGNSSAntennaOffsetEstimation"></a><a name="Topic1484"></a><div class="CTopic TVariable LC">
  <div class="CTitle">enableGNSSAntennaOffsetEstimation</div>
- <div id="NDPrototype1455" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enableGNSSAntennaOffsetEstimation</div>
+ <div id="NDPrototype1484" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enableGNSSAntennaOffsetEstimation</div>
 </div>
 
-<a name="EstimationControlOptions.enableHardIronAutoCalibration"></a><a name="Topic1456"></a><div class="CTopic TVariable LC">
+<a name="EstimationControlOptions.enableHardIronAutoCalibration"></a><a name="Topic1485"></a><div class="CTopic TVariable LC">
  <div class="CTitle">enableHardIronAutoCalibration</div>
- <div id="NDPrototype1456" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enableHardIronAutoCalibration</div>
+ <div id="NDPrototype1485" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enableHardIronAutoCalibration</div>
 </div>
 
-<a name="EstimationControlOptions.enableSoftIronAutoCalibration"></a><a name="Topic1457"></a><div class="CTopic TVariable LC">
+<a name="EstimationControlOptions.enableSoftIronAutoCalibration"></a><a name="Topic1486"></a><div class="CTopic TVariable LC">
  <div class="CTitle">enableSoftIronAutoCalibration</div>
- <div id="NDPrototype1457" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enableSoftIronAutoCalibration</div>
+ <div id="NDPrototype1486" class="NDPrototype NoParameterForm"><span class="SHKeyword">bool</span> enableSoftIronAutoCalibration</div>
 </div>
 
-<a name="HeadingData"></a><a name="Topic1458"></a><div class="CTopic TStruct LC">
+<a name="HeadingData"></a><a name="Topic1487"></a><div class="CTopic TStruct LC">
  <div class="CTitle">HeadingData</div>
 </div>
 
-<a name="HeadingData.Types"></a><a name="Topic1459"></a><div class="CTopic TGroup LC">
+<a name="HeadingData.Types"></a><a name="Topic1488"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Types</div>
 </div>
 
-<a name="HeadingData.HeadingType"></a><a name="Topic1460"></a><div class="CTopic TEnumeration LC">
+<a name="HeadingData.HeadingType"></a><a name="Topic1489"></a><div class="CTopic TEnumeration LC">
  <div class="CTitle">HeadingType</div>
  <div class="CBody"><p>Dictates whether heading is relative to true north or magnetic north.</p></div>
 </div>
 
-<a name="HeadingData.Variables"></a><a name="Topic1461"></a><div class="CTopic TGroup LC">
+<a name="HeadingData.Variables"></a><a name="Topic1490"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="HeadingData.headingAngle"></a><a name="Topic1462"></a><div class="CTopic TVariable LC">
+<a name="HeadingData.headingAngle"></a><a name="Topic1491"></a><div class="CTopic TVariable LC">
  <div class="CTitle">headingAngle</div>
- <div id="NDPrototype1462" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> headingAngle</div>
+ <div id="NDPrototype1491" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> headingAngle</div>
 </div>
 
-<a name="HeadingData.headingAngleUncertainty"></a><a name="Topic1463"></a><div class="CTopic TVariable LC">
+<a name="HeadingData.headingAngleUncertainty"></a><a name="Topic1492"></a><div class="CTopic TVariable LC">
  <div class="CTitle">headingAngleUncertainty</div>
- <div id="NDPrototype1463" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> headingAngleUncertainty</div>
+ <div id="NDPrototype1492" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> headingAngleUncertainty</div>
 </div>
 
-<a name="AdaptiveMeasurementData"></a><a name="Topic1464"></a><div class="CTopic TStruct LC">
+<a name="AdaptiveMeasurementData"></a><a name="Topic1493"></a><div class="CTopic TStruct LC">
  <div class="CTitle">AdaptiveMeasurementData</div>
 </div>
 
-<a name="AdaptiveMeasurementData.Variables"></a><a name="Topic1465"></a><div class="CTopic TGroup LC">
+<a name="AdaptiveMeasurementData.Variables"></a><a name="Topic1494"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="AdaptiveMeasurementData.mode"></a><a name="Topic1466"></a><div class="CTopic TVariable LC">
+<a name="AdaptiveMeasurementData.mode"></a><a name="Topic1495"></a><div class="CTopic TVariable LC">
  <div class="CTitle">mode</div>
- <div id="NDPrototype1466" class="NDPrototype NoParameterForm">InertialTypes::AdaptiveMeasurementMode mode</div>
+ <div id="NDPrototype1495" class="NDPrototype NoParameterForm">InertialTypes::AdaptiveMeasurementMode mode</div>
 </div>
 
-<a name="AdaptiveMeasurementData.lowPassFilterCutoff"></a><a name="Topic1467"></a><div class="CTopic TVariable LC">
+<a name="AdaptiveMeasurementData.lowPassFilterCutoff"></a><a name="Topic1496"></a><div class="CTopic TVariable LC">
  <div class="CTitle">lowPassFilterCutoff</div>
- <div id="NDPrototype1467" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> lowPassFilterCutoff</div>
+ <div id="NDPrototype1496" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> lowPassFilterCutoff</div>
 </div>
 
-<a name="AdaptiveMeasurementData.lowLimit"></a><a name="Topic1468"></a><div class="CTopic TVariable LC">
+<a name="AdaptiveMeasurementData.lowLimit"></a><a name="Topic1497"></a><div class="CTopic TVariable LC">
  <div class="CTitle">lowLimit</div>
- <div id="NDPrototype1468" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> lowLimit</div>
+ <div id="NDPrototype1497" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> lowLimit</div>
 </div>
 
-<a name="AdaptiveMeasurementData.highLimit"></a><a name="Topic1469"></a><div class="CTopic TVariable LC">
+<a name="AdaptiveMeasurementData.highLimit"></a><a name="Topic1498"></a><div class="CTopic TVariable LC">
  <div class="CTitle">highLimit</div>
- <div id="NDPrototype1469" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> highLimit</div>
+ <div id="NDPrototype1498" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> highLimit</div>
 </div>
 
-<a name="AdaptiveMeasurementData.lowLimitUncertainty"></a><a name="Topic1470"></a><div class="CTopic TVariable LC">
+<a name="AdaptiveMeasurementData.lowLimitUncertainty"></a><a name="Topic1499"></a><div class="CTopic TVariable LC">
  <div class="CTitle">lowLimitUncertainty</div>
- <div id="NDPrototype1470" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> lowLimitUncertainty</div>
+ <div id="NDPrototype1499" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> lowLimitUncertainty</div>
 </div>
 
-<a name="AdaptiveMeasurementData.highLimitUncertainty"></a><a name="Topic1471"></a><div class="CTopic TVariable LC">
+<a name="AdaptiveMeasurementData.highLimitUncertainty"></a><a name="Topic1500"></a><div class="CTopic TVariable LC">
  <div class="CTitle">highLimitUncertainty</div>
- <div id="NDPrototype1471" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> highLimitUncertainty</div>
+ <div id="NDPrototype1500" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> highLimitUncertainty</div>
 </div>
 
-<a name="AdaptiveMeasurementData.minUncertainty"></a><a name="Topic1472"></a><div class="CTopic TVariable LC last">
+<a name="AdaptiveMeasurementData.minUncertainty"></a><a name="Topic1501"></a><div class="CTopic TVariable LC last">
  <div class="CTitle">minUncertainty</div>
- <div id="NDPrototype1472" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> minUncertainty</div>
+ <div id="NDPrototype1501" class="NDPrototype NoParameterForm"><span class="SHKeyword">float</span> minUncertainty</div>
 </div>
 
 </body></html>
