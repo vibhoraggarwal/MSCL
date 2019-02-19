@@ -1,1 +1,1 @@
-NDFramePage.OnPageTitleLoaded("CClass:FieldParser_ScaledAccelVector","FieldParser_ScaledAccelVector");NDSummary.OnSummaryLoaded("CClass:FieldParser_ScaledAccelVector",[["C/C++","C"]],[["Classes","Class"]],[[934,0,0,"FieldParser_ScaledAccelVector"]]);
+NDFramePage.OnPageTitleLoaded("CClass:FieldParser_ScaledAccelVector","FieldParser_ScaledAccelVector");NDSummary.OnSummaryLoaded("CClass:FieldParser_ScaledAccelVector",[["C/C++","C"]],[["Classes","Class"]],[[918,0,0,"FieldParser_ScaledAccelVector"]]);

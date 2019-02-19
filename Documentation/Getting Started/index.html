@@ -120,12 +120,11 @@
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id="introduction">Introduction</h1>
-<pre class="highlight cpp"><code><span class="c1">//get the version of MSCL (MSCL_VERSION.majorPart(), .minorPart(), and .patchPart() are also available)
+        <h1 id='introduction'>Introduction</h1><pre class="highlight cpp tab-cpp"><code><span class="c1">//get the version of MSCL (MSCL_VERSION.majorPart(), .minorPart(), and .patchPart() are also available)
 </span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">mscl</span><span class="o">::</span><span class="n">MSCL_VERSION</span><span class="p">.</span><span class="n">str</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</code></pre><pre class="highlight csharp"><code><span class="c1">//get the version of MSCL (MSCL_VERSION.majorPart(), .minorPart(), and .patchPart() are also available)</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="c1">//get the version of MSCL (MSCL_VERSION.majorPart(), .minorPart(), and .patchPart() are also available)</span>
 <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MSCL_VERSION</span><span class="p">.</span><span class="nf">ToString</span><span class="p">());</span>
-</code></pre><pre class="highlight python"><code><span class="c"># get the version of MSCL (MSCL_VERSION.majorPart(), .minorPart(), and .patchPart() are also available)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="c"># get the version of MSCL (MSCL_VERSION.majorPart(), .minorPart(), and .patchPart() are also available)</span>
 <span class="k">print</span> <span class="n">mscl</span><span class="o">.</span><span class="n">MSCL_VERSION</span>
 </code></pre>
 <p>Welcome to the MSCL (MicroStrain Communication Library) Quick Start Guide! </p>
@@ -137,24 +136,19 @@
 <p>This guide will help get you started with using MSCL. It does not encompass everything that MSCL can do. Please see the complete Documentation for a list of all functionality.</p>
 
 <p>For simplicity, the examples below do not show the necessary error handling that should be performed when using MSCL. Please see the <a href="http://lord-microstrain.github.io/MSCL/Documentation/MSCL%20API%20Documentation/index.html">API Documentation</a> for details on Exceptions that each function can throw.</p>
-
-<h1 id="wireless">Wireless</h1>
-
-<h2 id="creating-a-basestation">Creating a BaseStation</h2>
-<pre class="highlight cpp"><code><span class="cp">#include "mscl/Communication/Connection.h"
-#include "mscl/MicroStrain/Wireless/BaseStation.h"
+<h1 id='wireless'>Wireless</h1><h2 id='creating-a-basestation'>Creating a BaseStation</h2><pre class="highlight cpp tab-cpp"><code><span class="cp">#include "mscl/mscl.h"
 </span>
 <span class="c1">//create the connection object with port and baud rate
 </span><span class="n">mscl</span><span class="o">::</span><span class="n">Connection</span> <span class="n">connection</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">::</span><span class="n">Connection</span><span class="o">::</span><span class="n">Serial</span><span class="p">(</span><span class="s">"COM3"</span><span class="p">,</span> <span class="mi">921600</span><span class="p">);</span>
 
 <span class="c1">//create the BaseStation, passing in the connection
 </span><span class="n">mscl</span><span class="o">::</span><span class="n">BaseStation</span> <span class="n">basestation</span><span class="p">(</span><span class="n">connection</span><span class="p">);</span>
-</code></pre><pre class="highlight csharp"><code><span class="c1">//create the connection object with port and baud rate</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="c1">//create the connection object with port and baud rate</span>
 <span class="n">mscl</span><span class="p">.</span><span class="n">Connection</span> <span class="n">connection</span> <span class="p">=</span> <span class="n">mscl</span><span class="p">.</span><span class="n">Connection</span><span class="p">.</span><span class="nf">Serial</span><span class="p">(</span><span class="s">"COM3"</span><span class="p">,</span> <span class="m">921600</span><span class="p">);</span>
 
 <span class="c1">//create the BaseStation, passing in the connection</span>
 <span class="n">mscl</span><span class="p">.</span><span class="n">BaseStation</span> <span class="n">basestation</span> <span class="p">=</span> <span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">BaseStation</span><span class="p">(</span><span class="n">connection</span><span class="p">);</span>
-</code></pre><pre class="highlight python"><code><span class="kn">import</span> <span class="nn">mscl</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">mscl</span>
 
 <span class="c">#create the connection object with port and baud rate</span>
 <span class="n">connection</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">.</span><span class="n">Connection</span><span class="o">.</span><span class="n">Serial</span><span class="p">(</span><span class="s">"COM3"</span><span class="p">,</span> <span class="mi">921600</span><span class="p">)</span>
@@ -163,42 +157,37 @@
 <span class="n">basestation</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">.</span><span class="n">BaseStation</span><span class="p">(</span><span class="n">connection</span><span class="p">)</span>
 </code></pre>
 <blockquote>
-<p>Make sure to replace <code class="prettyprint">COM3</code> and <code class="prettyprint">921600</code> with your own port settings.</p>
+<p>Make sure to replace <code>COM3</code> and <code>921600</code> with your own port settings.</p>
 </blockquote>
 
-<p>To interface with a wireless device, you will first need to create a <code class="prettyprint">BaseStation</code> that represents a physical <a href="http://www.microstrain.com/wireless/gateways">BaseStation or Gateway</a>.</p>
+<p>To interface with a wireless device, you will first need to create a <code>BaseStation</code> that represents a physical <a href="http://www.microstrain.com/wireless/gateways">BaseStation or Gateway</a>.</p>
 
-<p>A <code class="prettyprint">BaseStation</code> takes a <code class="prettyprint">Connection</code> as a parameter. </p>
+<p>A <code>BaseStation</code> takes a <code>Connection</code> as a parameter. </p>
 
-<p><code class="prettyprint">Serial</code>, <code class="prettyprint">TcpIp</code>, and <code class="prettyprint">UnixSocket</code> are all available as connection types.</p>
+<p><code>Serial</code>, <code>TcpIp</code>, and <code>UnixSocket</code> are all available as connection types.</p>
 
 <aside class="notice">
 As soon as the Connection object is created, the port will be opened.
 </aside>
-
-<h2 id="creating-a-wirelessnode">Creating a WirelessNode</h2>
-<pre class="highlight cpp"><code><span class="cp">#include "mscl/MicroStrain/Wireless/WirelessNode.h"
-</span>
+<h2 id='creating-a-wirelessnode'>Creating a WirelessNode</h2><pre class="highlight cpp tab-cpp"><code>
 <span class="c1">//create a WirelessNode with the BaseStation
 </span><span class="n">mscl</span><span class="o">::</span><span class="n">WirelessNode</span> <span class="n">node</span><span class="p">(</span><span class="mi">31849</span><span class="p">,</span> <span class="n">baseStation</span><span class="p">);</span>
-</code></pre><pre class="highlight csharp"><code><span class="c1">//create a WirelessNode with the BaseStation we created</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="c1">//create a WirelessNode with the BaseStation we created</span>
 <span class="n">mscl</span><span class="p">.</span><span class="n">WirelessNode</span> <span class="n">node</span> <span class="p">=</span> <span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">WirelessNode</span><span class="p">(</span><span class="m">31849</span><span class="p">,</span> <span class="n">baseStation</span><span class="p">);</span>
-</code></pre><pre class="highlight python"><code><span class="c"># create a WirelessNode with the BaseStation we created</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="c"># create a WirelessNode with the BaseStation we created</span>
 <span class="n">node</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">.</span><span class="n">WirelessNode</span><span class="p">(</span><span class="mi">31849</span><span class="p">,</span> <span class="n">baseStation</span><span class="p">)</span>
 </code></pre>
 <blockquote>
-<p>Make sure to replace <code class="prettyprint">31849</code> with the Node Address of your Wireless Node.</p>
+<p>Make sure to replace <code>31849</code> with the Node Address of your Wireless Node.</p>
 </blockquote>
 
-<p>To communicate with any <a href="http://www.microstrain.com/wireless/sensors">Wireless Node</a>, create a <code class="prettyprint">WirelessNode</code> instance, providing the Node Address of the physical Node, and the <code class="prettyprint">BaseStation</code> that you wish to communicate to the Node with.</p>
+<p>To communicate with any <a href="http://www.microstrain.com/wireless/sensors">Wireless Node</a>, create a <code>WirelessNode</code> instance, providing the Node Address of the physical Node, and the <code>BaseStation</code> that you wish to communicate to the Node with.</p>
 
 <aside class="notice">
-If a Wireless Node is already sampling and all you would like to do is collect data, you don&rsquo;t need to create a WirelessNode object.
+If a Wireless Node is already sampling and all you would like to do is collect data, you don't need to create a WirelessNode object.
 See the Collecting Data section for more info.
 </aside>
-
-<h2 id="communicating-with-a-node">Communicating with a Node</h2>
-<pre class="highlight cpp"><code><span class="c1">//ping the Node
+<h2 id='communicating-with-a-node'>Communicating with a Node</h2><pre class="highlight cpp tab-cpp"><code><span class="c1">//ping the Node
 </span><span class="n">mscl</span><span class="o">::</span><span class="n">PingResponse</span> <span class="n">response</span> <span class="o">=</span> <span class="n">node</span><span class="p">.</span><span class="n">ping</span><span class="p">();</span>
 
 <span class="c1">//if the ping response was a success
@@ -207,7 +196,7 @@ See the Collecting Data section for more info.
     <span class="n">response</span><span class="p">.</span><span class="n">baseRssi</span><span class="p">();</span> <span class="c1">//the BaseStation RSSI
 </span>    <span class="n">response</span><span class="p">.</span><span class="n">nodeRssi</span><span class="p">();</span> <span class="c1">//the Node RSSI
 </span><span class="p">}</span>
-</code></pre><pre class="highlight csharp"><code><span class="c1">//ping the Node</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="c1">//ping the Node</span>
 <span class="n">mscl</span><span class="p">.</span><span class="n">PingResponse</span> <span class="n">response</span> <span class="p">=</span> <span class="n">node</span><span class="p">.</span><span class="nf">ping</span><span class="p">();</span>
 
 <span class="c1">//if the ping response was a success</span>
@@ -216,7 +205,7 @@ See the Collecting Data section for more info.
     <span class="n">response</span><span class="p">.</span><span class="nf">baseRssi</span><span class="p">();</span> <span class="c1">//the BaseStation RSSI</span>
     <span class="n">response</span><span class="p">.</span><span class="nf">nodeRssi</span><span class="p">();</span> <span class="c1">//the Node RSSI</span>
 <span class="p">}</span>
-</code></pre><pre class="highlight python"><code><span class="c"># ping the Node</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="c"># ping the Node</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">ping</span><span class="p">()</span>
 
 <span class="c"># if the ping response was a success</span>
@@ -246,8 +235,8 @@ See the Collecting Data section for more info.
 </tr>
 </tbody></table>
 
-<p>If a Node is in an Idle state, it will respond to pings, can be configured, and can be put into the other states (sleep or sampling). To test communicating with a WirelessNode that is in an idle state, use the <code class="prettyprint">ping()</code> function.</p>
-<pre class="highlight cpp"><code><span class="c1">//call the setToIdle function and get the resulting SetToIdleStatus object
+<p>If a Node is in an Idle state, it will respond to pings, can be configured, and can be put into the other states (sleep or sampling). To test communicating with a WirelessNode that is in an idle state, use the <code>ping()</code> function.</p>
+<pre class="highlight cpp tab-cpp"><code><span class="c1">//call the setToIdle function and get the resulting SetToIdleStatus object
 </span><span class="n">mscl</span><span class="o">::</span><span class="n">SetToIdleStatus</span> <span class="n">idleStatus</span> <span class="o">=</span> <span class="n">node</span><span class="p">.</span><span class="n">setToIdle</span><span class="p">();</span>
 
 <span class="c1">// checks if the set to idle operation has completed (successfully or with a failure)
@@ -274,7 +263,7 @@ See the Collecting Data section for more info.
     <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Set to Idle has failed!"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">break</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre><pre class="highlight csharp"><code><span class="c1">//call the setToIdle function and get the resulting SetToIdleStatus object</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="c1">//call the setToIdle function and get the resulting SetToIdleStatus object</span>
 <span class="n">mscl</span><span class="p">.</span><span class="n">SetToIdleStatus</span> <span class="n">idleStatus</span> <span class="p">=</span> <span class="n">node</span><span class="p">.</span><span class="nf">setToIdle</span><span class="p">();</span>
 
 <span class="c1">// checks if the Set to Idle operation has completed (successfully or with a failure)</span>
@@ -301,7 +290,7 @@ See the Collecting Data section for more info.
         <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">"Set to Idle has failed!"</span><span class="p">);</span>
         <span class="k">break</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre><pre class="highlight python"><code><span class="c"># call the setToIdle function and get the resulting SetToIdleStatus object</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="c"># call the setToIdle function and get the resulting SetToIdleStatus object</span>
 <span class="n">idleStatus</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">setToIdle</span><span class="p">()</span>
 
 <span class="c"># checks if the Set to Idle operation has completed (successfully or with a failure)</span>
@@ -320,14 +309,10 @@ See the Collecting Data section for more info.
 <span class="k">else</span><span class="p">:</span>
     <span class="k">print</span> <span class="s">"Set to Idle has failed!"</span>
 </code></pre>
-<p>If a Node is in the Sleep state or Sampling state, it cannot be directly communicated with. In order to communicate with the Node, it must be put back into the Idle state. This can be done by using the <code class="prettyprint">setToIdle()</code> function.</p>
+<p>If a Node is in the Sleep state or Sampling state, it cannot be directly communicated with. In order to communicate with the Node, it must be put back into the Idle state. This can be done by using the <code>setToIdle()</code> function.</p>
 
-<p>The Set to Idle operation uses all of the BaseStation&rsquo;s bandwidth to attempt to stop/wake the Node. Thus, this can only be performed on a single Node at a time. Once started, the operation will continue until canceled by calling the <code class="prettyprint">cancel()</code> function on the <code class="prettyprint">SetToIdleStatus</code> object returned from the <code class="prettyprint">setToIdle()</code> function.</p>
-
-<h2 id="configuring-a-node">Configuring a Node</h2>
-
-<h3 id="getting-current-config">Getting Current Config</h3>
-<pre class="highlight cpp"><code><span class="c1">//get the number of datalogging sessions stored on the node
+<p>The Set to Idle operation uses all of the BaseStation&#39;s bandwidth to attempt to stop/wake the Node. Thus, this can only be performed on a single Node at a time. Once started, the operation will continue until canceled by calling the <code>cancel()</code> function on the <code>SetToIdleStatus</code> object returned from the <code>setToIdle()</code> function.</p>
+<h2 id='configuring-a-node'>Configuring a Node</h2><h3 id='getting-current-config'>Getting Current Config</h3><pre class="highlight cpp tab-cpp"><code><span class="c1">//get the number of datalogging sessions stored on the node
 </span><span class="n">node</span><span class="p">.</span><span class="n">getNumDatalogSessions</span><span class="p">();</span>  
 
 <span class="c1">//get the user inactivity timeout in seconds
@@ -345,7 +330,7 @@ See the Collecting Data section for more info.
     <span class="c1">//get the thermocouple type
 </span>    <span class="n">node</span><span class="p">.</span><span class="n">getThermocoupleType</span><span class="p">();</span>
 <span class="p">}</span>
-</code></pre><pre class="highlight csharp"><code><span class="c1">//get the number of datalogging sessions stored on the node</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="c1">//get the number of datalogging sessions stored on the node</span>
 <span class="n">node</span><span class="p">.</span><span class="nf">getNumDatalogSessions</span><span class="p">();</span>  
 
 <span class="c1">//get the user inactivity timeout in seconds</span>
@@ -363,7 +348,7 @@ See the Collecting Data section for more info.
     <span class="c1">//get the thermocouple type</span>
     <span class="n">node</span><span class="p">.</span><span class="nf">getThermocoupleType</span><span class="p">();</span>
 <span class="p">}</span>
-</code></pre><pre class="highlight python"><code><span class="c"># get the number of datalogging sessions stored on the node</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="c"># get the number of datalogging sessions stored on the node</span>
 <span class="n">node</span><span class="o">.</span><span class="n">getNumDatalogSessions</span><span class="p">()</span>
 
 <span class="c"># get the user inactivity timeout in seconds</span>
@@ -380,19 +365,17 @@ See the Collecting Data section for more info.
     <span class="c"># get the thermocouple type</span>
     <span class="n">node</span><span class="o">.</span><span class="n">getThermocoupleType</span><span class="p">()</span>
 </code></pre>
-<p>To get the current configuration settings of a Wireless Node, each setting has an individual function on the <code class="prettyprint">WirelessNode</code> object.</p>
+<p>To get the current configuration settings of a Wireless Node, each setting has an individual function on the <code>WirelessNode</code> object.</p>
 
-<p>However, not all settings are supported by all Nodes. If a function is called (such as <code class="prettyprint">getThermocoupleType()</code>) on a Node that doesn&rsquo;t support that feature (doesn&rsquo;t support thermocouples), it will throw an <code class="prettyprint">Error_NotSupported</code> exception.</p>
+<p>However, not all settings are supported by all Nodes. If a function is called (such as <code>getThermocoupleType()</code>) on a Node that doesn&#39;t support that feature (doesn&#39;t support thermocouples), it will throw an <code>Error_NotSupported</code> exception.</p>
 
-<p>Use the <code class="prettyprint">NodeFeatures</code> class (<code class="prettyprint">node.features()</code>) to check which features are available for the Wireless Node.</p>
+<p>Use the <code>NodeFeatures</code> class (<code>node.features()</code>) to check which features are available for the Wireless Node.</p>
 
 <p><br><br><br><br>
 <br><br><br><br>
 <br><br><br><br>
 <br><br></p>
-
-<h3 id="setting-the-config">Setting the Config</h3>
-<pre class="highlight cpp"><code><span class="c1">//create a WirelessNodeConfig which is used to set all node configuration options
+<h3 id='setting-the-config'>Setting the Config</h3><pre class="highlight cpp tab-cpp"><code><span class="c1">//create a WirelessNodeConfig which is used to set all node configuration options
 </span><span class="n">mscl</span><span class="o">::</span><span class="n">WirelessNodeConfig</span> <span class="n">config</span><span class="p">;</span>
 
 <span class="c1">//set the configuration options that we want to change
@@ -404,7 +387,7 @@ See the Collecting Data section for more info.
 
 <span class="c1">//apply the configuration to the Node
 </span><span class="n">node</span><span class="p">.</span><span class="n">applyConfig</span><span class="p">(</span><span class="n">config</span><span class="p">);</span>
-</code></pre><pre class="highlight csharp"><code><span class="c1">//create a WirelessNodeConfig which is used to set all node configuration options</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="c1">//create a WirelessNodeConfig which is used to set all node configuration options</span>
 <span class="n">mscl</span><span class="p">.</span><span class="n">WirelessNodeConfig</span> <span class="n">config</span> <span class="p">=</span> <span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">WirelessNodeConfig</span><span class="p">();</span>
 
 <span class="c1">//set some of the node's configuration options</span>
@@ -416,7 +399,7 @@ See the Collecting Data section for more info.
 
 <span class="c1">//apply the configuration to the Node</span>
 <span class="n">node</span><span class="p">.</span><span class="nf">applyConfig</span><span class="p">(</span><span class="n">config</span><span class="p">);</span>
-</code></pre><pre class="highlight python"><code><span class="c"># create a WirelessNodeConfig which is used to set all node configuration options</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="c"># create a WirelessNodeConfig which is used to set all node configuration options</span>
 <span class="n">config</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">.</span><span class="n">WirelessNodeConfig</span><span class="p">()</span>
 
 <span class="c"># set the configuration options that we want to change</span>
@@ -433,20 +416,18 @@ See the Collecting Data section for more info.
 <p>These are just some examples of the Wireless Node config options available. See the complete API Documentation for the full list of available options.</p>
 </blockquote>
 
-<p>To change configuration settings of a Wireless Nodes, use the <code class="prettyprint">WirelessNodeConfig</code> object. This object contains functions for all Wireless Node config options. </p>
+<p>To change configuration settings of a Wireless Nodes, use the <code>WirelessNodeConfig</code> object. This object contains functions for all Wireless Node config options. </p>
 
-<p>When setting an option in the <code class="prettyprint">WirelessNodeConfig</code>, the value is just stored on that object itself. The object must then be given as a parameter in the <code class="prettyprint">node.applyConfig()</code> function to write all of the changed options to the physical Node. In this way, you can apply the same <code class="prettyprint">WirelessNodeConfig</code> object to multiple Nodes if desired.</p>
+<p>When setting an option in the <code>WirelessNodeConfig</code>, the value is just stored on that object itself. The object must then be given as a parameter in the <code>node.applyConfig()</code> function to write all of the changed options to the physical Node. In this way, you can apply the same <code>WirelessNodeConfig</code> object to multiple Nodes if desired.</p>
 
-<p>Some of the configuration options may conflict with other options that are being set, or that are currently set on the Wireless Node. For example, only certain Sample Rates are supported in the Burst Sync Sampling mode. If you only update the <code class="prettyprint">WirelessNodeConfig</code> object&rsquo;s sample rate, this will be checked against the current sampling mode on the Node when applying and will throw an <code class="prettyprint">Error_InvalidNodeConfig</code> exception if it is invalid for that sampling mode. If both the sample rate and sampling mode are set in the <code class="prettyprint">WirelessNodeConfig</code>, they will be checked against each other before applying to the Node.</p>
+<p>Some of the configuration options may conflict with other options that are being set, or that are currently set on the Wireless Node. For example, only certain Sample Rates are supported in the Burst Sync Sampling mode. If you only update the <code>WirelessNodeConfig</code> object&#39;s sample rate, this will be checked against the current sampling mode on the Node when applying and will throw an <code>Error_InvalidNodeConfig</code> exception if it is invalid for that sampling mode. If both the sample rate and sampling mode are set in the <code>WirelessNodeConfig</code>, they will be checked against each other before applying to the Node.</p>
 
-<p>Not all settings are supported by all Nodes. If the <code class="prettyprint">WirelessNodeConfig</code> has an option set (such as <code class="prettyprint">thermocoupleType()</code>) and that config is applied to a Node that doesn&rsquo;t support that feature (doesn&rsquo;t support thermocouples), it will throw an <code class="prettyprint">Error_InvalidNodeConfig</code> exception.</p>
+<p>Not all settings are supported by all Nodes. If the <code>WirelessNodeConfig</code> has an option set (such as <code>thermocoupleType()</code>) and that config is applied to a Node that doesn&#39;t support that feature (doesn&#39;t support thermocouples), it will throw an <code>Error_InvalidNodeConfig</code> exception.</p>
 
-<p>Use the <code class="prettyprint">NodeFeatures</code> class (<code class="prettyprint">node.features()</code>) to check which features are available for the Wireless Node.</p>
-
-<h2 id="starting-sampling">Starting Sampling</h2>
-
+<p>Use the <code>NodeFeatures</code> class (<code>node.features()</code>) to check which features are available for the Wireless Node.</p>
+<h2 id='starting-sampling'>Starting Sampling</h2>
 <p>There are 2 main sampling modes: <strong>Synchronized Sampling</strong> and <strong>Non-Synchronized Sampling</strong>.</p>
-<pre class="highlight cpp"><code><span class="c1">//create a SyncSamplingNetwork object, giving it the BaseStation that will be the master BaseStation for the network
+<pre class="highlight cpp tab-cpp"><code><span class="c1">//create a SyncSamplingNetwork object, giving it the BaseStation that will be the master BaseStation for the network
 </span><span class="n">mscl</span><span class="o">::</span><span class="n">SyncSamplingNetwork</span> <span class="n">network</span><span class="p">(</span><span class="n">baseStation</span><span class="p">);</span>
 
 <span class="c1">//add a WirelessNode to the network.
@@ -462,7 +443,7 @@ See the Collecting Data section for more info.
 
 <span class="c1">//start all the nodes in the network sampling.
 </span><span class="n">network</span><span class="p">.</span><span class="n">startSampling</span><span class="p">();</span>
-</code></pre><pre class="highlight csharp"><code><span class="c1">//create a SyncSamplingNetwork object, giving it the BaseStation that will be the master BaseStation for the network</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="c1">//create a SyncSamplingNetwork object, giving it the BaseStation that will be the master BaseStation for the network</span>
 <span class="n">mscl</span><span class="p">.</span><span class="n">SyncSamplingNetwork</span> <span class="n">network</span> <span class="p">=</span> <span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">SyncSamplingNetwork</span><span class="p">(</span><span class="n">baseStation</span><span class="p">);</span>
 
 <span class="c1">//add a WirelessNode to the network.</span>
@@ -478,7 +459,7 @@ See the Collecting Data section for more info.
 
 <span class="c1">//start all the nodes in the network sampling.</span>
 <span class="n">network</span><span class="p">.</span><span class="nf">startSampling</span><span class="p">();</span>
-</code></pre><pre class="highlight python"><code><span class="c"># create a SyncSamplingNetwork object, giving it the BaseStation that will be the master BaseStation for the network</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="c"># create a SyncSamplingNetwork object, giving it the BaseStation that will be the master BaseStation for the network</span>
 <span class="n">network</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">.</span><span class="n">SyncSamplingNetwork</span><span class="p">(</span><span class="n">baseStation</span><span class="p">)</span>
 
 <span class="c"># add a WirelessNode to the network.</span>
@@ -494,38 +475,32 @@ See the Collecting Data section for more info.
 
 <span class="c"># start all the nodes in the network sampling.</span>
 <span class="n">network</span><span class="o">.</span><span class="n">startSampling</span><span class="p">()</span>
-</code></pre>
-<h3 id="synchronized-sampling">Synchronized Sampling</h3>
-
+</code></pre><h3 id='synchronized-sampling'>Synchronized Sampling</h3>
 <p>Synchronized Sampling involves creating a Time Division Multiple Access (TDMA) network with one or more Wireless Nodes tied to a single Base Station. In this mode, all of the Nodes will have a common timestamp that is transmitted with the data, so that data can be accurately aligned.
 The BaseStation provides a beacon which keeps the Nodes in the network time-synchronized to +/- 32 microseconds.</p>
 
-<p>To start a Sync Sampling network, create a <code class="prettyprint">SyncSamplingNetwork</code> instance. This takes a <code class="prettyprint">BaseStation</code> as a parameter, which will be the master BaseStation that communicates with all of the Nodes, starts them sampling, and provides the beacon.</p>
+<p>To start a Sync Sampling network, create a <code>SyncSamplingNetwork</code> instance. This takes a <code>BaseStation</code> as a parameter, which will be the master BaseStation that communicates with all of the Nodes, starts them sampling, and provides the beacon.</p>
 
-<p>After you have configured all of the Nodes, add them to the network using the networks <code class="prettyprint">addNode()</code> function. </p>
+<p>After you have configured all of the Nodes, add them to the network using the networks <code>addNode()</code> function. </p>
 
-<p>Once all of the Nodes have been added to the network, start the network using the network&rsquo;s <code class="prettyprint">startSampling()</code> function.</p>
+<p>Once all of the Nodes have been added to the network, start the network using the network&#39;s <code>startSampling()</code> function.</p>
 
 <aside class="notice">
 The <b>startSampling( )</b> function will arm all of the Nodes for sampling and then enable the Beacon on the master Base Station using the system time. if you wish to provide your own start time (not use the system time), pass a <b>Timestamp</b> as a parameter to this function. Note: if you do not want to enable a beacon at this time, use the <b>startSampling_noBeacon()</b> function. In this case, the Nodes will be armed and will start sampling as soon as they hear a beacon.
 </aside>
-<pre class="highlight cpp"><code><span class="c1">//start the Non-Sync Sampling session.
+<pre class="highlight cpp tab-cpp"><code><span class="c1">//start the Non-Sync Sampling session.
 </span><span class="n">node</span><span class="p">.</span><span class="n">startNonSyncSampling</span><span class="p">();</span>
-</code></pre><pre class="highlight csharp"><code><span class="c1">//start the Non-Sync Sampling session.</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="c1">//start the Non-Sync Sampling session.</span>
 <span class="n">node</span><span class="p">.</span><span class="nf">startNonSyncSampling</span><span class="p">();</span>
-</code></pre><pre class="highlight python"><code><span class="c"># start the Non-Sync Sampling session.</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="c"># start the Non-Sync Sampling session.</span>
 <span class="n">node</span><span class="o">.</span><span class="n">startNonSyncSampling</span><span class="p">()</span>
-</code></pre>
-<h3 id="non-synchronized-sampling">Non-Synchronized Sampling</h3>
-
+</code></pre><h3 id='non-synchronized-sampling'>Non-Synchronized Sampling</h3>
 <p>Non-Synchronized Sampling requires no beacon, or network. Instead, each Node is set to sample individually. This mode has much lower latency than Synchronized Sampling.</p>
 
 <p>Since there is no synchronization, there is a high chance of data loss, as Nodes could send their data at the same time as other Nodes, resulting in a loss of packets. This sampling mode also does not transmit timestamps with the data. Instead, timestamps will be assigned to the data when MSCL receives it.</p>
 
-<p>To start a Non-Sync Sampling network, use the <code class="prettyprint">startNonSyncSampling()</code> function on the <code class="prettyprint">WirelessNode</code> object.</p>
-
-<h2 id="collecting-data">Collecting Data</h2>
-<pre class="highlight cpp"><code><span class="c1">//create the BaseStation, passing in the connection
+<p>To start a Non-Sync Sampling network, use the <code>startNonSyncSampling()</code> function on the <code>WirelessNode</code> object.</p>
+<h2 id='collecting-data'>Collecting Data</h2><pre class="highlight cpp tab-cpp"><code><span class="c1">//create the BaseStation, passing in the connection
 </span><span class="n">mscl</span><span class="o">::</span><span class="n">BaseStation</span> <span class="n">basestation</span><span class="p">(</span><span class="n">connection</span><span class="p">);</span>
 
 <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span>
@@ -556,7 +531,7 @@ The <b>startSampling( )</b> function will arm all of the Nodes for sampling and 
 </span>        <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre><pre class="highlight csharp"><code><span class="c1">//create the BaseStation, passing in the connection</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="c1">//create the BaseStation, passing in the connection</span>
 <span class="n">mscl</span><span class="p">.</span><span class="n">BaseStation</span> <span class="n">basestation</span> <span class="p">=</span> <span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">BaseStation</span><span class="p">(</span><span class="n">connection</span><span class="p">);</span>
 
 <span class="k">while</span><span class="p">(</span><span class="k">true</span><span class="p">)</span>
@@ -587,7 +562,7 @@ The <b>startSampling( )</b> function will arm all of the Nodes for sampling and 
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre><pre class="highlight python"><code><span class="c">#create the BaseStation, passing in the connection</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="c">#create the BaseStation, passing in the connection</span>
 <span class="n">basestation</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">.</span><span class="n">BaseStation</span><span class="p">(</span><span class="n">connection</span><span class="p">)</span>
 
 <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
@@ -615,43 +590,38 @@ The <b>startSampling( )</b> function will arm all of the Nodes for sampling and 
             <span class="n">dataPoint</span><span class="o">.</span><span class="n">as_float</span><span class="p">()</span>       <span class="c"># get the value as a float</span>
 </code></pre>
 <blockquote>
-<p><code class="prettyprint">as_float()</code> returns the dataPoint value as a 4-byte float. However there are more options, such as <code class="prettyprint">as_uint16()</code>, <code class="prettyprint">as_double()</code>, <code class="prettyprint">as_string()</code>, etc. The <code class="prettyprint">ValueType</code> that is returned from the <code class="prettyprint">storedAs()</code> function determines how the data is actually stored.</p>
+<p><code>as_float()</code> returns the dataPoint value as a 4-byte float. However there are more options, such as <code>as_uint16()</code>, <code>as_double()</code>, <code>as_string()</code>, etc. The <code>ValueType</code> that is returned from the <code>storedAs()</code> function determines how the data is actually stored.</p>
 </blockquote>
 
-<p>As soon as the <code class="prettyprint">BaseStation</code> object is created, all incoming packets will be parsed and stored in an internal circular buffer.</p>
+<p>As soon as the <code>BaseStation</code> object is created, all incoming packets will be parsed and stored in an internal circular buffer.</p>
 
 <p>So if a Wireless Node is already sampling on the same frequency as your BaseStation, you can simply access and consume the data that is being transmitted.</p>
 
-<p><code class="prettyprint">basestation.getData()</code> will return a vector of <code class="prettyprint">DataSweep</code> objects. This will contain all of the sweeps that have been collected after the <code class="prettyprint">BaseStation</code> object was created.</p>
+<p><code>basestation.getData()</code> will return a vector of <code>DataSweep</code> objects. This will contain all of the sweeps that have been collected after the <code>BaseStation</code> object was created.</p>
 
-<p>Each <code class="prettyprint">DataSweep</code> contains various information describing it. The DataSweep&rsquo;s <code class="prettyprint">data()</code> function will return a vector of <code class="prettyprint">WirelessDataPoint</code> objects. This will have one point for each active channel that was enabled on the Node.</p>
+<p>Each <code>DataSweep</code> contains various information describing it. The DataSweep&#39;s <code>data()</code> function will return a vector of <code>WirelessDataPoint</code> objects. This will have one point for each active channel that was enabled on the Node.</p>
 
-<p>Each data point will be stored as a certain type. The datapoint&rsquo;s <code class="prettyprint">storedAs()</code> function will return an enum specifying which type the data is stored in (<code class="prettyprint">valueType_float</code>, <code class="prettyprint">valueType_uint16</code>, etc).</p>
+<p>Each data point will be stored as a certain type. The datapoint&#39;s <code>storedAs()</code> function will return an enum specifying which type the data is stored in (<code>valueType_float</code>, <code>valueType_uint16</code>, etc).</p>
 
-<p>Using this information, you can call one of the datapoint&rsquo;s <code class="prettyprint">as_XXXXX()</code> functions (<code class="prettyprint">as_float()</code>, <code class="prettyprint">as_uint16()</code>, etc) to get the value in the way it was stored.</p>
+<p>Using this information, you can call one of the datapoint&#39;s <code>as_XXXXX()</code> functions (<code>as_float()</code>, <code>as_uint16()</code>, etc) to get the value in the way it was stored.</p>
 
 <aside class="notice">
 Most types can be converted between each other. For example, if the data was stored as valueType_uint16 (2-byte unsigned integer), you can still use the as_float() function and the uint16 will be converted to a float and returned.
 However, some types such as valueType_Vector cannot be converted to other values and will throw an Error_BadDataType exception if an invalid function is used to retrieve it (using as_float() instead of as_Vector()). 
 </aside>
-
-<h1 id="inertial">Inertial</h1>
-
-<h2 id="creating-an-inertialnode">Creating an InertialNode</h2>
-<pre class="highlight cpp"><code><span class="cp">#include "mscl/Communication/Connection.h"
-#include "mscl/MicroStrain/Inertial/InertialNode.h"
+<h1 id='inertial'>Inertial</h1><h2 id='creating-an-inertialnode'>Creating an InertialNode</h2><pre class="highlight cpp tab-cpp"><code><span class="cp">#include "mscl/mscl.h"
 </span>
 <span class="c1">//create the connection object with port and baud rate
 </span><span class="n">mscl</span><span class="o">::</span><span class="n">Connection</span><span class="o">::</span><span class="n">Serial</span> <span class="n">connection</span><span class="p">(</span><span class="s">"COM3"</span><span class="p">,</span> <span class="mi">115200</span><span class="p">);</span>
 
 <span class="c1">//create the InertialNode, passing in the connection
 </span><span class="n">mscl</span><span class="o">::</span><span class="n">InertialNode</span> <span class="n">node</span><span class="p">(</span><span class="n">connection</span><span class="p">);</span>
-</code></pre><pre class="highlight csharp"><code><span class="c1">//create the connection object with port and baud rate</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="c1">//create the connection object with port and baud rate</span>
 <span class="n">mscl</span><span class="p">.</span><span class="n">Connection</span> <span class="n">connection</span> <span class="p">=</span> <span class="n">mscl</span><span class="p">.</span><span class="n">Connection</span><span class="p">.</span><span class="nf">Serial</span><span class="p">(</span><span class="s">"COM3"</span><span class="p">,</span> <span class="m">115200</span><span class="p">);</span>
 
 <span class="c1">//create the InertialNode, passing in the connection</span>
 <span class="n">mscl</span><span class="p">.</span><span class="n">InertialNode</span> <span class="n">node</span> <span class="p">=</span> <span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">InertialNode</span><span class="p">(</span><span class="n">connection</span><span class="p">);</span>
-</code></pre><pre class="highlight python"><code><span class="kn">import</span> <span class="nn">mscl</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">mscl</span>
 
 <span class="c">#create the connection object with port and baud rate</span>
 <span class="n">connection</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">.</span><span class="n">Connection</span><span class="o">.</span><span class="n">Serial</span><span class="p">(</span><span class="s">"COM3"</span><span class="p">,</span> <span class="mi">115200</span><span class="p">)</span>
@@ -660,44 +630,40 @@ However, some types such as valueType_Vector cannot be converted to other values
 <span class="n">node</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">.</span><span class="n">InertialNode</span><span class="p">(</span><span class="n">connection</span><span class="p">)</span>
 </code></pre>
 <blockquote>
-<p>Make sure to replace <code class="prettyprint">COM3</code> and <code class="prettyprint">115200</code> with your own port settings.</p>
+<p>Make sure to replace <code>COM3</code> and <code>115200</code> with your own port settings.</p>
 </blockquote>
 
-<p>To interace with an <a href="http://www.microstrain.com/lord-microstrain-inertial-sensors-all-products">Inertial Node</a>, create an <code class="prettyprint">InertialNode</code> object.</p>
+<p>To interace with an <a href="http://www.microstrain.com/lord-microstrain-inertial-sensors-all-products">Inertial Node</a>, create an <code>InertialNode</code> object.</p>
 
-<p>An <code class="prettyprint">InertialNode</code> takes a <code class="prettyprint">Connection</code> as a parameter. </p>
+<p>An <code>InertialNode</code> takes a <code>Connection</code> as a parameter. </p>
 
-<p><code class="prettyprint">Serial</code>, <code class="prettyprint">TcpIp</code>, and <code class="prettyprint">UnixSocket</code> are all available as connection types.</p>
+<p><code>Serial</code>, <code>TcpIp</code>, and <code>UnixSocket</code> are all available as connection types.</p>
 
 <aside class="notice">
 As soon as the Connection object is created, the port will be opened.
 </aside>
-
-<h2 id="communicating-with-a-node">Communicating with a Node</h2>
-<pre class="highlight cpp"><code><span class="c1">//ping the Node
+<h2 id='communicating-with-a-node-2'>Communicating with a Node</h2><pre class="highlight cpp tab-cpp"><code><span class="c1">//ping the Node
 </span><span class="kt">bool</span> <span class="n">success</span> <span class="o">=</span> <span class="n">node</span><span class="p">.</span><span class="n">ping</span><span class="p">();</span>
-</code></pre><pre class="highlight csharp"><code><span class="c1">//ping the Node</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="c1">//ping the Node</span>
 <span class="kt">bool</span> <span class="n">success</span> <span class="p">=</span> <span class="n">node</span><span class="p">.</span><span class="nf">ping</span><span class="p">();</span>
-</code></pre><pre class="highlight python"><code><span class="c"># ping the Node</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="c"># ping the Node</span>
 <span class="n">success</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">ping</span><span class="p">()</span>
 </code></pre>
-<p>To test communicating with an Inertial Node, use the <code class="prettyprint">ping()</code> function.
+<p>To test communicating with an Inertial Node, use the <code>ping()</code> function.
 <br><br><br><br><br><br></p>
-<pre class="highlight cpp"><code><span class="c1">//put the Inertial Node into its idle state
+<pre class="highlight cpp tab-cpp"><code><span class="c1">//put the Inertial Node into its idle state
 </span><span class="n">node</span><span class="p">.</span><span class="n">setToIdle</span><span class="p">();</span>
-</code></pre><pre class="highlight csharp"><code><span class="c1">//put the Inertial Node into its idle state</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="c1">//put the Inertial Node into its idle state</span>
 <span class="n">node</span><span class="p">.</span><span class="nf">setToIdle</span><span class="p">();</span>
-</code></pre><pre class="highlight python"><code><span class="c"># put the Inertial Node into its idle state</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="c"># put the Inertial Node into its idle state</span>
 <span class="n">node</span><span class="o">.</span><span class="n">setToIdle</span><span class="p">()</span>
 </code></pre>
-<p>Unlike a Wireless Node, an Inertial Node can be directly communicated with even if it is sampling. However, in most cases, it is still useful to set the Node to an idle state between sampling sessions and when changing configurations. To do this, use the <code class="prettyprint">setToIdle()</code> function.</p>
-
-<h2 id="configuring-a-node">Configuring a Node</h2>
-<pre class="highlight cpp"><code><span class="c1">//get all of the active channels for the GPS category on the Node
+<p>Unlike a Wireless Node, an Inertial Node can be directly communicated with even if it is sampling. However, in most cases, it is still useful to set the Node to an idle state between sampling sessions and when changing configurations. To do this, use the <code>setToIdle()</code> function.</p>
+<h2 id='configuring-a-node-2'>Configuring a Node</h2><pre class="highlight cpp tab-cpp"><code><span class="c1">//get all of the active channels for the GPS category on the Node
 </span><span class="n">mscl</span><span class="o">::</span><span class="n">MipChannels</span> <span class="n">activeChs</span> <span class="o">=</span> <span class="n">node</span><span class="p">.</span><span class="n">getActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipTypes</span><span class="o">::</span><span class="n">CLASS_GNSS</span><span class="p">);</span>
-</code></pre><pre class="highlight csharp"><code><span class="c1">//get all of the active channels for the GPS category on the Node</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="c1">//get all of the active channels for the GPS category on the Node</span>
 <span class="n">mscl</span><span class="p">.</span><span class="n">MipChannels</span> <span class="n">activeChs</span> <span class="p">=</span> <span class="n">node</span><span class="p">.</span><span class="nf">getActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipTypes</span><span class="p">.</span><span class="n">DataClass</span><span class="p">.</span><span class="n">CLASS_GNSS</span><span class="p">);</span>
-</code></pre><pre class="highlight python"><code><span class="c"># get all of the active channels for the GPS category on the Node</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="c"># get all of the active channels for the GPS category on the Node</span>
 <span class="n">activeChs</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">getActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">MipTypes</span><span class="o">.</span><span class="n">CLASS_GNSS</span><span class="p">)</span>
 </code></pre>
 <p>Each Inertial Node has 1 or more Data Classes on the Node:</p>
@@ -710,20 +676,20 @@ As soon as the Connection object is created, the port will be opened.
 </thead><tbody>
 <tr>
 <td>AHRS/IMU</td>
-<td><code class="prettyprint">CLASS_AHRS_IMU</code></td>
+<td><code>CLASS_AHRS_IMU</code></td>
 </tr>
 <tr>
 <td>GNSS</td>
-<td><code class="prettyprint">CLASS_GNSS</code></td>
+<td><code>CLASS_GNSS</code></td>
 </tr>
 <tr>
 <td>Estimation Filter</td>
-<td><code class="prettyprint">CLASS_ESTFILTER</code></td>
+<td><code>CLASS_ESTFILTER</code></td>
 </tr>
 </tbody></table>
 
 <p>When getting and setting configuration options, it is sometimes necessary to choose the class to target for the command. This is the case in getting the active channels that are currently enabled on the Node.</p>
-<pre class="highlight cpp"><code>
+<pre class="highlight cpp tab-cpp"><code>
 <span class="n">mscl</span><span class="o">::</span><span class="n">MipChannels</span> <span class="n">ahrsImuChs</span><span class="p">;</span>
 <span class="n">ahrsImuChs</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipChannel</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipTypes</span><span class="o">::</span><span class="n">CH_FIELD_SENSOR_RAW_ACCEL_VEC</span><span class="p">,</span> <span class="n">mscl</span><span class="o">::</span><span class="n">SampleRate</span><span class="o">::</span><span class="n">Hertz</span><span class="p">(</span><span class="mi">500</span><span class="p">)));</span>
 <span class="n">ahrsImuChs</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipChannel</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipTypes</span><span class="o">::</span><span class="n">CH_FIELD_SENSOR_RAW_GYRO_VEC</span><span class="p">,</span> <span class="n">mscl</span><span class="o">::</span><span class="n">SampleRate</span><span class="o">::</span><span class="n">Hertz</span><span class="p">(</span><span class="mi">100</span><span class="p">)));</span>
@@ -739,7 +705,7 @@ As soon as the Connection object is created, the port will be opened.
 <span class="n">node</span><span class="p">.</span><span class="n">setActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipTypes</span><span class="o">::</span><span class="n">CLASS_GNSS</span><span class="p">,</span> <span class="n">gnssChs</span><span class="p">);</span>
 <span class="n">node</span><span class="p">.</span><span class="n">setActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipTypes</span><span class="o">::</span><span class="n">CLASS_ESTFILTER</span><span class="p">,</span> <span class="n">estFilterChs</span><span class="p">);</span>
 
-</code></pre><pre class="highlight csharp"><code>
+</code></pre><pre class="highlight csharp tab-csharp"><code>
 <span class="n">mscl</span><span class="p">::</span><span class="n">MipChannels</span> <span class="n">ahrsImuChs</span> <span class="p">=</span> <span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">MipChannels</span><span class="p">();</span>
 <span class="n">ahrsImuChs</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">MipChannel</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipTypes</span><span class="p">.</span><span class="n">ChannelField</span><span class="p">.</span><span class="n">CH_FIELD_SENSOR_RAW_ACCEL_VEC</span><span class="p">,</span> <span class="n">mscl</span><span class="p">.</span><span class="n">SampleRate</span><span class="p">.</span><span class="nf">Hertz</span><span class="p">(</span><span class="m">500</span><span class="p">)));</span>
 <span class="n">ahrsImuChs</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">MipChannel</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipTypes</span><span class="p">.</span><span class="n">ChannelField</span><span class="p">.</span><span class="n">CH_FIELD_SENSOR_RAW_GYRO_VEC</span><span class="p">,</span> <span class="n">mscl</span><span class="p">.</span><span class="n">SampleRate</span><span class="p">.</span><span class="nf">Hertz</span><span class="p">(</span><span class="m">100</span><span class="p">)));</span>
@@ -755,7 +721,7 @@ As soon as the Connection object is created, the port will be opened.
 <span class="n">node</span><span class="p">.</span><span class="nf">setActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipTypes</span><span class="p">.</span><span class="n">DataClass</span><span class="p">.</span><span class="n">CLASS_GNSS</span><span class="p">,</span> <span class="n">gnssChs</span><span class="p">);</span>
 <span class="n">node</span><span class="p">.</span><span class="nf">setActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipTypes</span><span class="p">.</span><span class="n">DataClass</span><span class="p">.</span><span class="n">CLASS_ESTFILTER</span><span class="p">,</span> <span class="n">estFilterChs</span><span class="p">);</span>
 
-</code></pre><pre class="highlight python"><code>
+</code></pre><pre class="highlight python tab-python"><code>
 <span class="n">ahrsImuChs</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">.</span><span class="n">MipChannels</span><span class="p">()</span>
 <span class="n">ahrsImuChs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">MipChannel</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">MipTypes</span><span class="o">.</span><span class="n">CH_FIELD_SENSOR_RAW_ACCEL_VEC</span><span class="p">,</span> <span class="n">mscl</span><span class="o">.</span><span class="n">SampleRate</span><span class="o">.</span><span class="n">Hertz</span><span class="p">(</span><span class="mi">500</span><span class="p">)))</span>
 <span class="n">ahrsImuChs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">MipChannel</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">MipTypes</span><span class="o">.</span><span class="n">CH_FIELD_SENSOR_RAW_GYRO_VEC</span><span class="p">,</span> <span class="n">mscl</span><span class="o">.</span><span class="n">SampleRate</span><span class="o">.</span><span class="n">Hertz</span><span class="p">(</span><span class="mi">100</span><span class="p">)))</span>
@@ -772,45 +738,41 @@ As soon as the Connection object is created, the port will be opened.
 <span class="n">node</span><span class="o">.</span><span class="n">setActiveChannelFields</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">MipTypes</span><span class="o">.</span><span class="n">CLASS_ESTFILTER</span><span class="p">,</span> <span class="n">estFilterChs</span><span class="p">)</span>
 
 </code></pre>
-<p>Setting the active channels involves building an <code class="prettyprint">MipChannels</code> container, and then passing that to the <code class="prettyprint">setActiveChannelFields</code> function for a specific category.</p>
+<p>Setting the active channels involves building an <code>MipChannels</code> container, and then passing that to the <code>setActiveChannelFields</code> function for a specific category.</p>
 
-<p>Not all categories and channel fields are supported by each Inertial Node. Use the <code class="prettyprint">node.features()</code> function to get this information on the Node.</p>
-
-<h2 id="starting-sampling">Starting Sampling</h2>
-<pre class="highlight cpp"><code><span class="c1">//start sampling the active channels on the AHRS/IMU class of the Node
+<p>Not all categories and channel fields are supported by each Inertial Node. Use the <code>node.features()</code> function to get this information on the Node.</p>
+<h2 id='starting-sampling-2'>Starting Sampling</h2><pre class="highlight cpp tab-cpp"><code><span class="c1">//start sampling the active channels on the AHRS/IMU class of the Node
 </span><span class="n">node</span><span class="p">.</span><span class="n">enableDataStream</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipTypes</span><span class="o">::</span><span class="n">CLASS_AHRS_IMU</span><span class="p">);</span>
 
 <span class="c1">//start sampling the active channels on the GNSS class of the Node
 </span><span class="n">node</span><span class="p">.</span><span class="n">enableDataStream</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipTypes</span><span class="o">::</span><span class="n">CLASS_GNSS</span><span class="p">);</span>
-</code></pre><pre class="highlight csharp"><code><span class="c1">//start sampling on the AHRS/IMU class of the Node</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="c1">//start sampling on the AHRS/IMU class of the Node</span>
 <span class="n">node</span><span class="p">.</span><span class="nf">enableDataStream</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipTypes</span><span class="p">.</span><span class="n">DataClass</span><span class="p">.</span><span class="n">CLASS_AHRS_IMU</span><span class="p">);</span>
 
 <span class="c1">//start sampling on the GNSS class of the Node</span>
 <span class="n">node</span><span class="p">.</span><span class="nf">enableDataStream</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipTypes</span><span class="p">.</span><span class="n">DataClass</span><span class="p">.</span><span class="n">CLASS_GNSS</span><span class="p">);</span>
-</code></pre><pre class="highlight python"><code><span class="c"># start sampling on the AHRS/IMU class of the Node</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="c"># start sampling on the AHRS/IMU class of the Node</span>
 <span class="n">node</span><span class="o">.</span><span class="n">enableDataStream</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">MipTypes</span><span class="o">.</span><span class="n">CLASS_AHRS_IMU</span><span class="p">)</span>
 
 <span class="c"># start sampling on the GNSS class of the Node</span>
 <span class="n">node</span><span class="o">.</span><span class="n">enableDataStream</span><span class="p">(</span><span class="n">mscl</span><span class="o">.</span><span class="n">MipTypes</span><span class="o">.</span><span class="n">CLASS_GNSS</span><span class="p">)</span>
 </code></pre>
 <blockquote>
-<p>You can provide an optional 2nd parameter to the <code class="prettyprint">enableDataStream</code> function which is a boolean that allows enabling (true, default), or disabling (false) of the data stream.</p>
+<p>You can provide an optional 2nd parameter to the <code>enableDataStream</code> function which is a boolean that allows enabling (true, default), or disabling (false) of the data stream.</p>
 </blockquote>
 
-<p>There are a couple ways to start sampling on an Inertial Node. The first is the <code class="prettyprint">enableDataStream</code> command. This allows you to start sampling on individual categories of the Node.</p>
+<p>There are a couple ways to start sampling on an Inertial Node. The first is the <code>enableDataStream</code> command. This allows you to start sampling on individual categories of the Node.</p>
 
 <p><br><br><br><br><br><br><br><br><br><br></p>
-<pre class="highlight cpp"><code><span class="c1">//use the resume command to return to the mode before setToIdle
+<pre class="highlight cpp tab-cpp"><code><span class="c1">//use the resume command to return to the mode before setToIdle
 </span><span class="n">node</span><span class="p">.</span><span class="n">resume</span><span class="p">();</span>
-</code></pre><pre class="highlight csharp"><code><span class="c1">//use the resume command to return to the mode before setToIdle</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="c1">//use the resume command to return to the mode before setToIdle</span>
 <span class="n">node</span><span class="p">.</span><span class="nf">resume</span><span class="p">();</span>
-</code></pre><pre class="highlight python"><code><span class="c"># use the resume command to return to the mode before setToIdle</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="c"># use the resume command to return to the mode before setToIdle</span>
 <span class="n">node</span><span class="o">.</span><span class="n">resume</span><span class="p">()</span>
 </code></pre>
-<p>Alternatively, you can use the <code class="prettyprint">resume()</code> command. This command places the Node back into the mode it was in before issuing the <code class="prettyprint">setToIdle()</code> command. So if the Node was previously sampling on all of its categories, then <code class="prettyprint">setToIdle()</code> was called, calling <code class="prettyprint">resume()</code> will start the Node sampling again.</p>
-
-<h2 id="collecting-data">Collecting Data</h2>
-<pre class="highlight cpp"><code><span class="c1">//create the InertialNode, passing in the connection
+<p>Alternatively, you can use the <code>resume()</code> command. This command places the Node back into the mode it was in before issuing the <code>setToIdle()</code> command. So if the Node was previously sampling on all of its categories, then <code>setToIdle()</code> was called, calling <code>resume()</code> will start the Node sampling again.</p>
+<h2 id='collecting-data-2'>Collecting Data</h2><pre class="highlight cpp tab-cpp"><code><span class="c1">//create the InertialNode, passing in the connection
 </span><span class="n">mscl</span><span class="o">::</span><span class="n">InertialNode</span> <span class="n">node</span> <span class="o">=</span> <span class="n">mscl</span><span class="p">.</span><span class="n">InertialNode</span><span class="p">(</span><span class="n">connection</span><span class="p">);</span>
 
 <span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span>
@@ -834,7 +796,7 @@ As soon as the Connection object is created, the port will be opened.
 </span>        <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre><pre class="highlight csharp"><code><span class="c1">//create the InertialNode, passing in the connection</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="c1">//create the InertialNode, passing in the connection</span>
 <span class="n">mscl</span><span class="p">.</span><span class="n">InertialNode</span> <span class="n">node</span> <span class="p">=</span> <span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">InertialNode</span><span class="p">(</span><span class="n">connection</span><span class="p">);</span>
 
 <span class="k">while</span><span class="p">(</span><span class="k">true</span><span class="p">)</span>
@@ -858,7 +820,7 @@ As soon as the Connection object is created, the port will be opened.
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre><pre class="highlight python"><code><span class="c"># create the InertialNode, passing in the connection</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="c"># create the InertialNode, passing in the connection</span>
 <span class="n">node</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">.</span><span class="n">InertialNode</span><span class="p">(</span><span class="n">connection</span><span class="p">)</span>
 
 <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
@@ -880,26 +842,193 @@ As soon as the Connection object is created, the port will be opened.
     <span class="p">}</span>
 </code></pre>
 <blockquote>
-<p><code class="prettyprint">as_float()</code> returns the dataPoint value as a 4-byte float. However there are more options, such as <code class="prettyprint">as_uint16()</code>, <code class="prettyprint">as_double()</code>, <code class="prettyprint">as_string()</code>, etc. The <code class="prettyprint">ValueType</code> that is returned from the <code class="prettyprint">storedAs()</code> function determines how the data is actually stored.</p>
+<p><code>as_float()</code> returns the dataPoint value as a 4-byte float. However there are more options, such as <code>as_uint16()</code>, <code>as_double()</code>, <code>as_string()</code>, etc. The <code>ValueType</code> that is returned from the <code>storedAs()</code> function determines how the data is actually stored.</p>
 </blockquote>
 
-<p>As soon as the <code class="prettyprint">InertialNode</code> object is created, all data packets will be parsed and stored in an internal circular buffer.</p>
+<p>As soon as the <code>InertialNode</code> object is created, all data packets will be parsed and stored in an internal circular buffer.</p>
 
-<p><code class="prettyprint">node.getDataPackets()</code> will return a vector of <code class="prettyprint">MipDataPacket</code> objects. This will contain all of the packets that have been collected after the <code class="prettyprint">InertialNode</code> object was created.</p>
+<p><code>node.getDataPackets()</code> will return a vector of <code>MipDataPacket</code> objects. This will contain all of the packets that have been collected after the <code>InertialNode</code> object was created.</p>
 
-<p>Each <code class="prettyprint">MipDataPacket</code> contains various information describing it. The MipDataPacket&rsquo;s <code class="prettyprint">data()</code> function will return a vector of <code class="prettyprint">MipDataPoint</code> objects. These data points represent data from the active channels that were sampling on the Node.</p>
+<p>Each <code>MipDataPacket</code> contains various information describing it. The MipDataPacket&#39;s <code>data()</code> function will return a vector of <code>MipDataPoint</code> objects. These data points represent data from the active channels that were sampling on the Node.</p>
 
-<p>Each data point will be stored as a certain type. The datapoint&rsquo;s <code class="prettyprint">storedAs()</code> function will return an enum specifying which type the data is stored in (<code class="prettyprint">valueType_float</code>, <code class="prettyprint">valueType_uint16</code>, etc).</p>
+<p>Each data point will be stored as a certain type. The datapoint&#39;s <code>storedAs()</code> function will return an enum specifying which type the data is stored in (<code>valueType_float</code>, <code>valueType_uint16</code>, etc).</p>
 
-<p>Using this information, you can call one of the data point&rsquo;s <code class="prettyprint">as_XXXXX()</code> functions (<code class="prettyprint">as_float()</code>, <code class="prettyprint">as_uint16()</code>, etc) to get the value in the was it was stored.</p>
+<p>Using this information, you can call one of the data point&#39;s <code>as_XXXXX()</code> functions (<code>as_float()</code>, <code>as_uint16()</code>, etc) to get the value in the was it was stored.</p>
+
+<aside class="notice">
+Most types can be converted between each other. For example, if the data was stored as valueType_uint16 (2-byte unsigned integer), you can still use the as_float() function and the uint16 will be converted to a float and returned.
+However, some types such as valueType_Vector cannot be converted to other values and will throw an Error_BadDataType exception if an invalid function is used to retrieve it (using as_float() instead of as_Vector()). 
+</aside>
+<h1 id='displacement'>Displacement</h1><h2 id='creating-a-displacementnode'>Creating a DisplacementNode</h2><pre class="highlight cpp tab-cpp"><code><span class="cp">#include "mscl/mscl.h"
+</span>
+<span class="c1">//create the connection object with port and baud rate
+</span><span class="n">mscl</span><span class="o">::</span><span class="n">Connection</span><span class="o">::</span><span class="n">Serial</span> <span class="n">connection</span><span class="p">(</span><span class="s">"COM3"</span><span class="p">,</span> <span class="mi">115200</span><span class="p">);</span>
+
+<span class="c1">//create the DisplacementNode, passing in the connection
+</span><span class="n">mscl</span><span class="o">::</span><span class="n">DisplacementNode</span> <span class="n">node</span><span class="p">(</span><span class="n">connection</span><span class="p">);</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="c1">//create the connection object with port and baud rate</span>
+<span class="n">mscl</span><span class="p">.</span><span class="n">Connection</span> <span class="n">connection</span> <span class="p">=</span> <span class="n">mscl</span><span class="p">.</span><span class="n">Connection</span><span class="p">.</span><span class="nf">Serial</span><span class="p">(</span><span class="s">"COM3"</span><span class="p">,</span> <span class="m">115200</span><span class="p">);</span>
+
+<span class="c1">//create the InertialNode, passing in the connection</span>
+<span class="n">mscl</span><span class="p">.</span><span class="n">DisplacementNode</span> <span class="n">node</span> <span class="p">=</span> <span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">DisplacementNode</span><span class="p">(</span><span class="n">connection</span><span class="p">);</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">mscl</span>
+
+<span class="c">#create the connection object with port and baud rate</span>
+<span class="n">connection</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">.</span><span class="n">Connection</span><span class="o">.</span><span class="n">Serial</span><span class="p">(</span><span class="s">"COM3"</span><span class="p">,</span> <span class="mi">115200</span><span class="p">)</span>
+
+<span class="c">#create the DisplacementNode, passing in the connection</span>
+<span class="n">node</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">.</span><span class="n">DisplacementNode</span><span class="p">(</span><span class="n">connection</span><span class="p">)</span>
+</code></pre>
+<blockquote>
+<p>Make sure to replace <code>COM3</code> and <code>115200</code> with your own port settings.</p>
+</blockquote>
+
+<p>To interace with a digital <a href="https://www.microstrain.com/displacement">Displacement Node</a>, create a <code>DisplacementNode</code> object.</p>
+
+<p>A <code>DisplacementNode</code> takes a <code>Connection</code> as a parameter. </p>
+
+<p><code>Serial</code>, <code>TcpIp</code>, and <code>UnixSocket</code> are all available as connection types.</p>
+
+<aside class="notice">
+As soon as the Connection object is created, the port will be opened.
+</aside>
+<h2 id='communicating-with-a-node-3'>Communicating with a Node</h2><pre class="highlight cpp tab-cpp"><code><span class="c1">//ping the Node
+</span><span class="kt">bool</span> <span class="n">success</span> <span class="o">=</span> <span class="n">node</span><span class="p">.</span><span class="n">ping</span><span class="p">();</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="c1">//ping the Node</span>
+<span class="kt">bool</span> <span class="n">success</span> <span class="p">=</span> <span class="n">node</span><span class="p">.</span><span class="nf">ping</span><span class="p">();</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="c"># ping the Node</span>
+<span class="n">success</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">ping</span><span class="p">()</span>
+</code></pre>
+<p>To test communicating with a Displacement Node, use the <code>ping()</code> function.
+<br><br><br><br><br><br></p>
+<pre class="highlight cpp tab-cpp"><code><span class="c1">//put the Inertial Node into its idle state
+</span><span class="n">node</span><span class="p">.</span><span class="n">setToIdle</span><span class="p">();</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="c1">//put the Inertial Node into its idle state</span>
+<span class="n">node</span><span class="p">.</span><span class="nf">setToIdle</span><span class="p">();</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="c"># put the Inertial Node into its idle state</span>
+<span class="n">node</span><span class="o">.</span><span class="n">setToIdle</span><span class="p">()</span>
+</code></pre>
+<p>Unlike a Wireless Node, a Displacement Node can be directly communicated with even if it is sampling. However, in most cases, it is still useful to set the Node to an idle state between sampling sessions and when changing configurations. To do this, use the <code>setToIdle()</code> function.</p>
+<h2 id='configuring-a-node-3'>Configuring a Node</h2><pre class="highlight cpp tab-cpp"><code>
+<span class="c1">//seed the device time with the current PC time
+//Note: you can pass your own time to this function as a parameter in nanoseconds since unix epoch
+</span><span class="n">node</span><span class="p">.</span><span class="n">setDeviceTime</span><span class="p">();</span>
+
+</code></pre><pre class="highlight csharp tab-csharp"><code>
+<span class="c1">//seed the device time with the current PC time</span>
+<span class="c1">//Note: you can pass your own time to this function as a parameter in nanoseconds since unix epoch</span>
+<span class="n">node</span><span class="p">.</span><span class="nf">setDeviceTime</span><span class="p">();</span>
+
+</code></pre><pre class="highlight python tab-python"><code>
+<span class="c">#seed the device time with the current PC time</span>
+<span class="c">#Note: you can pass your own time to this function as a parameter in nanoseconds since unix epoch</span>
+<span class="n">node</span><span class="o">.</span><span class="n">setDeviceTime</span><span class="p">()</span>
+
+</code></pre>
+<p>You can seed the <code>DisplacementNode</code> time before you start sampling so that the time channel that is output has an accurate timestamp.</p>
+<h2 id='starting-sampling-3'>Starting Sampling</h2><pre class="highlight cpp tab-cpp"><code>
+<span class="c1">//start sampling
+</span><span class="n">node</span><span class="p">.</span><span class="n">resume</span><span class="p">();</span>
+
+</code></pre><pre class="highlight csharp tab-csharp"><code>
+<span class="c1">//start sampling</span>
+<span class="n">node</span><span class="p">.</span><span class="nf">resume</span><span class="p">();</span>
+
+</code></pre><pre class="highlight python tab-python"><code>
+<span class="c"># start sampling</span>
+<span class="n">node</span><span class="o">.</span><span class="n">resume</span><span class="p">()</span>
+
+</code></pre>
+<p>Use the <code>resume</code> function to start sampling on the Displacement Node.</p>
+
+<p><br><br><br><br><br><br><br><br><br><br></p>
+<h2 id='collecting-data-3'>Collecting Data</h2><pre class="highlight cpp tab-cpp"><code><span class="c1">//create the DisplacementNode, passing in the connection
+</span><span class="n">mscl</span><span class="o">::</span><span class="n">DisplacementNode</span> <span class="n">node</span> <span class="o">=</span> <span class="n">mscl</span><span class="p">.</span><span class="n">DisplacementNode</span><span class="p">(</span><span class="n">connection</span><span class="p">);</span>
+
+<span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">//get all the packets that have been collected, with a timeout of 500 milliseconds
+</span>    <span class="n">mscl</span><span class="o">::</span><span class="n">MipDataPackets</span> <span class="n">packets</span> <span class="o">=</span> <span class="n">node</span><span class="p">.</span><span class="n">getDataPackets</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+
+    <span class="k">for</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipDataPacket</span> <span class="n">packet</span> <span class="o">:</span> <span class="n">packets</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">packet</span><span class="p">.</span><span class="n">timestamp</span><span class="p">();</span>     <span class="c1">//the PC time when this packet was received
+</span>
+        <span class="c1">//get all of the points in the packet
+</span>        <span class="n">mscl</span><span class="o">::</span><span class="n">MipDataPoints</span> <span class="n">points</span> <span class="o">=</span> <span class="n">packet</span><span class="p">.</span><span class="n">data</span><span class="p">();</span>
+
+        <span class="k">for</span><span class="p">(</span><span class="n">mscl</span><span class="o">::</span><span class="n">MipDataPoint</span> <span class="n">dataPoint</span> <span class="o">:</span> <span class="n">points</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">dataPoint</span><span class="p">.</span><span class="n">channelName</span><span class="p">();</span>  <span class="c1">//the name of the channel for this point
+</span>            <span class="n">dataPoint</span><span class="p">.</span><span class="n">storedAs</span><span class="p">();</span>     <span class="c1">//the ValueType that the data is stored as
+</span>            <span class="n">dataPoint</span><span class="p">.</span><span class="n">as_float</span><span class="p">();</span>     <span class="c1">//get the value as a float
+</span>        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="c1">//create the DisplacementNode, passing in the connection</span>
+<span class="n">mscl</span><span class="p">.</span><span class="n">DisplacementNode</span> <span class="n">node</span> <span class="p">=</span> <span class="k">new</span> <span class="n">mscl</span><span class="p">.</span><span class="nf">DisplacementNode</span><span class="p">(</span><span class="n">connection</span><span class="p">);</span>
+
+<span class="k">while</span><span class="p">(</span><span class="k">true</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">//get all the packets that have been collected, with a timeout of 500 milliseconds</span>
+    <span class="n">mscl</span><span class="p">.</span><span class="n">MipDataPackets</span> <span class="n">packets</span> <span class="p">=</span> <span class="n">node</span><span class="p">.</span><span class="nf">getDataPackets</span><span class="p">(</span><span class="m">500</span><span class="p">);</span>
+
+    <span class="k">foreach</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipDataPacket</span> <span class="n">packet</span> <span class="k">in</span> <span class="n">packets</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">packet</span><span class="p">.</span><span class="nf">timestamp</span><span class="p">();</span>      <span class="c1">//the PC time when this packet was received</span>
+
+        <span class="c1">//get all of the points in the packet</span>
+        <span class="n">mscl</span><span class="p">.</span><span class="n">MipDataPoints</span> <span class="n">points</span> <span class="p">=</span> <span class="n">packet</span><span class="p">.</span><span class="nf">data</span><span class="p">();</span>
+
+        <span class="k">foreach</span><span class="p">(</span><span class="n">mscl</span><span class="p">.</span><span class="n">MipDataPoint</span> <span class="n">dataPoint</span> <span class="k">in</span> <span class="n">points</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">dataPoint</span><span class="p">.</span><span class="nf">channelName</span><span class="p">();</span>  <span class="c1">//the name of the channel for this point</span>
+            <span class="n">dataPoint</span><span class="p">.</span><span class="nf">storedAs</span><span class="p">();</span>     <span class="c1">//the ValueType that the data is stored as</span>
+            <span class="n">dataPoint</span><span class="p">.</span><span class="nf">as_float</span><span class="p">();</span>     <span class="c1">//get the value as a float</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="c"># create the DisplacementNode, passing in the connection</span>
+<span class="n">node</span> <span class="o">=</span> <span class="n">mscl</span><span class="o">.</span><span class="n">DisplacementNode</span><span class="p">(</span><span class="n">connection</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+
+    <span class="c"># get all the packets that have been collected, with a timeout of 500 milliseconds</span>
+    <span class="n">packets</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">getDataPackets</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">packet</span> <span class="ow">in</span> <span class="n">packets</span><span class="p">:</span>
+        <span class="n">packet</span><span class="o">.</span><span class="n">descriptorSet</span><span class="p">()</span>  <span class="c"># the descriptor set of the packet</span>
+        <span class="n">packet</span><span class="o">.</span><span class="n">timestamp</span><span class="p">()</span>      <span class="c"># the PC time when this packet was received</span>
+
+        <span class="c"># get all of the points in the packet</span>
+        <span class="n">points</span> <span class="o">=</span> <span class="n">packet</span><span class="o">.</span><span class="n">data</span><span class="p">()</span>
+
+        <span class="k">for</span> <span class="n">dataPoint</span> <span class="ow">in</span> <span class="n">points</span><span class="p">:</span>
+            <span class="n">dataPoint</span><span class="o">.</span><span class="n">channelName</span><span class="p">()</span>   <span class="c"># the name of the channel for this point</span>
+            <span class="n">dataPoint</span><span class="o">.</span><span class="n">storedAs</span><span class="p">()</span>      <span class="c"># the ValueType that the data is stored as</span>
+            <span class="n">dataPoint</span><span class="o">.</span><span class="n">as_float</span><span class="p">()</span>      <span class="c"># get the value as a float</span>
+    <span class="p">}</span>
+</code></pre>
+<blockquote>
+<p><code>as_float()</code> returns the dataPoint value as a 4-byte float. However there are more options, such as <code>as_uint16()</code>, <code>as_double()</code>, <code>as_string()</code>, etc. The <code>ValueType</code> that is returned from the <code>storedAs()</code> function determines how the data is actually stored.</p>
+</blockquote>
+
+<p>As soon as the <code>DisplacementNode</code> object is created, all data packets will be parsed and stored in an internal circular buffer.</p>
+
+<p><code>node.getDataPackets()</code> will return a vector of <code>MipDataPacket</code> objects. This will contain all of the packets that have been collected after the <code>DisplacementNode</code> object was created.</p>
+
+<p>Each <code>MipDataPacket</code> contains various information describing it. The MipDataPacket&#39;s <code>data()</code> function will return a vector of <code>MipDataPoint</code> objects. These data points represent data from the active channels that were sampling on the Node.</p>
+
+<p>Each data point will be stored as a certain type. The datapoint&#39;s <code>storedAs()</code> function will return an enum specifying which type the data is stored in (<code>valueType_float</code>, <code>valueType_uint16</code>, etc).</p>
+
+<p>Using this information, you can call one of the data point&#39;s <code>as_XXXXX()</code> functions (<code>as_float()</code>, <code>as_uint16()</code>, etc) to get the value in the was it was stored.</p>
 
 <aside class="notice">
 Most types can be converted between each other. For example, if the data was stored as valueType_uint16 (2-byte unsigned integer), you can still use the as_float() function and the uint16 will be converted to a float and returned.
 However, some types such as valueType_Vector cannot be converted to other values and will throw an Error_BadDataType exception if an invalid function is used to retrieve it (using as_float() instead of as_Vector()). 
 </aside>
 
-          <h1 id="exceptions">Exceptions</h1>
-
+          <h1 id='exceptions'>Exceptions</h1>
 <p>MSCL uses the following Exceptions. Check the full documentation for details of which exceptions are thrown by each function.</p>
 
 <table><thead>

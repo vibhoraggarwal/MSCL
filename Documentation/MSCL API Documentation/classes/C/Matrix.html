@@ -8,51 +8,51 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="Topic2338"></a><div class="CTopic TClass LC first">
+<a name="Topic2342"></a><div class="CTopic TClass LC first">
  <div class="CTitle">Matrix</div>
- <div class="NDClassPrototype" id="NDClassPrototype2338"><div class="CPEntry TClass Current"><div class="CPName">Matrix</div></div></div>
+ <div class="NDClassPrototype" id="NDClassPrototype2342"><div class="CPEntry TClass Current"><div class="CPName">Matrix</div></div></div>
  <div class="CBody"><p>Represents a Matrix of values (varying size)</p></div>
 </div>
 
-<a name="valuesType"></a><a name="Topic2339"></a><div class="CTopic TFunction LC">
+<a name="valuesType"></a><a name="Topic2343"></a><div class="CTopic TFunction LC">
  <div class="CTitle">valuesType</div>
- <div id="NDPrototype2339" class="NDPrototype NoParameterForm"><a href="../../index.html#File:Types.h:ValueType" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2447);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ValueType</a> valuesType() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>Gets how each value within the Matrix is stored</p><div class="CHeading">Returns</div><p>A <a href="../../index.html#File:Types.h:ValueType" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2447);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ValueType</a> representing how each value in the Matrix is stored</p></div>
+ <div id="NDPrototype2343" class="NDPrototype NoParameterForm"><a href="../../index.html#File:Types.h:ValueType" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2451);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ValueType</a> valuesType() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>Gets how each value within the Matrix is stored</p><div class="CHeading">Returns</div><p>A <a href="../../index.html#File:Types.h:ValueType" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2451);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >ValueType</a> representing how each value in the Matrix is stored</p></div>
 </div>
 
-<a name="rows"></a><a name="Topic2340"></a><div class="CTopic TFunction LC">
+<a name="rows"></a><a name="Topic2344"></a><div class="CTopic TFunction LC">
  <div class="CTitle">rows</div>
- <div id="NDPrototype2340" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> rows() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype2344" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> rows() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Gets the number of rows in the Matrix</p><div class="CHeading">Returns</div><p>The number of rows in the Matrix</p></div>
 </div>
 
-<a name="columns"></a><a name="Topic2341"></a><div class="CTopic TFunction LC">
+<a name="columns"></a><a name="Topic2345"></a><div class="CTopic TFunction LC">
  <div class="CTitle">columns</div>
- <div id="NDPrototype2341" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> columns() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype2345" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> columns() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Gets the number of columns in the Matrix</p><div class="CHeading">Returns</div><p>The number of columns in the Matrix</p></div>
 </div>
 
-<a name="as_floatAt"></a><a name="Topic2342"></a><div class="CTopic TFunction LC">
+<a name="as_floatAt"></a><a name="Topic2346"></a><div class="CTopic TFunction LC">
  <div class="CTitle">as_floatAt</div>
- <div id="NDPrototype2342" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">float</span> as_floatAt(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">row,</td></tr><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">column</td></tr></table></td><td class="PAfterParameters">) <span class="SHKeyword">const</span></td></tr></table></div>
+ <div id="NDPrototype2346" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">float</span> as_floatAt(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">row,</td></tr><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">column</td></tr></table></td><td class="PAfterParameters">) <span class="SHKeyword">const</span></td></tr></table></div>
  <div class="CBody"><p>Gets the value stored at the given row and column (0-based), as a 4-byte float</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">row<div class="CDLParameterType"><span class="SHKeyword">uint16</span></div></td><td class="CDLDefinition"><p>The 0-based row index of which to get the value</p></td></tr><tr><td class="CDLEntry">column<div class="CDLParameterType"><span class="SHKeyword">uint16</span></div></td><td class="CDLDefinition"><p>The 0-based column index of which to get the value</p></td></tr></table><div class="CHeading">Returns</div><p>The value stored at the given row and column, as a float</p><div class="CHeading">Exceptions</div><ul><li><p>std::out_of_range: The position requested is out of range</p></li></ul></div>
 </div>
 
-<a name="as_uint16At"></a><a name="Topic2343"></a><div class="CTopic TFunction LC">
+<a name="as_uint16At"></a><a name="Topic2347"></a><div class="CTopic TFunction LC">
  <div class="CTitle">as_uint16At</div>
- <div id="NDPrototype2343" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">uint16</span> as_uint16At(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">row,</td></tr><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">column</td></tr></table></td><td class="PAfterParameters">) <span class="SHKeyword">const</span></td></tr></table></div>
+ <div id="NDPrototype2347" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">uint16</span> as_uint16At(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">row,</td></tr><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">column</td></tr></table></td><td class="PAfterParameters">) <span class="SHKeyword">const</span></td></tr></table></div>
  <div class="CBody"><p>Gets the value stored at the given row and column (0-based), as a 2-byte unsigned integer</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">row<div class="CDLParameterType"><span class="SHKeyword">uint16</span></div></td><td class="CDLDefinition"><p>The 0-based row index of which to get the value</p></td></tr><tr><td class="CDLEntry">column<div class="CDLParameterType"><span class="SHKeyword">uint16</span></div></td><td class="CDLDefinition"><p>The 0-based column index of which to get the value</p></td></tr></table><div class="CHeading">Returns</div><p>The value stored at the given row and column, as a 2-byte unsigned integer</p><div class="CHeading">Exceptions</div><ul><li><p>std::out_of_range: The position requested is out of range</p></li></ul></div>
 </div>
 
-<a name="as_uint8At"></a><a name="Topic2344"></a><div class="CTopic TFunction LC">
+<a name="as_uint8At"></a><a name="Topic2348"></a><div class="CTopic TFunction LC">
  <div class="CTitle">as_uint8At</div>
- <div id="NDPrototype2344" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">uint8</span> as_uint8At(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">row,</td></tr><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">column</td></tr></table></td><td class="PAfterParameters">) <span class="SHKeyword">const</span></td></tr></table></div>
+ <div id="NDPrototype2348" class="NDPrototype WideForm CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">uint8</span> as_uint8At(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">row,</td></tr><tr><td class="PType first"><span class="SHKeyword">uint16</span>&nbsp;</td><td class="PName last">column</td></tr></table></td><td class="PAfterParameters">) <span class="SHKeyword">const</span></td></tr></table></div>
  <div class="CBody"><p>Gets the value stored at the given row and column (0-based), as a 1-byte uint8</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">row<div class="CDLParameterType"><span class="SHKeyword">uint16</span></div></td><td class="CDLDefinition"><p>The 0-based row index of which to get the value</p></td></tr><tr><td class="CDLEntry">column<div class="CDLParameterType"><span class="SHKeyword">uint16</span></div></td><td class="CDLDefinition"><p>The 0-based column index of which to get the value</p></td></tr></table><div class="CHeading">Returns</div><p>The value stored at the given row and column, as a 1-byte uint8</p><div class="CHeading">Exceptions</div><ul><li><p>std::out_of_range: The position requested is out of range</p></li></ul></div>
 </div>
 
-<a name="str"></a><a name="Topic2345"></a><div class="CTopic TFunction LC last">
+<a name="str"></a><a name="Topic2349"></a><div class="CTopic TFunction LC last">
  <div class="CTitle">str</div>
- <div id="NDPrototype2345" class="NDPrototype NoParameterForm">std::<span class="SHKeyword">string</span> str() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype2349" class="NDPrototype NoParameterForm">std::<span class="SHKeyword">string</span> str() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Creates a string from the Matrix</p><div class="CHeading">Returns</div><p>A string representing the entire Matrix object (ex. &quot;[[0,0.1,0.2],[1,1.1,1.2],[2,2.1,2.2]]&quot;)</p></div>
 </div>
 
