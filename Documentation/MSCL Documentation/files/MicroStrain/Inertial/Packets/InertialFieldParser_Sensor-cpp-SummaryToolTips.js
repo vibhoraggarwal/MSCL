@@ -1,1 +1,1 @@
-NDSummary.OnToolTipsLoaded("File:MicroStrain/Inertial/Packets/InertialFieldParser_Sensor.cpp",{1051:"<div class=\"NDToolTip TConstant LC\"><div class=\"TTSummary\">The number of nanoseconds between the unix Epoch and the gps Epoch</div></div>"});
+NDSummary.OnToolTipsLoaded("File:MicroStrain/Inertial/Packets/InertialFieldParser_Sensor.cpp",{1250:"<div class=\"NDToolTip TConstant LC\"><div class=\"TTSummary\">The number of nanoseconds between the unix Epoch and the gps Epoch</div></div>"});

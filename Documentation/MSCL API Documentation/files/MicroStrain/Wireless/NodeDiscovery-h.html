@@ -8,93 +8,93 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="NodeDiscovery"></a><a name="Topic2191"></a><div class="CTopic TClass LC first">
+<a name="NodeDiscovery"></a><a name="Topic2240"></a><div class="CTopic TClass LC first">
  <div class="CTitle">NodeDiscovery</div>
- <div class="NDClassPrototype" id="NDClassPrototype2191"><div class="CPEntry TClass Current"><div class="CPName">NodeDiscovery</div></div></div>
+ <div class="NDClassPrototype" id="NDClassPrototype2240"><div class="CPEntry TClass Current"><div class="CPName">NodeDiscovery</div></div></div>
  <div class="CBody"><p>Represents 1 node discovery, which is created when a Wireless Node Discovery packet is sent from a Node.&nbsp; Note: There are multiple versions of Node Discovery packets which have been developed over time.&nbsp; Each version has added more useful information. If an earlier version of the Node Discovery packet is heard, this NodeDiscovery object will have some information be invalid (set to default values).</p></div>
 </div>
 
-<a name="NodeDiscovery.nodeAddress"></a><a name="Topic2192"></a><div class="CTopic TFunction LC">
+<a name="NodeDiscovery.nodeAddress"></a><a name="Topic2241"></a><div class="CTopic TFunction LC">
  <div class="CTitle">nodeAddress</div>
- <div id="NDPrototype2192" class="NDPrototype NoParameterForm"><a href="../../../index.html#File:Types.h:NodeAddress" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2449);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >NodeAddress</a> nodeAddress() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype2241" class="NDPrototype NoParameterForm"><a href="../../../index.html#File:Types.h:NodeAddress" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2505);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >NodeAddress</a> nodeAddress() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Gets the node address of the discovered Node.</p><div class="CHeading">Returns</div><p>The node address of the discovered Node.</p></div>
 </div>
 
-<a name="NodeDiscovery.frequency"></a><a name="Topic2193"></a><div class="CTopic TFunction LC">
+<a name="NodeDiscovery.frequency"></a><a name="Topic2242"></a><div class="CTopic TFunction LC">
  <div class="CTitle">frequency</div>
- <div id="NDPrototype2193" class="NDPrototype NoParameterForm"><a href="../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.Frequency" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1556);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::Frequency</a> frequency() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>Gets the <a href="../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.Frequency" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1556);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::Frequency</a> of the discovered Node.</p><div class="CHeading">Returns</div><p>The <a href="../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.Frequency" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1556);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::Frequency</a> of the discovered Node.</p></div>
+ <div id="NDPrototype2242" class="NDPrototype NoParameterForm"><a href="../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.Frequency" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1699);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::Frequency</a> frequency() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>Gets the <a href="../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.Frequency" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1699);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::Frequency</a> of the discovered Node.</p><div class="CHeading">Returns</div><p>The <a href="../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.Frequency" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1699);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::Frequency</a> of the discovered Node.</p></div>
 </div>
 
-<a name="NodeDiscovery.panId"></a><a name="Topic2194"></a><div class="CTopic TFunction LC">
+<a name="NodeDiscovery.panId"></a><a name="Topic2243"></a><div class="CTopic TFunction LC">
  <div class="CTitle">panId</div>
- <div id="NDPrototype2194" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> panId() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype2243" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint16</span> panId() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Gets the PAN Id of the discovered Node.&nbsp; Note: Returns 0 if not present in the packet.</p><div class="CHeading">Returns</div><p>The PAN Id of the discovered Node.</p></div>
 </div>
 
-<a name="NodeDiscovery.model"></a><a name="Topic2195"></a><div class="CTopic TFunction LC">
+<a name="NodeDiscovery.model"></a><a name="Topic2244"></a><div class="CTopic TFunction LC">
  <div class="CTitle">model</div>
- <div id="NDPrototype2195" class="NDPrototype NoParameterForm"><a href="../../../index.html#File:MicroStrain/Wireless/WirelessModels.h:WirelessModels.NodeModel" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1000);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessModels::NodeModel</a> model() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>Gets the model of the discovered Node.</p><div class="CHeading">Returns</div><p>The <a href="../../../index.html#File:MicroStrain/Wireless/WirelessModels.h:WirelessModels.NodeModel" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1000);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessModels::NodeModel</a> of the discovered Node.</p></div>
+ <div id="NDPrototype2244" class="NDPrototype NoParameterForm"><a href="../../../index.html#File:MicroStrain/Wireless/WirelessModels.h:WirelessModels.NodeModel" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1068);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessModels::NodeModel</a> model() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>Gets the model of the discovered Node.</p><div class="CHeading">Returns</div><p>The <a href="../../../index.html#File:MicroStrain/Wireless/WirelessModels.h:WirelessModels.NodeModel" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1068);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessModels::NodeModel</a> of the discovered Node.</p></div>
 </div>
 
-<a name="NodeDiscovery.serialNumber"></a><a name="Topic2196"></a><div class="CTopic TFunction LC">
+<a name="NodeDiscovery.serialNumber"></a><a name="Topic2245"></a><div class="CTopic TFunction LC">
  <div class="CTitle">serialNumber</div>
- <div id="NDPrototype2196" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> serialNumber() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype2245" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> serialNumber() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Gets the serial number of the discovered Node.&nbsp; Note: Returns 0 if not present in the packet.</p><div class="CHeading">Returns</div><p>The serial number of the discovered Node.</p></div>
 </div>
 
-<a name="NodeDiscovery.firmwareVersion"></a><a name="Topic2197"></a><div class="CTopic TFunction LC">
+<a name="NodeDiscovery.firmwareVersion"></a><a name="Topic2246"></a><div class="CTopic TFunction LC">
  <div class="CTitle">firmwareVersion</div>
- <div id="NDPrototype2197" class="NDPrototype NoParameterForm"><a href="../../../index.html#File:Version.h:Version" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2419);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Version</a> firmwareVersion() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype2246" class="NDPrototype NoParameterForm"><a href="../../../index.html#File:Version.h:Version" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2421);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Version</a> firmwareVersion() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Gets the firmware version of the discovered Node.&nbsp; Note: Returns 0.0.0 if not present in the packet.</p><div class="CHeading">Returns</div><p>The firmware version of the discovered Node.</p></div>
 </div>
 
-<a name="NodeDiscovery.defaultMode"></a><a name="Topic2198"></a><div class="CTopic TFunction LC">
+<a name="NodeDiscovery.defaultMode"></a><a name="Topic2247"></a><div class="CTopic TFunction LC">
  <div class="CTitle">defaultMode</div>
- <div id="NDPrototype2198" class="NDPrototype NoParameterForm"><a href="../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.DefaultMode" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1550);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::DefaultMode</a> defaultMode() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>Gets the <a href="../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.DefaultMode" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1550);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::DefaultMode</a> of the discovered Node.&nbsp; Note: Returns 999 if not present in the packet.</p><div class="CHeading">Returns</div><p>The <a href="../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.DefaultMode" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1550);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::DefaultMode</a> of the discovered Node.</p></div>
+ <div id="NDPrototype2247" class="NDPrototype NoParameterForm"><a href="../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.DefaultMode" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1693);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::DefaultMode</a> defaultMode() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>Gets the <a href="../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.DefaultMode" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1693);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::DefaultMode</a> of the discovered Node.&nbsp; Note: Returns 999 if not present in the packet.</p><div class="CHeading">Returns</div><p>The <a href="../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.DefaultMode" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,1693);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::DefaultMode</a> of the discovered Node.</p></div>
 </div>
 
-<a name="NodeDiscovery.builtInTestResult"></a><a name="Topic2199"></a><div class="CTopic TFunction LC">
+<a name="NodeDiscovery.builtInTestResult"></a><a name="Topic2248"></a><div class="CTopic TFunction LC">
  <div class="CTitle">builtInTestResult</div>
- <div id="NDPrototype2199" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> builtInTestResult() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype2248" class="NDPrototype NoParameterForm"><span class="SHKeyword">uint32</span> builtInTestResult() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Gets the result bitmask of the built in test.</p><div class="CHeading">Returns</div><p>A uint32 bitmask representing the result of the built in test.</p></div>
 </div>
 
-<a name="NodeDiscovery.communicationProtocol"></a><a name="Topic2200"></a><div class="CTopic TFunction LC">
+<a name="NodeDiscovery.communicationProtocol"></a><a name="Topic2249"></a><div class="CTopic TFunction LC">
  <div class="CTitle">communicationProtocol</div>
- <div id="NDPrototype2200" class="NDPrototype NoParameterForm"><a href="../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.CommProtocol" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2068);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::CommProtocol</a> communicationProtocol() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>Gets the <a href="../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.CommProtocol" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2068);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::CommProtocol</a> of the discovered Node.</p><div class="CHeading">Returns</div><p>The <a href="../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.CommProtocol" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2068);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::CommProtocol</a> that the Node is currently in.</p></div>
+ <div id="NDPrototype2249" class="NDPrototype NoParameterForm"><a href="../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.CommProtocol" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2212);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::CommProtocol</a> communicationProtocol() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>Gets the <a href="../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.CommProtocol" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2212);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::CommProtocol</a> of the discovered Node.</p><div class="CHeading">Returns</div><p>The <a href="../../../index.html#File:MicroStrain/Wireless/WirelessTypes.h:WirelessTypes.CommProtocol" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2212);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >WirelessTypes::CommProtocol</a> that the Node is currently in.</p></div>
 </div>
 
-<a name="NodeDiscovery.asppVersion_lxrs"></a><a name="Topic2201"></a><div class="CTopic TFunction LC">
+<a name="NodeDiscovery.asppVersion_lxrs"></a><a name="Topic2250"></a><div class="CTopic TFunction LC">
  <div class="CTitle">asppVersion_lxrs</div>
- <div id="NDPrototype2201" class="NDPrototype NoParameterForm"><a href="../../../index.html#File:Version.h:Version" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2419);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Version</a> asppVersion_lxrs() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>Gets the ASPP protocol <a href="../../../index.html#File:Version.h:Version" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2419);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Version</a> of the Node when it is in LXRS RadioMode.</p></div>
+ <div id="NDPrototype2250" class="NDPrototype NoParameterForm"><a href="../../../index.html#File:Version.h:Version" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2421);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Version</a> asppVersion_lxrs() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>Gets the ASPP protocol <a href="../../../index.html#File:Version.h:Version" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2421);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Version</a> of the Node when it is in LXRS RadioMode.</p></div>
 </div>
 
-<a name="NodeDiscovery.asppVersion_lxrsPlus"></a><a name="Topic2202"></a><div class="CTopic TFunction LC">
+<a name="NodeDiscovery.asppVersion_lxrsPlus"></a><a name="Topic2251"></a><div class="CTopic TFunction LC">
  <div class="CTitle">asppVersion_lxrsPlus</div>
- <div id="NDPrototype2202" class="NDPrototype NoParameterForm"><a href="../../../index.html#File:Version.h:Version" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2419);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Version</a> asppVersion_lxrsPlus() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>Gets the ASPP protocol <a href="../../../index.html#File:Version.h:Version" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2419);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Version</a> of the Node when it is in LXRS+ RadioMode.</p></div>
+ <div id="NDPrototype2251" class="NDPrototype NoParameterForm"><a href="../../../index.html#File:Version.h:Version" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2421);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Version</a> asppVersion_lxrsPlus() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>Gets the ASPP protocol <a href="../../../index.html#File:Version.h:Version" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2421);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Version</a> of the Node when it is in LXRS+ RadioMode.</p></div>
 </div>
 
-<a name="NodeDiscovery.baseRssi"></a><a name="Topic2203"></a><div class="CTopic TFunction LC">
+<a name="NodeDiscovery.baseRssi"></a><a name="Topic2252"></a><div class="CTopic TFunction LC">
  <div class="CTitle">baseRssi</div>
- <div id="NDPrototype2203" class="NDPrototype NoParameterForm"><span class="SHKeyword">int16</span> baseRssi() <span class="SHKeyword">const</span></div>
+ <div id="NDPrototype2252" class="NDPrototype NoParameterForm"><span class="SHKeyword">int16</span> baseRssi() <span class="SHKeyword">const</span></div>
  <div class="CBody"><p>Gets the base station rssi of the discovered Node.</p><div class="CHeading">Returns</div><p>The base station rssi of the discovered Node.</p></div>
 </div>
 
-<a name="NodeDiscovery.timestamp"></a><a name="Topic2204"></a><div class="CTopic TFunction LC">
+<a name="NodeDiscovery.timestamp"></a><a name="Topic2253"></a><div class="CTopic TFunction LC">
  <div class="CTitle">timestamp</div>
- <div id="NDPrototype2204" class="NDPrototype NoParameterForm"><a href="../../../index.html#File:Timestamp.h:Timestamp" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2475);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Timestamp</a> timestamp() <span class="SHKeyword">const</span></div>
- <div class="CBody"><p>Gets the <a href="../../../index.html#File:Timestamp.h:Timestamp" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2475);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Timestamp</a> of when the NodeDiscovery packet was received by MSCL.</p><div class="CHeading">Returns</div><p>The <a href="../../../index.html#File:Timestamp.h:Timestamp" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2475);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Timestamp</a> of when the NodeDiscovery packet was received by MSCL.</p></div>
+ <div id="NDPrototype2253" class="NDPrototype NoParameterForm"><a href="../../../index.html#File:Timestamp.h:Timestamp" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2531);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Timestamp</a> timestamp() <span class="SHKeyword">const</span></div>
+ <div class="CBody"><p>Gets the <a href="../../../index.html#File:Timestamp.h:Timestamp" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2531);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Timestamp</a> of when the NodeDiscovery packet was received by MSCL.</p><div class="CHeading">Returns</div><p>The <a href="../../../index.html#File:Timestamp.h:Timestamp" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2531);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >Timestamp</a> of when the NodeDiscovery packet was received by MSCL.</p></div>
 </div>
 
-<a name="NodeDiscovery.NodeDiscoveries"></a><a name="Topic2205"></a><div class="CTopic TType LC last">
+<a name="NodeDiscovery.NodeDiscoveries"></a><a name="Topic2254"></a><div class="CTopic TType LC last">
  <div class="CTitle">NodeDiscoveries</div>
- <div class="CBody"><p>typedef for a vector of <a href="../../../index.html#File:MicroStrain/Wireless/NodeDiscovery.h:NodeDiscovery" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2191);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >NodeDiscovery</a> objects</p></div>
+ <div class="CBody"><p>typedef for a vector of <a href="../../../index.html#File:MicroStrain/Wireless/NodeDiscovery.h:NodeDiscovery" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,2240);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >NodeDiscovery</a> objects</p></div>
 </div>
 
 </body></html>

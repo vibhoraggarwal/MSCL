@@ -1,0 +1,1 @@
+NDSearch.OnPrefixDataLoaded("acc",["Variable"],[["accelGyroFilterWidth",,[["SignalConditioningValues",,,,0,"File:MicroStrain/Inertial/ExposedInertialTypes.h:SignalConditioningValues.accelGyroFilterWidth","CClass:SignalConditioningValues:accelGyroFilterWidth"]]]]);
