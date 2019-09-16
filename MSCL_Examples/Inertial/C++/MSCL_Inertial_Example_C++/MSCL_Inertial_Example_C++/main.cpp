@@ -12,12 +12,12 @@ using namespace std;
 int main(int argc, char **argv)
 {
     //TODO: change these constants to match your setup
-    const string COM_PORT = "COM4";
+    const string COM_PORT = "/dev/ttyACM1";
 
     try
     {
         //create a SerialConnection with the COM port
-        mscl::Connection connection = mscl::Connection::Serial(COM_PORT);
+        mscl::Connection connection = mscl::Connection::Serial(COM_PORT, 115200);
 
         //create an InertialNode with the connection
         mscl::InertialNode node(connection);
@@ -31,19 +31,24 @@ int main(int argc, char **argv)
         //TODO: Uncomment the lines below to run the examples
 
         //Example: Get Configuration
+        //cout << "printing the current configuration";
         //getCurrentConfig(node);
 
         //Example: Set Configuration
         //setCurrentConfig(node);       //Warning: this example changes settings on your Node!
 
         //Example: Start Sampling
-        //startSampling(node);
+        cout<< "start the sampling";
+        startSampling(node);
+        cout<< "sampling ended";
 
         //Example: Set to Idle
         //setToIdle(node);
 
         //Example: Parse Data
-        //parseData(node);
+        cout << "Parsing data starts";
+        parseData(node);
+        cout << "Parsing data ends";
     }
     catch(mscl::Error& e)
     {
